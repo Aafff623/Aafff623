@@ -1,0 +1,12 @@
+<svg width="980" height="178" viewBox="0 0 980 178" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="threetwoa identity badges">
+  <rect x="2" y="2" width="976" height="174" rx="30" fill="#ffffff" stroke="#d7dde6" stroke-width="3"/>
+  <text x="34" y="45" fill="#1f2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">IDENTITY TAGS</text>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="34" y="66" width="253" height="36" rx="12" fill="#edf4ff" stroke="#b8cef0"/><text x="50" y="90" fill="#315f9f">AI Workflow Builder</text>
+    <rect x="303" y="66" width="305" height="36" rx="12" fill="#fff7e5" stroke="#edd393"/><text x="319" y="90" fill="#8a6929">Spec-driven Student Builder</text>
+    <rect x="624" y="66" width="303" height="36" rx="12" fill="#edf4ff" stroke="#b8cef0"/><text x="640" y="90" fill="#315f9f">Web3 Hackathon Frontend</text>
+    <rect x="34" y="118" width="290" height="36" rx="12" fill="#fff7e5" stroke="#edd393"/><text x="50" y="142" fill="#8a6929">Knowledge Asset Curator</text>
+    <rect x="340" y="118" width="254" height="36" rx="12" fill="#edf4ff" stroke="#b8cef0"/><text x="356" y="142" fill="#315f9f">Claude Code Operator</text>
+    <rect x="610" y="118" width="242" height="36" rx="12" fill="#fff7e5" stroke="#edd393"/><text x="626" y="142" fill="#8a6929">Motion UI Explorer</text>
+  </g>
+</svg>

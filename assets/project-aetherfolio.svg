@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 150" width="100%">
+  <defs>
+    <style>
+      .ae-bg { fill: #FFFFFF; }
+      .ae-border { fill: none; stroke: #E5E7EB; stroke-width: 1.5; }
+      .ae-accent { fill: #1F2937; }
+      .ae-gold { fill: #D4AF37; }
+      .ae-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 26px; font-weight: 700; fill: #111827; }
+      .ae-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; fill: #6B7280; }
+      .ae-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; fill: #4B5563; }
+      .ae-pill { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 600; fill: #374151; }
+      .ae-pill-bg { fill: #F3F4F6; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="150" rx="14" class="ae-bg"/>
+  <rect x="0" y="0" width="800" height="150" rx="14" class="ae-border"/>
+
+  <rect x="24" y="24" width="40" height="40" rx="10" class="ae-accent"/>
+  <text x="32" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">A</text>
+
+  <text x="80" y="48" class="ae-title">threetwoa-aetherfolio</text>
+  <text x="80" y="74" class="ae-sub">A static-first personal space built with Astro.</text>
+
+  <text x="80" y="108" class="ae-desc">Personal site experiments, portfolio pages, and Astro-based content architecture.</text>
+
+  <g transform="translate(80, 124)">
+    <rect x="0" y="0" width="52" height="24" rx="5" class="ae-pill-bg"/>
+    <text x="9" y="16" class="ae-pill">Astro</text>
+
+    <rect x="60" y="0" width="76" height="24" rx="5" class="ae-pill-bg"/>
+    <text x="69" y="16" class="ae-pill">Static Site</text>
+
+    <rect x="144" y="0" width="70" height="24" rx="5" class="ae-pill-bg"/>
+    <text x="153" y="16" class="ae-pill">Personal</text>
+  </g>
+
+  <circle cx="760" cy="30" r="5" class="ae-gold"/>
+</svg>

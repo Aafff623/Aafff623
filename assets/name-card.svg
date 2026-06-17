@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" width="100%">
+  <defs>
+    <style>
+      .nc-bg { fill: #FAFAFA; }
+      .nc-border { fill: none; stroke: #E5E7EB; stroke-width: 1.5; }
+      .nc-name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 38px; font-weight: 700; fill: #111827; }
+      .nc-handle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 18px; font-weight: 500; fill: #3B82F6; }
+      .nc-motto { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 20px; font-weight: 600; fill: #1F2937; }
+      .nc-meta { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; fill: #6B7280; }
+      .nc-accent { fill: #D4AF37; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="180" rx="14" class="nc-bg"/>
+  <rect x="0" y="0" width="720" height="180" rx="14" class="nc-border"/>
+
+  <circle cx="36" cy="36" r="5" class="nc-accent"/>
+  <rect x="36" y="70" width="4" height="80" rx="2" fill="#E5E7EB"/>
+  <rect x="36" y="70" width="4" height="36" rx="2" fill="#3B82F6"/>
+
+  <text x="60" y="52" class="nc-name">threetwoa</text>
+  <text x="280" y="52" class="nc-handle">Aafff623</text>
+
+  <text x="60" y="102" class="nc-motto">Code less, Architect more.</text>
+
+  <text x="60" y="142" class="nc-meta">Taiyuan · Sophomore · Software Engineering</text>
+</svg>
