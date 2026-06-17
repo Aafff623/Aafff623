@@ -11,7 +11,7 @@
 <div>
   <img src="./assets/threetwoa-title.svg" height="44" alt="threetwoa" />
   <br/>
-  <img src="./assets/role-badges.svg" height="40" alt="roles" />
+  <img src="./assets/role-badges.svg" width="100%" alt="roles" />
 </div>
 
 🌟 `vibe coding` 到 `spec-driven` 的探索者，专注 AI 编程工作流与 Web3 前端交付。
