@@ -1,18 +1,33 @@
 <img align="right" src="./assets/hero-knight.png" width="300" alt="threetwoa hero" />
 
-<h1>👋 Hi, I'm threetwoa</h1>
+<h1 align="center">👋 Hi, I'm threetwoa</h1>
 
-<img src="./assets/threetwoa-title.svg" height="42" alt="threetwoa" />
+<p align="center">
+  <img src="./assets/threetwoa-title.svg" height="40" alt="threetwoa" />
+</p>
 
-### Code less, Architect more.
+<p align="center">
+  <i>Code less, Architect more.</i>
+</p>
 
-太原 · 大二 · 软件工程  
-AI Workflow Builder · Spec-driven Student Builder · Web3 Hackathon Frontend
+<p align="center">
+  太原 · 大二 · 软件工程  <br/>
+  AI Workflow Builder · Spec-driven Student Builder · Web3 Hackathon Frontend
+</p>
 
 <br/>
 
-`Claude Code` · `Cursor` · `Codex` · `MCP` · `Skills` · `Workflow`  
-`React` · `Vue` · `Tailwind CSS` · `Framer Motion` · `Java Spring Boot` · `FastAPI` · `Web3`
+**AI Stack**  
+`Claude Code` · `Cursor` · `Codex` · `MCP` · `Skills` · `Workflow`
+
+**Frontend**  
+`React` · `Vue` · `Tailwind CSS` · `Framer Motion`
+
+**Backend**  
+`Java Spring Boot` · `FastAPI`
+
+**Web3**  
+`Web3`
 
 ---
 
@@ -35,6 +50,10 @@ Claude Code 配置工坊 & 知识资产库：GPT → Claude Code → Codex, MCP,
 ### Workflow
 
 GPT as Brain · Claude Code as Executor · Codex as Reviewer · Human-in-the-loop
+
+### Contact
+
+GitHub: [@Aafff623](https://github.com/Aafff623)
 
 ---
 
