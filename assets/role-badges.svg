@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710 44" height="40" fill="none" role="img" aria-labelledby="rb-title">
+  <title id="rb-title">role badges</title>
+  <defs>
+    <style>
+      .badge { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; font-size: 13px; font-weight: 600; fill: #374151; }
+    </style>
+  </defs>
+
+  <g transform="translate(0, 6)">
+    <rect width="132" height="32" rx="16" fill="#ffffff" stroke="#e5e7eb" />
+    <circle cx="16" cy="16" r="4" fill="#315f9f" />
+    <text x="28" y="21" class="badge">AI Workflow</text>
+  </g>
+
+  <g transform="translate(142, 6)">
+    <rect width="132" height="32" rx="16" fill="#ffffff" stroke="#e5e7eb" />
+    <circle cx="16" cy="16" r="4" fill="#d4af37" />
+    <text x="28" y="21" class="badge">Spec-driven</text>
+  </g>
+
+  <g transform="translate(284, 6)">
+    <rect width="132" height="32" rx="16" fill="#ffffff" stroke="#e5e7eb" />
+    <circle cx="16" cy="16" r="4" fill="#10b981" />
+    <text x="28" y="21" class="badge">Web3 Frontend</text>
+  </g>
+
+  <g transform="translate(426, 6)">
+    <rect width="132" height="32" rx="16" fill="#ffffff" stroke="#e5e7eb" />
+    <circle cx="16" cy="16" r="4" fill="#8b5cf6" />
+    <text x="28" y="21" class="badge">Claude Code</text>
+  </g>
+
+  <g transform="translate(568, 6)">
+    <rect width="132" height="32" rx="16" fill="#ffffff" stroke="#e5e7eb" />
+    <circle cx="16" cy="16" r="4" fill="#f43f5e" />
+    <text x="28" y="21" class="badge">Motion UI</text>
+  </g>
+</svg>

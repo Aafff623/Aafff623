@@ -10,11 +10,8 @@
 
 <div>
   <img src="./assets/threetwoa-title.svg" height="44" alt="threetwoa" />
-  <img src="https://img.shields.io/badge/AI%20Workflow%20Builder-2f3136?style=for-the-badge" alt="AI Workflow Builder" />
-  <img src="https://img.shields.io/badge/Spec--driven%20Builder-2f3136?style=for-the-badge" alt="Spec-driven Builder" />
-  <img src="https://img.shields.io/badge/Web3%20Frontend-2f3136?style=for-the-badge" alt="Web3 Frontend" />
-  <img src="https://img.shields.io/badge/Claude%20Code%20Operator-2f3136?style=for-the-badge" alt="Claude Code Operator" />
-  <img src="https://img.shields.io/badge/Motion%20UI%20Explorer-2f3136?style=for-the-badge" alt="Motion UI Explorer" />
+  <br/>
+  <img src="./assets/role-badges.svg" height="40" alt="roles" />
 </div>
 
 🌟 `vibe coding` 到 `spec-driven` 的探索者，专注 AI 编程工作流与 Web3 前端交付。
