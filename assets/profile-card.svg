@@ -85,7 +85,7 @@
       <rect width="226" height="86" rx="14" fill="#ffffff" stroke="#e5e7eb" />
       <path d="M0 14 A14 14 0 0 1 14 0 H212 A14 14 0 0 1 226 14 V38 H0 V14 Z" fill="url(#coverGradient)" />
       <text x="14" y="26" class="project-title">AI Workflow OS</text>
-      <text x="14" y="60" class="project-desc">Claude Code 配置工坊 & 知识资产库</text>
+      <text x="14" y="60" class="project-desc">Claude Code 配置工坊 &amp; 知识资产库</text>
       <text x="14" y="76" class="project-desc">GPT → Claude Code → Codex / MCP / Skills</text>
     </g>
   </g>
