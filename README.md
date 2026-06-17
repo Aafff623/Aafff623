@@ -6,13 +6,12 @@
 
 #
 
-<img align="right" src="./assets/hero-knight.png" width="48%" alt="threetwoa hero" />
+<table width="100%">
+  <tr>
+    <td width="58%" valign="top">
 
-<div>
-  <img src="./assets/threetwoa-title.svg" height="44" alt="threetwoa" />
-  <br/>
-  <img src="./assets/role-badges.svg" width="100%" alt="roles" />
-</div>
+<img src="./assets/threetwoa-title.svg" height="44" alt="threetwoa" />
+<img src="./assets/role-badges.svg" width="100%" alt="roles" />
 
 🌟 `vibe coding` 到 `spec-driven` 的探索者，专注 AI 编程工作流与 Web3 前端交付。
 
@@ -23,9 +22,16 @@
 
 我正在全力投入 `AI 编程工作流` 的探索，希望把 GPT、Claude Code、Codex、MCP、Skills 整合成稳定可复用的开发环境。
 
-<img src="./assets/profile-card.svg" width="48%" alt="profile card" />
+<img src="./assets/profile-card.svg" width="100%" alt="profile card" />
 
-<br clear="right" />
+    </td>
+    <td width="42%" align="center" valign="top">
+
+<img src="./assets/hero-knight.png" width="100%" alt="threetwoa hero" />
+
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <a href="mailto:laiyif68@gmail.com"><img src="https://img.shields.io/badge/Email-2f3136?style=flat-square" alt="Email" /></a>
