@@ -1,64 +1,51 @@
 <table width="100%">
   <tr>
-    <td width="58%" valign="top">
-      <img src="./assets/name-card.svg" width="100%" alt="threetwoa name card" />
-      <br/><br/>
-      <img src="./assets/identity-badge-strip.svg" width="100%" alt="identity badges" />
-      <br/><br/>
-      <p>
-        Building AI coding workflows, Web3 demos, and reusable knowledge assets.<br/>
-        From vibe coding to spec-driven, workflow-driven building.
-      </p>
+    <td width="58%" valign="middle">
+
+<img src="./assets/threetwoa-title.svg" width="100%" />
+
+### Code less, Architect more.
+
+Building AI coding workflows, Web3 demos, and reusable knowledge assets.  
+From vibe coding to spec-driven, workflow-driven building.
+
+<a href="https://github.com/San-Y108/agent-cfo">AgentCFO</a> ·
+<a href="https://github.com/Aafff623/threetwoa-cc-workshop">AI Workflow OS</a> ·
+<a href="https://github.com/Aafff623/Aafff623.github.io">Workflow Lab</a>
+
     </td>
-    <td width="42%" align="center" valign="top">
-      <img src="./assets/hero-knight.png" width="320" alt="threetwoa hero" />
+    <td width="42%" align="center">
+
+<img src="./assets/hero-knight.png" width="320" />
+
     </td>
   </tr>
 </table>
 
-<img src="./assets/ornament-divider.svg" width="100%" alt="divider" />
+<img src="./assets/signature-strip.svg" width="100%" />
 
-<img src="./assets/profile-card.svg" width="100%" alt="profile card" />
+## Focus
 
----
+AI Workflow Builder · Spec-driven Student Builder · Web3 Hackathon Frontend  
+Claude Code Operator · Knowledge Asset Curator · Motion UI Explorer
 
-## Featured Projects
+## Projects
 
-<img src="./assets/project-agentcfo.svg" width="100%" alt="AgentCFO project" />
+**AgentCFO** — DAO AI 财务官 / Web3 hackathon team project  
+Frontend lead / contributor for demo experience, visual delivery, and frontend polish.  
+[repo](https://github.com/San-Y108/agent-cfo) · [demo](https://agentcfo-frontend.vercel.app/)
 
-<p align="right">
-  <a href="https://github.com/San-Y108/agent-cfo">repo</a> ·
-  <a href="https://agentcfo-frontend.vercel.app/">demo</a>
-</p>
-
-<img src="./assets/project-aetherfolio.svg" width="100%" alt="threetwoa-aetherfolio project" />
-
-<p align="right">
-  <a href="https://github.com/Aafff623/threetwoa-aetherfolio">repo</a>
-</p>
-
-<img src="./assets/ornament-divider.svg" width="100%" alt="divider" />
-
----
+**threetwoa-cc-workshop** — AI Workflow Operating System  
+Claude Code 配置工坊 & 知识资产库：GPT → Claude Code → Codex, MCP, Skills, Workflow, Prompt, Checklist, Docs.  
+[repo](https://github.com/Aafff623/threetwoa-cc-workshop)
 
 ## Workflow
 
-<img src="./assets/workflow-card.svg" width="100%" alt="workflow map" />
-
----
+GPT as Brain · Claude Code as Executor · Codex as Reviewer · Human-in-the-loop
 
 ## Stack
 
-<p>
-  <strong>Backend:</strong> Java Spring Boot, Spring Cloud, Python FastAPI  <br/>
-  <strong>Frontend:</strong> React, Vue, Tailwind CSS, Framer Motion  <br/>
-  <strong>UI Assets:</strong> HeroUI v3, Makedirs, Aceternity UI, motionsites.ai, Lovable, OpenDesign, taste-skill  <br/>
-  <strong>Motion:</strong> GSAP, Vibe Motion  <br/>
-  <strong>AI Coding Workflow:</strong> Claude Code, Cursor, Codex, MCP, Skills, Spec-driven development  <br/>
-  <strong>Web3:</strong> EVM basics, DAO payment workflow, hackathon demos
-</p>
-
----
+Java Spring Boot · Spring Cloud · Python FastAPI · React · Vue · Tailwind CSS · Framer Motion · HeroUI v3 · GSAP · Claude Code · Cursor · Codex · MCP · Skills · Web3
 
 <p align="center">
   <i>Build less, reuse more.</i>
