@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" width="100%" fill="none" role="img" aria-labelledby="pc-title">
+  <title id="pc-title">threetwoa profile card</title>
+  <defs>
+    <linearGradient id="coverGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#315f9f" />
+      <stop offset="100%" stop-color="#1e3a6f" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#111827" flood-opacity="0.08" />
+    </filter>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
+      .title { font-size: 16px; font-weight: 700; fill: #111827; }
+      .label { font-size: 11px; font-weight: 600; fill: #4b5563; }
+      .mono { font-size: 18px; font-weight: 700; fill: #1f2937; text-anchor: middle; }
+      .project-title { font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .project-desc { font-size: 11px; fill: #6b7280; }
+      .contact-label { font-size: 13px; font-weight: 600; fill: #374151; }
+      .contact-value { font-size: 12px; fill: #6b7280; }
+    </style>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="10" y="10" width="266" height="260" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5" />
+    <text x="30" y="42" class="title">🛠️ 技能（Skills）</text>
+
+    <g transform="translate(30, 64)">
+      <g transform="translate(0, 0)">
+        <rect width="52" height="52" rx="12" fill="#f3f4f6" stroke="#e5e7eb" />
+        <text x="26" y="34" class="mono">Ja</text>
+        <text x="26" y="72" class="label" text-anchor="middle">Java</text>
+      </g>
+      <g transform="translate(66, 0)">
+        <rect width="52" height="52" rx="12" fill="#f3f4f6" stroke="#e5e7eb" />
+        <text x="26" y="34" class="mono">Py</text>
+        <text x="26" y="72" class="label" text-anchor="middle">Python</text>
+      </g>
+      <g transform="translate(132, 0)">
+        <rect width="52" height="52" rx="12" fill="#f3f4f6" stroke="#e5e7eb" />
+        <text x="26" y="34" class="mono">Re</text>
+        <text x="26" y="72" class="label" text-anchor="middle">React</text>
+      </g>
+      <g transform="translate(198, 0)">
+        <rect width="52" height="52" rx="12" fill="#f3f4f6" stroke="#e5e7eb" />
+        <text x="26" y="34" class="mono">Vu</text>
+        <text x="26" y="72" class="label" text-anchor="middle">Vue</text>
+      </g>
+
+      <g transform="translate(0, 94)">
+        <rect width="52" height="52" rx="12" fill="#f3f4f6" stroke="#e5e7eb" />
+        <text x="26" y="34" class="mono">Tw</text>
+        <text x="26" y="72" class="label" text-anchor="middle">Tailwind</text>
+      </g>
+      <g transform="translate(66, 94)">
+        <rect width="52" height="52" rx="12" fill="#f3f4f6" stroke="#e5e7eb" />
+        <text x="26" y="34" class="mono">Gs</text>
+        <text x="26" y="72" class="label" text-anchor="middle">GSAP</text>
+      </g>
+      <g transform="translate(132, 94)">
+        <rect width="52" height="52" rx="12" fill="#f3f4f6" stroke="#e5e7eb" />
+        <text x="26" y="34" class="mono">CC</text>
+        <text x="26" y="72" class="label" text-anchor="middle">Claude</text>
+      </g>
+      <g transform="translate(198, 94)">
+        <rect width="52" height="52" rx="12" fill="#f3f4f6" stroke="#e5e7eb" />
+        <text x="26" y="34" class="mono">W3</text>
+        <text x="26" y="72" class="label" text-anchor="middle">Web3</text>
+      </g>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="296" y="10" width="266" height="260" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5" />
+    <text x="316" y="42" class="title">🏆 项目（Projects）</text>
+
+    <g transform="translate(316, 58)">
+      <rect width="226" height="86" rx="14" fill="#ffffff" stroke="#e5e7eb" />
+      <path d="M0 14 A14 14 0 0 1 14 0 H212 A14 14 0 0 1 226 14 V38 H0 V14 Z" fill="url(#coverGradient)" />
+      <text x="14" y="26" class="project-title">AgentCFO</text>
+      <text x="14" y="60" class="project-desc">DAO AI 财务官 / Web3 hackathon</text>
+      <text x="14" y="76" class="project-desc">团队项目 · 前端视觉与 Demo 交付</text>
+    </g>
+
+    <g transform="translate(316, 156)">
+      <rect width="226" height="86" rx="14" fill="#ffffff" stroke="#e5e7eb" />
+      <path d="M0 14 A14 14 0 0 1 14 0 H212 A14 14 0 0 1 226 14 V38 H0 V14 Z" fill="url(#coverGradient)" />
+      <text x="14" y="26" class="project-title">AI Workflow OS</text>
+      <text x="14" y="60" class="project-desc">Claude Code 配置工坊 & 知识资产库</text>
+      <text x="14" y="76" class="project-desc">GPT → Claude Code → Codex / MCP / Skills</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="582" y="10" width="266" height="260" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5" />
+    <text x="602" y="42" class="title">💬 联系（Contact）</text>
+
+    <g transform="translate(602, 70)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="22" font-size="14" font-weight="700" fill="#315f9f" text-anchor="middle">✉</text>
+      <text x="44" y="14" class="contact-label">Email</text>
+      <text x="44" y="32" class="contact-value">laiyif68@gmail.com</text>
+    </g>
+
+    <g transform="translate(602, 130)">
+      <circle cx="16" cy="16" r="16" fill="#f0fdf4" />
+      <text x="16" y="22" font-size="14" font-weight="700" fill="#16a34a" text-anchor="middle">Gh</text>
+      <text x="44" y="14" class="contact-label">GitHub</text>
+      <text x="44" y="32" class="contact-value">github.com/Aafff623</text>
+    </g>
+
+    <g transform="translate(602, 190)">
+      <rect x="0" y="0" width="226" height="44" rx="10" fill="#fafafa" stroke="#e5e7eb" />
+      <text x="113" y="28" font-size="12" font-weight="600" fill="#6b7280" text-anchor="middle">🌐 主页 · github.com/Aafff623</text>
+    </g>
+  </g>
+</svg>

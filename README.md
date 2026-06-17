@@ -1,52 +1,49 @@
-<table width="100%">
-  <tr>
-    <td width="58%" valign="middle">
-
-<img src="./assets/threetwoa-title.svg" width="100%" />
-
-### Code less, Architect more.
-
-Building AI coding workflows, Web3 demos, and reusable knowledge assets.  
-From vibe coding to spec-driven, workflow-driven building.
-
-<a href="https://github.com/San-Y108/agent-cfo">AgentCFO</a> ·
-<a href="https://github.com/Aafff623/threetwoa-cc-workshop">AI Workflow OS</a> ·
-<a href="https://github.com/Aafff623/Aafff623.github.io">Workflow Lab</a>
-
-    </td>
-    <td width="42%" align="center">
-
-<img src="./assets/hero-knight.png" width="320" />
-
-    </td>
-  </tr>
-</table>
-
-<img src="./assets/signature-strip.svg" width="100%" />
-
-## Focus
-
-AI Workflow Builder · Spec-driven Student Builder · Web3 Hackathon Frontend  
-Claude Code Operator · Knowledge Asset Curator · Motion UI Explorer
-
-## Projects
-
-**AgentCFO** — DAO AI 财务官 / Web3 hackathon team project  
-Frontend lead / contributor for demo experience, visual delivery, and frontend polish.  
-[repo](https://github.com/San-Y108/agent-cfo) · [demo](https://agentcfo-frontend.vercel.app/)
-
-**threetwoa-cc-workshop** — AI Workflow Operating System  
-Claude Code 配置工坊 & 知识资产库：GPT → Claude Code → Codex, MCP, Skills, Workflow, Prompt, Checklist, Docs.  
-[repo](https://github.com/Aafff623/threetwoa-cc-workshop)
-
-## Workflow
-
-GPT as Brain · Claude Code as Executor · Codex as Reviewer · Human-in-the-loop
-
-## Stack
-
-Java Spring Boot · Spring Cloud · Python FastAPI · React · Vue · Tailwind CSS · Framer Motion · HeroUI v3 · GSAP · Claude Code · Cursor · Codex · MCP · Skills · Web3
+<h1 align="center">👋 Hi, I'm threetwoa</h1>
 
 <p align="center">
-  <i>Build less, reuse more.</i>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;size=21&amp;duration=2200&amp;pause=1000&amp;center=true&amp;vCenter=true&amp;width=800&amp;lines=Code%20less%2C%20Architect%20more.;Building%20AI%20workflows%20%26%20Web3%20demos.;From%20vibe%20coding%20to%20spec-driven%20building." alt="typing motto" />
+</p>
+
+#
+
+<img align="right" src="./assets/hero-knight.png" width="48%" alt="threetwoa hero" />
+
+<div>
+  <img src="./assets/threetwoa-title.svg" height="44" alt="threetwoa" />
+  <img src="https://img.shields.io/badge/AI%20Workflow%20Builder-2f3136?style=for-the-badge" alt="AI Workflow Builder" />
+  <img src="https://img.shields.io/badge/Spec--driven%20Builder-2f3136?style=for-the-badge" alt="Spec-driven Builder" />
+  <img src="https://img.shields.io/badge/Web3%20Frontend-2f3136?style=for-the-badge" alt="Web3 Frontend" />
+  <img src="https://img.shields.io/badge/Claude%20Code%20Operator-2f3136?style=for-the-badge" alt="Claude Code Operator" />
+  <img src="https://img.shields.io/badge/Motion%20UI%20Explorer-2f3136?style=for-the-badge" alt="Motion UI Explorer" />
+</div>
+
+🌟 `vibe coding` 到 `spec-driven` 的探索者，专注 AI 编程工作流与 Web3 前端交付。
+
+• 🧠 身份：**AI Workflow Builder** · **Spec-driven Student Builder**  
+• 🏆 项目：[AgentCFO](https://github.com/San-Y108/agent-cfo) · [AI Workflow OS](https://github.com/Aafff623/threetwoa-cc-workshop)  
+• ✉️ Email: `laiyif68@gmail.com`  
+• 🌐 主页：[github.com/Aafff623](https://github.com/Aafff623)
+
+我正在全力投入 `AI 编程工作流` 的探索，希望把 GPT、Claude Code、Codex、MCP、Skills 整合成稳定可复用的开发环境。
+
+<img src="./assets/profile-card.svg" width="48%" alt="profile card" />
+
+<br clear="right" />
+
+<p align="center">
+  <a href="mailto:laiyif68@gmail.com"><img src="https://img.shields.io/badge/Email-2f3136?style=flat-square" alt="Email" /></a>
+  <span> </span>
+  <a href="https://github.com/Aafff623"><img src="https://img.shields.io/badge/GitHub-2f3136?style=flat-square" alt="GitHub" /></a>
+</p>
+
+## 🛠️ 技术栈
+
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java,python,react,vue,tailwindcss,ts,js,spring,fastapi,docker,nginx,mysql,redis,linux" alt="tech stack" />
+  </a>
+</p>
+
+<p align="center">
+  <i>最后更新：2026 年 6 月</i>
 </p>
