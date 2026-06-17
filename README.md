@@ -1,7 +1,5 @@
 <img align="right" src="./assets/hero-knight.png" width="300" alt="threetwoa hero" />
 
-<h1 align="center">👋 Hi, I'm threetwoa</h1>
-
 <p align="center">
   <img src="./assets/threetwoa-title.svg" height="40" alt="threetwoa" />
 </p>
@@ -21,13 +19,10 @@
 `Claude Code` · `Cursor` · `Codex` · `MCP` · `Skills` · `Workflow`
 
 **Frontend**  
-`React` · `Vue` · `Tailwind CSS` · `Framer Motion`
+`React` · `Vue` · `Tailwind CSS` · `Framer Motion` · `Web3`
 
 **Backend**  
 `Java Spring Boot` · `FastAPI`
-
-**Web3**  
-`Web3`
 
 ---
 
