@@ -6,7 +6,7 @@
 
 #
 
-<img align="right" src="./assets/hero-knight-v6.png" width="48%" alt="threetwoa hero" />
+<img align="right" src="./assets/hero-knight.png" width="48%" alt="threetwoa hero" />
 
 <div>
   <img src="./assets/threetwoa-title.svg" height="44" alt="threetwoa" />
