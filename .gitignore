@@ -1,5 +1,6 @@
 .playwright-mcp/
 preview-v7-*.png
+github-profile-*.png
 *.heapsnapshot
 .DS_Store
 Thumbs.db
