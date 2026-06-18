@@ -118,10 +118,10 @@
       <p><img src="https://img.shields.io/badge/Web3-0969da?style=flat-square" alt="Web3" /> <img src="https://img.shields.io/badge/Frontend-f59e0b?style=flat-square" alt="Frontend" /></p>
     </td>
     <td width="33%" valign="top">
-      <h3><a href="https://github.com/Aafff623/pet-adoption-app">PetConnect</a></h3>
-      <p>AI-powered pet rescue, adoption, and health management platform. 35+ pages, 20+ API modules, PWA, Supabase, and multi-LLM support.</p>
-      <p><a href="https://github.com/Aafff623/pet-adoption-app">Repo</a></p>
-      <p><img src="https://img.shields.io/badge/React-20232a?style=flat-square&logo=react" alt="React" /> <img src="https://img.shields.io/badge/Supabase-3ecf8e?style=flat-square&logo=supabase" alt="Supabase" /> <img src="https://img.shields.io/badge/PWA-5a0fc8?style=flat-square" alt="PWA" /></p>
+      <h3><a href="https://github.com/Aafff623/threetwoa-blogs">threetwoa-blogs</a></h3>
+      <p>A Valaxy static blog with Sakura theme and progressive UI enhancements. Features ECharts visualizations, announcement board, random articles, image lightbox, friend links, and site uptime countdown.</p>
+      <p><a href="https://daily.yybb.us/">Demo</a> · <a href="https://github.com/Aafff623/threetwoa-blogs">Repo</a></p>
+      <p><img src="https://img.shields.io/badge/Vue-35495E?style=flat-square&logo=vue.js" alt="Vue" /> <img src="https://img.shields.io/badge/Valaxy-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Valaxy" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/ECharts-E43961?style=flat-square&logo=apache-echarts&logoColor=white" alt="ECharts" /></p>
     </td>
     <td width="33%" valign="top">
       <h3><a href="https://github.com/Aafff623/web3career-study-track">AI Web3 Study Track</a></h3>
