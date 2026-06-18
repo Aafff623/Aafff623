@@ -9,19 +9,17 @@
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <blockquote>
-        <p>I'm a sophomore Software Engineering student at North University of China, deeply passionate about exploring the frontiers of Agentic Coding. I thrive on transforming AI coding tools into reusable, production-ready engineering workflows.</p>
-        <p>My hands-on practice spans multiple domains: crafting complex backend architectures and business logic, delivering polished frontend visual and interactive components, building automated pipelines for images, audio, and video, and continuously iterating on MCP and Skills.</p>
-        <p>I chase a more free-flowing, inspiration-driven way of coding — not just writing code, but turning raw ideas into monetizable products and projects. I've already participated in several Web3 and AI-focused hackathons, sharpening my ability to ship fast while keeping user experience and delivery quality high.</p>
-        <ul>
-          <li><b>Identity:</b> Agentic Coding Explorer · Workflow Practitioner · Web3 & AI Hackathon Frontend & Full-Stack Builder</li>
-          <li><b>Background:</b> 🎓 Sophomore in Software Engineering, North University of China · <code>laiyif68@gmail.com</code></li>
-          <li><b>Core Approach:</b> GPT drives deep planning and creative sparks, Claude Code handles execution and architecture, Codex ensures rigorous review — with me always steering the human judgment layer to close the loop from idea to shipped product.</li>
-        </ul>
-      </blockquote>
+      <p>I'm a sophomore Software Engineering student at North University of China, deeply passionate about exploring the frontiers of Agentic Coding. I thrive on transforming AI coding tools into reusable, production-ready engineering workflows.</p>
+      <p>My hands-on practice spans multiple domains: crafting complex backend architectures and business logic, delivering polished frontend visual and interactive components, building automated pipelines for images, audio, and video, and continuously iterating on MCP and Skills.</p>
+      <p>I chase a more free-flowing, inspiration-driven way of coding — not just writing code, but turning raw ideas into monetizable products and projects. I've already participated in several Web3 and AI-focused hackathons, sharpening my ability to ship fast while keeping user experience and delivery quality high.</p>
+      <ul>
+        <li><b>Identity:</b> Agentic Coding Explorer · Workflow Practitioner · Web3 & AI Hackathon Frontend & Full-Stack Builder</li>
+        <li><b>Background:</b> 🎓 Sophomore in Software Engineering, North University of China · <code>laiyif68@gmail.com</code></li>
+        <li><b>Core Approach:</b> GPT drives deep planning and creative sparks, Claude Code handles execution and architecture, Codex ensures rigorous review — with me always steering the human judgment layer to close the loop from idea to shipped product.</li>
+      </ul>
     </td>
     <td width="40%" align="center" valign="middle">
-      <img src="./assets/hero-knight.png" width="78%" alt="threetwoa hero" />
+      <img src="./assets/hero-knight.png" width="92%" alt="threetwoa hero" />
     </td>
   </tr>
 </table>
