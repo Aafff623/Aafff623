@@ -129,7 +129,7 @@
       <h3><a href="https://github.com/Aafff623/web3career-study-track">AI Web3 Study Track</a></h3>
       <p><i>Full learning and hackathon journey through the AI Web3 cohort. Completed all prep tracks, built 6 custom Skills, and shipped toward Smart Account + Session Key.</i></p>
       <p><a href="https://github.com/Aafff623/web3career-study-track">Repo</a></p>
-      <p><img src="https://img.shields.io/badge/AI%20×%20Web3-0969da?style=flat-square" alt="AI x Web3" /> <img src="https://img.shields.io/badge/Smart%20Account-f59e0b?style=flat-square" alt="Smart Account" /></p>
+      <p><img src="https://img.shields.io/badge/AI%20×%20Web3-0969da?style=flat-square" alt="AI x Web3" /> <img src="https://img.shields.io/badge/Smart%20Account-f59e0b?style=flat-square" alt="Smart Account" /> <img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=flat-square" alt="Session Keys" /> <img src="https://img.shields.io/badge/MCP-0969da?style=flat-square" alt="MCP" /> <img src="https://img.shields.io/badge/Skills-f59e0b?style=flat-square" alt="Skills" /> <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=flat-square&logo=claude" alt="Claude Code" /></p>
     </td>
   </tr>
 </table>
