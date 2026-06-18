@@ -53,30 +53,48 @@
 
 ## Tech Stack
 
-<b>Frontend</b>  
+<b>🎨 Frontend</b>  
 <img src="https://img.shields.io/badge/React-20232a?style=flat-square&logo=react" alt="React" />
 <img src="https://img.shields.io/badge/Vue-35495E?style=flat-square&logo=vue.js" alt="Vue" />
 <img src="https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Tailwind-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+<img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
+<img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" alt="GSAP" />
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
 
-<b>Backend</b>  
+<b>⛓️ Web3</b>  
+<img src="https://img.shields.io/badge/Ethers.js-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Ethers.js" />
+<img src="https://img.shields.io/badge/Viem-FF6B35?style=flat-square&logo=ethereum&logoColor=white" alt="Viem" />
+<img src="https://img.shields.io/badge/Wagmi-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" />
+<img src="https://img.shields.io/badge/Smart%20Accounts-0969da?style=flat-square" alt="Smart Accounts" />
+<img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=flat-square" alt="Session Keys" />
+
+<b>🛠️ Backend & Database</b>  
 <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java" />
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+<img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
 
-<b>AI Workflow</b>  
+<b>🤖 AI Workflow</b>  
 <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=flat-square&logo=claude" alt="Claude Code" />
 <img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor" alt="Cursor" />
 <img src="https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai" alt="Codex" />
 <img src="https://img.shields.io/badge/MCP-0969da?style=flat-square" alt="MCP" />
+<img src="https://img.shields.io/badge/Skills-f59e0b?style=flat-square" alt="Skills" />
+<img src="https://img.shields.io/badge/Matt%20Pocock-1f2328?style=flat-square" alt="Matt Pocock" />
+<img src="https://img.shields.io/badge/Superpowers-7C3AED?style=flat-square" alt="Superpowers" />
+<img src="https://img.shields.io/badge/ECC-059669?style=flat-square" alt="ECC" />
 
-<b>DevOps</b>  
+<b>⚙️ DevOps & Tools</b>  
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
-<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
 <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
 
 ---
 
