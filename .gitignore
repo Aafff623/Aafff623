@@ -1,0 +1,5 @@
+.playwright-mcp/
+preview-v7-*.png
+*.heapsnapshot
+.DS_Store
+Thumbs.db
