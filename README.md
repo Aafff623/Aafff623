@@ -1,4 +1,6 @@
-![threetwoa banner](./assets/v7-banner.gif)
+<p align="center">
+  <img src="./assets/v7-banner.gif" alt="threetwoa banner" />
+</p>
 
 <h1 align="center">threetwoa</h1>
 
