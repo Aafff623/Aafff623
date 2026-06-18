@@ -9,8 +9,8 @@
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <p>I'm a sophomore Software Engineering student exploring how to turn AI coding tools — GPT, Claude Code, Codex, MCP, and Skills — into reusable, production-ready workflows. I also contribute frontend work for Web3 hackathon demos, focusing on polished delivery and user experience.</p>
-      <ul>
+      <p style="font-family: Georgia, 'Times New Roman', serif;">I'm a sophomore Software Engineering student exploring how to turn AI coding tools — GPT, Claude Code, Codex, MCP, and Skills — into reusable, production-ready workflows. I also contribute frontend work for Web3 hackathon demos, focusing on polished delivery and user experience.</p>
+      <ul style="font-family: Georgia, 'Times New Roman', serif;">
         <li><b>Identity:</b> AI Workflow Builder · Spec-driven Student Builder · Web3 Hackathon Frontend</li>
         <li><b>Background:</b> 🎓 Sophomore · Software Engineering · North University of China · <code>laiyif68@gmail.com</code></li>
         <li><b>Workflow:</b> GPT as Brain · Claude Code as Executor · Codex as Reviewer · Human-in-the-loop</li>
@@ -53,7 +53,7 @@
 
 ## Tech Stack
 
-<b>🎨 Frontend</b>  
+<i>🎨 Frontend</i>  
 <img src="https://img.shields.io/badge/React-20232a?style=flat-square&logo=react" alt="React" />
 <img src="https://img.shields.io/badge/Vue-35495E?style=flat-square&logo=vue.js" alt="Vue" />
 <img src="https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -62,14 +62,14 @@
 <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" alt="GSAP" />
 <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
 
-<b>⛓️ Web3</b>  
+<i>⛓️ Web3</i>  
 <img src="https://img.shields.io/badge/Ethers.js-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Ethers.js" />
 <img src="https://img.shields.io/badge/Viem-FF6B35?style=flat-square&logo=ethereum&logoColor=white" alt="Viem" />
 <img src="https://img.shields.io/badge/Wagmi-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" />
 <img src="https://img.shields.io/badge/Smart%20Accounts-0969da?style=flat-square" alt="Smart Accounts" />
 <img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=flat-square" alt="Session Keys" />
 
-<b>🛠️ Backend & Database</b>  
+<i>🛠️ Backend & Database</i>  
 <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java" />
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
@@ -79,7 +79,7 @@
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
 <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
 
-<b>🤖 AI Workflow</b>  
+<i>🤖 AI Workflow</i>  
 <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=flat-square&logo=claude" alt="Claude Code" />
 <img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor" alt="Cursor" />
 <img src="https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai" alt="Codex" />
@@ -89,7 +89,7 @@
 <img src="https://img.shields.io/badge/Superpowers-7C3AED?style=flat-square" alt="Superpowers" />
 <img src="https://img.shields.io/badge/ECC-059669?style=flat-square" alt="ECC" />
 
-<b>⚙️ DevOps & Tools</b>  
+<i>⚙️ DevOps & Tools</i>  
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
 <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
