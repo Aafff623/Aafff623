@@ -9,12 +9,14 @@
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <p style="font-family: Georgia, 'Times New Roman', serif;">I'm a sophomore Software Engineering student exploring how to turn AI coding tools — GPT, Claude Code, Codex, MCP, and Skills — into reusable, production-ready workflows. I also contribute frontend work for Web3 hackathon demos, focusing on polished delivery and user experience.</p>
-      <ul style="font-family: Georgia, 'Times New Roman', serif;">
-        <li><b>Identity:</b> AI Workflow Builder · Spec-driven Student Builder · Web3 Hackathon Frontend</li>
-        <li><b>Background:</b> 🎓 Sophomore · Software Engineering · North University of China · <code>laiyif68@gmail.com</code></li>
-        <li><b>Workflow:</b> GPT as Brain · Claude Code as Executor · Codex as Reviewer · Human-in-the-loop</li>
-      </ul>
+      <blockquote>
+        <p>I'm a sophomore Software Engineering student exploring how to turn AI coding tools — GPT, Claude Code, Codex, MCP, and Skills — into reusable, production-ready workflows. I also contribute frontend work for Web3 hackathon demos, focusing on polished delivery and user experience.</p>
+        <ul>
+          <li><b>Identity:</b> AI Workflow Builder · Spec-driven Student Builder · Web3 Hackathon Frontend</li>
+          <li><b>Background:</b> 🎓 Sophomore · Software Engineering · North University of China · <code>laiyif68@gmail.com</code></li>
+          <li><b>Workflow:</b> GPT as Brain · Claude Code as Executor · Codex as Reviewer · Human-in-the-loop</li>
+        </ul>
+      </blockquote>
     </td>
     <td width="40%" align="center" valign="middle">
       <img src="./assets/hero-knight.png" width="78%" alt="threetwoa hero" />
