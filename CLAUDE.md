@@ -13,8 +13,8 @@ There is no build system, package manager, test suite, or linter in this reposit
 ## Development workflow
 
 - **Source of truth for the published profile:** `README.md`.
-- **Local preview:** `preview-profile.html` is a standalone HTML file that mirrors the intended v6 README layout using the same `assets/` files. Open it directly in a browser to check visual changes before updating `README.md`.
-- **Asset paths:** Use relative paths (e.g., `./assets/threetwoa-title.svg`) in `README.md` so they resolve correctly on GitHub. External badges and images use HTTPS URLs.
+- **Local preview:** `preview-profile.html` is a standalone HTML file that mirrors the README layout using the same `assets/` files. Open it directly in a browser to check visual changes before updating `README.md`.
+- **Asset paths:** Use relative paths (e.g., `./assets/v7-banner.gif`) in `README.md` so they resolve correctly on GitHub. External badges and images use HTTPS URLs.
 
 ## Content from README.md
 
@@ -31,9 +31,8 @@ There is no build system, package manager, test suite, or linter in this reposit
 
 ```
 README.md                 # Public GitHub profile content
-preview-profile.html      # Local v6 redesign preview (not published)
+preview-profile.html      # Local preview of the README layout (not published)
 assets/
+  v7-banner.gif           # Banner image used by README and preview
   hero-knight.png         # Hero image used by README and preview
-  profile-card.svg        # Profile card graphic
-  threetwoa-title.svg     # Title logo
 ```
