@@ -4,3 +4,4 @@ github-profile-*.png
 *.heapsnapshot
 .DS_Store
 Thumbs.db
+.scratch/
