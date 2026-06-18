@@ -22,6 +22,7 @@ There is no build system, package manager, test suite, or linter in this reposit
 - **Stack:** Claude Code, Cursor, Codex, MCP, Skills, Workflow on the AI side; React, Vue, Tailwind CSS, Framer Motion, Web3 on the frontend; Java Spring Boot and FastAPI on the backend.
 - **Projects:**
   - `AgentCFO` — DAO AI 财务官 / Web3 hackathon team project (frontend lead / contributor).
+  - `threetwoa-blogs` — Valaxy static blog with Sakura theme, ECharts visualizations, and progressive UI enhancements.
   - `threetwoa-cc-workshop` — AI Workflow Operating System / Claude Code 配置工坊 & 知识资产库.
 - **Workflow model:** GPT as Brain · Claude Code as Executor · Codex as Reviewer · Human-in-the-loop.
 - **Contact:** GitHub [@Aafff623](https://github.com/Aafff623).
