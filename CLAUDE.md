@@ -35,4 +35,5 @@ preview-profile.html      # Local preview of the README layout (not published)
 assets/
   v7-banner.gif           # Banner image used by README and preview
   hero-knight.png         # Hero image used by README and preview
+  mascot.png              # Transparent-background mascot beside the Tech Stack section
 ```
