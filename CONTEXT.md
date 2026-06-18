@@ -27,7 +27,8 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 | Asset | File | Usage |
 |---|---|---|
-| Banner | `./assets/v7-banner.gif` | Top-center animated banner |
+| Banner | `./assets/v8-banner.gif` | Top-center animated banner |
+| Banner fallback | `./assets/v7-banner.gif` | Previous banner kept as versioned fallback |
 | Hero | `./assets/hero-knight.png` | Intro table right cell |
 | Mascot | `./assets/mascot.gif` | Tech Stack table right cell, white-background looping GIF |
 | Badges | HTTPS shields.io URLs | Tech stack and project badges |

@@ -36,7 +36,8 @@ CONTEXT.md                # Project context, audience, constraints, and decision
 LANGUAGE.md               # Glossary and naming conventions for the profile
 docs/adr/                 # Architecture Decision Records
 assets/
-  v7-banner.gif           # Banner image used by README and preview
+  v7-banner.gif           # Previous banner kept as versioned fallback
+  v8-banner.gif           # Current pixel-art anime banner used by README and preview
   hero-knight.png         # Hero image used by README and preview
   mascot.gif              # Animated mascot (looping GIF) beside the Tech Stack section
 ```
