@@ -1,4 +1,4 @@
-![threetwoa banner](./assets/v7-banner.png)
+![threetwoa banner](./assets/v7-banner.gif)
 
 <h1 align="center">threetwoa</h1>
 
