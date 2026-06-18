@@ -30,21 +30,21 @@
   <tr>
     <td width="50%" valign="top">
       <h3>🤖 AI Workflow</h3>
-      <p>Building reusable AI coding systems across Claude Code, Cursor, Codex, MCP, and Skills — turning one-off prompts into repeatable engineering workflows.</p>
+      <p><i>Building reusable AI coding systems across Claude Code, Cursor, Codex, MCP, and Skills — turning one-off prompts into repeatable engineering workflows.</i></p>
     </td>
     <td width="50%" valign="top">
       <h3>⛓️ Web3 Hackathon</h3>
-      <p>Contributing to AI × Web3 hackathon teams, with hands-on work around Smart Accounts, Session Keys, and testnet transactions.</p>
+      <p><i>Contributing to AI × Web3 hackathon teams, with hands-on work around Smart Accounts, Session Keys, and testnet transactions.</i></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🛠️ Full-stack Projects</h3>
-      <p>From React + Supabase AI platforms to Java Spring Boot / FastAPI backends — covering the full frontend-to-backend delivery chain.</p>
+      <p><i>From React + Supabase AI platforms to Java Spring Boot / FastAPI backends — covering the full frontend-to-backend delivery chain.</i></p>
     </td>
     <td width="50%" valign="top">
       <h3>📋 Spec-driven</h3>
-      <p>Using PRDs, CONTEXT.md, and Skill specs to turn scattered ideas into maintainable, reproducible engineering assets.</p>
+      <p><i>Using PRDs, CONTEXT.md, and Skill specs to turn scattered ideas into maintainable, reproducible engineering assets.</i></p>
     </td>
   </tr>
 </table>
@@ -113,19 +113,19 @@
   <tr>
     <td width="33%" valign="top">
       <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO</a></h3>
-      <p>DAO AI CFO for Web3 hackathons. Led frontend demo delivery end-to-end, from component design to interaction polish.</p>
+      <p><i>DAO AI CFO for Web3 hackathons. Led frontend demo delivery end-to-end, from component design to interaction polish.</i></p>
       <p><a href="https://agentcfo-frontend.vercel.app/">Website</a> · <a href="https://github.com/San-Y108/agent-cfo">Repo</a></p>
       <p><img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/React-20232a?style=flat-square&logo=react" alt="React" /> <img src="https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Tailwind-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /> <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" /> <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" alt="GSAP" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/Cobo%20CAW-0969da?style=flat-square" alt="Cobo CAW" /></p>
     </td>
     <td width="33%" valign="top">
       <h3><a href="https://github.com/Aafff623/threetwoa-blogs">threetwoa-blogs</a></h3>
-      <p>A Valaxy static blog with Sakura theme and progressive UI enhancements. Features ECharts visualizations, announcement board, random articles, image lightbox, friend links, and site uptime countdown.</p>
+      <p><i>A Valaxy static blog with Sakura theme and progressive UI enhancements. Features ECharts visualizations, announcement board, random articles, image lightbox, friend links, and site uptime countdown.</i></p>
       <p><a href="https://daily.yybb.us/">Website</a> · <a href="https://github.com/Aafff623/threetwoa-blogs">Repo</a></p>
       <p><img src="https://img.shields.io/badge/Vue-35495E?style=flat-square&logo=vue.js" alt="Vue" /> <img src="https://img.shields.io/badge/Valaxy-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Valaxy" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/ECharts-E43961?style=flat-square&logo=apache-echarts&logoColor=white" alt="ECharts" /></p>
     </td>
     <td width="33%" valign="top">
       <h3><a href="https://github.com/Aafff623/web3career-study-track">AI Web3 Study Track</a></h3>
-      <p>Full learning and hackathon journey through the AI Web3 cohort. Completed all prep tracks, built 6 custom Skills, and shipped toward Smart Account + Session Key.</p>
+      <p><i>Full learning and hackathon journey through the AI Web3 cohort. Completed all prep tracks, built 6 custom Skills, and shipped toward Smart Account + Session Key.</i></p>
       <p><a href="https://github.com/Aafff623/web3career-study-track">Repo</a></p>
       <p><img src="https://img.shields.io/badge/AI%20×%20Web3-0969da?style=flat-square" alt="AI x Web3" /> <img src="https://img.shields.io/badge/Smart%20Account-f59e0b?style=flat-square" alt="Smart Account" /></p>
     </td>
@@ -148,21 +148,21 @@
   <tr>
     <td width="50%" valign="top">
       <h3>🚀 Ship 3+ Projects</h3>
-      <p>Finish and publish 3+ projects with real users or live demos.</p>
+      <p><i>Finish and publish 3+ projects with real users or live demos.</i></p>
     </td>
     <td width="50%" valign="top">
       <h3>📦 Open Source</h3>
-      <p>Open-source reusable AI workflow capabilities as Skills or CLI tools.</p>
+      <p><i>Open-source reusable AI workflow capabilities as Skills or CLI tools.</i></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🏆 More Hackathons</h3>
-      <p>Join more Web3 / AI hackathons and turn ideas into testnet-ready MVPs.</p>
+      <p><i>Join more Web3 / AI hackathons and turn ideas into testnet-ready MVPs.</i></p>
     </td>
     <td width="50%" valign="top">
       <h3>📝 Documentation</h3>
-      <p>Keep sharing notes, project retrospectives, and AI coding best practices.</p>
+      <p><i>Keep sharing notes, project retrospectives, and AI coding best practices.</i></p>
     </td>
   </tr>
 </table>
