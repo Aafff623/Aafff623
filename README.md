@@ -184,11 +184,37 @@
 
 ---
 
-## Contact
+## Connect
+
+<p align="center"><i>Open to collaborations on agentic coding, Web3, and full-stack experiments.</i></p>
 
 <p align="center">
-  <a href="mailto:laiyif68@gmail.com"><img src="https://img.shields.io/badge/Email-laiyif68@gmail.com-0969da?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/Aafff623"><img src="https://img.shields.io/badge/GitHub-@Aafff623-0969da?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <table align="center">
+    <tr>
+      <td>
+        <a href="mailto:laiyif68@gmail.com">
+          <img src="./assets/email-card.svg" width="260" alt="Email me" />
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/Aafff623">
+          <img src="./assets/github-card.svg" width="260" alt="GitHub profile" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://x.com/FanLaiyi26341">
+          <img src="./assets/x-card.svg" width="260" alt="X / Twitter profile" />
+        </a>
+      </td>
+      <td>
+        <a href="https://space.bilibili.com/549916339">
+          <img src="./assets/bilibili-card.svg" width="260" alt="Bilibili space" />
+        </a>
+      </td>
+    </tr>
+  </table>
 </p>
 
 ---

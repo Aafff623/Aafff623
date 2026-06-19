@@ -8,7 +8,7 @@
 - **Currently Learning**: Short-form list of active learning areas.
 - **2026 Goals**: Goal cards for the current year.
 - **Activity**: GitHub contribution graph embed.
-- **Contact**: Email and GitHub links.
+- **Connect**: Social-link card grid (Email, GitHub, X/Twitter, Bilibili).
 
 ## Assets
 

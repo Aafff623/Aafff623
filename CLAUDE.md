@@ -41,6 +41,10 @@ assets/
   v9-banner.gif           # Current pixelized-mascot banner used by README and preview
   hero-knight.png         # Hero image used by README and preview
   mascot.gif              # Animated mascot (looping GIF) beside the Tech Stack section
+  email-card.svg          # Connect section email card
+  github-card.svg         # Connect section GitHub card
+  x-card.svg              # Connect section X/Twitter card
+  bilibili-card.svg       # Connect section Bilibili card
 ```
 
 ## Documentation
