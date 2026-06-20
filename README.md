@@ -1,10 +1,8 @@
 <p align="center">
-  <img src="./assets/v9-banner.gif" alt="threetwoa banner" />
+  <img src="./assets/brand-threetwoa.svg" alt="threetwoa" width="720" />
 </p>
 
-<h1 align="center">threetwoa</h1>
-
-<p align="center">✨ <i>Code less, Architect more.</i> 🚀</p>
+<p align="center"><em>✨ Code less, Architect more. 🚀</em></p>
 
 <table width="100%">
   <tr>
