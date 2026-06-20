@@ -1,22 +1,22 @@
-<svg width="800" height="160" viewBox="0 0 800 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="760" height="150" viewBox="0 0 760 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">threetwoa</title>
-  <desc id="desc">An elegant serif wordmark for threetwoa with orbital ring, sparkles, and code bracket decorations.</desc>
+  <desc id="desc">Elegant serif wordmark for threetwoa with orbital ring, sparkles, and code bracket decorations.</desc>
 
   <defs>
-    <linearGradient id="wordGradient" x1="160" y1="40" x2="640" y2="120" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#1E3A8A"/>
-      <stop offset="50%" stop-color="#2563EB"/>
-      <stop offset="100%" stop-color="#1E3A8A"/>
+    <linearGradient id="wordGradient" x1="130" y1="35" x2="630" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="45%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#2563EB"/>
     </linearGradient>
 
-    <linearGradient id="ringGradient" x1="200" y1="30" x2="600" y2="130" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ringGradient" x1="160" y1="25" x2="600" y2="120" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#93C5FD"/>
       <stop offset="50%" stop-color="#60A5FA"/>
       <stop offset="100%" stop-color="#93C5FD"/>
     </linearGradient>
 
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -24,59 +24,56 @@
     </filter>
   </defs>
 
-  <!-- Orbital ring around the wordmark -->
-  <ellipse cx="400" cy="80" rx="260" ry="42"
+  <!-- Orbital ring -->
+  <ellipse cx="380" cy="75" rx="245" ry="40"
            fill="none"
            stroke="url(#ringGradient)"
-           stroke-width="1.2"
-           stroke-dasharray="6 4"
-           opacity="0.85"
-           transform="rotate(-2 400 80)"/>
+           stroke-width="1.1"
+           stroke-dasharray="5 4"
+           opacity="0.8"
+           transform="rotate(-1.5 380 75)"/>
 
-  <!-- Sparkle stars -->
+  <!-- Sparkles -->
   <g filter="url(#softGlow)" fill="#2563EB">
-    <!-- Top-left large sparkle -->
-    <path d="M148 52 L151 61 L160 64 L151 67 L148 76 L145 67 L136 64 L145 61 Z"/>
-    <!-- Top-right large sparkle -->
-    <path d="M652 48 L655 57 L664 60 L655 63 L652 72 L649 63 L640 60 L649 57 Z"/>
-    <!-- Small sparkles -->
-    <path d="M210 42 L211.5 46 L216 47.5 L211.5 49 L210 53.5 L208.5 49 L204 47.5 L208.5 46 Z"/>
-    <path d="M590 95 L591.2 98 L595 99 L591.2 100 L590 103.5 L588.8 100 L585 99 L588.8 98 Z"/>
-    <path d="M270 108 L271.2 111 L275 112 L271.2 113 L270 116.5 L268.8 113 L265 112 L268.8 111 Z"/>
-    <path d="M530 38 L531.2 41 L535 42 L531.2 43 L530 46.5 L528.8 43 L525 42 L528.8 41 Z"/>
+    <path d="M132 46 L135 55 L144 58 L135 61 L132 70 L129 61 L120 58 L129 55 Z"/>
+    <path d="M628 42 L631 51 L640 54 L631 57 L628 66 L625 57 L616 54 L625 51 Z"/>
+    <path d="M198 36 L199.5 40 L204 41.5 L199.5 43 L198 47.5 L196.5 43 L192 41.5 L196.5 40 Z"/>
+    <path d="M562 88 L563.2 91 L567 92 L563.2 93 L562 96.5 L560.8 93 L557 92 L560.8 91 Z"/>
+    <path d="M256 100 L257.2 103 L261 104 L257.2 105 L256 108.5 L254.8 105 L251 104 L254.8 103 Z"/>
+    <path d="M504 32 L505.2 35 L509 36 L505.2 37 L504 40.5 L502.8 37 L499 36 L502.8 35 Z"/>
   </g>
 
   <!-- Left code decoration -->
-  <text x="118" y="86"
+  <text x="108" y="82"
         font-family="SFMono-Regular, Consolas, 'Liberation Mono', monospace"
-        font-size="22"
+        font-size="20"
         font-weight="500"
         fill="#60A5FA"
         letter-spacing="2">&lt; · ✦ · /&gt;</text>
 
   <!-- Right code decoration -->
-  <text x="620" y="86"
+  <text x="588" y="82"
         font-family="SFMono-Regular, Consolas, 'Liberation Mono', monospace"
-        font-size="22"
+        font-size="20"
         font-weight="500"
         fill="#60A5FA"
         letter-spacing="2">&lt; · ✦ · /&gt;</text>
 
   <!-- Main wordmark -->
-  <text x="400" y="98"
+  <text x="380" y="92"
         text-anchor="middle"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="78"
+        font-size="72"
         font-weight="400"
         font-style="italic"
-        letter-spacing="2"
+        letter-spacing="1.5"
         fill="url(#wordGradient)">threetwoa</text>
 
-  <!-- Bottom accent line -->
-  <line x1="320" y1="128" x2="480" y2="128"
+  <!-- Bottom accent -->
+  <line x1="300" y1="122" x2="460" y2="122"
         stroke="#93C5FD"
         stroke-width="1"
         stroke-linecap="round"/>
-  <circle cx="320" cy="128" r="2" fill="#60A5FA"/>
-  <circle cx="480" cy="128" r="2" fill="#60A5FA"/>
+  <circle cx="300" cy="122" r="1.8" fill="#60A5FA"/>
+  <circle cx="460" cy="122" r="1.8" fill="#60A5FA"/>
 </svg>
