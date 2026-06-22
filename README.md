@@ -1,19 +1,44 @@
 <p align="center">
-  <img src="./assets/v9-banner.gif" alt="threetwoa banner" />
+  <img src="./assets/v9-banner.gif" alt="threetwoa banner" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./assets/brand-threetwoa.svg" alt="threetwoa" width="680" />
+  <img src="./assets/brand-threetwoa.svg" alt="threetwoa" width="640" />
 </p>
 
-<p align="center">✨ <i>Code less, Architect more.</i> 🚀</p>
+<p align="center">
+  <b>Agentic Coding Explorer · Workflow Practitioner · Web3 & AI Hackathon Builder</b>
+</p>
+
+<p align="center">
+  <em>Code less, Architect more. Turning AI tools into reusable, production-ready workflows.</em>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Aafff623&style=for-the-badge&labelColor=0f172a" alt="Profile views" />
+  <img src="https://img.shields.io/github/followers/Aafff623?style=for-the-badge&labelColor=0f172a" alt="GitHub followers" />
+  <img src="https://img.shields.io/badge/Location-China-3B82F6?style=for-the-badge&labelColor=0f172a" alt="Location" />
+  <a href="mailto:laiyif68@gmail.com"><img src="https://img.shields.io/badge/Email-laiyif68@gmail.com-EA4335?style=for-the-badge&labelColor=0f172a" alt="Email" /></a>
+</p>
+
+<p align="center">
+  <a href="#about">About</a> ·
+  <a href="#highlights">Highlights</a> ·
+  <a href="#tech-stack">Stack</a> ·
+  <a href="#projects">Projects</a> ·
+  <a href="#github-stats">Stats</a> ·
+  <a href="#goals">Goals</a> ·
+  <a href="#connect">Connect</a>
+</p>
+
+---
+
+## About
 
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <p>I'm a sophomore Software Engineering student at North University of China, deeply passionate about exploring the frontiers of Agentic Coding. I thrive on transforming AI coding tools into reusable, production-ready engineering workflows.</p>
-      <p>My hands-on practice spans multiple domains: crafting complex backend architectures and business logic, delivering polished frontend visual and interactive components, building automated pipelines for images, audio, and video, and continuously iterating on MCP and Skills.</p>
-      <p>I chase a more free-flowing, inspiration-driven way of coding — not just writing code, but turning raw ideas into monetizable products and projects. I've already participated in several Web3 and AI-focused hackathons, sharpening my ability to ship fast while keeping user experience and delivery quality high.</p>
+      <p>I'm a sophomore Software Engineering student at North University of China, passionate about pushing the boundaries of <strong>Agentic Coding</strong>. I turn AI coding tools into reusable, production-ready engineering workflows.</p>
       <ul>
         <li><b>Identity:</b> Agentic Coding Explorer · Workflow Practitioner · Web3 & AI Hackathon Frontend & Full-Stack Builder</li>
         <li><b>Background:</b> 🎓 Sophomore in Software Engineering, North University of China · <code>laiyif68@gmail.com</code></li>
@@ -43,11 +68,11 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🛠️ Full-stack Projects</h3>
+      <h3>🛠️ Full-stack Delivery</h3>
       <p><i>From React + Supabase AI platforms to Java Spring Boot / FastAPI backends — covering the full frontend-to-backend delivery chain.</i></p>
     </td>
     <td width="50%" valign="top">
-      <h3>📋 Spec-driven</h3>
+      <h3>📋 Spec-driven Engineering</h3>
       <p><i>Using PRDs, CONTEXT.md, and Skill specs to turn scattered ideas into maintainable, reproducible engineering assets.</i></p>
     </td>
   </tr>
@@ -68,12 +93,14 @@
       <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
       <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" alt="GSAP" />
       <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /></p>
+
       <p><i>⛓️ Web3</i><br />
       <img src="https://img.shields.io/badge/Ethers.js-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Ethers.js" />
       <img src="https://img.shields.io/badge/Viem-FF6B35?style=flat-square&logo=ethereum&logoColor=white" alt="Viem" />
       <img src="https://img.shields.io/badge/Wagmi-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" />
       <img src="https://img.shields.io/badge/Smart%20Accounts-0969da?style=flat-square" alt="Smart Accounts" />
       <img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=flat-square" alt="Session Keys" /></p>
+
       <p><i>🛠️ Backend & Database</i><br />
       <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java" />
       <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
@@ -83,6 +110,7 @@
       <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
       <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" /></p>
+
       <p><i>🤖 AI Workflow</i><br />
       <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=flat-square&logo=claude" alt="Claude Code" />
       <img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor" alt="Cursor" />
@@ -92,6 +120,7 @@
       <img src="https://img.shields.io/badge/Matt%20Pocock-1f2328?style=flat-square" alt="Matt Pocock" />
       <img src="https://img.shields.io/badge/Superpowers-7C3AED?style=flat-square" alt="Superpowers" />
       <img src="https://img.shields.io/badge/ECC-059669?style=flat-square" alt="ECC" /></p>
+
       <p><i>⚙️ DevOps & Tools</i><br />
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
       <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
@@ -107,39 +136,66 @@
 
 ---
 
+## Projects
+
+### 🚀 Featured — AgentCFO
+
+<table width="100%">
+  <tr>
+    <td width="65%" valign="top">
+      <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO — DAO AI Treasury</a></h3>
+      <p><i>Give every DAO an AI CFO with a controlled wallet.</i></p>
+      <p>AgentCFO 是面向 Web3 小团队 / DAO 的 AI 财务官。它读取贡献记录与预算规则，自动生成 Payment Plan，执行确定性 Risk Check，在 Human Approval 之后通过 <strong>Cobo Agentic Wallet (CAW)</strong> 完成受控付款，最终输出完整可审计的 Audit Report。</p>
+      <ul>
+        <li>🥇 参赛赛道：<strong>Cobo 赛道｜Agentic Economy × CAW</strong></li>
+        <li>🖥️ 职责：前端负责人，端到端完成 Landing + Console Demo</li>
+        <li>✅ 已完成 2 笔 Sepolia/SETH testnet 付款证据，验证 CAW 对外付款与内部地址路由</li>
+      </ul>
+      <p><a href="https://agentcfo-frontend.vercel.app/">🌐 Live Demo</a> · <a href="https://github.com/San-Y108/agent-cfo">📁 Repo</a></p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=next.js&logoColor=white" alt="Next.js" />
+        <img src="https://img.shields.io/badge/React-20232a?style=plastic&logo=react" alt="React" />
+        <img src="https://img.shields.io/badge/TypeScript-3178c6?style=plastic&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Tailwind-06b6d4?style=plastic&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+        <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=plastic&logo=framer&logoColor=white" alt="Framer Motion" />
+        <img src="https://img.shields.io/badge/GSAP-88CE02?style=plastic&logo=greensock&logoColor=white" alt="GSAP" />
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=plastic&logo=fastapi&logoColor=white" alt="FastAPI" />
+        <img src="https://img.shields.io/badge/Cobo%20CAW-0969da?style=plastic" alt="Cobo CAW" />
+      </p>
+    </td>
+    <td width="35%" align="center" valign="middle">
+      <img src="https://raw.githubusercontent.com/San-Y108/agent-cfo/master/assets/images/readme/banner.png" width="100%" alt="AgentCFO banner" />
+    </td>
+  </tr>
+</table>
+
+### 📦 More Projects
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Aafff623/threetwoa-blogs">threetwoa-blogs</a></h3>
+      <p><i>A Valaxy static blog with Sakura theme and progressive UI enhancements.</i></p>
+      <p><a href="https://daily.yybb.us/">Website</a> · <a href="https://github.com/Aafff623/threetwoa-blogs">Repo</a></p>
+      <p><img src="https://img.shields.io/badge/Vue-35495E?style=plastic&logo=vue.js" alt="Vue" /> <img src="https://img.shields.io/badge/Valaxy-646CFF?style=plastic&logo=vite&logoColor=white" alt="Valaxy" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=plastic&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/ECharts-E43961?style=plastic&logo=apache-echarts&logoColor=white" alt="ECharts" /></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Aafff623/web3career-study-track">AI Web3 Study Track</a></h3>
+      <p><i>Full learning and hackathon journey through the AI Web3 cohort.</i></p>
+      <p><a href="https://github.com/Aafff623/web3career-study-track">Repo</a></p>
+      <p><img src="https://img.shields.io/badge/AI%20×%20Web3-0969da?style=plastic" alt="AI x Web3" /> <img src="https://img.shields.io/badge/Smart%20Account-f59e0b?style=plastic" alt="Smart Account" /> <img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=plastic" alt="Session Keys" /> <img src="https://img.shields.io/badge/MCP-0969da?style=plastic" alt="MCP" /> <img src="https://img.shields.io/badge/Skills-f59e0b?style=plastic" alt="Skills" /> <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=plastic&logo=claude" alt="Claude Code" /></p>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Aafff623&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&count_private=true&hide_border=false&border_color=d1d9e0&card_width=500" alt="GitHub stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0&card_width=320" alt="Top languages" />
 </p>
-
----
-
-## Projects
-
-<table width="100%">
-  <tr>
-    <td width="33%" valign="top">
-      <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO</a></h3>
-      <p><i>DAO AI CFO for Web3 hackathons. Led frontend demo delivery end-to-end, from component design to interaction polish.</i></p>
-      <p><a href="https://agentcfo-frontend.vercel.app/">Website</a> · <a href="https://github.com/San-Y108/agent-cfo">Repo</a></p>
-      <p><img src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=next.js&logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/React-20232a?style=plastic&logo=react" alt="React" /> <img src="https://img.shields.io/badge/TypeScript-3178c6?style=plastic&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Tailwind-06b6d4?style=plastic&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /> <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=plastic&logo=framer&logoColor=white" alt="Framer Motion" /> <img src="https://img.shields.io/badge/GSAP-88CE02?style=plastic&logo=greensock&logoColor=white" alt="GSAP" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=plastic&logo=fastapi&logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/Cobo%20CAW-0969da?style=plastic" alt="Cobo CAW" /></p>
-    </td>
-    <td width="33%" valign="top">
-      <h3><a href="https://github.com/Aafff623/threetwoa-blogs">threetwoa-blogs</a></h3>
-      <p><i>A Valaxy static blog with Sakura theme and progressive UI enhancements. Features ECharts visualizations, announcement board, random articles, image lightbox, friend links, and site uptime countdown.</i></p>
-      <p><a href="https://daily.yybb.us/">Website</a> · <a href="https://github.com/Aafff623/threetwoa-blogs">Repo</a></p>
-      <p><img src="https://img.shields.io/badge/Vue-35495E?style=plastic&logo=vue.js" alt="Vue" /> <img src="https://img.shields.io/badge/Valaxy-646CFF?style=plastic&logo=vite&logoColor=white" alt="Valaxy" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=plastic&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/ECharts-E43961?style=plastic&logo=apache-echarts&logoColor=white" alt="ECharts" /></p>
-    </td>
-    <td width="33%" valign="top">
-      <h3><a href="https://github.com/Aafff623/web3career-study-track">AI Web3 Study Track</a></h3>
-      <p><i>Full learning and hackathon journey through the AI Web3 cohort. Completed all prep tracks, built 6 custom Skills, and shipped toward Smart Account + Session Key.</i></p>
-      <p><a href="https://github.com/Aafff623/web3career-study-track">Repo</a></p>
-      <p><img src="https://img.shields.io/badge/AI%20×%20Web3-0969da?style=plastic" alt="AI x Web3" /> <img src="https://img.shields.io/badge/Smart%20Account-f59e0b?style=plastic" alt="Smart Account" /> <img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=plastic" alt="Session Keys" /> <img src="https://img.shields.io/badge/MCP-0969da?style=plastic" alt="MCP" /> <img src="https://img.shields.io/badge/Skills-f59e0b?style=plastic" alt="Skills" /> <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=plastic&logo=claude" alt="Claude Code" /></p>
-    </td>
-  </tr>
-</table>
 
 ---
 
@@ -151,7 +207,7 @@
 
 ---
 
-## 2026 Goals
+## Goals
 
 <table width="100%">
   <tr>
