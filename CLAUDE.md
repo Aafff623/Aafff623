@@ -22,7 +22,7 @@ There is no build system, package manager, test suite, or linter in this reposit
 - **Stack:** Claude Code, Cursor, Codex, MCP, Skills, Workflow on the AI side; React, Vue, Tailwind CSS, Framer Motion, Web3 on the frontend; Java Spring Boot and FastAPI on the backend.
 - **Projects:**
   - `AgentCFO` — DAO AI 财务官 / Web3 hackathon team project (frontend lead / contributor).
-  - `threetwoa-blogs` — Valaxy static blog with Sakura theme, ECharts visualizations, and progressive UI enhancements.
+  - `my-blogs` — Personal blog workbench built on an open-source template, using GitHub as CMS and Vercel for deployment.
   - `AI Web3 Study Track` — Full learning and hackathon journey through the AI Web3 cohort, with custom Skills and Smart Account + Session Key work.
 - **Workflow model:** GPT drives deep planning and creative sparks, Claude Code handles execution and architecture, Codex ensures rigorous review — with me always steering the human judgment layer to close the loop from idea to shipped product.
 - **Contact:** GitHub [@Aafff623](https://github.com/Aafff623).
