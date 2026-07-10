@@ -3,7 +3,10 @@
 </p>
 
 <p align="center">
-  <img src="./assets/brand-threetwoa.svg" alt="threetwoa" width="680" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/brand-threetwoa-dark.svg" />
+    <img src="./assets/brand-threetwoa.svg" alt="threetwoa" width="680" />
+  </picture>
 </p>
 
 <p align="center">✨ <i>Code less, Architect more.</i> 🚀</p>
@@ -16,7 +19,7 @@
       <p>I chase a more free-flowing, inspiration-driven way of coding — not just writing code, but turning raw ideas into monetizable products and projects. I've already participated in several Web3 and AI-focused hackathons, sharpening my ability to ship fast while keeping user experience and delivery quality high.</p>
       <ul>
         <li><b>Identity:</b> Agentic Coding Explorer · Workflow Practitioner · Web3 & AI Hackathon Frontend & Full-Stack Builder</li>
-        <li><b>Background:</b> 🎓 Sophomore in Software Engineering, North University of China · <code>laiyif68@gmail.com</code></li>
+            <li><b>Background:</b> 🎓 Sophomore in Software Engineering, North University of China</li>
         <li><b>Core Approach:</b> GPT drives deep planning and creative sparks, Claude Code handles execution and architecture, Codex ensures rigorous review — with me always steering the human judgment layer to close the loop from idea to shipped product.</li>
       </ul>
     </td>
@@ -34,21 +37,31 @@
   <tr>
     <td width="50%" valign="top">
       <h3>🤖 Agentic Workflow</h3>
-      <p><i>Building reusable AI coding systems across Claude Code, Cursor, Codex, MCP, and Skills — turning one-off prompts into repeatable engineering workflows.</i></p>
+      <p>Treats AI coding tools as engineering systems, not just chat boxes. Built 6 custom Skills (<code>cascade-maintain</code> / <code>daily-log-sync</code> / <code>pre-study-note</code> / <code>wcb-sync</code>, etc.) shared across Claude Code / Kiro / Codex, with README polish, directory structure, and commit conventions codified into reusable workflows.</p>
+      <p><i>📁 Spec-driven: uses <code>CONTEXT.md</code> / <code>LANGUAGE.md</code> / ADRs to turn ideas into maintainable, reproducible engineering assets — this very repo is the example.</i></p>
+      <p align="center"><img src="./assets/highlight-agentic.png" alt="Agentic workflow evidence" /></p>
     </td>
     <td width="50%" valign="top">
       <h3>⛓️ Web3 & AI Hackathon</h3>
-      <p><i>Contributing to AI & Web3 hackathon teams, with hands-on work around Smart Accounts, Session Keys, and testnet transactions.</i></p>
+      <p>AgentCFO Frontend Lead — shipped the Landing + Console and ran the Cobo Agentic Wallet real payment path, leaving 2 verifiable testnet payment records:</p>
+      <ul>
+        <li><b>Demo payment</b> · SETH · <code>0.001</code> → <code>0xAf3f…594B</code> · <a href="https://sepolia.etherscan.io/tx/0x85a5a2e934ca0e34c7fb3e038ca06e54e15bd29b56b64e5b01ff80eb20ed4d98">tx hash ↗</a></li>
+        <li><b>Internal transfer</b> · Sepolia · <code>0.001</code> → <code>0xaa55…c199</code> · <a href="https://sepolia.etherscan.io/tx/0x6bd793bc3030c995245b2e73a466898e46278be092aa9f7a3c86cad21cbbae8a">tx hash ↗</a></li>
+      </ul>
+      <p><i>Proof, not slides — the hackathon requires testnet Tx Hash; no PPT-only projects.</i></p>
+      <p align="center"><img src="./assets/highlight-agentcfo.png" alt="AgentCFO testnet evidence" /></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🛠️ Full-stack Projects</h3>
-      <p><i>From React + Supabase AI platforms to Java Spring Boot / FastAPI backends — covering the full frontend-to-backend delivery chain.</i></p>
+      <h3>🛠️ Full-stack Delivery</h3>
+      <p>From React + Supabase to Java Spring Boot / FastAPI, covering the full frontend-to-backend delivery chain. Flagship project <a href="https://github.com/Aafff623/my-blogs"><b>my-blogs</b></a>: built on Next.js 16, write-and-publish in the browser (GitHub as CMS, Vercel auto-deploy) — turning "spin up a server to blog" into a single commit.</p>
+      <p align="center"><img src="./assets/highlight-fullstack.png" alt="Full-stack delivery evidence" /></p>
     </td>
     <td width="50%" valign="top">
-      <h3>📋 Spec-driven</h3>
-      <p><i>Using PRDs, CONTEXT.md, and Skill specs to turn scattered ideas into maintainable, reproducible engineering assets.</i></p>
+      <h3>📚 Proof-of-Work</h3>
+      <p>Don't just say "I can" — leave evidence you can flip through. Finished 42/42 pre-study notes in <a href="https://github.com/Aafff623/web3career-study-track"><b>web3career-study-track</b></a>, distilled into an input → process → output proof-of-work workspace; also took over and shipped several course / practice projects (data-structures course design, Python Flask tracker, Java LangChain4j assistant).</p>
+      <p align="center"><img src="./assets/highlight-pow.png" alt="Proof-of-work evidence" /></p>
     </td>
   </tr>
 </table>
@@ -242,4 +255,4 @@
 
 ---
 
-<p align="center"><i>Last updated: June 2026</i></p>
+<p align="center"><i>Last updated: July 2026</i></p>

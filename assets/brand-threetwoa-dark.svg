@@ -1,0 +1,79 @@
+<svg width="760" height="150" viewBox="0 0 760 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">threetwoa</title>
+  <desc id="desc">Elegant serif wordmark for threetwoa with orbital ring, sparkles, and code bracket decorations (dark mode variant).</desc>
+
+  <defs>
+    <linearGradient id="wordGradientDark" x1="130" y1="35" x2="630" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="45%" stop-color="#93C5FD"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+
+    <linearGradient id="ringGradientDark" x1="160" y1="25" x2="600" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="50%" stop-color="#93C5FD"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+
+    <filter id="softGlowDark" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Orbital ring -->
+  <ellipse cx="380" cy="75" rx="245" ry="40"
+           fill="none"
+           stroke="url(#ringGradientDark)"
+           stroke-width="1.1"
+           stroke-dasharray="5 4"
+           opacity="0.7"
+           transform="rotate(-1.5 380 75)"/>
+
+  <!-- Sparkles -->
+  <g filter="url(#softGlowDark)" fill="#93C5FD">
+    <path d="M132 46 L135 55 L144 58 L135 61 L132 70 L129 61 L120 58 L129 55 Z"/>
+    <path d="M628 42 L631 51 L640 54 L631 57 L628 66 L625 57 L616 54 L625 51 Z"/>
+    <path d="M198 36 L199.5 40 L204 41.5 L199.5 43 L198 47.5 L196.5 43 L192 41.5 L196.5 40 Z"/>
+    <path d="M562 88 L563.2 91 L567 92 L563.2 93 L562 96.5 L560.8 93 L557 92 L560.8 91 Z"/>
+    <path d="M256 100 L257.2 103 L261 104 L257.2 105 L256 108.5 L254.8 105 L251 104 L254.8 103 Z"/>
+    <path d="M504 32 L505.2 35 L509 36 L505.2 37 L504 40.5 L502.8 37 L499 36 L502.8 35 Z"/>
+  </g>
+
+  <!-- Left code decoration -->
+  <text x="108" y="82"
+        font-family="SFMono-Regular, Consolas, 'Liberation Mono', monospace"
+        font-size="20"
+        font-weight="500"
+        fill="#93C5FD"
+        letter-spacing="2">&lt; · ✦ · /&gt;</text>
+
+  <!-- Right code decoration -->
+  <text x="588" y="82"
+        font-family="SFMono-Regular, Consolas, 'Liberation Mono', monospace"
+        font-size="20"
+        font-weight="500"
+        fill="#93C5FD"
+        letter-spacing="2">&lt; · ✦ · /&gt;</text>
+
+  <!-- Main wordmark -->
+  <text x="380" y="92"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="72"
+        font-weight="400"
+        font-style="italic"
+        letter-spacing="1.5"
+        fill="url(#wordGradientDark)">threetwoa</text>
+
+  <!-- Bottom accent -->
+  <line x1="300" y1="122" x2="460" y2="122"
+        stroke="#60A5FA"
+        stroke-width="1"
+        stroke-linecap="round"/>
+  <circle cx="300" cy="122" r="1.8" fill="#93C5FD"/>
+  <circle cx="460" cy="122" r="1.8" fill="#93C5FD"/>
+</svg>
