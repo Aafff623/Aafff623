@@ -39,7 +39,7 @@
       <h3>🤖 Agentic Workflow</h3>
       <p>Treats AI coding tools as engineering systems, not just chat boxes. Built 6 custom Skills (<code>cascade-maintain</code> / <code>daily-log-sync</code> / <code>pre-study-note</code> / <code>wcb-sync</code>, etc.) shared across Claude Code / Kiro / Codex, with README polish, directory structure, and commit conventions codified into reusable workflows.</p>
       <p><i>📁 Spec-driven: uses <code>CONTEXT.md</code> / <code>LANGUAGE.md</code> / ADRs to turn ideas into maintainable, reproducible engineering assets — this very repo is the example.</i></p>
-      <p align="center"><img src="./assets/highlight-agentic.png" alt="Agentic workflow evidence" /></p>
+      <p align="center"><img src="./assets/highlight-agentic.png" alt="Agentic workflow evidence" width="90%" /></p>
     </td>
     <td width="50%" valign="top">
       <h3>⛓️ Web3 & AI Hackathon</h3>
@@ -49,19 +49,19 @@
         <li><b>Internal transfer</b> · Sepolia · <code>0.001</code> → <code>0xaa55…c199</code> · <a href="https://sepolia.etherscan.io/tx/0x6bd793bc3030c995245b2e73a466898e46278be092aa9f7a3c86cad21cbbae8a">tx hash ↗</a></li>
       </ul>
       <p><i>Proof, not slides — the hackathon requires testnet Tx Hash; no PPT-only projects.</i></p>
-      <p align="center"><img src="./assets/highlight-agentcfo.png" alt="AgentCFO testnet evidence" /></p>
+      <p align="center"><img src="./assets/highlight-agentcfo.png" alt="AgentCFO testnet evidence" width="90%" /></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🛠️ Full-stack Delivery</h3>
       <p>From React + Supabase to Java Spring Boot / FastAPI, covering the full frontend-to-backend delivery chain. Flagship project <a href="https://github.com/Aafff623/my-blogs"><b>my-blogs</b></a>: built on Next.js 16, write-and-publish in the browser (GitHub as CMS, Vercel auto-deploy) — turning "spin up a server to blog" into a single commit.</p>
-      <p align="center"><img src="./assets/highlight-fullstack.png" alt="Full-stack delivery evidence" /></p>
+      <p align="center"><img src="./assets/highlight-fullstack.png" alt="Full-stack delivery evidence" width="90%" /></p>
     </td>
     <td width="50%" valign="top">
       <h3>📚 Proof-of-Work</h3>
       <p>Don't just say "I can" — leave evidence you can flip through. Finished 42/42 pre-study notes in <a href="https://github.com/Aafff623/web3career-study-track"><b>web3career-study-track</b></a>, distilled into an input → process → output proof-of-work workspace; also took over and shipped several course / practice projects (data-structures course design, Python Flask tracker, Java LangChain4j assistant).</p>
-      <p align="center"><img src="./assets/highlight-pow.png" alt="Proof-of-work evidence" /></p>
+      <p align="center"><img src="./assets/highlight-pow.png" alt="Proof-of-work evidence" width="90%" /></p>
     </td>
   </tr>
 </table>
@@ -123,10 +123,16 @@
 <table width="100%">
   <tr>
     <td width="60%" align="center" valign="top">
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Aafff623&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&count_private=true&hide_border=false&border_color=d1d9e0&card_width=500" alt="GitHub stats" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=Aafff623&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide=prs,issues&count_private=true&hide_border=false&border_color=30363d&card_width=500" />
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Aafff623&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&count_private=true&hide_border=false&border_color=d1d9e0&card_width=500" alt="GitHub stats" />
+      </picture>
     </td>
     <td width="40%" align="center" valign="top">
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0&card_width=320" alt="Top languages" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d&card_width=320" />
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0&card_width=320" alt="Top languages" />
+      </picture>
     </td>
   </tr>
 </table>
@@ -226,7 +232,10 @@
 ## Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=ffffff&color=0969da&line=0969da&point=f59e0b&hide_border=true" alt="activity graph" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=0d1117&color=58a6ff&line=58a6ff&point=d29922&hide_border=true" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=ffffff&color=0969da&line=0969da&point=f59e0b&hide_border=true" alt="activity graph" />
+  </picture>
 </p>
 
 ---
