@@ -28,8 +28,6 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 | Asset | File | Usage |
 |---|---|---|
 | Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, bright palette) |
-| Banner fallback | `./assets/v8-banner.gif` | Previous pixel-art banner kept as versioned fallback |
-| Banner fallback v7 | `./assets/v7-banner.gif` | Earlier banner kept as versioned fallback |
 | Hero | `./assets/hero-knight.png` | Intro table right cell |
 | Mascot | `./assets/mascot.gif` | Tech Stack table right cell, white-background looping GIF |
 | Badges | HTTPS shields.io / simpleicons.org URLs | Tech stack and social link icons |

@@ -14,7 +14,7 @@ There is no build system, package manager, test suite, or linter in this reposit
 
 - **Source of truth for the published profile:** `README.md`.
 - **Local preview:** `preview-profile.html` is a standalone HTML file that mirrors the README layout using the same `assets/` files. Open it directly in a browser to check visual changes before updating `README.md`.
-- **Asset paths:** Use relative paths (e.g., `./assets/v7-banner.gif`) in `README.md` so they resolve correctly on GitHub. External badges and images use HTTPS URLs.
+- **Asset paths:** Use relative paths (e.g., `./assets/v9-banner.gif`) in `README.md` so they resolve correctly on GitHub. External badges and images use HTTPS URLs.
 
 ## Content from README.md
 
@@ -36,8 +36,6 @@ CONTEXT.md                # Project context, audience, constraints, and decision
 LANGUAGE.md               # Glossary and naming conventions for the profile
 docs/adr/                 # Architecture Decision Records
 assets/
-  v7-banner.gif           # Previous banner kept as versioned fallback
-  v8-banner.gif           # Previous pixel-art anime banner kept as fallback
   v9-banner.gif           # Current pixelized-mascot banner used by README and preview
   hero-knight.png         # Hero image used by README and preview
   mascot.gif              # Animated mascot (looping GIF) beside the Tech Stack section

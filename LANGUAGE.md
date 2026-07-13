@@ -14,7 +14,7 @@
 
 - **mascot**: Animated GIF placed in the Tech Stack right cell. Previously a static PNG.
 - **hero-knight**: Static hero image in the intro table.
-- **v7-banner**: Animated banner at the top of the profile.
+- **v9-banner**: Animated banner (pixelized mascot) at the top of the profile.
 
 ## Workflow Terms
 
