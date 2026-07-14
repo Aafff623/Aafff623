@@ -15,16 +15,17 @@ There is no build system, package manager, test suite, or linter in this reposit
 - **Source of truth for the published profile:** `README.md`.
 - **Local preview:** `preview-profile.html` is a standalone HTML file that mirrors the README layout using the same `assets/` files. Open it directly in a browser to check visual changes before updating `README.md`.
 - **Asset paths:** Use relative paths (e.g., `./assets/v9-banner.gif`) in `README.md` so they resolve correctly on GitHub. External badges and images use HTTPS URLs.
+- **Copy style:** Write in first person and use specific, restrained language. Avoid slogans, promotional adjectives, and AI filler. Use `humanizer-output-style` as the editing reference.
 
 ## Content from README.md
 
-- **Builder identity:** Agentic Coding Explorer · Workflow Practitioner · Web3 & AI Hackathon Frontend & Full-Stack Builder
-- **Stack:** Claude Code, Cursor, Codex, MCP, Skills, Workflow on the AI side; React, Vue, Tailwind CSS, Framer Motion, Web3 on the frontend; Java Spring Boot and FastAPI on the backend.
+- **Profile:** Second-year Software Engineering student working on AI-assisted development, web applications, and Web3.
+- **Stack:** Claude Code, Kiro, Codex, MCP, and reusable Skills for development work; React, Vue, Tailwind CSS, and related frontend tools; Java Spring Boot and FastAPI on the backend.
 - **Projects:**
-  - `AgentCFO` — DAO AI 财务官 / Web3 hackathon team project (frontend lead / contributor).
-  - `my-blogs` — Personal blog workbench built on an open-source template, using GitHub as CMS and Vercel for deployment.
-  - `AI Web3 Study Track` — Full learning and hackathon journey through the AI Web3 cohort, with custom Skills and Smart Account + Session Key work.
-- **Workflow model:** GPT drives deep planning and creative sparks, Claude Code handles execution and architecture, Codex ensures rigorous review — with me always steering the human judgment layer to close the loop from idea to shipped product.
+  - `AgentCFO`: Web3 hackathon team project; frontend lead for the landing page and console demo.
+  - `my-blogs`: Personal blog based on an open-source template, with GitHub content storage and Vercel deployment.
+  - `AI Web3 Study Track`: Notes, exercises, and hackathon work from an AI and Web3 cohort.
+- **Workflow model:** GPT is mainly used for early exploration, Claude Code and Kiro for implementation, and Codex for a second review. The author decides what to keep and what to change.
 - **Contact:** GitHub [@Aafff623](https://github.com/Aafff623).
 
 ## Repository structure

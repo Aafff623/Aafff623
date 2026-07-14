@@ -1,29 +1,38 @@
-# LANGUAGE — Aafff623 Profile
+# LANGUAGE: Aafff623 Profile
 
-## Profile Sections
+## Profile sections
 
-- **Highlights**: Four capability cards — Agentic Workflow, Web3 & AI Hackathon, Full-stack Projects, Spec-driven.
-- **Tech Stack**: Badged technology list grouped by Frontend, Web3, Backend & Database, AI Workflow, DevOps & Tools.
-- **Projects**: Featured repositories with descriptions, links, and technology badges.
-- **Currently Learning**: Short-form list of active learning areas.
-- **2026 Goals**: Goal cards for the current year.
-- **Activity**: GitHub contribution graph embed.
-- **Connect**: Social-link card grid (Email, GitHub, X/Twitter, Bilibili).
+- **What I've been working on**: Four cards covering AI-assisted workflows, AgentCFO and Web3, full-stack projects, and study notes.
+- **Tech stack**: Technology badges grouped by frontend, Web3, backend and database, AI tools, and DevOps.
+- **Projects**: AgentCFO plus links to my-blogs and the AI Web3 Study Track.
+- **What I'm learning**: A short list of current learning areas.
+- **Goals for 2026**: Four concrete goals for projects, reusable tools, hackathons, and writing.
+- **Activity**: GitHub contribution graph.
+- **Contact**: Icon links for email, GitHub, X, Bilibili, Telegram, blog, YouTube, and Buy Me a Coffee.
 
 ## Assets
 
-- **mascot**: Animated GIF placed in the Tech Stack right cell. Previously a static PNG.
-- **hero-knight**: Static hero image in the intro table.
-- **v9-banner**: Animated banner (pixelized mascot) at the top of the profile.
+- **mascot**: Animated GIF in the Tech stack section.
+- **hero-knight**: Static image in the introduction table.
+- **v9-banner**: Animated banner at the top of the profile.
+- **highlight images**: Four illustrations for the work cards. Treat their embedded text as illustrative unless it exactly matches the linked project records.
 
-## Workflow Terms
+## Workflow terms
 
-- **Agentic Coding**: Using AI coding tools (Claude Code, Cursor, Codex) as part of the engineering workflow.
-- **Spec-driven**: Defining work through PRDs, CONTEXT.md, and Skill specs before implementation.
-- **MCP**: Model Context Protocol — extensible tool interfaces for LLMs.
-- **Skills**: Reusable Claude Code skill modules.
+- **AI-assisted development**: Using tools such as GPT, Claude Code, Kiro, and Codex during planning, implementation, and review while keeping final decisions with the author.
+- **MCP**: Model Context Protocol, used to connect AI tools to external services and local resources.
+- **Skills**: Reusable instruction modules for recurring development and documentation tasks.
+- **ADRs**: Short records explaining decisions that future edits need to preserve.
 
-## Badge Conventions
+## Copy conventions
 
-- Tech Stack badges use `style=flat-square`.
+- Use first person for the profile and name the work directly.
+- Prefer specific facts and links over identity labels, slogans, or claims such as "flagship" and "proof."
+- Use sentence-case headings and keep decorative emoji out of section titles.
+- Do not call an image "evidence" unless its data matches the linked source.
+- Avoid em dashes, marketing adjectives, and generic AI phrases.
+
+## Badge conventions
+
+- Tech stack badges use `style=flat-square`.
 - Project technology badges use `style=plastic`.

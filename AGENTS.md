@@ -11,6 +11,7 @@ Static **GitHub profile repository** (`Aafff623/Aafff623`). The root `README.md`
 - **Published profile** → `README.md`
 - **Local preview** → `preview-profile.html` (standalone, mirrors README using the same `assets/`)
 - **Asset paths** must be relative (`./assets/...`) so they resolve on GitHub; external badges use HTTPS
+- **Profile copy** should be direct, specific, and modest. Use first person, prefer facts and links over labels, and apply the anti-AI patterns from `humanizer-output-style`.
 
 ## Critical gotchas
 

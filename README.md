@@ -9,18 +9,18 @@
   </picture>
 </p>
 
-<p align="center">✨ <i>Code less, Architect more.</i> 🚀</p>
+<p align="center"><i>Software engineering student learning by building, testing, and writing things down.</i></p>
 
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <p>I'm a sophomore Software Engineering student at North University of China, deeply passionate about exploring the frontiers of Agentic Coding. I thrive on transforming AI coding tools into reusable, production-ready engineering workflows.</p>
-      <p>My hands-on practice spans multiple domains: crafting complex backend architectures and business logic, delivering polished frontend visual and interactive components, building automated pipelines for images, audio, and video, and continuously iterating on MCP and Skills.</p>
-      <p>I chase a more free-flowing, inspiration-driven way of coding — not just writing code, but turning raw ideas into monetizable products and projects. I've already participated in several Web3 and AI-focused hackathons, sharpening my ability to ship fast while keeping user experience and delivery quality high.</p>
+      <p>I'm a second-year Software Engineering student at North University of China. Most of my recent work combines AI-assisted development, web applications, and Web3.</p>
+      <p>I use GPT, Claude Code, Kiro, and Codex at different points in a project. They help me explore an idea, implement it, review the result, and keep the documentation in sync. I decide what to keep and what to change.</p>
+      <p>This profile is a record of what I have built and studied so far. Some projects are complete and some are experiments. I keep both because they show what I was learning at the time.</p>
       <ul>
-        <li><b>Identity:</b> Agentic Coding Explorer · Workflow Practitioner · Web3 & AI Hackathon Frontend & Full-Stack Builder</li>
-            <li><b>Background:</b> 🎓 Sophomore in Software Engineering, North University of China</li>
-        <li><b>Core Approach:</b> GPT drives deep planning and creative sparks, Claude Code handles execution and architecture, Codex ensures rigorous review — with me always steering the human judgment layer to close the loop from idea to shipped product.</li>
+        <li><b>Studying:</b> Software Engineering, second year, North University of China</li>
+        <li><b>Working on:</b> reusable AI coding workflows, full-stack applications, and Web3 prototypes</li>
+        <li><b>How I use AI tools:</b> GPT for early exploration, Claude Code and Kiro for implementation, and Codex for a second review</li>
       </ul>
     </td>
     <td width="40%" align="center" valign="middle">
@@ -31,49 +31,49 @@
 
 ---
 
-## Highlights
+## What I've been working on
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3>🤖 Agentic Workflow</h3>
-      <p>Treats AI coding tools as engineering systems, not just chat boxes. Built 6 custom Skills (<code>cascade-maintain</code> / <code>daily-log-sync</code> / <code>pre-study-note</code> / <code>wcb-sync</code>, etc.) shared across Claude Code / Kiro / Codex, with README polish, directory structure, and commit conventions codified into reusable workflows.</p>
-      <p><i>📁 Spec-driven: uses <code>CONTEXT.md</code> / <code>LANGUAGE.md</code> / ADRs to turn ideas into maintainable, reproducible engineering assets — this very repo is the example.</i></p>
-      <p align="center"><img src="./assets/highlight-agentic.png" alt="Agentic workflow evidence" width="90%" /></p>
+      <h3>AI-assisted workflows</h3>
+      <p>I maintain six reusable Skills, including <code>cascade-maintain</code>, <code>daily-log-sync</code>, <code>pre-study-note</code>, and <code>wcb-sync</code>. I use them across Claude Code, Kiro, and Codex for recurring work such as documentation maintenance, log syncing, and study notes.</p>
+      <p><i>This repository also uses <code>CONTEXT.md</code>, <code>LANGUAGE.md</code>, and ADRs so later edits do not depend on chat history alone.</i></p>
+      <p align="center"><img src="./assets/highlight-agentic.png" alt="AI-assisted workflow diagram" width="90%" /></p>
     </td>
     <td width="50%" valign="top">
-      <h3>⛓️ Web3 & AI Hackathon</h3>
-      <p>AgentCFO Frontend Lead — shipped the Landing + Console and ran the Cobo Agentic Wallet real payment path, leaving 2 verifiable testnet payment records:</p>
+      <h3>AgentCFO and Web3</h3>
+      <p>I was the frontend lead for AgentCFO, where I worked on the landing page and console demo. I also tested the Cobo Agentic Wallet payment flow. Two testnet transactions from that work are linked below:</p>
       <ul>
-        <li><b>Demo payment</b> · SETH · <code>0.001</code> → <code>0xAf3f…594B</code> · <a href="https://sepolia.etherscan.io/tx/0x85a5a2e934ca0e34c7fb3e038ca06e54e15bd29b56b64e5b01ff80eb20ed4d98">tx hash ↗</a></li>
-        <li><b>Internal transfer</b> · Sepolia · <code>0.001</code> → <code>0xaa55…c199</code> · <a href="https://sepolia.etherscan.io/tx/0x6bd793bc3030c995245b2e73a466898e46278be092aa9f7a3c86cad21cbbae8a">tx hash ↗</a></li>
+        <li><b>External payment:</b> SETH · <code>0.001</code> → <code>0xAf3f...594B</code> · <a href="https://sepolia.etherscan.io/tx/0x85a5a2e934ca0e34c7fb3e038ca06e54e15bd29b56b64e5b01ff80eb20ed4d98">transaction</a></li>
+        <li><b>Internal transfer:</b> Sepolia · <code>0.001</code> → <code>0xaa55...c199</code> · <a href="https://sepolia.etherscan.io/tx/0x6bd793bc3030c995245b2e73a466898e46278be092aa9f7a3c86cad21cbbae8a">transaction</a></li>
       </ul>
-      <p><i>Proof, not slides — the hackathon requires testnet Tx Hash; no PPT-only projects.</i></p>
-      <p align="center"><img src="./assets/highlight-agentcfo.png" alt="AgentCFO testnet evidence" width="90%" /></p>
+      <p><i>The hackathon submission required transaction hashes, so I kept the records here.</i></p>
+      <p align="center"><img src="./assets/highlight-agentcfo.png" alt="AgentCFO workflow illustration" width="90%" /></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🛠️ Full-stack Delivery</h3>
-      <p>From React + Supabase to Java Spring Boot / FastAPI, covering the full frontend-to-backend delivery chain. Flagship project <a href="https://github.com/Aafff623/my-blogs"><b>my-blogs</b></a>: built on Next.js 16, write-and-publish in the browser (GitHub as CMS, Vercel auto-deploy) — turning "spin up a server to blog" into a single commit.</p>
-      <p align="center"><img src="./assets/highlight-fullstack.png" alt="Full-stack delivery evidence" width="90%" /></p>
+      <h3>Full-stack projects</h3>
+      <p>I work on both frontend and backend code, depending on the project. <a href="https://github.com/Aafff623/my-blogs"><b>my-blogs</b></a> uses Next.js 16, GitHub for content storage, and Vercel for deployment. I can write and publish a post from the browser without running a separate CMS.</p>
+      <p align="center"><img src="./assets/highlight-fullstack.png" alt="my-blogs publishing workflow illustration" width="90%" /></p>
     </td>
     <td width="50%" valign="top">
-      <h3>📚 Proof-of-Work</h3>
-      <p>Don't just say "I can" — leave evidence you can flip through. Finished 42/42 pre-study notes in <a href="https://github.com/Aafff623/web3career-study-track"><b>web3career-study-track</b></a>, distilled into an input → process → output proof-of-work workspace; also took over and shipped several course / practice projects (data-structures course design, Python Flask tracker, Java LangChain4j assistant).</p>
-      <p align="center"><img src="./assets/highlight-pow.png" alt="Proof-of-work evidence" width="90%" /></p>
+      <h3>Study notes and course work</h3>
+      <p>In <a href="https://github.com/Aafff623/web3career-study-track"><b>web3career-study-track</b></a>, I completed all 42 pre-study notes and organized the material around inputs, process, and outputs. I have also worked on a data-structures course project, a Flask tracker, and a Java assistant built with LangChain4j.</p>
+      <p align="center"><img src="./assets/highlight-pow.png" alt="Study track progress summary" width="90%" /></p>
     </td>
   </tr>
 </table>
 
 ---
 
-## Tech Stack
+## Tech stack
 
 <table width="100%">
   <tr>
     <td width="75%" valign="top">
-      <p><i>🎨 Frontend</i><br />
+      <p><i>Frontend</i><br />
       <img src="https://img.shields.io/badge/React-20232a?style=flat-square&logo=react" alt="React" />
       <img src="https://img.shields.io/badge/Vue-35495E?style=flat-square&logo=vue.js" alt="Vue" />
       <img src="https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -81,13 +81,13 @@
       <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
       <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" alt="GSAP" />
       <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /></p>
-      <p><i>⛓️ Web3</i><br />
+      <p><i>Web3</i><br />
       <img src="https://img.shields.io/badge/Ethers.js-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Ethers.js" />
       <img src="https://img.shields.io/badge/Viem-FF6B35?style=flat-square&logo=ethereum&logoColor=white" alt="Viem" />
       <img src="https://img.shields.io/badge/Wagmi-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" />
       <img src="https://img.shields.io/badge/Smart%20Accounts-0969da?style=flat-square" alt="Smart Accounts" />
       <img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=flat-square" alt="Session Keys" /></p>
-      <p><i>🛠️ Backend & Database</i><br />
+      <p><i>Backend and database</i><br />
       <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java" />
       <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
@@ -96,14 +96,14 @@
       <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
       <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" /></p>
-      <p><i>🤖 AI Workflow</i><br />
+      <p><i>AI tools</i><br />
       <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=flat-square&logo=claude" alt="Claude Code" />
       <img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor" alt="Cursor" />
       <img src="https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai" alt="Codex" />
       <img src="https://img.shields.io/badge/MCP-0969da?style=flat-square" alt="MCP" />
       <img src="https://img.shields.io/badge/Skills-f59e0b?style=flat-square" alt="Skills" />
       <img src="https://img.shields.io/badge/Matt%20Pocock%20Skills-1f2328?style=flat-square" alt="Matt Pocock Skills" /></p>
-      <p><i>⚙️ DevOps & Tools</i><br />
+      <p><i>DevOps and tools</i><br />
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
       <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
       <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
@@ -118,7 +118,7 @@
 
 ---
 
-## GitHub Stats
+## GitHub stats
 
 <table width="100%">
   <tr>
@@ -141,20 +141,20 @@
 
 ## Projects
 
-### 🚀 Featured — AgentCFO
+### AgentCFO
 
 <table width="100%">
   <tr>
     <td width="65%" valign="top">
-      <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO — DAO AI Treasury</a></h3>
-      <p><i>Give every DAO an AI CFO with a controlled wallet.</i></p>
-      <p>AgentCFO is an AI financial officer purpose-built for Web3 small teams and DAOs. It ingests contribution records and budget rules, auto-generates Payment Plans, runs deterministic Risk Checks, and — once Human Approval lands — completes controlled payouts through the <strong>Cobo Agentic Wallet (CAW)</strong>. Every flow ends with a fully auditable Audit Report.</p>
+      <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO: DAO treasury assistant</a></h3>
+      <p><i>A hackathon project for preparing, checking, approving, and sending DAO payments.</i></p>
+      <p>AgentCFO reads contribution records and budget rules, creates payment plans, runs deterministic risk checks, waits for human approval, and sends approved payouts through the <strong>Cobo Agentic Wallet (CAW)</strong>. It creates an audit report for each run.</p>
       <ul>
-        <li>🥇 <b>Track:</b> Cobo · Agentic Economy × CAW</li>
-        <li>🖥️ <b>Role:</b> Frontend Lead — owned the Landing page and Console Demo end-to-end</li>
-        <li>✅ <b>Status:</b> 2 Sepolia / SETH testnet payouts shipped, validating CAW external payments and internal address routing</li>
+        <li><b>Hackathon track:</b> Cobo · Agentic Economy × CAW</li>
+        <li><b>My role:</b> frontend lead for the landing page and console demo</li>
+        <li><b>Tested:</b> two Sepolia / SETH payouts covering an external payment and an internal transfer</li>
       </ul>
-      <p><a href="https://agentcfo-frontend.vercel.app/">🌐 Live Demo</a> · <a href="https://github.com/San-Y108/agent-cfo">📁 Repo</a></p>
+      <p><a href="https://agentcfo-frontend.vercel.app/">Live demo</a> · <a href="https://github.com/San-Y108/agent-cfo">Repository</a></p>
       <p>
         <img src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=next.js&logoColor=white" alt="Next.js" />
         <img src="https://img.shields.io/badge/React-20232a?style=plastic&logo=react" alt="React" />
@@ -173,19 +173,19 @@
   </tr>
 </table>
 
-### 📦 More Projects
+### Other projects
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Aafff623/my-blogs">my-blogs</a></h3>
-      <p><i>A personal blog workbench built on an open-source template — GitHub as CMS, Vercel for publishing.</i></p>
+      <p><i>A personal blog based on an open-source template. I use GitHub for content storage and Vercel for deployment.</i></p>
       <p><a href="https://my-blogs-roan-seven.vercel.app/">Website</a> · <a href="https://github.com/Aafff623/my-blogs">Repo</a></p>
       <p><img src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=next.js&logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/React-20232a?style=plastic&logo=react" alt="React" /> <img src="https://img.shields.io/badge/TypeScript-3178c6?style=plastic&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Tailwind-06b6d4?style=plastic&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /> <img src="https://img.shields.io/badge/Zustand-FF8855?style=plastic&logo=zustand&logoColor=white" alt="Zustand" /> <img src="https://img.shields.io/badge/SWR-000000?style=plastic&logo=swr&logoColor=white" alt="SWR" /> <img src="https://img.shields.io/badge/Shiki-2D2D2D?style=plastic" alt="Shiki" /> <img src="https://img.shields.io/badge/Marked-CA8A04?style=plastic&logo=marked&logoColor=white" alt="Marked" /></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Aafff623/web3career-study-track">AI Web3 Study Track</a></h3>
-      <p><i>Full learning and hackathon journey through the AI Web3 cohort.</i></p>
+      <p><i>Notes, exercises, and hackathon work from an AI and Web3 cohort.</i></p>
       <p><a href="https://github.com/Aafff623/web3career-study-track">Repo</a></p>
       <p><img src="https://img.shields.io/badge/AI%20×%20Web3-0969da?style=plastic" alt="AI x Web3" /> <img src="https://img.shields.io/badge/Smart%20Account-f59e0b?style=plastic" alt="Smart Account" /> <img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=plastic" alt="Session Keys" /> <img src="https://img.shields.io/badge/MCP-0969da?style=plastic" alt="MCP" /> <img src="https://img.shields.io/badge/Skills-f59e0b?style=plastic" alt="Skills" /> <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=plastic&logo=claude" alt="Claude Code" /></p>
     </td>
@@ -194,35 +194,35 @@
 
 ---
 
-## Currently Learning
+## What I'm learning
 
-- <b>Web3 Deep Dive:</b> Smart Accounts, Session Keys, Agentic Wallets, on-chain interactions, and testnet deployments
-- <b>AI Engineering:</b> Turning single Claude Code sessions into reusable Skills, Workflows, and MCP toolchains
-- <b>Frontend Delivery:</b> Complex forms, state management, PWA offline capabilities, and rapid hackathon demo iteration
+- <b>Web3:</b> Smart Accounts, Session Keys, Agentic Wallets, on-chain interactions, and testnet deployments
+- <b>AI-assisted development:</b> reusable Skills, MCP tooling, and repeatable review and maintenance workflows
+- <b>Frontend:</b> complex forms, state management, PWA offline behavior, and faster demo iteration
 
 ---
 
-## 2026 Goals
+## Goals for 2026
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3>🚀 Ship 3+ Projects</h3>
-      <p><i>Finish and publish 3+ projects with real users or live demos.</i></p>
+      <h3>Publish three projects</h3>
+      <p><i>Finish and publish at least three projects with a working demo or real users.</i></p>
     </td>
     <td width="50%" valign="top">
-      <h3>📦 Open Source</h3>
-      <p><i>Open-source reusable AI workflow capabilities as Skills or CLI tools.</i></p>
+      <h3>Release reusable tools</h3>
+      <p><i>Publish some of the Skills or CLI tools that I currently use locally.</i></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🏆 More Hackathons</h3>
-      <p><i>Join more Web3 / AI hackathons and turn ideas into testnet-ready MVPs.</i></p>
+      <h3>Join more hackathons</h3>
+      <p><i>Join more AI or Web3 hackathons and get better at narrowing ideas into testable demos.</i></p>
     </td>
     <td width="50%" valign="top">
-      <h3>📝 Documentation</h3>
-      <p><i>Keep sharing notes, project retrospectives, and AI coding best practices.</i></p>
+      <h3>Write as I go</h3>
+      <p><i>Keep notes and retrospectives close to the code, especially when a project changes direction.</i></p>
     </td>
   </tr>
 </table>
@@ -240,9 +240,9 @@
 
 ---
 
-## Connect
+## Contact
 
-<p align="center"><i>Open to collaborations on agentic coding, Web3, and full-stack experiments.</i></p>
+<p align="center"><i>You can reach me by email or through any of the links below.</i></p>
 
 <p align="center">
   <a href="mailto:laiyif68@gmail.com"><img height="42" width="42" src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" title="Email" /></a>

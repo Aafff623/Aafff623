@@ -1,4 +1,4 @@
-# CONTEXT — Aafff623 GitHub Profile
+# CONTEXT: Aafff623 GitHub Profile
 
 ## Purpose
 
@@ -8,13 +8,15 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 - Recruiters and hiring managers
 - Hackathon teammates and potential collaborators
-- Visitors interested in Agentic Coding, Web3, and AI workflows
+- Visitors interested in AI-assisted development, Web3, and software projects
 
-## Identity & Voice
+## Identity and voice
 
-- **Builder identity:** Agentic Coding Explorer · Workflow Practitioner · Web3 & AI Hackathon Frontend & Full-Stack Builder
-- **Tagline:** "Code less, Architect more."
-- **Tone:** Professional but energetic; emoji-friendly; spec-driven.
+- **Profile:** Second-year Software Engineering student building AI-assisted workflows, web applications, and Web3 prototypes.
+- **Intro line:** "Software engineering student learning by building, testing, and writing things down."
+- **Tone:** Direct, specific, and modest. Use first person and keep emoji sparse.
+- **Evidence:** Prefer concrete details, repository links, and transaction records over self-assigned labels.
+- **Editing reference:** Apply the anti-AI patterns from `humanizer-output-style`, adapted for an English profile.
 
 ## Constraints
 
