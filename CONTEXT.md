@@ -44,3 +44,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 ## Active Decisions
 
 - Mascot uses a white-background looping GIF instead of a transparent PNG. See `docs/adr/0001-mascot-white-background-gif.md`.
+- Quick links (AgentCFO, my-blogs, AI Web3 Study Track, Blog, Digital Garden) sit below the intro table, not above the tagline, so first-time visitors read the tagline and intro before hitting a link row.
+- The Digital Garden link appears in both Quick links and the Contact icon row for consistency; it is not treated as a top-tier destination like AgentCFO.
+- Tech stack badge reads "Docs as Code," not "Matt Pocock Skills." The latter names an internal workflow reference the profile's audience (recruiters, teammates) has no context for.
+- The four `highlight-*.png` illustrations were removed from "What I've been working on." They restated what the adjacent text already said and added scroll length without new information. The two cards that leaned on their image for detail (my-blogs, study track) got a sentence of extra specifics instead, pulled from facts already stated elsewhere in the README (my-blogs' tech badges, the study track's project list).
