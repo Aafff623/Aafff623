@@ -25,6 +25,7 @@ There is no build system, package manager, test suite, or linter in this reposit
   - `AgentCFO`: Web3 hackathon team project; frontend lead for the landing page and console demo.
   - `my-blogs`: Personal blog based on an open-source template, with GitHub content storage and Vercel deployment.
   - `AI Web3 Study Track`: Notes, exercises, and hackathon work from an AI and Web3 cohort.
+- **Writing:** [Blog](https://my-blogs-roan-seven.vercel.app/) and [Digital Garden](https://threetwoa-digital-garden.vercel.app/), linked from a Quick links line below the intro table and from the Contact icon row.
 - **Workflow model:** GPT is mainly used for early exploration, Claude Code and Kiro for implementation, and Codex for a second review. The author decides what to keep and what to change.
 - **Contact:** GitHub [@Aafff623](https://github.com/Aafff623).
 
