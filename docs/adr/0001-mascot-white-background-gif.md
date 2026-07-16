@@ -10,18 +10,20 @@ The Tech Stack section has a mascot image in the right table cell. The original 
 
 ## Decision
 
-Replace the static transparent PNG with a white-background looping GIF (`assets/mascot.gif`).
+Replace the static transparent PNG with a white-background looping GIF (`assets/mascot.gif`) and treat that published GIF as the canonical asset.
 
 - **Frames:** 5 storyboard poses scaled to 360×360 source, displayed at 90% width in the table cell.
 - **Timing:** 12 frames held per pose, 6-frame eased crossfade, 18 fps, ~4.5 s loop.
 - **Easing:** `smoothstep(t) = t²(3 − 2t)` for crossfades.
 - **Encoding:** ffmpeg `palettegen` + `paletteuse` with 64 colors and no dither, output ~1 MB.
 - **Background:** Pure white (`#ffffff`) to match the profile's light-mode page and avoid GIF 1-bit transparency jagged edges.
+- **Working files:** Generated frames, candidate encodes, and local scripts may live under ignored `.scratch/`, but this ADR records the durable production settings. Tracked files do not depend on scratch content.
 
 ## Consequences
 
 - **Positive:** Animated mascot draws attention; no alpha-matting defects; consistent with the light-mode background.
 - **Negative:** GIF supports only 1-bit transparency, so a dark-mode visitor would see a white box. Acceptable because GitHub profile defaults to light mode and the rest of the profile is also light-mode-first.
+- **Negative:** Exact regeneration requires the original local storyboard poses; those disposable working files are not part of the published repository.
 - **Tradeoff:** File size ~1 MB vs. PNG ~841 KB; acceptable for the animation value.
 
 ## Alternatives Considered
@@ -33,5 +35,4 @@ Replace the static transparent PNG with a white-background looping GIF (`assets/
 ## Related
 
 - `assets/mascot.gif`
-- `.scratch/mascot-anim/spec.md`
-- Memory: `mascot-cutout-verification.md`
+- `docs/dark-mode-checklist.md`

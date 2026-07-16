@@ -31,17 +31,21 @@ There is no build system, package manager, test suite, or linter in this reposit
 
 ## Repository structure
 
-```
-README.md                 # Public GitHub profile content
-preview-profile.html      # Local preview of the README layout (not published)
-CONTEXT.md                # Project context, audience, constraints, and decisions
-LANGUAGE.md               # Glossary and naming conventions for the profile
-docs/adr/                 # Architecture Decision Records
+```text
+README.md                      # Public GitHub profile content
+preview-profile.html           # Local preview of the README layout (not published)
+CONTEXT.md                     # Project context, audience, constraints, and decisions
+LANGUAGE.md                    # Glossary and naming conventions for the profile
+docs/adr/                      # Architecture Decision Records
 assets/
-  v9-banner.gif           # Current pixelized-mascot banner used by README and preview
-  hero-knight.png         # Hero image used by README and preview
-  mascot.gif              # Animated mascot (looping GIF) beside the Tech Stack section
+  v9-banner.gif                # Animated banner used by README and preview
+  brand-threetwoa.svg          # Light-theme wordmark
+  brand-threetwoa-dark.svg     # Dark-theme wordmark selected with <picture>
+  hero-knight.png              # Optimized 800×1000 intro hero image
+  mascot.gif                   # Animated mascot beside the Tech Stack section
 ```
+
+`assets/` contains only files currently used by the published profile. `.scratch/` is ignored, disposable local workspace for generated frames, compression candidates, and visual checks. Do not reference `.scratch/` from `README.md` or tracked documentation; durable production decisions belong in `CONTEXT.md` or an ADR.
 
 ## Documentation
 

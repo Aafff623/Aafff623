@@ -24,13 +24,16 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 - `README.md` must use relative paths for local assets (e.g., `./assets/...`) so they resolve on GitHub.
 - GitHub's cmark-gfm treats blank lines inside raw HTML blocks as block terminators. Keep `<table>` blocks compact.
 - Profile is light-mode-first; assets should look correct on a white background.
+- `assets/` contains only files used by the published profile. `.scratch/` is ignored and disposable; tracked files must not depend on anything inside it.
 
 ## Asset Conventions
 
 | Asset | File | Usage |
-|---|---|---|
+| --- | --- | --- |
 | Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, bright palette) |
-| Hero | `./assets/hero-knight.png` | Intro table right cell |
+| Wordmark (light) | `./assets/brand-threetwoa.svg` | Default profile wordmark |
+| Wordmark (dark) | `./assets/brand-threetwoa-dark.svg` | Dark-theme wordmark selected with `<picture>` |
+| Hero | `./assets/hero-knight.png` | Intro table right cell; optimized 800×1000 RGB PNG |
 | Mascot | `./assets/mascot.gif` | Tech Stack table right cell, white-background looping GIF |
 | Badges | HTTPS shields.io / simpleicons.org URLs | Tech stack and social link icons |
 
@@ -44,7 +47,8 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 ## Active Decisions
 
 - Mascot uses a white-background looping GIF instead of a transparent PNG. See `docs/adr/0001-mascot-white-background-gif.md`.
+- The hero remains PNG for repository-format consistency. It is downscaled from 1122×1402 to 800×1000 with lossless PNG encoding, reducing its size without changing the visible composition.
 - Quick links (AgentCFO, my-blogs, AI Web3 Study Track, Blog, Digital Garden) sit below the intro table, not above the tagline, so first-time visitors read the tagline and intro before hitting a link row.
 - The Digital Garden link appears in both Quick links and the Contact icon row for consistency; it is not treated as a top-tier destination like AgentCFO.
 - Tech stack badge reads "Docs as Code," not "Matt Pocock Skills." The latter names an internal workflow reference the profile's audience (recruiters, teammates) has no context for.
-- The four `highlight-*.png` illustrations were removed from "What I've been working on." They restated what the adjacent text already said and added scroll length without new information. The two cards that leaned on their image for detail (my-blogs, study track) got a sentence of extra specifics instead, pulled from facts already stated elsewhere in the README (my-blogs' tech badges, the study track's project list).
+- The four `highlight-*.png` illustrations were removed from both "What I've been working on" and `assets/`. They restated what the adjacent text already said and added scroll length without new information. The two cards that leaned on their image for detail (my-blogs, study track) got a sentence of extra specifics instead, pulled from facts already stated elsewhere in the README (my-blogs' tech badges, the study track's project list).

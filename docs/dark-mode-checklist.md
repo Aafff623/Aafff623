@@ -7,7 +7,7 @@
 ## 1. 技术边界（GitHub README 能做 / 不能做）
 
 | 能力 | GitHub README | preview-profile.html | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `<picture>` + `<source media>` 按主题切图 | ✅ 官方支持 | ✅ 原生支持 | 暗色资产切换的**唯一**可靠方式 |
 | `#gh-dark-mode-only` URL fragment | ⚠️ 可用但不推荐 | ❌ | 旧 hack，已被 `<picture>` 取代 |
 | CSS `prefers-color-scheme` 媒体查询 | ❌ 被 cmark 剥离 | ✅ | README 的 `<style>` 会被清掉 |
@@ -55,21 +55,17 @@
 - **README 现状**：表格未用硬编码颜色，**无冲突**。✅
 - **preview 现状**：表格 `td` padding 正常，暗色下无白底。✅
 
-### 3.4 白底 GIF 资产（最大问题源）
-- **问题**：`mascot.gif` / `v9-banner.gif` / `hero-knight.png` 都是白底，暗色模式下会显示为刺眼的白框。
+### 3.4 白底资产（最大问题源）
+- **问题**：`mascot.gif` / `v9-banner.gif` / `hero-knight.png` 都以白色或浅色为主，暗色模式下会显示为明显的亮色区域。
 - **README 现状**：**无法用 CSS 软化**（GitHub 剥离 style）。解决路径有两条：
-  - **方案 A**（已部分采用）：保持现状，接受白框。ADR 0001 已记录此取舍。
-  - **方案 B**（彻底解决，成本高）：为每个白底资产制作暗色版本，用 `<picture>` 切换。**但 GIF 动画的暗色重制成本很高**（需要重新生成帧 + 重新编码）。
-- **preview 现状**：已加圆角 + outline 软化。✅
+  - **方案 A**（当前采用）：保持现状，接受亮色区域。ADR 0001 已记录 GIF 的取舍。
+  - **方案 B**（彻底解决，成本高）：为每个资产制作暗色版本，用 `<picture>` 切换。**但 GIF 动画的暗色重制成本很高**（需要重新生成帧 + 重新编码）。
+- **preview 现状**：GIF 已加圆角 + outline 软化；hero 保持与 README 一致。✅
 
 ### 3.5 外部服务图片（stats / activity graph）
-- **问题**：以下外部图都是写死 `bg_color=ffffff`，暗色下是白框：
-  - `github-readme-stats-sigma-five.vercel.app`（Stats 卡 + Top Languages）
-  - `github-readme-activity-graph.vercel.app`（Activity graph）
-- **README 现状**：当前都是白底写死。**适配方式**：
-  - github-readme-stats 支持 `&theme=dark` 参数，但无法按主题自动切。
-  - **真正适配**需要 `<picture>` + 两套 URL（一套亮色参数、一套暗色参数）。
-- **状态**：⏳ 待办（见下方 Checklist）
+- **问题**：统计卡和活动图需要分别提供亮色、暗色参数，单一 URL 无法跟随主题。
+- **README 现状**：Stats、Top Languages 和 Activity graph 均已使用 `<picture>` + 两套 URL。✅
+- **preview 现状**：与 README 使用相同的 `<picture>` 结构。✅
 
 ---
 
@@ -77,9 +73,9 @@
 
 > 优先级：P0 = 首屏可见、影响大；P1 = 次要；P2 = 锦上添花
 
-- [ ] **P1** 为 github-readme-stats 卡片做 `<picture>` 明暗切换（亮色现有参数 ↔ 暗色 `theme=dark` 参数）
-- [ ] **P1** 为 Top Languages 卡片做同样切换
-- [ ] **P1** 为 Activity graph 做 `<picture>` 明暗切换（需要暗色参数组合）
+- [x] **P1** 为 github-readme-stats 卡片做 `<picture>` 明暗切换
+- [x] **P1** 为 Top Languages 卡片做 `<picture>` 明暗切换
+- [x] **P1** 为 Activity graph 做 `<picture>` 明暗切换
 - [ ] **P2** mascot.gif 暗色版本（若白框接受不了）— 需重新生成 5 帧 GIF
 - [ ] **P2** v9-banner.gif 暗色版本 — 同上，成本高
 - [ ] **P2** hero-knight.png 暗色版本 — 需要换底色或重新生成
