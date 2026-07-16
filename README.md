@@ -9,17 +9,16 @@
   </picture>
 </p>
 
-<p align="center"><i>Software engineering student learning by building, testing, and writing things down.</i></p>
+<p align="center"><i>SE student · fusing HIP kernels for vLLM on Hygon DCU · shipping Next.js apps on the side</i></p>
 
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <p>I'm a second-year Software Engineering student at North University of China. Recent work spans AI-assisted development, full-stack web apps, Web3 prototypes, and inference serving on domestic accelerators.</p>
-      <p>I use GPT, Claude Code, Kiro, and Codex at different points in a project. They help me explore an idea, implement it, review the result, and keep the documentation in sync. I decide what to keep and what to change.</p>
-      <p>This profile is a record of what I have built and studied so far, including product demos and system-level contest work. Some items are finished; some are still experiments. I keep both because they show what I was learning at the time.</p>
+      <p>I'm a second-year Software Engineering student at North University of China. My recent work splits between two tracks: <b>system-level inference optimization</b> on domestic accelerators, and <b>full-stack web apps / Web3 prototypes</b> where I can ship something to real users.</p>
+      <p>I use GPT, Claude Code, Kiro, and Codex at different points in a project — exploration, implementation, review, and keeping docs in sync — but I decide what to keep and what to change.</p>
       <ul>
         <li><b>Studying:</b> Software Engineering, second year, North University of China</li>
-        <li><b>Working on:</b> AI coding workflows, full-stack apps, Web3 prototypes, and vLLM optimization on Hygon DCU</li>
+        <li><b>Recent focus:</b> vLLM kernel fusion on Hygon DCU (gfx936) for the 2026 Lead Cup, and a Next.js blog I actually publish to</li>
         <li><b>How I use AI tools:</b> GPT for early exploration, Claude Code and Kiro for implementation, and Codex for a second review</li>
       </ul>
     </td>
@@ -47,17 +46,11 @@
   <tr>
     <td width="50%" valign="top">
       <h3>🤖 AI-assisted workflows</h3>
-      <p>I maintain six reusable Skills, including <code>cascade-maintain</code>, <code>daily-log-sync</code>, <code>pre-study-note</code>, and <code>wcb-sync</code>. I use them across Claude Code, Kiro, and Codex for recurring work such as documentation maintenance, log syncing, and study notes.</p>
-      <p><i>This repository also uses <code>CONTEXT.md</code>, <code>LANGUAGE.md</code>, and ADRs so later edits do not depend on chat history alone.</i></p>
+      <p>I maintain six reusable Skills — <code>cascade-maintain</code>, <code>daily-log-sync</code>, <code>pre-study-note</code>, <code>wcb-sync</code>, and two more — and use them across Claude Code, Kiro, and Codex for recurring tasks like documentation maintenance, log syncing, and study notes.</p>
     </td>
     <td width="50%" valign="top">
       <h3>🌐 AgentCFO and Web3</h3>
-      <p>I was the frontend lead for AgentCFO, where I worked on the landing page and console demo. I also tested the Cobo Agentic Wallet payment flow. Two testnet transactions from that work are linked below:</p>
-      <ul>
-        <li><b>External payment:</b> SETH · <code>0.001</code> → <code>0xAf3f...594B</code> · <a href="https://sepolia.etherscan.io/tx/0x85a5a2e934ca0e34c7fb3e038ca06e54e15bd29b56b64e5b01ff80eb20ed4d98">transaction</a></li>
-        <li><b>Internal transfer:</b> Sepolia · <code>0.001</code> → <code>0xaa55...c199</code> · <a href="https://sepolia.etherscan.io/tx/0x6bd793bc3030c995245b2e73a466898e46278be092aa9f7a3c86cad21cbbae8a">transaction</a></li>
-      </ul>
-      <p><i>The hackathon submission required transaction hashes, so I kept the records here.</i></p>
+      <p>I was the frontend lead for <a href="https://github.com/San-Y108/agent-cfo">AgentCFO</a>, a DAO treasury assistant on the Cobo Agentic Wallet track. I built the landing page and console demo, and verified the end-to-end payout flow with two live Sepolia testnet transactions (see the full hashes and details in the project card below).</p>
     </td>
   </tr>
   <tr>
@@ -217,37 +210,10 @@
 
 ## 📖 What I'm learning
 
-- <b>Systems / inference:</b> vLLM serving on Hygon DCU (gfx936), HIP kernel fusion, decode/prefill routing, and reading TTFT / TPOT / throughput under contest SLAs
-- <b>Web3:</b> Smart Accounts, Session Keys, Agentic Wallets, on-chain interactions, and testnet deployments
-- <b>AI-assisted development:</b> reusable Skills, MCP tooling, and repeatable review and maintenance workflows
-- <b>Frontend:</b> complex forms, state management, PWA offline behavior, and faster demo iteration
-
----
-
-## 🎯 Goals for 2026
-
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🚀 Publish three projects</h3>
-      <p><i>Finish and publish at least three projects with a working demo or real users.</i></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🔧 Release reusable tools</h3>
-      <p><i>Publish some of the Skills or CLI tools that I currently use locally.</i></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🏆 Join more contests</h3>
-      <p><i>Join more AI or Web3 hackathons and system-capability contests, and get better at turning fixed constraints into measured results.</i></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>✍️ Write as I go</h3>
-      <p><i>Keep notes and retrospectives close to the code, especially when a project changes direction.</i></p>
-    </td>
-  </tr>
-</table>
+- <b>Systems / inference:</b> reading the vLLM scheduler and attention backends, profiling decode-bound kernels on gfx936, and reasoning about TTFT / TPOT / throughput trade-offs under fixed SLAs instead of chasing single metrics
+- <b>Web3:</b> Smart Account and Session Key abstraction patterns, and the gap between testnet demos and mainnet-grade UX
+- <b>AI-assisted development:</b> turning one-off prompts into reusable Skills and MCP tools, and building review loops that catch my own mistakes
+- <b>Frontend:</b> shipping a Next.js app I actually maintain, rather than rebuilding a starter from scratch every time
 
 ---
 
