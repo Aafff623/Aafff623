@@ -93,7 +93,6 @@
       <img src="https://img.shields.io/badge/Hygon%20DCU-F5F3FF?style=for-the-badge" alt="Hygon DCU" />
       <img src="https://img.shields.io/badge/Qwen3.5-ECFDF5?style=for-the-badge" alt="Qwen3.5" /></p>
       <p><b>Web3</b><br />
-      <img src="https://img.shields.io/badge/Ethers.js-F4F5F7?style=for-the-badge&logo=ethereum&logoColor=627EEA" alt="Ethers.js" />
       <img src="https://img.shields.io/badge/Viem-F4F5F7?style=for-the-badge&logo=ethereum&logoColor=FF6B35" alt="Viem" />
       <img src="https://img.shields.io/badge/Wagmi-F4F5F7?style=for-the-badge&logo=ethereum&logoColor=1A1B1F" alt="Wagmi" />
       <img src="https://img.shields.io/badge/Smart%20Accounts-EFF6FF?style=for-the-badge" alt="Smart Accounts" />
@@ -112,11 +111,11 @@
       <img src="https://img.shields.io/badge/Cursor-F4F5F7?style=for-the-badge&logo=cursor&logoColor=1F2328" alt="Cursor" />
       <img src="https://img.shields.io/badge/Codex-F4F5F7?style=for-the-badge&logo=openai&logoColor=412991" alt="Codex" />
       <img src="https://img.shields.io/badge/MCP-EFF6FF?style=for-the-badge" alt="MCP" />
-      <img src="https://img.shields.io/badge/Skills-FFFBEB?style=for-the-badge" alt="Skills" />
-      <img src="https://img.shields.io/badge/Docs%20as%20Code-F4F5F7?style=for-the-badge" alt="Docs as Code" /></p>
+      <img src="https://img.shields.io/badge/Skills-FFFBEB?style=for-the-badge" alt="Skills" /></p>
       <p><b>DevOps and tools</b><br />
       <img src="https://img.shields.io/badge/Docker-F4F5F7?style=for-the-badge&logo=docker&logoColor=2496ED" alt="Docker" />
       <img src="https://img.shields.io/badge/Nginx-F4F5F7?style=for-the-badge&logo=nginx&logoColor=009639" alt="Nginx" />
+      <img src="https://img.shields.io/badge/Vercel-F4F5F7?style=for-the-badge&logo=vercel&logoColor=000000" alt="Vercel" />
       <img src="https://img.shields.io/badge/Linux-F4F5F7?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Linux" />
       <img src="https://img.shields.io/badge/Git-F4F5F7?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
       <img src="https://img.shields.io/badge/GitHub-F4F5F7?style=for-the-badge&logo=github&logoColor=181717" alt="GitHub" /></p>
@@ -202,6 +201,35 @@
       <p><i>Notes, exercises, and hackathon work from an AI and Web3 cohort.</i></p>
       <p><a href="https://github.com/Aafff623/web3career-study-track">Repo</a></p>
       <p><img src="https://img.shields.io/badge/AI%20×%20Web3-0969da?style=plastic" alt="AI x Web3" /> <img src="https://img.shields.io/badge/Smart%20Account-f59e0b?style=plastic" alt="Smart Account" /> <img src="https://img.shields.io/badge/Session%20Keys-f59e0b?style=plastic" alt="Session Keys" /> <img src="https://img.shields.io/badge/MCP-0969da?style=plastic" alt="MCP" /> <img src="https://img.shields.io/badge/Skills-f59e0b?style=plastic" alt="Skills" /> <img src="https://img.shields.io/badge/Claude%20Code-d4a27f?style=plastic&logo=claude" alt="Claude Code" /></p>
+    </td>
+  </tr>
+</table>
+
+### 🧪 Coursework & side projects
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Aafff623/simple-ai-code-helper">🤖 Simple AI Code Helper</a></h3>
+      <p><i>LangChain4j + Spring Boot MVP with multi-turn chat, RAG, MCP extension, and structured output.</i></p>
+      <p><img src="https://img.shields.io/badge/Java-ED8B00?style=plastic&logo=openjdk&logoColor=white" alt="Java" /> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=plastic&logo=springboot&logoColor=white" alt="Spring Boot" /> <img src="https://img.shields.io/badge/MCP-0969da?style=plastic" alt="MCP" /></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Aafff623/pet-adoption-app">🐾 Pet Adoption App</a></h3>
+      <p><i>Vibe-coded pet adoption app with Supabase auth, PostgreSQL, and storage.</i></p>
+      <p><img src="https://img.shields.io/badge/TypeScript-3178c6?style=plastic&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=plastic&logo=supabase&logoColor=white" alt="Supabase" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=plastic&logo=postgresql&logoColor=white" alt="PostgreSQL" /></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Aafff623/lottery-pattern-analyzer">🎰 Lottery Pattern Analyzer</a></h3>
+      <p><i>Big-data lottery analysis — Vue 3 frontend + Spring Boot + Python Flask crawler + MySQL.</i></p>
+      <p><img src="https://img.shields.io/badge/Vue%203-42B883?style=plastic&logo=vuedotjs&logoColor=white" alt="Vue 3" /> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=plastic&logo=springboot&logoColor=white" alt="Spring Boot" /> <img src="https://img.shields.io/badge/MySQL-4479A1?style=plastic&logo=mysql&logoColor=white" alt="MySQL" /></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Aafff623/tourism-master">🏔️ Tourism Master</a></h3>
+      <p><i>Shanxi tourism bilingual mini-program — Spring Boot + MySQL + Redis.</i></p>
+      <p><img src="https://img.shields.io/badge/Java-ED8B00?style=plastic&logo=openjdk&logoColor=white" alt="Java" /> <img src="https://img.shields.io/badge/Redis-DC382D?style=plastic&logo=redis&logoColor=white" alt="Redis" /> <img src="https://img.shields.io/badge/MySQL-4479A1?style=plastic&logo=mysql&logoColor=white" alt="MySQL" /></p>
     </td>
   </tr>
 </table>
