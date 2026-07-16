@@ -4,4 +4,5 @@ github-profile-*.png
 *.heapsnapshot
 .DS_Store
 Thumbs.db
+# Local generation frames, compression candidates, and visual checks; disposable and never referenced by tracked files.
 .scratch/
