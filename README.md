@@ -71,7 +71,7 @@
       <ul>
         <li><b>Best score:</b> 87.7839 / 100 · SLA 0 · precision 0</li>
         <li><b>Work:</b> fused shared-gate, gate-up ⊕ SwiGLU HIP kernel, GDN packed launch, Gather-FA routing, LPK prefetch</li>
-        <li><b>Measured:</b> TTFT P99 down 61% to 87%, TPOT P99 down about 35%, throughput up 7% to 24% vs official baseline smoke tests</li>
+        <li><b>Measured:</b> TTFT P99 down 61%–87%, TPOT P99 down about 35%, throughput up 7%–24% vs official baseline smoke tests</li>
       </ul>
       <p><a href="https://github.com/Aafff623/vllm-cscc-leadcup">GitHub</a> · <a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3">GitLab submission</a></p>
     </td>
