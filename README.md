@@ -116,7 +116,10 @@
       <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></p>
     </td>
     <td width="25%" align="center" valign="middle">
-      <img src="./assets/mascot.gif" width="90%" alt="animated threetwoa mascot" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/mascot-dark.gif" />
+        <img src="./assets/mascot.gif" width="90%" alt="animated threetwoa mascot" />
+      </picture>
     </td>
   </tr>
 </table>
