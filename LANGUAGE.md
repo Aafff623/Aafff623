@@ -4,11 +4,11 @@
 
 - **Intro**: Banner, wordmark, tagline, and the "who I am" table with the hero image.
 - **Quick links**: A single line below the intro table linking representative project repositories plus the Blog and Digital Garden. Placed after the intro so visitors read the tagline first.
-- **What I've been working on**: Four cards covering AI-assisted workflows, AgentCFO and Web3, full-stack projects, and study notes.
-- **Tech stack**: Technology badges grouped by frontend, Web3, backend and database, AI tools, and DevOps.
-- **Projects**: AgentCFO plus links to my-blogs and the AI Web3 Study Track.
-- **What I'm learning**: A short list of current learning areas.
-- **Goals for 2026**: Four concrete goals for projects, reusable tools, hackathons, and writing.
+- **What I've been working on**: Four cards covering AI-assisted workflows, AgentCFO and Web3, full-stack projects, and Lead Cup vLLM optimization on Hygon DCU (replaced the weaker study-notes card; study track remains under Projects).
+- **Tech stack**: Soft pastel rounded `for-the-badge` shields (light body, brand logo accents) by category. Mascot stays on the right.
+- **Projects**: AgentCFO plus Other projects (Digital Garden, AI Web3 Study Track).
+- **What I'm learning**: Systems/inference (vLLM, Hygon DCU), Web3, AI-assisted development, and frontend.
+- **Goals for 2026**: Four concrete goals for projects, reusable tools, contests (hackathons and system contests), and writing.
 - **Activity**: GitHub contribution graph.
 - **Contact**: Icon links for email, GitHub, X, Bilibili, Telegram, blog, Digital Garden, YouTube, and Buy Me a Coffee.
 
@@ -30,7 +30,7 @@
 
 - Use first person for the profile and name the work directly.
 - Prefer specific facts and links over identity labels, slogans, or claims such as "flagship" and "proof."
-- Use sentence-case headings and keep decorative emoji out of section titles.
+- Use sentence-case headings. Light section-title emoji is allowed when the profile needs visual pacing; keep body copy emoji-sparse.
 - Do not call an image "evidence" unless its data matches the linked source.
 - Avoid em dashes, marketing adjectives, and generic AI phrases.
 

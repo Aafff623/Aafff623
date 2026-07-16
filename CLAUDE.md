@@ -23,8 +23,10 @@ There is no build system, package manager, test suite, or linter in this reposit
 - **Stack:** Claude Code, Kiro, Codex, MCP, and reusable Skills for development work; React, Vue, Tailwind CSS, and related frontend tools; Java Spring Boot and FastAPI on the backend.
 - **Projects:**
   - `AgentCFO`: Web3 hackathon team project; frontend lead for the landing page and console demo.
-  - `my-blogs`: Personal blog based on an open-source template, with GitHub content storage and Vercel deployment.
+  - `threetwoa-digital-garden` (Other projects): Personal digital garden for notes, photo walls, footprints, and archives; Next.js + Vercel.
+  - `my-blogs`: Still referenced under full-stack work and Quick links; personal blog based on an open-source template.
   - `AI Web3 Study Track`: Notes, exercises, and hackathon work from an AI and Web3 cohort.
+  - `vllm-cscc-leadcup` (also in "What I've been working on"): 2026 Lead Cup Problem 1; kernel-level vLLM optimization on Hygon DCU (gfx936) for Qwen3.5-27B; best score 87.7839/100. Dual links: GitHub mirror + GitLab submission.
 - **Writing:** [Blog](https://my-blogs-roan-seven.vercel.app/) and [Digital Garden](https://threetwoa-digital-garden.vercel.app/), linked from a Quick links line below the intro table and from the Contact icon row.
 - **Workflow model:** GPT is mainly used for early exploration, Claude Code and Kiro for implementation, and Codex for a second review. The author decides what to keep and what to change.
 - **Contact:** GitHub [@Aafff623](https://github.com/Aafff623).
