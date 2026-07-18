@@ -9,15 +9,14 @@
   </picture>
 </p>
 
-<p align="center"><i>SE student · indie builder · looking for an internship where I can ship</i></p>
+<p align="center"><i>Software Engineering student · Java &amp; Python · Agent Engineering</i></p>
 
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <p>I'm a second-year Software Engineering student at North University of China. Outside class I keep a blog and a digital garden, and I like getting small projects onto a real URL instead of leaving them in a homework folder.</p>
-      <p>Interests are messy on purpose: writing things down, frontend and a bit of Web3, anime, and collecting scraps in the garden. What I care about most is finishing something people can open.</p>
-      <p>I work like an indie developer for now: pick the idea, ship it, maintain it. Next I want an internship on a team that actually ships product, where I can see user feedback and practice both code and judgment. Ideal setup is a small squad that cares about what goes out, not slide decks.</p>
-      <p><b>Agentic Workflow:</b> agents help me explore and draft first, then grind through implementation, then a second pass for review. Skills, MCP, and docs live next to the repo so the next round is cheaper. Merge or rewrite is still my call.</p>
+      <p>I'm a second-year Software Engineering student at North University of China. My next step is an internship where I can work across the Java and Python business ecosystem while continuing to build AI agents.</p>
+      <p>The path I am working toward is deliberate: learn how real teams build and maintain business software; develop Agent Engineering skills; use Harness Engineering practices to make AI-assisted work reproducible, testable, and reviewable; then carry that judgment into independent products. The long-term goal is simple to say and hard to earn: become an independent developer who can build almost anything from idea to deployment.</p>
+      <p>Outside code, I keep a blog and a digital garden, watch anime, and write down whatever I do not want to forget.</p>
     </td>
     <td width="40%" align="center" valign="middle">
       <img src="./assets/hero-knight.png" width="92%" alt="threetwoa hero" />
@@ -26,46 +25,54 @@
 </table>
 
 <p align="center">
-  <b>🔗 Project quick links:</b>
-  <a href="https://agentcfo-frontend.vercel.app/">AgentCFO</a> ·
+  <a href="mailto:laiyif68@gmail.com">Email</a> ·
   <a href="https://my-blogs-roan-seven.vercel.app/">Blog</a> ·
   <a href="https://threetwoa-digital-garden.vercel.app/">Digital Garden</a>
 </p>
 
 ---
 
-## 🏆 Competitions
+## Agent workflow
+
+I use coding agents for repository exploration, research, repetitive edits, and first-pass implementation. The surrounding harness matters more than the prompt: scoped tasks, repository rules, reproducible commands, tests, documentation, and a final diff review. I remain responsible for the design decisions and every merge.
+
+---
+
+## Competitions
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3>⚡ Lead Cup · vLLM on Hygon DCU</h3>
-      <p><b>Finished.</b> 2026 National Collegiate Computer System Capability Competition · Lead Cup Problem 1. With team <b>翻斗花园</b>, we optimized vLLM 0.18.1 serving Qwen3.5-27B on a fixed Hygon DCU (gfx936). My part was kernel-level fusion and decode/prefill routing — not config-only tuning.</p>
-      <p><b>Result:</b> best run <b>87.7839 / 100</b> · <b>#26 / 132</b><br />SLA 0 · precision 0</p>
+      <h3>Lead Cup · vLLM on Hygon DCU</h3>
+      <p>2026 National Collegiate Computer System Capability Competition, Lead Cup Problem 1.</p>
+      <p><b>Team:</b> 翻斗花园 · <b>Role:</b> kernel fusion and decode/prefill routing</p>
+      <p><b>Leaderboard best run:</b> 87.7839 / 100 · #26 / 132 · SLA 0 · precision 0</p>
+      <p>We optimized vLLM 0.18.1 serving Qwen3.5-27B on a fixed Hygon DCU (gfx936). My work covered shared-gate fusion, a gate-up and SwiGLU HIP kernel, GDN launch packing, Gather-FA routing, and LPK prefetch.</p>
       <ul>
-        <li><b>Focus:</b> fused shared-gate · gate-up ⊕ SwiGLU HIP kernel · GDN packed launch · Gather-FA routing · LPK prefetch</li>
-        <li><b>Gains:</b> vs official baseline smoke tests — TTFT P99 −61% to −87% · TPOT P99 ≈ −35% · throughput +7% to +24%</li>
+        <li>Against official baseline smoke tests: TTFT P99 reduced by 61% to 87%</li>
+        <li>TPOT P99 reduced by about 35%; throughput increased by 7% to 24%</li>
       </ul>
-      <p><a href="https://github.com/Aafff623/vllm-cscc-leadcup">GitHub</a> · <a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3">GitLab submission</a></p>
+      <p><a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3">Submission</a> · <a href="https://github.com/Aafff623/vllm-cscc-leadcup">Source mirror</a></p>
     </td>
     <td width="50%" valign="top">
-      <h3>🔬 AI4S · 书生国智科探挑战赛</h3>
-      <p><b>In progress · registered.</b> Shanghai AI Laboratory × Biren · track <b>模型与算子</b> (壁仞飞翔杯). Team <b>翻斗花园</b> (five people, same name as our Lead Cup team); I'm a <b>member, not captain</b>.</p>
-      <p>Format is research-facing Skills / Agents: early selection → SCP plaza voting → later rounds / hackathon. The track sits on Biren GPU — Agent-assisted scientific models and operators (PINN / GNN / FNO-style compute plus operator engineering). Preliminary development has not opened yet; upload window is around late July, and the goal is something that can land on the SCP plaza for real researchers to try.</p>
+      <h3>AI4S · 书生国智科探挑战赛</h3>
+      <p><b>Status:</b> registered and preparing · <b>Team:</b> 翻斗花园, five members · <b>Role:</b> team member</p>
+      <p>We entered the 模型与算子 track organized by Shanghai AI Laboratory and Biren. The current preparation covers agent-assisted scientific models and operator work for PINN, GNN, and FNO-style computation on Biren GPU. No score or public deliverable is available yet.</p>
       <p><a href="https://ai4scompetition.intern-ai.org.cn/">Competition site</a></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📱 HarmonyOS · C4 高校创新赛</h3>
-      <p><b>Tentative · not locked as a hard registration fact yet.</b> Targeting direction <b>04 操作系统智能创新</b> under the C4 HarmonyOS track (ninth China Collegiate Computing Contest · AI Creativity / Huawei × Zhejiang University). Three-person team drawn from the same systems-contest cohort as 翻斗花园; I'm a <b>member, not captain</b>.</p>
-      <p>If we commit: heterogeneous scheduling, cross-device communication, and perception data-flow that improves system-side AI efficiency and multi-device coordination — closer to OS plumbing than a consumer app. Delivery, if we enter, follows the C4 package (demo system plus the usual write-ups / video / slides).</p>
-      <p><a href="https://developer.huawei.com/home/C4-AI">C4-AI page</a></p>
+      <h3>HarmonyOS · C4 University Innovation Competition</h3>
+      <p><b>Status:</b> under consideration; registration is not yet confirmed.</p>
+      <p>The intended direction is operating-system intelligence: heterogeneous scheduling, cross-device communication, and perception data flow for system-side AI efficiency. If the team confirms entry, the work will be documented here with its repository, demo, and submission materials.</p>
+      <p><a href="https://developer.huawei.com/home/C4-AI">Competition page</a></p>
     </td>
     <td width="50%" valign="top">
-      <h3>⛓️ Monad Builder Camp</h3>
-      <p><b>In progress · Week 2.</b> Official name: Web3 暑期实习计划 · Monad Builder Camp — a four-week practical growth plan for shipping a first on-chain product on Monad (Demo / Repo / research or ops materials / portfolio), then a hackathon week, with an optional fifth week to tidy the portfolio.</p>
-      <p>Structure is roughly three weeks of shared learning, track split, and collaboration, then hackathon. Week 2 is the <b>builder-track split</b> (Tech / Ops / Research); I have not locked which track I commit to. Handbook keeps the product loop concrete: <a href="https://web3intern.xyz/zh/">web3intern.xyz</a>.</p>
+      <h3>Monad Builder Camp</h3>
+      <p><b>Status:</b> in progress.</p>
+      <p>A practical Web3 program organized around building and presenting an on-chain product on Monad. I am currently working through the builder track before committing to a final product direction.</p>
+      <p><a href="https://web3intern.xyz/zh/">Program handbook</a></p>
     </td>
   </tr>
 </table>
@@ -87,7 +94,15 @@
       <img src="https://img.shields.io/badge/UniApp-2B9939?style=flat-square&logoColor=white" alt="UniApp" />
       <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
       <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black" alt="GSAP" />
-      <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /></p>
+      <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+      <img src="https://img.shields.io/badge/Ant%20Design-0170FE?style=flat-square&logo=antdesign&logoColor=white" alt="Ant Design" />
+      <img src="https://img.shields.io/badge/Pinia-FFD859?style=flat-square&logoColor=black" alt="Pinia" /></p>
+      <p><b>Node.js / real-time</b><br />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+      <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+      <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO" />
+      <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
+      <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest" /></p>
       <p><b>Java / Spring</b><br />
       <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
       <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
@@ -97,17 +112,37 @@
       <img src="https://img.shields.io/badge/Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Gateway" />
       <img src="https://img.shields.io/badge/OpenFeign-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="OpenFeign" />
       <img src="https://img.shields.io/badge/Sentinel-E65C33?style=flat-square&logoColor=white" alt="Sentinel" />
-      <img src="https://img.shields.io/badge/Seata-1890FF?style=flat-square&logoColor=white" alt="Seata" /></p>
+      <img src="https://img.shields.io/badge/Seata-1890FF?style=flat-square&logoColor=white" alt="Seata" />
+      <img src="https://img.shields.io/badge/Dubbo-2E6BE6?style=flat-square&logo=apache&logoColor=white" alt="Apache Dubbo" />
+      <img src="https://img.shields.io/badge/FreeMarker-0050B2?style=flat-square&logo=apachefreemarker&logoColor=white" alt="FreeMarker" /></p>
+      <p><b>AI / agents</b><br />
+      <img src="https://img.shields.io/badge/Spring%20AI-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring AI" />
+      <img src="https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logoColor=white" alt="LangChain4j" />
+      <img src="https://img.shields.io/badge/LangGraph4j-334155?style=flat-square&logoColor=white" alt="LangGraph4j" />
+      <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white" alt="Retrieval-Augmented Generation" />
+      <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logoColor=white" alt="Model Context Protocol" />
+      <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="Qwen / DashScope" /></p>
+      <p><b>Distributed systems</b><br />
+      <img src="https://img.shields.io/badge/RPC-0F766E?style=flat-square&logoColor=white" alt="RPC" />
+      <img src="https://img.shields.io/badge/Vert.x-782A90?style=flat-square&logo=eclipsevertica&logoColor=white" alt="Vert.x" />
+      <img src="https://img.shields.io/badge/etcd-419EDA?style=flat-square&logo=etcd&logoColor=white" alt="etcd" />
+      <img src="https://img.shields.io/badge/ZooKeeper-D4A017?style=flat-square&logo=apache&logoColor=white" alt="Apache ZooKeeper" /></p>
       <p><b>Data / middleware</b><br />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
       <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
       <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
       <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elasticsearch" />
       <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" /></p>
+      <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+      <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite / sql.js" />
+      <img src="https://img.shields.io/badge/PGVector-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PGVector" />
+      <img src="https://img.shields.io/badge/ShardingSphere-1E6BB8?style=flat-square&logo=apache&logoColor=white" alt="Apache ShardingSphere" /></p>
       <p><b>Python / API</b><br />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /></p>
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+      <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic" />
+      <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
+      <img src="https://img.shields.io/badge/httpx-1F2937?style=flat-square&logoColor=white" alt="httpx" /></p>
       <p><b>Systems / inference</b><br />
       <img src="https://img.shields.io/badge/vLLM-1F2937?style=flat-square&logoColor=white" alt="vLLM" />
       <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-7C3AED?style=flat-square&logoColor=white" alt="HIP / ROCm" />
@@ -140,7 +175,7 @@
 
 ---
 
-## 📊 GitHub stats
+## GitHub stats
 
 <table width="100%">
   <tr>
@@ -153,7 +188,7 @@
     <td width="40%" align="center" valign="top">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d&card_width=320" />
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0&card_width=320" alt="Top languages" />
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&count_private=true&hide_border=false&border_color=d1d9e0&card_width=320" alt="Top languages" />
       </picture>
     </td>
   </tr>
@@ -161,18 +196,19 @@
 
 ---
 
-## 📦 Classic project
+## Classic project
 
 <table width="100%">
   <tr>
     <td width="65%" valign="top">
       <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO: DAO treasury assistant</a></h3>
-      <p><i>A hackathon project for preparing, checking, approving, and sending DAO payments.</i></p>
-      <p>AgentCFO reads contribution records and budget rules, creates payment plans, runs deterministic risk checks, waits for human approval, and sends approved payouts through the <strong>Cobo Agentic Wallet (CAW)</strong>. It creates an audit report for each run.</p>
+      <p>AgentCFO is a hackathon prototype for preparing and approving DAO treasury payments through the Cobo Agentic Wallet.</p>
       <ul>
         <li><b>Hackathon track:</b> Cobo · Agentic Economy × CAW</li>
-        <li><b>My role:</b> frontend lead for the landing page and console demo</li>
-        <li><b>Tested:</b> two Sepolia / SETH payouts covering an external payment and an internal transfer</li>
+        <li><b>My role:</b> frontend lead; built the landing page and the operator console used in the demo</li>
+        <li><b>Flow:</b> contribution records and budget rules → payment plan → deterministic checks → human approval → payout and audit report</li>
+        <li><b>Verification:</b> two Sepolia / SETH payouts, covering an external payment and an internal transfer</li>
+        <li><b>Stack:</b> Next.js, TypeScript, FastAPI, Cobo CAW</li>
       </ul>
       <p><a href="https://agentcfo-frontend.vercel.app/">Live demo</a> · <a href="https://github.com/San-Y108/agent-cfo">Repository</a></p>
       <p>
@@ -195,18 +231,18 @@
 
 ---
 
-## 📖 What I'm learning
+## What I'm learning
 
-- <b>Systems / inference:</b> vLLM scheduler and attention backends, decode-bound kernel profiling on gfx936, and TTFT / TPOT / throughput trade-offs under fixed SLAs
-- <b>Scientific compute &amp; operators:</b> Agent-assisted PINN / GNN / FNO-style model work and operator engineering on Biren GPU
-- <b>OS / multi-device:</b> heterogeneous scheduling, cross-device communication, and perception data-flow for system-side AI efficiency (HarmonyOS side)
-- <b>Web3:</b> Smart Account and Session Key patterns, Monad on-chain product loops, and the gap between testnet demos and mainnet-grade UX
-- <b>AI-assisted development:</b> turning one-off prompts into reusable Skills and MCP tools, and review loops that catch my own mistakes
-- <b>Frontend:</b> shipping and maintaining a Next.js app instead of rebuilding starters every time
+- <b>Java and Python business systems:</b> service boundaries, persistence, caching, deployment, and the maintenance work expected in a backend or AI application engineering internship.
+- <b>Agent Engineering:</b> tool calling, RAG, MCP, context design, evaluations, and the repository harness needed to make agent output reviewable.
+- <b>Systems and inference:</b> vLLM scheduling, attention backends, gfx936 kernel profiling, and TTFT, TPOT, throughput trade-offs under fixed SLAs.
+- <b>Scientific computing:</b> agent-assisted PINN, GNN, and FNO-style workloads plus operator engineering on Biren GPU.
+- <b>Operating systems and devices:</b> heterogeneous scheduling, cross-device communication, and perception data flow for system-side AI.
+- <b>Web3:</b> Smart Accounts, Session Keys, Monad product development, and the gap between a testnet demo and production UX.
 
 ---
 
-## 📈 Activity
+## Activity
 
 <p align="center">
   <picture>
@@ -217,9 +253,7 @@
 
 ---
 
-## 📫 Contact
-
-<p align="center"><i>You can reach me by email or through any of the links below.</i></p>
+## Contact
 
 <p align="center">
   <a href="mailto:laiyif68@gmail.com"><img height="42" width="42" src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" title="Email" /></a>
