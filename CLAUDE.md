@@ -12,8 +12,10 @@ There is no build system, package manager, test suite, or linter in this reposit
 
 ## Development workflow
 
-- **Source of truth for the published profile:** `README.md`.
-- **Local preview:** `preview-profile.html` is a standalone HTML file that mirrors the README layout using the same `assets/` files. Open it directly in a browser to check visual changes before updating `README.md`.
+- **Source of truth for the published profile:** `README.md` (English; GitHub profile page).
+- **Chinese mirror:** `README.zh.md` — same structure/facts as `README.md` on the current branch (local review only).
+- **Local preview:** `preview-profile.html` (EN) and `preview-profile.zh.html` (ZH). Open both together with `open-previews.bat` / `open-previews.ps1`. Keep each preview paired with its README.
+- **Bilingual sync:** On any branch, EN↔ZH must stay aligned with **that branch’s** English files, not another branch’s Chinese. Change structure/facts/links in both languages in the same edit.
 - **Asset paths:** Use relative paths (e.g., `./assets/v9-banner.gif`) in `README.md` so they resolve correctly on GitHub. External badges and images use HTTPS URLs.
 - **Copy style:** Write in first person and use specific, restrained language. Avoid slogans, promotional adjectives, and AI filler. Use `humanizer-output-style` as the editing reference.
 
@@ -34,8 +36,11 @@ There is no build system, package manager, test suite, or linter in this reposit
 ## Repository structure
 
 ```text
-README.md                      # Public GitHub profile content
-preview-profile.html           # Local preview of the README layout (not published)
+README.md                      # Public GitHub profile content (EN)
+README.zh.md                   # Chinese mirror for local review (not the GitHub profile page)
+preview-profile.html           # Local EN preview
+preview-profile.zh.html        # Local ZH preview
+open-previews.bat / .ps1       # Open EN + ZH previews together
 CONTEXT.md                     # Project context, audience, constraints, and decisions
 LANGUAGE.md                    # Glossary and naming conventions for the profile
 docs/adr/                      # Architecture Decision Records

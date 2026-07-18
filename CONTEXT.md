@@ -39,18 +39,27 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 ## Development Flow
 
-1. Edit `README.md`.
-2. Verify visually via `preview-profile.html` (open directly or serve locally).
-3. For risky HTML/table changes, verify with `gh api markdown` before pushing.
-4. Commit atomic changes with Conventional Commits.
+1. Edit `README.md` (English; published GitHub profile).
+2. Mirror the same structure and facts in `README.zh.md` (Chinese; local review only — GitHub does not render it as the profile).
+3. Keep `preview-profile.html` and `preview-profile.zh.html` in sync with their README counterparts. Open both via `open-previews.bat` / `open-previews.ps1`.
+4. For risky HTML/table changes, verify with `gh api markdown` before pushing.
+5. Commit atomic changes with Conventional Commits.
+
+## Bilingual sync
+
+- **Same branch, same content:** ZH must match this branch’s EN (sections, facts, links, badge rows, assets). Do not sync ZH against another branch.
+- **Pairs:** `README.md` ↔ `README.zh.md`; `preview-profile.html` ↔ `preview-profile.zh.html`.
+- **Published surface:** only `README.md` is the GitHub profile. Chinese files are for review and repo-side documentation.
 
 ## Active Decisions
 
 - Mascot uses a white-background looping GIF instead of a transparent PNG. See `docs/adr/0001-mascot-white-background-gif.md`.
 - The hero remains PNG for repository-format consistency. It is downscaled from 1122×1402 to 800×1000 with lossless PNG encoding, reducing its size without changing the visible composition.
-- Quick links (AgentCFO, my-blogs, AI Web3 Study Track, Blog, Digital Garden) sit below the intro table, not above the tagline, so first-time visitors read the tagline and intro before hitting a link row.
+- Project quick links sit below the intro table and point at deployed URLs only (AgentCFO demo, Blog, Digital Garden), not GitHub repos or contest sites.
 - The Digital Garden link appears in both Quick links and the Contact icon row for consistency; it is not treated as a top-tier destination like AgentCFO.
-- Tech stack uses soft pastel shields.io `for-the-badge` pills only (fixed pixel size). pure `cdn.simpleicons.org` SVG icons were dropped: GitHub often ignores `height` on those SVGs so they render enormous. AI tools still read "Docs as Code."
+- Tech stack badges use shields.io `flat-square` with brand fill colors. No AI tools row (tools stay in intro copy). Trim concept badges (Smart Accounts, Session Keys, Skills) and universal noise (Git, GitHub). Include Java enterprise path cores from the public "小坏说 Java" job-ready map; WeChat Pay / Alipay stay out of badge rows.
 - The four `highlight-*.png` illustrations were removed from both "What I've been working on" and `assets/`. They restated what the adjacent text already said and added scroll length without new information. The two cards that leaned on their image for detail (my-blogs, study track) got a sentence of extra specifics instead, pulled from facts already stated elsewhere in the README (my-blogs' tech badges, the study track's project list).
 - Lead Cup 2026 (vLLM on Hygon DCU / gfx936) sits in "What I've been working on" as the fourth card, replacing "Study notes and course work". Study notes stay under Projects (AI Web3 Study Track) so the high-signal contest work gets above-the-fold space without a second Competitions section.
-- Competition links use both `https://github.com/Aafff623/vllm-cscc-leadcup` (mirror, currently private) and the GitLab submission `https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3`. Profile copy states measurable facts even if a visitor cannot open private remotes.
+- Competition links use both `https://github.com/Aafff623/vllm-cscc-leadcup` (mirror, currently private) and the GitLab submission `https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3`. Profile copy states measurable facts even if a visitor cannot open private remotes. Lead Cup card uses **Result** for the best-run line: 87.7839/100 · #26 / 132 (best run on the leaderboard, not a final award placement).
+- Summer 2026: section renamed to **Competitions** (Lead Cup, AI4S 科探, tentative HarmonyOS C4, Monad Builder Camp Week 2). AI-assisted workflows and full-stack cards removed from that grid to avoid overlapping "What I'm learning". Learning lists topics only. No teammate PII in the published README.
+- **Classic project** shows AgentCFO alone. Digital Garden / study track / coursework are not listed as project cards; live sites stay in Project quick links.

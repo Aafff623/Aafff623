@@ -3,12 +3,11 @@
 ## Profile sections
 
 - **Intro**: Banner, wordmark, tagline, and the "who I am" table with the hero image.
-- **Quick links**: A single line below the intro table linking representative project repositories plus the Blog and Digital Garden. Placed after the intro so visitors read the tagline first.
-- **What I've been working on**: Four cards covering AI-assisted workflows, AgentCFO and Web3, full-stack projects, and Lead Cup vLLM optimization on Hygon DCU (replaced the weaker study-notes card; study track remains under Projects).
-- **Tech stack**: Soft pastel rounded `for-the-badge` shields (light body, brand logo accents) by category. Mascot stays on the right.
-- **Projects**: AgentCFO plus Other projects (Digital Garden, AI Web3 Study Track).
-- **What I'm learning**: Systems/inference (vLLM, Hygon DCU), Web3, AI-assisted development, and frontend.
-- **Goals for 2026**: Four concrete goals for projects, reusable tools, contests (hackathons and system contests), and writing.
+- **Project quick links**: Deployed project URLs only (AgentCFO demo, Blog, Digital Garden), below the intro table.
+- **Competitions**: Four cards — Lead Cup (vLLM / Hygon); AI4S 书生国智科探挑战赛 (模型与算子); HarmonyOS C4 (操作系统智能创新, tentative); Monad Builder Camp (Week 2). No workflows / full-stack cards here.
+- **Tech stack**: Compact brand-color `flat-square` shields by category. No AI tools row. Mascot stays on the right.
+- **Classic project**: AgentCFO only. Other / coursework cards stay off the profile; Blog and Digital Garden remain in Project quick links.
+- **What I'm learning**: Topic list only (systems, scientific compute/operators, OS/multi-device, Web3, AI tools, frontend) — no contest registration status.
 - **Activity**: GitHub contribution graph.
 - **Contact**: Icon links for email, GitHub, X, Bilibili, Telegram, blog, Digital Garden, YouTube, and Buy Me a Coffee.
 
@@ -26,6 +25,12 @@
 - **ADRs**: Short records explaining decisions that future edits need to preserve.
 - **Docs as code**: Keeping `CONTEXT.md`, `LANGUAGE.md`, and ADRs alongside the profile so edits do not depend on chat history. Shown as a badge instead of "Matt Pocock Skills," which is an internal workflow reference with no meaning to an outside reader.
 
+## Locales
+
+- **EN:** `README.md` + `preview-profile.html` — published GitHub profile is English.
+- **ZH:** `README.zh.md` + `preview-profile.zh.html` — Simplified Chinese mirror for review.
+- Keep section order, facts, links, and badge rows identical across locales on the **same branch**.
+
 ## Copy conventions
 
 - Use first person for the profile and name the work directly.
@@ -33,8 +38,9 @@
 - Use sentence-case headings. Light section-title emoji is allowed when the profile needs visual pacing; keep body copy emoji-sparse.
 - Do not call an image "evidence" unless its data matches the linked source.
 - Avoid em dashes, marketing adjectives, and generic AI phrases.
+- Chinese copy should stay factual and restrained like the English — not a looser marketing rewrite.
 
 ## Badge conventions
 
-- Tech stack badges use `style=flat-square`.
+- Tech stack badges use `style=flat-square` with brand fill colors (not pastel `for-the-badge`).
 - Project technology badges use `style=plastic`.
