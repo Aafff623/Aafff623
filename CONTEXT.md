@@ -12,8 +12,8 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 ## Identity and voice
 
-- **Profile:** Second-year Software Engineering student building AI-assisted workflows, web applications, and Web3 prototypes.
-- **Intro line:** "Software engineering student learning by building, testing, and writing things down."
+- **Profile:** Second-year Software Engineering student at North University of China, working toward a Java/Python + Agent Engineering internship.
+- **Tagline:** "Software Engineering student · Java & Python · Agent Engineering" (rendered under the wordmark).
 - **Tone:** Direct, specific, and modest. Use first person and keep emoji sparse.
 - **Evidence:** Prefer concrete details, repository links, and transaction records over self-assigned labels.
 - **Editing reference:** Apply the anti-AI patterns from `humanizer-output-style`, adapted for an English profile.
@@ -34,7 +34,8 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 | Wordmark (light) | `./assets/brand-threetwoa.svg` | Default profile wordmark |
 | Wordmark (dark) | `./assets/brand-threetwoa-dark.svg` | Dark-theme wordmark selected with `<picture>` |
 | Hero | `./assets/hero-knight.png` | Intro table right cell; optimized 800×1000 RGB PNG |
-| Mascot | `./assets/mascot.gif` | Tech Stack table right cell, white-background looping GIF |
+| Mascot (light) | `./assets/mascot.gif` | Tech Stack right cell, light-theme 3D knight looping GIF |
+| Mascot (dark) | `./assets/mascot-dark.gif` | Dark-theme mascot selected with `<picture>` (see ADR 0002) |
 | Badges | HTTPS shields.io / simpleicons.org URLs | Tech stack and social link icons |
 
 ## Development Flow
@@ -53,7 +54,8 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 ## Active Decisions
 
-- Mascot uses a white-background looping GIF instead of a transparent PNG. See `docs/adr/0001-mascot-white-background-gif.md`.
+- **Note:** Entries are chronological. Where an older entry names a section that has since been renamed or removed (e.g., "What I've been working on", "Projects", "Other projects"), the current structure is the section list in `LANGUAGE.md` and `CLAUDE.md`: Agent workflow, Competitions, Tech stack, GitHub stats, Classic project, What I'm learning, Activity, Contact.
+- Mascot is a 3D chibi knight shipped as light (`mascot.gif`) and dark (`mascot-dark.gif`) GIFs, switched with `<picture>`. See `docs/adr/0002-3d-chibi-knight-light-dark-gif.md` (supersedes ADR 0001).
 - The hero remains PNG for repository-format consistency. It is downscaled from 1122×1402 to 800×1000 with lossless PNG encoding, reducing its size without changing the visible composition.
 - Project quick links sit below the intro table and point at deployed URLs only (AgentCFO demo, Blog, Digital Garden), not GitHub repos or contest sites.
 - The Digital Garden link appears in both Quick links and the Contact icon row for consistency; it is not treated as a top-tier destination like AgentCFO.

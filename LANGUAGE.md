@@ -4,10 +4,10 @@
 
 - **Intro**: Banner, wordmark, tagline, and the "who I am" table with the hero image.
 - **Project quick links**: Deployed project URLs only (AgentCFO demo, Blog, Digital Garden), below the intro table.
-- **Competitions**: Four cards — Lead Cup (vLLM / Hygon); AI4S 书生国智科探挑战赛 (模型与算子); HarmonyOS C4 (操作系统智能创新, tentative); Monad Builder Camp (Week 2). No workflows / full-stack cards here.
+- **Competitions**: Four cards — Lead Cup (vLLM / Hygon); AI4S 书生国智科探挑战赛 (模型与算子); HarmonyOS C4 (操作系统智能创新, tentative); Monad Builder Camp (in progress). No workflows / full-stack cards here.
 - **Tech stack**: Compact brand-color `flat-square` shields by category. No AI tools row. Mascot stays on the right.
 - **Classic project**: AgentCFO only. Other / coursework cards stay off the profile; Blog and Digital Garden remain in Project quick links.
-- **What I'm learning**: Topic list only (systems, scientific compute/operators, OS/multi-device, Web3, AI tools, frontend) — no contest registration status.
+- **What I'm learning**: Topic list only — Java/Python business systems, Agent Engineering, systems & inference, scientific computing, OS & devices, Web3. No contest registration status.
 - **Activity**: GitHub contribution graph.
 - **Contact**: Icon links for email, GitHub, X, Bilibili, Telegram, blog, Digital Garden, YouTube, and Buy Me a Coffee.
 

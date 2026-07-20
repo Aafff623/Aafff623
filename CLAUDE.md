@@ -21,35 +21,43 @@ There is no build system, package manager, test suite, or linter in this reposit
 
 ## Content from README.md
 
-- **Profile:** Second-year Software Engineering student working on AI-assisted development, web applications, and Web3.
-- **Stack:** Claude Code, Kiro, Codex, MCP, and reusable Skills for development work; React, Vue, Tailwind CSS, and related frontend tools; Java Spring Boot and FastAPI on the backend.
-- **Projects:**
-  - `AgentCFO`: Web3 hackathon team project; frontend lead for the landing page and console demo.
-  - `threetwoa-digital-garden` (Other projects): Personal digital garden for notes, photo walls, footprints, and archives; Next.js + Vercel.
-  - `my-blogs`: Still referenced under full-stack work and Quick links; personal blog based on an open-source template.
-  - `AI Web3 Study Track`: Notes, exercises, and hackathon work from an AI and Web3 cohort.
-  - `vllm-cscc-leadcup` (also in "What I've been working on"): 2026 Lead Cup Problem 1; kernel-level vLLM optimization on Hygon DCU (gfx936) for Qwen3.5-27B; best score 87.7839/100. Dual links: GitHub mirror + GitLab submission.
-- **Writing:** [Blog](https://my-blogs-roan-seven.vercel.app/) and [Digital Garden](https://threetwoa-digital-garden.vercel.app/), linked from a Quick links line below the intro table and from the Contact icon row.
-- **Workflow model:** GPT is mainly used for early exploration, Claude Code and Kiro for implementation, and Codex for a second review. The author decides what to keep and what to change.
-- **Contact:** GitHub [@Aafff623](https://github.com/Aafff623).
+- **Profile:** Second-year Software Engineering student at North University of China, aiming for a Java/Python + Agent Engineering internship. Tagline: "Software Engineering student · Java & Python · Agent Engineering".
+- **Section order:** Intro (banner, wordmark, self-intro table + hero, quick links: Email/Blog/Digital Garden) → Agent workflow → Competitions → Tech stack → GitHub stats → Classic project → What I'm learning → Activity → Contact.
+- **Agent workflow:** Coding agents handle exploration, research, repetitive edits, and first-pass implementation; the harness (scoped tasks, repo rules, reproducible commands, tests, docs, diff review) matters more than the prompt. The author owns design decisions and every merge.
+- **Competitions (4 cards):**
+  - `Lead Cup · vLLM on Hygon DCU`: 2026 Lead Cup Problem 1; team 翻斗花园; kernel fusion + decode/prefill routing on Hygon DCU (gfx936) serving Qwen3.5-27B on vLLM 0.18.1. Best run 87.7839/100 · #26/132. Dual links: GitLab submission + GitHub mirror (mirror currently private).
+  - `AI4S · 书生国智科探挑战赛`: 模型与算子 track (Shanghai AI Lab × Biren); registered and preparing; no public deliverable yet.
+  - `HarmonyOS · C4`: OS-intelligence direction (heterogeneous scheduling, cross-device); entry not yet confirmed.
+  - `Monad Builder Camp`: in progress; Web3 builder track.
+- **Tech stack:** ~70 shields.io `flat-square` badges across 11 categories (Frontend, Node.js/real-time, Java/Spring, AI/agents, Distributed systems, Data/middleware, Python/API, Systems/inference, Web3, DevOps/observability). No AI-tools row. Mascot GIF in the right cell.
+- **Classic project:** `AgentCFO` (repo under teammate `San-Y108/agent-cfo`): hackathon prototype for preparing/approving DAO treasury payments via Cobo Agentic Wallet; author was frontend lead (landing page + operator console); verified with two Sepolia/SETH payouts. Stack: Next.js, TypeScript, FastAPI, Cobo CAW.
+- **What I'm learning:** Java/Python business systems, Agent Engineering, systems & inference, scientific computing, OS & devices, Web3 (topics only, no registration status).
+- **Writing:** [Blog](https://my-blogs-roan-seven.vercel.app/) and [Digital Garden](https://threetwoa-digital-garden.vercel.app/), linked from the intro quick links and the Contact icon row.
+- **Contact:** Email, GitHub [@Aafff623](https://github.com/Aafff623), X, Bilibili, Telegram, Blog, Digital Garden, YouTube, Buy Me a Coffee.
 
 ## Repository structure
 
 ```text
 README.md                      # Public GitHub profile content (EN)
 README.zh.md                   # Chinese mirror for local review (not the GitHub profile page)
-preview-profile.html           # Local EN preview
-preview-profile.zh.html        # Local ZH preview
+preview-profile.html           # Local EN preview (saved GitHub render)
+preview-profile.zh.html        # Local ZH preview (saved GitHub render)
 open-previews.bat / .ps1       # Open EN + ZH previews together
 CONTEXT.md                     # Project context, audience, constraints, and decisions
 LANGUAGE.md                    # Glossary and naming conventions for the profile
-docs/adr/                      # Architecture Decision Records
+AGENTS.md                      # Cross-tool entry point for AI agents
+CONTRIBUTING.md / SECURITY.md / LICENSE  # Community and maintenance files
+docs/
+  adr/                         # Architecture Decision Records (0001 superseded by 0002)
+  dark-mode-checklist.md       # Dark-mode capability notes and to-dos
+  tech-stack-3d-mascot-plan.md # 3D mascot production plan (implemented)
 assets/
   v9-banner.gif                # Animated banner used by README and preview
   brand-threetwoa.svg          # Light-theme wordmark
   brand-threetwoa-dark.svg     # Dark-theme wordmark selected with <picture>
-  hero-knight.png              # Optimized 800×1000 intro hero image
-  mascot.gif                   # Animated mascot beside the Tech Stack section
+  hero-knight.png              # Intro hero image (~800×1000 PNG)
+  mascot.gif                   # Light-theme animated mascot (Tech Stack section)
+  mascot-dark.gif              # Dark-theme animated mascot selected with <picture>
 ```
 
 `assets/` contains only files currently used by the published profile. `.scratch/` is ignored, disposable local workspace for generated frames, compression candidates, and visual checks. Do not reference `.scratch/` from `README.md` or tracked documentation; durable production decisions belong in `CONTEXT.md` or an ADR.
