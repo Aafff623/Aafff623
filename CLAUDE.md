@@ -59,7 +59,7 @@ assets/
   v9-banner.gif                # Animated banner used by README and preview
   brand-threetwoa.svg          # Light-theme wordmark
   brand-threetwoa-dark.svg     # Dark-theme wordmark selected with <picture>
-  hero-knight.png              # Intro hero image (~800×1000 PNG)
+  hero-knight.webp             # Intro hero image (800×1000 WebP, see ADR 0003)
   mascot.gif                   # Light-theme animated mascot (Tech Stack section)
   mascot-dark.gif              # Dark-theme animated mascot selected with <picture>
 ```

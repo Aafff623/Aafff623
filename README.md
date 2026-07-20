@@ -19,7 +19,7 @@
       <p>Outside code, I keep a blog and a digital garden, watch anime, and write down whatever I do not want to forget.</p>
     </td>
     <td width="40%" align="center" valign="middle">
-      <img src="./assets/hero-knight.png" width="92%" alt="threetwoa hero" />
+      <img src="./assets/hero-knight.webp" width="92%" alt="threetwoa hero" />
     </td>
   </tr>
 </table>

@@ -33,7 +33,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 | Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, bright palette) |
 | Wordmark (light) | `./assets/brand-threetwoa.svg` | Default profile wordmark |
 | Wordmark (dark) | `./assets/brand-threetwoa-dark.svg` | Dark-theme wordmark selected with `<picture>` |
-| Hero | `./assets/hero-knight.png` | Intro table right cell; optimized 800×1000 RGB PNG |
+| Hero | `./assets/hero-knight.webp` | Intro table right cell; 800×1000 WebP q90 (see ADR 0003) |
 | Mascot (light) | `./assets/mascot.gif` | Tech Stack right cell, light-theme 3D knight looping GIF |
 | Mascot (dark) | `./assets/mascot-dark.gif` | Dark-theme mascot selected with `<picture>` (see ADR 0002) |
 | Badges | HTTPS shields.io / simpleicons.org URLs | Tech stack and social link icons |
@@ -56,7 +56,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 - **Note:** Entries are chronological. Where an older entry names a section that has since been renamed or removed (e.g., "What I've been working on", "Projects", "Other projects"), the current structure is the section list in `LANGUAGE.md` and `CLAUDE.md`: Agent workflow, Competitions, Tech stack, GitHub stats, Classic project, What I'm learning, Activity, Contact.
 - Mascot is a 3D chibi knight shipped as light (`mascot.gif`) and dark (`mascot-dark.gif`) GIFs, switched with `<picture>`. See `docs/adr/0002-3d-chibi-knight-light-dark-gif.md` (supersedes ADR 0001).
-- The hero remains PNG for repository-format consistency. It is downscaled from 1122×1402 to 800×1000 with lossless PNG encoding, reducing its size without changing the visible composition.
+- The hero is served as WebP (`hero-knight.webp`, 800×1000, quality 90, ~90 KB), replacing the earlier ~981 KB PNG. See `docs/adr/0003-hero-webp.md`.
 - Project quick links sit below the intro table and point at deployed URLs only (AgentCFO demo, Blog, Digital Garden), not GitHub repos or contest sites.
 - The Digital Garden link appears in both Quick links and the Contact icon row for consistency; it is not treated as a top-tier destination like AgentCFO.
 - Tech stack badges use shields.io `flat-square` with brand fill colors. No AI tools row (tools stay in intro copy). Trim concept badges (Smart Accounts, Session Keys, Skills) and universal noise (Git, GitHub). Include Java enterprise path cores from the public "小坏说 Java" job-ready map; WeChat Pay / Alipay stay out of badge rows.

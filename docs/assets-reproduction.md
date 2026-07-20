@@ -37,14 +37,18 @@ ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/%04d.png -i .scratch/mas
 Repeat with `frames-dark/` for `mascot-dark.gif`. Then run the acceptance checks
 in the plan (§12) before copying candidates into `assets/`.
 
-## `assets/hero-knight.png` — intro hero
+## `assets/hero-knight.webp` — intro hero
 
-- **Current:** RGB PNG, downscaled from `1122×1402` to `800×1000` (ADR 0001 note).
-- **Format decision:** kept as PNG for repository-format consistency.
+- **Current:** WebP, `800×1000`, quality 90 (~90 KB). See `docs/adr/0003-hero-webp.md`.
+- **Why WebP:** the hero is a gradient-heavy illustration; PNG stored it at ~981 KB with no lossless headroom, while WebP q90 is ~10x smaller at the same size and visually near-identical.
 - **Source not tracked.** The original high-res render lives outside the repo.
-- **Recompression:** losslessly re-optimize, or downscale to display size, keeping
-  PNG. The hero renders at ~40% of a ~900px column (≈360px), so the `800×1000`
-  source is already oversampled; a smaller source is safe for display fidelity.
+- **Regenerate (Pillow):**
+
+```python
+from PIL import Image
+Image.open("<source>.png").convert("RGB").save(
+    "assets/hero-knight.webp", format="WEBP", quality=90, method=6)
+```
 
 ## `assets/v9-banner.gif` — top banner
 

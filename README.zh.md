@@ -19,7 +19,7 @@
       <p>代码之外，我会写博客、养数字花园、看动画，也会把不想忘掉的东西随手记下来。</p>
     </td>
     <td width="40%" align="center" valign="middle">
-      <img src="./assets/hero-knight.png" width="92%" alt="threetwoa hero" />
+      <img src="./assets/hero-knight.webp" width="92%" alt="threetwoa hero" />
     </td>
   </tr>
 </table>

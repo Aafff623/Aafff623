@@ -58,11 +58,11 @@
 - **preview 现状**：表格 `td` padding 正常，暗色下无白底。✅
 
 ### 3.4 白底资产（最大问题源）
-- **问题**：`mascot.gif` / `v9-banner.gif` / `hero-knight.png` 都以白色或浅色为主，暗色模式下会显示为明显的亮色区域。
+- **问题**：`mascot.gif` / `v9-banner.gif` / `hero-knight.webp` 都以白色或浅色为主，暗色模式下会显示为明显的亮色区域。
 - **README 现状**：**无法用 CSS 软化**（GitHub 剥离 style），只能靠 `<picture>` 切换暗色资产。逐个进展：
   - **mascot**：✅ 已制作暗色版 `assets/mascot-dark.gif`，README 与预览均用 `<picture>` 按主题切换。决策见 ADR 0002（取代 ADR 0001）。
   - **v9-banner**：⬜ 仍为单一白底 GIF，暗色下有亮色块（见 §4 待办，成本高）。
-  - **hero-knight**：⬜ 仍为单一浅色 PNG，暗色下偏亮（见 §4 待办，需换底或重出）。
+  - **hero-knight**：⬜ 仍为单一浅色 WebP，暗色下偏亮（见 §4 待办，需换底或重出）。
 - **preview 现状**：白底 GIF 已加圆角 + outline 软化；hero 保持与 README 一致。✅
 
 ### 3.5 外部服务图片（stats / activity graph）
@@ -81,7 +81,7 @@
 - [x] **P1** 为 Activity graph 做 `<picture>` 明暗切换
 - [x] **P2** mascot.gif 暗色版本 — 已交付 `assets/mascot-dark.gif`（3D 骑士，见 ADR 0002）
 - [ ] **P2** v9-banner.gif 暗色版本 — 同上，成本高
-- [ ] **P2** hero-knight.png 暗色版本 — 需要换底色或重新生成
+- [ ] **P2** hero-knight.webp 暗色版本 — 需要换底色或重新生成
 
 ---
 
