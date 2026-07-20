@@ -42,7 +42,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 1. Edit `README.md` (English; published GitHub profile).
 2. Mirror the same structure and facts in `README.zh.md` (Chinese; local review only — GitHub does not render it as the profile).
-3. Keep `preview-profile.html` and `preview-profile.zh.html` in sync with their README counterparts. Open both via `open-previews.bat` / `open-previews.ps1`.
+3. Keep `preview-profile.html` and `preview-profile.zh.html` in sync with their README counterparts (they are **saved GitHub renders**, so regenerate them from GitHub rather than hand-editing badge markup; see `CLAUDE.md`). Open both via `open-previews.bat` / `open-previews.ps1`.
 4. For risky HTML/table changes, verify with `gh api markdown` before pushing.
 5. Commit atomic changes with Conventional Commits.
 

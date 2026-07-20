@@ -15,6 +15,9 @@ There is no build system, package manager, test suite, or linter in this reposit
 - **Source of truth for the published profile:** `README.md` (English; GitHub profile page).
 - **Chinese mirror:** `README.zh.md` — same structure/facts as `README.md` on the current branch (local review only).
 - **Local preview:** `preview-profile.html` (EN) and `preview-profile.zh.html` (ZH). Open both together with `open-previews.bat` / `open-previews.ps1`. Keep each preview paired with its README.
+  - These are **saved GitHub renders** (they contain `camo.githubusercontent.com` proxied URLs and GitHub web components such as `themed-picture` / `markdown-accessiblity-table`), plus a small hand-added dark-mode `<style>` and an EN/中文 switcher — not hand-written HTML mirrors.
+  - **Regenerate** after a README change by re-rendering the README on GitHub and saving the article HTML, then re-adding the `<style>` block and switcher — do not hand-edit badge markup.
+  - They can **drift** from the README because the camo URLs are frozen at capture time (e.g., a stats dark URL may lag). `README.md` remains the source of truth.
 - **Bilingual sync:** On any branch, EN↔ZH must stay aligned with **that branch’s** English files, not another branch’s Chinese. Change structure/facts/links in both languages in the same edit.
 - **Asset paths:** Use relative paths (e.g., `./assets/v9-banner.gif`) in `README.md` so they resolve correctly on GitHub. External badges and images use HTTPS URLs.
 - **Copy style:** Write in first person and use specific, restrained language. Avoid slogans, promotional adjectives, and AI filler. Use `humanizer-output-style` as the editing reference.
@@ -51,6 +54,7 @@ docs/
   adr/                         # Architecture Decision Records (0001 superseded by 0002)
   dark-mode-checklist.md       # Dark-mode capability notes and to-dos
   tech-stack-3d-mascot-plan.md # 3D mascot production plan (implemented)
+  assets-reproduction.md       # How each assets/ file was produced and regenerated
 assets/
   v9-banner.gif                # Animated banner used by README and preview
   brand-threetwoa.svg          # Light-theme wordmark
@@ -69,5 +73,6 @@ This repo follows the Matt Pocock single-context documentation layout:
 - `CONTEXT.md` — project purpose, audience, constraints, asset conventions, and active decisions.
 - `LANGUAGE.md` — glossary for profile sections, assets, workflow terms, and badge conventions.
 - `docs/adr/` — Architecture Decision Records for significant choices (e.g., mascot GIF format).
+- `docs/assets-reproduction.md` — how each `assets/` file was produced and how to regenerate it.
 
 When starting a significant change, align on intent using these docs, then update them as decisions land.
