@@ -32,7 +32,7 @@ There is no build system, package manager, test suite, or linter in this reposit
   - `AI4S · 书生国智科探挑战赛`: 模型与算子 track (Shanghai AI Lab × Biren); registered and preparing; no public deliverable yet.
   - `HarmonyOS · C4`: OS-intelligence direction (heterogeneous scheduling, cross-device); entry not yet confirmed.
   - `Monad Builder Camp`: in progress; Web3 builder track.
-- **Tech stack:** ~70 shields.io `flat-square` badges across 11 categories (Frontend, Node.js/real-time, Java/Spring, AI/agents, Distributed systems, Data/middleware, Python/API, Systems/inference, Web3, DevOps/observability). No AI-tools row. Mascot GIF in the right cell.
+- **Tech stack:** ~43 shields.io `flat-square` badges across 10 categories (Frontend, Node.js/real-time, Java/Spring, AI/agents, Distributed systems, Data/middleware, Python/API, Systems/inference, Web3, DevOps/observability). No AI-tools row. Mascot GIF in the right cell.
 - **Classic project:** `AgentCFO` (repo under teammate `San-Y108/agent-cfo`): hackathon prototype for preparing/approving DAO treasury payments via Cobo Agentic Wallet; author was frontend lead (landing page + operator console); verified with two Sepolia/SETH payouts. Stack: Next.js, TypeScript, FastAPI, Cobo CAW.
 - **What I'm learning:** Java/Python business systems, Agent Engineering, systems & inference, scientific computing, OS & devices, Web3 (topics only, no registration status).
 - **Writing:** [Blog](https://my-blogs-roan-seven.vercel.app/) and [Digital Garden](https://threetwoa-digital-garden.vercel.app/), linked from the intro quick links and the Contact icon row.
