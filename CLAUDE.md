@@ -25,18 +25,18 @@ There is no build system, package manager, test suite, or linter in this reposit
 ## Content from README.md
 
 - **Profile:** Second-year Software Engineering student at North University of China, aiming for a Java/Python + Agent Engineering internship. Tagline: "Software Engineering student · Java & Python · Agent Engineering".
-- **Section order:** Intro (banner, wordmark, self-intro table + hero, quick links: Email/Blog/Digital Garden) → Agent workflow → Competitions → Tech stack → GitHub stats → Classic project → What I'm learning → Activity → Contact.
+- **Section order:** Intro (banner, wordmark, self-intro table + hero, quick links: Email/Blog/Digital Garden) → Contact → Agent workflow → Tech stack → Competitions → GitHub stats → Classic project → What I'm learning → Activity.
 - **Agent workflow:** Coding agents handle exploration, research, repetitive edits, and first-pass implementation; the harness (scoped tasks, repo rules, reproducible commands, tests, docs, diff review) matters more than the prompt. The author owns design decisions and every merge.
 - **Competitions (4 cards):**
   - `Lead Cup · vLLM on Hygon DCU`: 2026 Lead Cup Problem 1; team 翻斗花园; kernel fusion + decode/prefill routing on Hygon DCU (gfx936) serving Qwen3.5-27B on vLLM 0.18.1. Best run 87.7839/100 · #26/132. Dual links: GitLab submission + GitHub mirror (mirror currently private).
   - `AI4S · 书生国智科探挑战赛`: 模型与算子 track (Shanghai AI Lab × Biren); registered and preparing; no public deliverable yet.
   - `HarmonyOS · C4`: OS-intelligence direction (heterogeneous scheduling, cross-device); entry not yet confirmed.
   - `Monad Builder Camp`: in progress; Web3 builder track.
-- **Tech stack:** ~43 shields.io `flat-square` badges across 10 categories (Frontend, Node.js/real-time, Java/Spring, AI/agents, Distributed systems, Data/middleware, Python/API, Systems/inference, Web3, DevOps/observability). No AI-tools row. Mascot GIF in the right cell.
+- **Tech stack:** ~53 shields.io `flat-square` badges across 10 categories (Frontend, Node.js/real-time, Java/Spring, AI/agents, Distributed systems, Data/middleware, Python/API, Systems/inference, Web3, DevOps/observability). Includes 2026-08 course-aligned adds (UniApp, Gateway, OpenFeign, Sentinel, Seata, Kafka, MinIO, Harbor, SkyWalking, Grafana). No AI-tools row. Mascot GIF in the right cell.
 - **Classic project:** `AgentCFO` (repo under teammate `San-Y108/agent-cfo`): hackathon prototype for preparing/approving DAO treasury payments via Cobo Agentic Wallet; author was frontend lead (landing page + operator console); verified with two Sepolia/SETH payouts. Stack: Next.js, TypeScript, FastAPI, Cobo CAW.
 - **What I'm learning:** Java/Python business systems, Agent Engineering, systems & inference, scientific computing, OS & devices, Web3 (topics only, no registration status).
-- **Writing:** [Blog](https://my-blogs-roan-seven.vercel.app/) and [Digital Garden](https://threetwoa-digital-garden.vercel.app/), linked from the intro quick links and the Contact icon row.
-- **Contact:** Email, GitHub [@Aafff623](https://github.com/Aafff623), X, Bilibili, Telegram, Blog, Digital Garden, YouTube, Buy Me a Coffee.
+- **Writing:** [Blog](https://my-blogs-roan-seven.vercel.app/) and [Digital Garden](https://threetwoa-digital-garden.vercel.app/), linked from the intro quick links.
+- **Contact:** GitHub [@Aafff623](https://github.com/Aafff623), X, Bilibili, Telegram, YouTube.
 
 ## Repository structure
 
