@@ -28,7 +28,7 @@ Ship two pre-composited GIFs and switch them by theme with `<picture>`:
 </picture>
 ```
 
-- **Encoding:** 360×360, 18 fps, ~73 frames, one optimized global palette. Shipped sizes: light ~605 KB, dark ~657 KB — within the plan's ≤1.5 MB budget.
+- **Encoding:** 320×320, 18 fps, ~73 frames, 64-color palette (A-tier compress). Shipped sizes: light ~442 KB, dark ~478 KB — within the plan's ≤1.5 MB budget.
 
 ## Consequences
 

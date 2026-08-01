@@ -33,6 +33,7 @@
 - [x] 字标 `<picture>` 切换：亮色 `brand-threetwoa.svg` ↔ 暗色 `brand-threetwoa-dark.svg`
 - [x] 新增 `assets/brand-threetwoa-dark.svg`（浅蓝渐变，适配暗色背景）
 - [x] 吉祥物 `<picture>` 切换：亮色 `mascot.gif` ↔ 暗色 `mascot-dark.gif`（3D 骑士，见 ADR 0002）
+- [x] Activity 由第三方活动曲线图替换为本地贡献热力图 GIF（亮/暗，见 ADR 0004），不再依赖外部服务
 
 ### 新增资产
 - [x] `assets/brand-threetwoa-dark.svg`（暗色字标）
@@ -65,9 +66,9 @@
   - **hero-knight**：⬜ 仍为单一浅色 WebP，暗色下偏亮（见 §4 待办，需换底或重出）。
 - **preview 现状**：白底 GIF 已加圆角 + outline 软化；hero 保持与 README 一致。✅
 
-### 3.5 外部服务图片（stats / activity graph）
-- **问题**：统计卡和活动图需要分别提供亮色、暗色参数，单一 URL 无法跟随主题。
-- **README 现状**：Stats、Top Languages 和 Activity graph 均已使用 `<picture>` + 两套 URL。✅
+### 3.5 外部服务图片（stats / top langs）
+- **问题**：统计卡需要分别提供亮色、暗色参数，单一 URL 无法跟随主题。
+- **README 现状**：Stats、Top Languages 已使用 `<picture>` + 两套 URL。Activity 已改为本地贡献热力图 GIF（见 ADR 0004），不再是外部服务图。✅
 - **preview 现状**：与 README 使用相同的 `<picture>` 结构。✅
 
 ---

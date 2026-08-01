@@ -4,16 +4,17 @@
 
 - **Intro**: Banner, wordmark, tagline, and the "who I am" table with the hero image.
 - **Project quick links**: Deployed project URLs only (AgentCFO demo, Blog, Digital Garden), below the intro table.
-- **Competitions**: Four cards — Lead Cup (vLLM / Hygon); AI4S 书生国智科探挑战赛 (模型与算子); HarmonyOS C4 (操作系统智能创新, tentative); Monad Builder Camp (in progress). No workflows / full-stack cards here.
+- **Contact**: Icon links for GitHub, X, Bilibili, Telegram, and YouTube — placed above Agent workflow.
 - **Tech stack**: Compact brand-color `flat-square` shields by category. No AI tools row. Mascot stays on the right.
+- **Competitions**: Four cards — Lead Cup (vLLM / Hygon); AI4S 书生国智科探挑战赛 (模型与算子); HarmonyOS C4 (操作系统智能创新, tentative); Monad Builder Camp (in progress). No workflows / full-stack cards here.
 - **Classic project**: AgentCFO only. Other / coursework cards stay off the profile; Blog and Digital Garden remain in Project quick links.
 - **What I'm learning**: Topic list only — Java/Python business systems, Agent Engineering, systems & inference, scientific computing, OS & devices, Web3. No contest registration status.
-- **Activity**: GitHub contribution graph.
-- **Contact**: Icon links for email, GitHub, X, Bilibili, Telegram, blog, Digital Garden, YouTube, and Buy Me a Coffee.
+- **Activity**: Animated contribution heatmap — a snake eats the contribution cells, shipped as light/dark GIFs switched with `<picture>` (see ADR 0004).
 
 ## Assets
 
 - **mascot**: Animated GIF in the Tech stack section.
+- **contribution-snake**: Animated contribution heatmap GIF in the Activity section (light + dark).
 - **hero-knight**: Static image in the introduction table.
 - **v9-banner**: Animated banner at the top of the profile.
 

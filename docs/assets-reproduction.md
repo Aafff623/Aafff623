@@ -18,24 +18,47 @@ replace an asset. Where a source is not available in the repo, it is marked
 - **Decision:** `docs/adr/0002-3d-chibi-knight-light-dark-gif.md` (supersedes ADR 0001).
 - **Full pipeline:** `docs/tech-stack-3d-mascot-plan.md` (asset audit, motion, transitions, encoding budget).
 - **Source frames:** `.scratch/chibi-knight-import/chibi_knight_5_images/` — 5× `1254×1254` PNG (no alpha). Matte and align before encoding; do not rely on the original filenames for pose order (see plan §3).
-- **Output:** `360×360`, 18 fps, ~73 frames, infinite loop. Light background near `#ffffff`; dark background near `#0d1117` with edges recomposited (not the light version darkened).
-- **Shipped sizes:** light ~605 KB, dark ~657 KB (budget ≤1.5 MB per GIF; hard cap 3 MB).
+- **Output:** `320×320`, 18 fps, ~73 frames, infinite loop. Light background near `#ffffff`; dark background near `#0d1117` with edges recomposited (not the light version darkened).
+- **Shipped sizes (A-tier):** light ~442 KB, dark ~478 KB (budget ≤1.5 MB per GIF; hard cap 3 MB).
 - **Encoding (representative two-pass palette):**
 
 ```bash
-# 1) build an optimized palette (start at 96 colors, raise toward 128 on banding)
-ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/%04d.png \
-  -vf "scale=360:360:flags=lanczos,palettegen=max_colors=128:stats_mode=diff" \
-  -y .scratch/mascot-3d/palette-light.png
+# 1) build an optimized palette (64 colors is enough for the chibi knight)
+ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/frame-%03d.png \
+  -vf "scale=320:320:flags=lanczos,palettegen=max_colors=64:stats_mode=diff" \
+  -update 1 -frames:v 1 -y .scratch/mascot-3d/palette-light.png
 
-# 2) apply the palette; prefer no dither on flat areas, light ordered dither only if banding appears
-ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/%04d.png -i .scratch/mascot-3d/palette-light.png \
-  -lavfi "scale=360:360:flags=lanczos[x];[x][1:v]paletteuse=dither=none" \
+# 2) apply the palette; prefer no dither on flat areas
+ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/frame-%03d.png -i .scratch/mascot-3d/palette-light.png \
+  -lavfi "scale=320:320:flags=lanczos[x];[x][1:v]paletteuse=dither=none" \
   -loop 0 -y .scratch/mascot-3d/mascot-light.candidate.gif
 ```
 
 Repeat with `frames-dark/` for `mascot-dark.gif`. Then run the acceptance checks
 in the plan (§12) before copying candidates into `assets/`.
+
+## `assets/contribution-snake.gif` and `assets/contribution-snake-dark.gif` — Activity heatmap
+
+- **Decision:** `docs/adr/0004-contribution-heatmap-gif.md`.
+- **Generator (not tracked):** `.scratch/contribution-heatmap/gen_heatmap_gif.py` —
+  fetches `github.com/users/{user}/contributions` without a token, lays out the GitHub
+  calendar (Sunday-first rows, one column per week, last 52 weeks), plans an A* route
+  between colored cells (lowest level first; un-eaten cells are walls, snake may step
+  `PAD=2` cells outside the grid to bypass them), draws frames with Pillow, and encodes
+  with ffmpeg.
+- **Output:** `896×192` (margins ≥ `PAD=2` cells so out-of-grid weave stays on-canvas),
+  12 fps, infinite loop, `palettegen max_colors=64`. Light `#ffffff` / dark `#0d1117`.
+  Purple snake with size/color gradients; variable speed `VMIN/VMAX=1.5/4.5` (open/near ≈ 3×).
+  Exterior bypass may insert a short bump-turn. Frame count scales with the A* path —
+  A-tier render ~341 frames / ~28 s / ~247 KB per GIF.
+- **Regenerate and refresh** (the GIF is a snapshot of the last 52 weeks):
+
+```bash
+python .scratch/contribution-heatmap/gen_heatmap_gif.py
+# candidates land in .scratch/contribution-heatmap/; copy the approved files to assets/
+cp .scratch/contribution-heatmap/contribution-snake.gif assets/
+cp .scratch/contribution-heatmap/contribution-snake-dark.gif assets/
+```
 
 ## `assets/hero-knight.webp` — intro hero
 
