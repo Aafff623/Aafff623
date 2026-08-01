@@ -9,12 +9,11 @@
 - **Competitions**: Two cards only — Lead Cup (vLLM / Hygon / 先导杯) and AI4S 书生国智科探挑战赛. Layout is a 2×2 table: text row, then a shared image row so both thumbnails share one baseline. Do not reintroduce removed camps/contests in this section.
 - **Classic project**: AgentCFO only. Other / coursework cards stay off the profile; Blog and Digital Garden remain in Project quick links.
 - **What I'm learning**: Five practice topics only — AI-assisted E2E (MCP), light CLI × heavy IDE, Prompt→Context→Harness→Loop, custom Skills / Spec-driven Coding, indie App/mini-program + overseas payments. No Web3 / OS / systems-inference rows here, no contest registration status, and no mirror of Competitions cards.
-- **Activity**: Animated contribution heatmap — a snake eats the contribution cells, shipped as light/dark GIFs switched with `<picture>` (see ADR 0004).
+- **Activity**: Third-party contribution activity line graph (`github-readme-activity-graph`) with light/dark `<picture>` URLs. Do not reintroduce the contribution-snake GIF heatmap here — GitHub's own calendar already covers that.
 
 ## Assets
 
 - **mascot**: Animated GIF in the Tech stack section.
-- **contribution-snake**: Animated contribution heatmap GIF in the Activity section (light + dark).
 - **comp-syscap-banner / comp-ai4s-ketan**: Competitions event thumbnails (WebP, rounded alpha).
 - **hero-knight**: Static intro hero (WebP with rounded alpha; GitHub strips CSS `border-radius`).
 - **v9-banner**: Animated banner at the top of the profile.

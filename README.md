@@ -246,11 +246,10 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/contribution-snake-dark.gif" />
-    <img src="./assets/contribution-snake.gif" width="100%" alt="animated contribution heatmap" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=0d1117&color=58a6ff&line=58a6ff&point=d29922&hide_border=true" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=ffffff&color=0969da&line=0969da&point=f59e0b&hide_border=true" alt="activity graph" />
   </picture>
 </p>
-<p align="center"><i>Contribution heatmap for the past year, animated.</i></p>
 
 ---
 

@@ -37,28 +37,10 @@ ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/frame-%03d.png -i .scrat
 Repeat with `frames-dark/` for `mascot-dark.gif`. Then run the acceptance checks
 in the plan (§12) before copying candidates into `assets/`.
 
-## `assets/contribution-snake.gif` and `assets/contribution-snake-dark.gif` — Activity heatmap
+## Activity graph (no local asset)
 
-- **Decision:** `docs/adr/0004-contribution-heatmap-gif.md`.
-- **Generator (not tracked):** `.scratch/contribution-heatmap/gen_heatmap_gif.py` —
-  fetches `github.com/users/{user}/contributions` without a token, lays out the GitHub
-  calendar (Sunday-first rows, one column per week, last 52 weeks), plans an A* route
-  between colored cells (lowest level first; un-eaten cells are walls, snake may step
-  `PAD=2` cells outside the grid to bypass them), draws frames with Pillow, and encodes
-  with ffmpeg.
-- **Output:** `896×192` (margins ≥ `PAD=2` cells so out-of-grid weave stays on-canvas),
-  12 fps, infinite loop, `palettegen max_colors=64`. Light `#ffffff` / dark `#0d1117`.
-  Purple snake with size/color gradients; variable speed `VMIN/VMAX=1.5/4.5` (open/near ≈ 3×).
-  Exterior bypass may insert a short bump-turn. Frame count scales with the A* path —
-  A-tier render ~341 frames / ~28 s / ~247 KB per GIF.
-- **Regenerate and refresh** (the GIF is a snapshot of the last 52 weeks):
-
-```bash
-python .scratch/contribution-heatmap/gen_heatmap_gif.py
-# candidates land in .scratch/contribution-heatmap/; copy the approved files to assets/
-cp .scratch/contribution-heatmap/contribution-snake.gif assets/
-cp .scratch/contribution-heatmap/contribution-snake-dark.gif assets/
-```
+- **Current:** `github-readme-activity-graph.vercel.app` line chart in the Activity section, light/dark via `<picture>`.
+- **Note:** the former `contribution-snake*.gif` heatmap (ADR 0004) was removed as redundant with GitHub's native calendar.
 
 ## `assets/comp-syscap-banner.webp` / `assets/comp-ai4s-ketan.webp` — Competitions thumbnails
 

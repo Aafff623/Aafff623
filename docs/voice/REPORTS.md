@@ -34,7 +34,7 @@
 | Competitions · AI4S | **05 Product** | 02 一句旅程 | 赛道痛点 → 提交证明 → 收尾状态 |
 | Classic project · AgentCFO | **05 Product** | 01 | 角色 / 流程 / 双笔验证 / Live demo |
 | What I'm learning | **01** | 02 极短 | 主题列表即可；勿写成参赛报名墙 |
-| Activity | **01** | — | 一句说明 GIF 是什么即可 |
+| Activity | **01** | — | 折线图即可，勿与官方热力图重复 |
 
 **一句话配方**：外壳极简工匠 · 竞赛段落系统深技 · 项目卡片产品清晰 · 全篇禁止假 MRR / Bali 人设。
 

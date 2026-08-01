@@ -246,11 +246,10 @@ Coding agent 帮我做探索、调研、重复编辑和第一轮实现。日常�
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/contribution-snake-dark.gif" />
-    <img src="./assets/contribution-snake.gif" width="100%" alt="贡献热力图动画" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=0d1117&color=58a6ff&line=58a6ff&point=d29922&hide_border=true" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=ffffff&color=0969da&line=0969da&point=f59e0b&hide_border=true" alt="活跃度折线图" />
   </picture>
 </p>
-<p align="center"><i>过去一年的贡献热力图，做成动画。</i></p>
 
 ---
 

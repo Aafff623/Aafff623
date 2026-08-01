@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted.
+Superseded (2026-08). Activity is back to `github-readme-activity-graph` — the snake GIF duplicated GitHub's native contribution calendar.
 
 ## Context
 
