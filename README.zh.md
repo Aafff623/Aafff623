@@ -9,14 +9,21 @@
   </picture>
 </p>
 
-<p align="center"><i>软件工程学生 · Java &amp; Python · Agent Engineering</i></p>
+<p align="center"><i>⭐ Code Less, Architect More 🚀</i></p>
 
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <p>我是中北大学软件工程二年级学生。下一步希望进入实习，在 Java 与 Python 业务生态中真正参与开发，同时继续积累 Agent 开发能力。</p>
-      <p>我给自己安排的路径很明确：先理解真实团队如何开发和维护业务软件，再把 Agent Engineering 做深；用 Harness Engineering 的方法，让 AI 辅助开发具备可复现、可测试、可审查的工程约束；最后把这些判断力带进自己的产品。长期目标说起来简单，做到很难：成为能把想法独立做成上线产品、可以 Build Almost Everything 的独立开发者。</p>
-      <p>代码之外，我会写博客、养数字花园、看动画，也会把不想忘掉的东西随手记下来。</p>
+      <p>你好！我是中北大学软件工程专业的准大三学生。💻&#8288;(￣▽￣)</p>
+      <p>这个暑假在做 Java 微服务、Python / Python AI，以及 Harness Engineering（硬约束工程）下的 AI Coding。缺少边界的纯 Vibe Coding 容易开局、难维护；我更在意架构、系统开发和可审查的长期代码。</p>
+      <p>⚡&#8288;(¬‿¬) 少一点一次性代码，多一点判断与 Workflow。</p>
+      <p>正在实践：</p>
+      <ul>
+        <li><b>全链路落地：</b>产品从开发到上线；海外支付与独立开发者闭环。</li>
+        <li><b>开源：</b>从自己的 repositories 和开源热点入手；关注 B 站 UP（如 IT咖啡馆）拉项目捣鼓，做二开或维护。</li>
+        <li><b>评测：</b>动手评测国模（DeepSeek、GLM）；国外侧主要看 OpenAI、Anthropic 与 xAI（暂不跟 Gemini：目前已掉队）。</li>
+      </ul>
+      <p>技术之外：自行车爱好者 🚲，常看赛事；闲时写博客、经营数字花园，记录追番与随手感悟，在代码之外留一点温热。</p>
     </td>
     <td width="40%" align="center" valign="middle">
       <img src="./assets/hero-knight.webp" width="92%" alt="threetwoa hero" />
@@ -29,10 +36,6 @@
   <a href="https://my-blogs-roan-seven.vercel.app/">博客</a> ·
   <a href="https://threetwoa-digital-garden.vercel.app/">数字花园</a>
 </p>
-
----
-
-## 联系
 
 <p align="center">
   <a href="https://github.com/Aafff623"><img height="42" width="42" src="https://cdn.simpleicons.org/github/181717" alt="GitHub" title="GitHub" /></a>
@@ -50,7 +53,7 @@
 
 ## Agent 工作流
 
-我会让 coding agent 参与仓库探索、资料调查、重复编辑和第一轮实现。比 prompt 更重要的是外围约束：清楚的任务范围、仓库规则、可复现命令、测试、文档和最终 diff review。设计判断和每一次合并仍由我负责。
+Coding agent 帮我做探索、调研、重复编辑和第一轮实现。日常工具是 Cursor、Claude Code、Codex；高性价比拼搭含 OpenCode Go 套餐拼车。轻量 CLI 适合快速试探；重度 IDE（Cursor）扛长期项目。比 prompt 更重要的是 harness：任务范围、仓库规则、可复现命令、测试、文档和最终 diff review。📋&#8288;(・ω・)ノ 设计判断与每一次 merge 仍由我负责。
 
 ---
 
@@ -87,6 +90,8 @@
       <img src="https://img.shields.io/badge/LangGraph4j-334155?style=flat-square&logoColor=white" alt="LangGraph4j" />
       <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white" alt="检索增强生成" />
       <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logoColor=white" alt="模型上下文协议" />
+      <img src="https://img.shields.io/badge/Harness%20Agent-0F766E?style=flat-square&logoColor=white" alt="Harness Agent" />
+      <img src="https://img.shields.io/badge/Loop%20Agent-334155?style=flat-square&logoColor=white" alt="Loop Agent" />
       <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="通义千问 / DashScope" /></p>
       <p><b>分布式系统</b><br />
       <img src="https://img.shields.io/badge/RPC-0F766E?style=flat-square&logoColor=white" alt="RPC" />
@@ -95,14 +100,19 @@
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
       <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
       <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
-      <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
       <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elasticsearch" />
       <img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
       <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
       <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" /></p>
-      <p><b>Python / API</b><br />
+      <p><b>Python / 后端</b><br />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /></p>
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+      <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic" />
+      <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
+      <img src="https://img.shields.io/badge/httpx-1F2937?style=flat-square&logoColor=white" alt="httpx" />
+      <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" alt="Celery" />
+      <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest" />
+      <img src="https://img.shields.io/badge/asyncio-3776AB?style=flat-square&logo=python&logoColor=white" alt="asyncio" /></p>
       <p><b>系统 / 推理</b><br />
       <img src="https://img.shields.io/badge/vLLM-1F2937?style=flat-square&logoColor=white" alt="vLLM" />
       <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-7C3AED?style=flat-square&logoColor=white" alt="HIP / ROCm" />
@@ -111,8 +121,7 @@
       <img src="https://img.shields.io/badge/Biren%20GPU-059669?style=flat-square&logoColor=white" alt="Biren GPU" /></p>
       <p><b>Web3</b><br />
       <img src="https://img.shields.io/badge/Viem-FF6B35?style=flat-square&logo=ethereum&logoColor=white" alt="Viem" />
-      <img src="https://img.shields.io/badge/Wagmi-1A1B1F?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" />
-      <img src="https://img.shields.io/badge/Monad-836EF9?style=flat-square&logoColor=white" alt="Monad" /></p>
+      <img src="https://img.shields.io/badge/Wagmi-1A1B1F?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" /></p>
       <p><b>DevOps / 可观测</b><br />
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
       <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
@@ -139,35 +148,28 @@
   <tr>
     <td width="50%" valign="top">
       <h3>Lead Cup · vLLM on Hygon DCU</h3>
-      <p>2026 全国大学生计算机系统能力大赛，领跑杯第 1 题。</p>
-      <p><b>队伍：</b>翻斗花园 · <b>职责：</b>kernel 融合与 decode/prefill 路由</p>
-      <p><b>榜单最好一跑：</b>87.7839 / 100 · #26 / 132 · SLA 0 · precision 0</p>
-      <p>我们在固定海光 DCU（gfx936）上优化 vLLM 0.18.1 推理 Qwen3.5-27B。我负责 shared-gate 融合、gate-up 与 SwiGLU HIP kernel、GDN launch packing、Gather-FA routing 和 LPK prefetch。</p>
-      <ul>
-        <li>相对官方基线 smoke tests，TTFT P99 降低 61% 至 87%</li>
-        <li>TPOT P99 降低约 35%，吞吐提升 7% 至 24%</li>
-      </ul>
+      <p>2026 全国大学生计算机系统能力大赛 · 智能计算创新设计赛（先导杯）赛题 1 · 队伍翻斗花园</p>
+      <p><b>最好一跑：</b>87.7839 / 100 · #26 / 132 · SLA 0 · precision 0</p>
+      <p>工作负载：在固定国产 DCU、concurrency=1 下提升长上下文 Qwen 吞吐，并满足 TTFT / TPOT P99 SLA（输入档 4k–8k / 8k–16k / 16k–32k）。</p>
+      <p>技术栈：vLLM 0.18.1 · Qwen3.5-27B BF16 · 海光 DCU（gfx936）· SCNet 实测。我负责 shared-gate 融合、SwiGLU HIP kernel、GDN launch packing、Gather-FA routing、LPK prefetch。</p>
+      <p>相对官方基线 smoke：TTFT P99 −61%–87% · TPOT P99 ≈ −35% · 吞吐 +7%–24%。分数以 SCNet 跑分为准，不用本地 Windows 数字顶替。</p>
       <p><a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3">赛事提交</a> · <a href="https://github.com/Aafff623/vllm-cscc-leadcup">源码镜像</a></p>
     </td>
     <td width="50%" valign="top">
       <h3>AI4S · 书生国智科探挑战赛</h3>
-      <p><b>状态：</b>已报名、准备中 · <b>队伍：</b>翻斗花园，5 人 · <b>角色：</b>队员</p>
-      <p>我们参加上海人工智能实验室与壁仞组织的模型与算子赛道。目前准备内容包括壁仞 GPU 上 Agent 辅助的 PINN、GNN、FNO 类科学模型与算子工作。当前尚无分数或公开交付物。</p>
+      <p>2026 书生国智科探挑战赛暨飞翔杯 AI Agent/Skills 开发大赛 · 上海人工智能实验室 × 壁仞科技</p>
+      <p><b>队伍：</b>翻斗花园 · <b>赛道：</b>模型与算子 · <b>状态：</b>已提交，收尾中</p>
+      <p>问题：在壁仞 GPU 上做出可复用的 AI4S 算子与科学计算模型，对接 Intern Discovery / SCP（大赛六赛道，主线「科研数据 × AI Skills/Agent」）。我们用 Agent 辅助交付 PINN / GNN / FNO 类工具，而不是一次性 notebook。</p>
+      <p>已交付：完整提交并获完赛结项认定（2026-07-28）。后续做最终打磨与主办方跟进，榜单尚未公布。</p>
       <p><a href="https://ai4scompetition.intern-ai.org.cn/">赛事主页</a></p>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3>HarmonyOS · C4 高校创新赛</h3>
-      <p><b>状态：</b>正在考虑，尚未确认报名。</p>
-      <p>计划方向是操作系统智能创新，包括异构调度、跨端通信，以及面向系统侧 AI 效率的感知数据流。如果队伍最终确认参赛，我会在这里补充仓库、Demo 和正式提交材料。</p>
-      <p><a href="https://developer.huawei.com/home/C4-AI">赛事页面</a></p>
+    <td width="50%" valign="bottom" align="center">
+      <img src="./assets/comp-syscap-banner.webp" width="100%" alt="2026 全国大学生计算机系统能力大赛" />
     </td>
-    <td width="50%" valign="top">
-      <h3>Monad Builder Camp</h3>
-      <p><b>状态：</b>进行中。</p>
-      <p>这是一个围绕 Monad 链上产品开发与展示展开的 Web3 实践计划。我目前正在完成 Builder 阶段，再决定最终产品方向。</p>
-      <p><a href="https://web3intern.xyz/zh/">计划手册</a></p>
+    <td width="50%" valign="bottom" align="center">
+      <img src="./assets/comp-ai4s-ketan.webp" width="100%" alt="书生国智科探挑战赛 — 上海 AI 实验室 × 壁仞" />
     </td>
   </tr>
 </table>
@@ -201,12 +203,12 @@
   <tr>
     <td width="65%" valign="top">
       <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO：DAO 资金助手</a></h3>
-      <p>AgentCFO 是一个通过 Cobo Agentic Wallet 准备和审批 DAO 资金支付的黑客松原型。</p>
+      <p>帮 DAO 运营方通过 Cobo Agentic Wallet 准备并审批资金支付，而不是靠零散表格和不透明转账。黑客松原型。</p>
       <ul>
-        <li><b>黑客松赛道：</b>Cobo · Agentic Economy × CAW</li>
-        <li><b>我的角色：</b>前端负责人，完成落地页和演示使用的操作控制台</li>
-        <li><b>业务流程：</b>贡献记录和预算规则 → 付款计划 → 确定性检查 → 人工审批 → 支付与审计报告</li>
-        <li><b>验证：</b>两笔 Sepolia / SETH 支付，覆盖外部付款与内部转账</li>
+        <li><b>赛道：</b>Cobo · Agentic Economy × CAW</li>
+        <li><b>我的角色：</b>前端负责人；落地页与演示用操作控制台</li>
+        <li><b>流程：</b>贡献记录和预算规则 → 付款计划 → 确定性检查 → 人工审批 → 支付与审计报告</li>
+        <li><b>证明：</b>两笔 Sepolia / SETH 支付（外部付款 + 内部转账）</li>
         <li><b>技术：</b>Next.js、TypeScript、FastAPI、Cobo CAW</li>
       </ul>
       <p><a href="https://agentcfo-frontend.vercel.app/">在线演示</a> · <a href="https://github.com/San-Y108/agent-cfo">仓库</a></p>
@@ -232,12 +234,11 @@
 
 ## 最近在学
 
-- <b>Java 与 Python 业务系统：</b>服务边界、持久化、缓存、部署，以及后端或 AI 应用工程实习真正需要面对的维护工作。
-- <b>Agent Engineering：</b>Tool Calling、RAG、MCP、上下文设计、评测，以及让 Agent 产出可审查的仓库 Harness。
-- <b>系统与推理：</b>vLLM 调度、attention backend、gfx936 kernel profiling，以及固定 SLA 下 TTFT、TPOT 和吞吐的取舍。
-- <b>科学计算：</b>Agent 辅助的 PINN、GNN、FNO 类工作负载，以及壁仞 GPU 上的算子工程。
-- <b>操作系统与设备：</b>异构调度、跨端通信，以及面向系统侧 AI 的感知数据流。
-- <b>Web3：</b>Smart Account、Session Key、Monad 产品开发，以及测试网 Demo 与生产级体验之间的差距。
+- <b>AI 辅助端到端测试：</b>用 MCP 工具让模型参与 E2E，尽早抓住断裂的业务流。🔬&#8288;(・∀・)
+- <b>轻量 CLI × 重度 IDE：</b>Claude Code / Kimi Code 等 CLI 做快速探索与小任务；Cursor（内置浏览器、调试、项目上下文）扛长期维护。
+- <b>范式演进：</b>Prompt → Context → Harness → Loop Engineering。用人类规范和纪律收窄人机理解偏差，逼自己把架构与项目知识想清楚。🧭&#8288;(｀・ω・´)
+- <b>自定义 Skill：</b>自写时效性 Skill，或借鉴优秀实践（如 Matt Pocock 的 Skill 库），划清项目边界，走向 Spec-driven Coding。
+- <b>兴趣驱动的独立开发链路：</b>打通 App / 小程序 + 海外支付；用信息推动开发，在 AI 探索业务时查漏补缺。
 
 ---
 
@@ -249,8 +250,8 @@
     <img src="./assets/contribution-snake.gif" width="100%" alt="贡献热力图动画" />
   </picture>
 </p>
-<p align="center"><i>过去一年的贡献热力图动画。</i></p>
+<p align="center"><i>过去一年的贡献热力图，做成动画。</i></p>
 
 ---
 
-<p align="center"><i>最近更新：2026 年 7 月</i></p>
+<p align="center"><i>最近更新：2026 年 8 月</i></p>

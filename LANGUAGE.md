@@ -4,18 +4,19 @@
 
 - **Intro**: Banner, wordmark, tagline, and the "who I am" table with the hero image.
 - **Project quick links**: Deployed project URLs only (AgentCFO demo, Blog, Digital Garden), below the intro table.
-- **Contact**: Icon links for GitHub, X, Bilibili, Telegram, and YouTube — placed above Agent workflow.
+- **Contact icons**: Icon links for GitHub, X, Bilibili, Telegram, and YouTube sit under Project quick links with **no section heading** and **no leading horizontal rule**; a rule still separates them from Agent workflow.
 - **Tech stack**: Compact brand-color `flat-square` shields by category. No AI tools row. Mascot stays on the right.
-- **Competitions**: Four cards — Lead Cup (vLLM / Hygon); AI4S 书生国智科探挑战赛 (模型与算子); HarmonyOS C4 (操作系统智能创新, tentative); Monad Builder Camp (in progress). No workflows / full-stack cards here.
+- **Competitions**: Two cards only — Lead Cup (vLLM / Hygon / 先导杯) and AI4S 书生国智科探挑战赛. Layout is a 2×2 table: text row, then a shared image row so both thumbnails share one baseline. Do not reintroduce removed camps/contests in this section.
 - **Classic project**: AgentCFO only. Other / coursework cards stay off the profile; Blog and Digital Garden remain in Project quick links.
-- **What I'm learning**: Topic list only — Java/Python business systems, Agent Engineering, systems & inference, scientific computing, OS & devices, Web3. No contest registration status.
+- **What I'm learning**: Five practice topics only — AI-assisted E2E (MCP), light CLI × heavy IDE, Prompt→Context→Harness→Loop, custom Skills / Spec-driven Coding, indie App/mini-program + overseas payments. No Web3 / OS / systems-inference rows here, no contest registration status, and no mirror of Competitions cards.
 - **Activity**: Animated contribution heatmap — a snake eats the contribution cells, shipped as light/dark GIFs switched with `<picture>` (see ADR 0004).
 
 ## Assets
 
 - **mascot**: Animated GIF in the Tech stack section.
 - **contribution-snake**: Animated contribution heatmap GIF in the Activity section (light + dark).
-- **hero-knight**: Static image in the introduction table.
+- **comp-syscap-banner / comp-ai4s-ketan**: Competitions event thumbnails (WebP, rounded alpha).
+- **hero-knight**: Static intro hero (WebP with rounded alpha; GitHub strips CSS `border-radius`).
 - **v9-banner**: Animated banner at the top of the profile.
 
 ## Workflow terms
@@ -36,10 +37,11 @@
 
 - Use first person for the profile and name the work directly.
 - Prefer specific facts and links over identity labels, slogans, or claims such as "flagship" and "proof."
-- Use sentence-case headings. Light section-title emoji is allowed when the profile needs visual pacing; keep body copy emoji-sparse.
+- Use sentence-case headings. Do **not** put emoji/kaomoji in section titles. Quota for restrained engineer-facing emoji+kaomoji: Intro **2**, Agent workflow **1**, What I'm learning **2**. Each combo must use a distinct emoji and a distinct kaomoji face (no repeats). Avoid cute/soft-moe faces. Prevent mid-combo line breaks with word joiner `&#8288;` after the emoji and/or by putting the combo on its own short paragraph (GitHub strips CSS `white-space`). Tagline: `⭐ Code Less, Architect More 🚀`.
 - Do not call an image "evidence" unless its data matches the linked source.
 - Avoid em dashes, marketing adjectives, and generic AI phrases.
 - Chinese copy should stay factual and restrained like the English — not a looser marketing rewrite.
+- Voice recipe for polish (external samples + module-level mix): `docs/voice/REPORTS.md` and the five category reports under `docs/voice/`.
 
 ## Badge conventions
 

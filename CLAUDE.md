@@ -24,17 +24,15 @@ There is no build system, package manager, test suite, or linter in this reposit
 
 ## Content from README.md
 
-- **Profile:** Second-year Software Engineering student at North University of China, aiming for a Java/Python + Agent Engineering internship. Tagline: "Software Engineering student · Java & Python · Agent Engineering".
-- **Section order:** Intro (banner, wordmark, self-intro table + hero, quick links: Email/Blog/Digital Garden) → Contact → Agent workflow → Tech stack → Competitions → GitHub stats → Classic project → What I'm learning → Activity.
-- **Agent workflow:** Coding agents handle exploration, research, repetitive edits, and first-pass implementation; the harness (scoped tasks, repo rules, reproducible commands, tests, docs, diff review) matters more than the prompt. The author owns design decisions and every merge.
-- **Competitions (4 cards):**
-  - `Lead Cup · vLLM on Hygon DCU`: 2026 Lead Cup Problem 1; team 翻斗花园; kernel fusion + decode/prefill routing on Hygon DCU (gfx936) serving Qwen3.5-27B on vLLM 0.18.1. Best run 87.7839/100 · #26/132. Dual links: GitLab submission + GitHub mirror (mirror currently private).
-  - `AI4S · 书生国智科探挑战赛`: 模型与算子 track (Shanghai AI Lab × Biren); registered and preparing; no public deliverable yet.
-  - `HarmonyOS · C4`: OS-intelligence direction (heterogeneous scheduling, cross-device); entry not yet confirmed.
-  - `Monad Builder Camp`: in progress; Web3 builder track.
-- **Tech stack:** ~53 shields.io `flat-square` badges across 10 categories (Frontend, Node.js/real-time, Java/Spring, AI/agents, Distributed systems, Data/middleware, Python/API, Systems/inference, Web3, DevOps/observability). Includes 2026-08 course-aligned adds (UniApp, Gateway, OpenFeign, Sentinel, Seata, Kafka, MinIO, Harbor, SkyWalking, Grafana). No AI-tools row. Mascot GIF in the right cell.
+- **Profile:** Incoming third-year Software Engineering student at North University of China. Tagline: "Code Less, Architect More 🚀". Summer focus: Java microservices, Python / Python AI, Harness Engineering guided AI Coding; tools Cursor / Claude Code / Codex; evals domestic models + OpenAI / Anthropic / xAI (not Gemini). Optional emoji+kaomoji only at end of Intro / Agent / Learning body (never in headings). Outside tech: cycling, blog, digital garden, anime notes.
+- **Section order:** Intro (banner, wordmark, self-intro table + hero, quick links: Email/Blog/Digital Garden) → Contact icons (no heading) → Agent workflow → Tech stack → Competitions → GitHub stats → Classic project → What I'm learning → Activity.
+- **Agent workflow:** Agents for exploration / research / repetitive edits / first-pass; tools Cursor / Claude Code / Codex + OpenCode Go; light CLI vs heavy IDE; harness over prompt; author owns design and every merge.
+- **Competitions (2 cards only — do not restore dropped cards):**
+  - `Lead Cup · vLLM on Hygon DCU`: 先导杯 / 智能计算创新设计赛题 1; team 翻斗花园; vLLM 0.18.1 · Qwen3.5-27B BF16 on Hygon DCU (gfx936) / SCNet; long-context concurrency=1. Author focus: shared-gate fusion, SwiGLU HIP, GDN packing, Gather-FA, LPK prefetch. Best run 87.7839/100 · #26/132. Links: GitLab submission + GitHub mirror. Thumbnail: `assets/comp-syscap-banner.webp`.
+  - `AI4S · 书生国智科探挑战赛`: 模型与算子 track (Shanghai AI Lab × Biren / 飞翔杯 Agent·Skills); submission complete (完赛结项 2026-07-28), wrap-up in coming days; no public ranking yet. Thumbnail: `assets/comp-ai4s-ketan.webp`. Do not publish certificate personal names.
+- **Tech stack:** ~59 shields.io `flat-square` badges across 10 categories (Frontend, Node.js/real-time, Java/Spring, AI/agents, Distributed systems, Data/middleware, Python/backend, Systems/inference, Web3, DevOps/observability). AI row includes Harness Agent + Loop Agent; Python row covers FastAPI ecosystem (Pydantic, SQLAlchemy, httpx, Celery, pytest, asyncio). MQ is RabbitMQ only; no Monad / Kafka badges. No AI-tools row. Mascot GIF in the right cell.
 - **Classic project:** `AgentCFO` (repo under teammate `San-Y108/agent-cfo`): hackathon prototype for preparing/approving DAO treasury payments via Cobo Agentic Wallet; author was frontend lead (landing page + operator console); verified with two Sepolia/SETH payouts. Stack: Next.js, TypeScript, FastAPI, Cobo CAW.
-- **What I'm learning:** Java/Python business systems, Agent Engineering, systems & inference, scientific computing, OS & devices, Web3 (topics only, no registration status).
+- **What I'm learning:** AI-assisted E2E (MCP), light CLI × heavy IDE, Prompt→Context→Harness→Loop, custom Skills / Spec-driven Coding, indie App/mini-program + overseas payments. No Web3 / OS / systems-inference rows; no contest registration status.
 - **Writing:** [Blog](https://my-blogs-roan-seven.vercel.app/) and [Digital Garden](https://threetwoa-digital-garden.vercel.app/), linked from the intro quick links.
 - **Contact:** GitHub [@Aafff623](https://github.com/Aafff623), X, Bilibili, Telegram, YouTube.
 
@@ -59,7 +57,7 @@ assets/
   v9-banner.gif                # Animated banner used by README and preview
   brand-threetwoa.svg          # Light-theme wordmark
   brand-threetwoa-dark.svg     # Dark-theme wordmark selected with <picture>
-  hero-knight.webp             # Intro hero image (800×1000 WebP, see ADR 0003)
+  hero-knight.webp             # Intro hero (rounded-alpha WebP, see ADR 0003)
   mascot.gif                   # Light-theme animated mascot (Tech Stack section)
   mascot-dark.gif              # Dark-theme animated mascot selected with <picture>
 ```

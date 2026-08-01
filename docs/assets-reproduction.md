@@ -60,18 +60,19 @@ cp .scratch/contribution-heatmap/contribution-snake.gif assets/
 cp .scratch/contribution-heatmap/contribution-snake-dark.gif assets/
 ```
 
+## `assets/comp-syscap-banner.webp` / `assets/comp-ai4s-ketan.webp` — Competitions thumbnails
+
+- **Usage:** shared second row under Competitions copy (`width="100%"`). Both files are letterboxed to the **same canvas** (`960×360`) so equal column widths yield equal rendered heights and parallel bottoms.
+- **Corners:** rounded mask baked into the WebP alpha (`radius≈28` on 960×360) — GitHub README strips most CSS `border-radius`, so do not rely on markup alone.
+- **Sources:** organizer promo art (not generated in-repo). Fit inside canvas, centered, dark fill; then round; WebP q≈86.
+- **Mapping:** `comp-syscap-banner.webp` → Lead Cup; `comp-ai4s-ketan.webp` → AI4S 书生国智科探.
+
 ## `assets/hero-knight.webp` — intro hero
 
-- **Current:** WebP, `800×1000`, quality 90 (~90 KB). See `docs/adr/0003-hero-webp.md`.
-- **Why WebP:** the hero is a gradient-heavy illustration; PNG stored it at ~981 KB with no lossless headroom, while WebP q90 is ~10x smaller at the same size and visually near-identical.
-- **Source not tracked.** The original high-res render lives outside the repo.
-- **Regenerate (Pillow):**
-
-```python
-from PIL import Image
-Image.open("<source>.png").convert("RGB").save(
-    "assets/hero-knight.webp", format="WEBP", quality=90, method=6)
-```
+- **Current:** WebP RGBA, trimmed from `800×1000` to ~`752×950`, quality 90, competition-style rounded alpha (`radius≈9%` of short side) plus a thin dual ring so the curve reads on light GitHub backgrounds (hero art is near-white at the edges). See `docs/adr/0003-hero-webp.md`.
+- **Why WebP:** the hero is a gradient-heavy illustration; PNG stored it at ~981 KB with no lossless headroom, while WebP q90 is ~10x smaller and visually near-identical.
+- **Why baked radius:** GitHub README strips most CSS `border-radius`; same approach as competition thumbnails (`comp-*-*.webp`).
+- **Source not tracked.** The original high-res render lives outside the repo. Local helper: `.scratch/round_hero.py` (restore flat `git checkout HEAD -- assets/hero-knight.webp` first if re-running after a rounded save).
 
 ## `assets/v9-banner.gif` — top banner
 

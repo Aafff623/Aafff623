@@ -9,14 +9,21 @@
   </picture>
 </p>
 
-<p align="center"><i>Software Engineering student · Java &amp; Python · Agent Engineering</i></p>
+<p align="center"><i>⭐ Code Less, Architect More 🚀</i></p>
 
 <table width="100%">
   <tr>
     <td width="60%" valign="top">
-      <p>I'm a second-year Software Engineering student at North University of China. My next step is an internship where I can work across the Java and Python business ecosystem while continuing to build AI agents.</p>
-      <p>The path I am working toward is deliberate: learn how real teams build and maintain business software; develop Agent Engineering skills; use Harness Engineering practices to make AI-assisted work reproducible, testable, and reviewable; then carry that judgment into independent products. The long-term goal is simple to say and hard to earn: become an independent developer who can build almost anything from idea to deployment.</p>
-      <p>Outside code, I keep a blog and a digital garden, watch anime, and write down whatever I do not want to forget.</p>
+      <p>Hello. I'm an incoming third-year Software Engineering student at North University of China. 💻&#8288;(￣▽￣)</p>
+      <p>This summer: Java microservices, Python / Python AI, and AI Coding under Harness Engineering. Pure vibe coding without hard constraints is easy to start and hard to maintain; I care more about architecture, systems work, and code that stays reviewable.</p>
+      <p>⚡&#8288;(¬‿¬) Fewer throwaway lines, more judgment and workflow.</p>
+      <p>What I'm practicing:</p>
+      <ul>
+        <li><b>Full-chain shipping:</b> take a product from build to launch; overseas payments and the indie-dev loop.</li>
+        <li><b>Open source:</b> dig into my own repositories and hotspot projects; follow Bilibili creators (e.g. IT咖啡馆), clone, tinker, fork, or help maintain.</li>
+        <li><b>Evals:</b> hands-on evaluation of domestic models (DeepSeek, GLM). On the foreign side I watch OpenAI, Anthropic, and xAI (Gemini skipped for now: it has fallen behind).</li>
+      </ul>
+      <p>Outside tech I'm a cyclist 🚲 and follow bike racing. I write a blog, tend a digital garden, note anime seasons, and keep small pieces of youth I do not want to lose.</p>
     </td>
     <td width="40%" align="center" valign="middle">
       <img src="./assets/hero-knight.webp" width="92%" alt="threetwoa hero" />
@@ -29,10 +36,6 @@
   <a href="https://my-blogs-roan-seven.vercel.app/">Blog</a> ·
   <a href="https://threetwoa-digital-garden.vercel.app/">Digital Garden</a>
 </p>
-
----
-
-## Contact
 
 <p align="center">
   <a href="https://github.com/Aafff623"><img height="42" width="42" src="https://cdn.simpleicons.org/github/181717" alt="GitHub" title="GitHub" /></a>
@@ -50,7 +53,7 @@
 
 ## Agent workflow
 
-I use coding agents for repository exploration, research, repetitive edits, and first-pass implementation. The surrounding harness matters more than the prompt: scoped tasks, repository rules, reproducible commands, tests, documentation, and a final diff review. I remain responsible for the design decisions and every merge.
+Coding agents help with exploration, research, repetitive edits, and first-pass implementation. Day to day I use Cursor, Claude Code, and Codex; cost-effective stacks include OpenCode Go carpools. Light CLIs are for quick probes; a heavy IDE (Cursor) carries long-lived work. The harness matters more than the prompt: scoped tasks, repository rules, reproducible commands, tests, docs, and a final diff review. 📋&#8288;(・ω・)ノ Design decisions and every merge stay mine.
 
 ---
 
@@ -87,6 +90,8 @@ I use coding agents for repository exploration, research, repetitive edits, and 
       <img src="https://img.shields.io/badge/LangGraph4j-334155?style=flat-square&logoColor=white" alt="LangGraph4j" />
       <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white" alt="Retrieval-Augmented Generation" />
       <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logoColor=white" alt="Model Context Protocol" />
+      <img src="https://img.shields.io/badge/Harness%20Agent-0F766E?style=flat-square&logoColor=white" alt="Harness Agent" />
+      <img src="https://img.shields.io/badge/Loop%20Agent-334155?style=flat-square&logoColor=white" alt="Loop Agent" />
       <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="Qwen / DashScope" /></p>
       <p><b>Distributed systems</b><br />
       <img src="https://img.shields.io/badge/RPC-0F766E?style=flat-square&logoColor=white" alt="RPC" />
@@ -95,14 +100,19 @@ I use coding agents for repository exploration, research, repetitive edits, and 
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
       <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
       <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
-      <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
       <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elasticsearch" />
       <img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
       <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
       <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" /></p>
-      <p><b>Python / API</b><br />
+      <p><b>Python / backend</b><br />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /></p>
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+      <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic" />
+      <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
+      <img src="https://img.shields.io/badge/httpx-1F2937?style=flat-square&logoColor=white" alt="httpx" />
+      <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" alt="Celery" />
+      <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest" />
+      <img src="https://img.shields.io/badge/asyncio-3776AB?style=flat-square&logo=python&logoColor=white" alt="asyncio" /></p>
       <p><b>Systems / inference</b><br />
       <img src="https://img.shields.io/badge/vLLM-1F2937?style=flat-square&logoColor=white" alt="vLLM" />
       <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-7C3AED?style=flat-square&logoColor=white" alt="HIP / ROCm" />
@@ -111,8 +121,7 @@ I use coding agents for repository exploration, research, repetitive edits, and 
       <img src="https://img.shields.io/badge/Biren%20GPU-059669?style=flat-square&logoColor=white" alt="Biren GPU" /></p>
       <p><b>Web3</b><br />
       <img src="https://img.shields.io/badge/Viem-FF6B35?style=flat-square&logo=ethereum&logoColor=white" alt="Viem" />
-      <img src="https://img.shields.io/badge/Wagmi-1A1B1F?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" />
-      <img src="https://img.shields.io/badge/Monad-836EF9?style=flat-square&logoColor=white" alt="Monad" /></p>
+      <img src="https://img.shields.io/badge/Wagmi-1A1B1F?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" /></p>
       <p><b>DevOps / observability</b><br />
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
       <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
@@ -139,35 +148,28 @@ I use coding agents for repository exploration, research, repetitive edits, and 
   <tr>
     <td width="50%" valign="top">
       <h3>Lead Cup · vLLM on Hygon DCU</h3>
-      <p>2026 National Collegiate Computer System Capability Competition, Lead Cup Problem 1.</p>
-      <p><b>Team:</b> 翻斗花园 · <b>Role:</b> kernel fusion and decode/prefill routing</p>
-      <p><b>Leaderboard best run:</b> 87.7839 / 100 · #26 / 132 · SLA 0 · precision 0</p>
-      <p>We optimized vLLM 0.18.1 serving Qwen3.5-27B on a fixed Hygon DCU (gfx936). My work covered shared-gate fusion, a gate-up and SwiGLU HIP kernel, GDN launch packing, Gather-FA routing, and LPK prefetch.</p>
-      <ul>
-        <li>Against official baseline smoke tests: TTFT P99 reduced by 61% to 87%</li>
-        <li>TPOT P99 reduced by about 35%; throughput increased by 7% to 24%</li>
-      </ul>
+      <p>2026 全国大学生计算机系统能力大赛 · 智能计算创新设计赛（先导杯）赛题 1 · Team 翻斗花园</p>
+      <p><b>Best run:</b> 87.7839 / 100 · #26 / 132 · SLA 0 · precision 0</p>
+      <p>Workload: raise long-context Qwen throughput on a fixed domestic DCU at concurrency=1, under TTFT/TPOT P99 SLA (input mix 4k–8k / 8k–16k / 16k–32k).</p>
+      <p>Stack: vLLM 0.18.1 · Qwen3.5-27B BF16 · Hygon DCU (gfx936) on SCNet. My focus: shared-gate fusion, SwiGLU HIP kernels, GDN launch packing, Gather-FA routing, LPK prefetch.</p>
+      <p>vs official baseline smoke: TTFT P99 −61%–87% · TPOT P99 ≈ −35% · throughput +7%–24%. Scores locked to SCNet runs, not local Windows numbers.</p>
       <p><a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3">Submission</a> · <a href="https://github.com/Aafff623/vllm-cscc-leadcup">Source mirror</a></p>
     </td>
     <td width="50%" valign="top">
       <h3>AI4S · 书生国智科探挑战赛</h3>
-      <p><b>Status:</b> registered and preparing · <b>Team:</b> 翻斗花园, five members · <b>Role:</b> team member</p>
-      <p>We entered the 模型与算子 track organized by Shanghai AI Laboratory and Biren. The current preparation covers agent-assisted scientific models and operator work for PINN, GNN, and FNO-style computation on Biren GPU. No score or public deliverable is available yet.</p>
+      <p>2026 书生国智科探挑战赛暨飞翔杯 AI Agent/Skills 开发大赛 · Shanghai AI Lab × Biren</p>
+      <p><b>Team:</b> 翻斗花园 · <b>Track:</b> 模型与算子 · <b>Status:</b> submitted; wrap-up in progress</p>
+      <p>Problem: reusable AI4S operators and scientific models on Biren GPU for Intern Discovery / SCP (six tracks under “科研数据 × AI Skills/Agent”). We ship Agent-assisted PINN / GNN / FNO-style tooling instead of one-off notebooks.</p>
+      <p>Delivered: full submission (完赛结项, 2026-07-28). Final polish and host follow-up remain; no public ranking yet.</p>
       <p><a href="https://ai4scompetition.intern-ai.org.cn/">Competition site</a></p>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3>HarmonyOS · C4 University Innovation Competition</h3>
-      <p><b>Status:</b> under consideration; registration is not yet confirmed.</p>
-      <p>The intended direction is operating-system intelligence: heterogeneous scheduling, cross-device communication, and perception data flow for system-side AI efficiency. If the team confirms entry, the work will be documented here with its repository, demo, and submission materials.</p>
-      <p><a href="https://developer.huawei.com/home/C4-AI">Competition page</a></p>
+    <td width="50%" valign="bottom" align="center">
+      <img src="./assets/comp-syscap-banner.webp" width="100%" alt="2026 National Collegiate Computer System Capability Competition" />
     </td>
-    <td width="50%" valign="top">
-      <h3>Monad Builder Camp</h3>
-      <p><b>Status:</b> in progress.</p>
-      <p>A practical Web3 program organized around building and presenting an on-chain product on Monad. I am currently working through the builder track before committing to a final product direction.</p>
-      <p><a href="https://web3intern.xyz/zh/">Program handbook</a></p>
+    <td width="50%" valign="bottom" align="center">
+      <img src="./assets/comp-ai4s-ketan.webp" width="100%" alt="书生国智科探挑战赛 — Shanghai AI Lab × Biren" />
     </td>
   </tr>
 </table>
@@ -201,12 +203,12 @@ I use coding agents for repository exploration, research, repetitive edits, and 
   <tr>
     <td width="65%" valign="top">
       <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO: DAO treasury assistant</a></h3>
-      <p>AgentCFO is a hackathon prototype for preparing and approving DAO treasury payments through the Cobo Agentic Wallet.</p>
+      <p>Helps DAO operators prepare and approve treasury payouts through Cobo Agentic Wallet, instead of ad-hoc spreadsheets and opaque transfers. Hackathon prototype.</p>
       <ul>
-        <li><b>Hackathon track:</b> Cobo · Agentic Economy × CAW</li>
-        <li><b>My role:</b> frontend lead; built the landing page and the operator console used in the demo</li>
+        <li><b>Track:</b> Cobo · Agentic Economy × CAW</li>
+        <li><b>My role:</b> frontend lead; landing page and the operator console used in the demo</li>
         <li><b>Flow:</b> contribution records and budget rules → payment plan → deterministic checks → human approval → payout and audit report</li>
-        <li><b>Verification:</b> two Sepolia / SETH payouts, covering an external payment and an internal transfer</li>
+        <li><b>Proof:</b> two Sepolia / SETH payouts (external payment + internal transfer)</li>
         <li><b>Stack:</b> Next.js, TypeScript, FastAPI, Cobo CAW</li>
       </ul>
       <p><a href="https://agentcfo-frontend.vercel.app/">Live demo</a> · <a href="https://github.com/San-Y108/agent-cfo">Repository</a></p>
@@ -232,12 +234,11 @@ I use coding agents for repository exploration, research, repetitive edits, and 
 
 ## What I'm learning
 
-- <b>Java and Python business systems:</b> service boundaries, persistence, caching, deployment, and the maintenance work expected in a backend or AI application engineering internship.
-- <b>Agent Engineering:</b> tool calling, RAG, MCP, context design, evaluations, and the repository harness needed to make agent output reviewable.
-- <b>Systems and inference:</b> vLLM scheduling, attention backends, gfx936 kernel profiling, and TTFT, TPOT, throughput trade-offs under fixed SLAs.
-- <b>Scientific computing:</b> agent-assisted PINN, GNN, and FNO-style workloads plus operator engineering on Biren GPU.
-- <b>Operating systems and devices:</b> heterogeneous scheduling, cross-device communication, and perception data flow for system-side AI.
-- <b>Web3:</b> Smart Accounts, Session Keys, Monad product development, and the gap between a testnet demo and production UX.
+- <b>AI-assisted E2E testing:</b> use MCP tools so models can drive end-to-end flows and catch broken business paths early. 🔬&#8288;(・∀・)
+- <b>Light CLI + heavy IDE:</b> Claude Code / Kimi Code CLIs for quick exploration and small tasks; Cursor (browser, debugger, project context) for long-lived maintenance.
+- <b>Paradigm shift:</b> Prompt → Context → Harness → Loop Engineering. Human rules and discipline shrink the human-agent gap and force clearer architecture knowledge. 🧭&#8288;(｀・ω・´)
+- <b>Custom Skills:</b> write time-bound Skills or borrow strong public libraries (e.g. Matt Pocock's), keep project boundaries clear, grow toward Spec-driven Coding.
+- <b>Indie shipping path:</b> App / mini-program + overseas payments end to end; use information to drive development while filling gaps with AI.
 
 ---
 
@@ -249,8 +250,8 @@ I use coding agents for repository exploration, research, repetitive edits, and 
     <img src="./assets/contribution-snake.gif" width="100%" alt="animated contribution heatmap" />
   </picture>
 </p>
-<p align="center"><i>Last year's contribution heatmap, animated.</i></p>
+<p align="center"><i>Contribution heatmap for the past year, animated.</i></p>
 
 ---
 
-<p align="center"><i>Last updated: July 2026</i></p>
+<p align="center"><i>Last updated: August 2026</i></p>
