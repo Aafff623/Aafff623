@@ -76,6 +76,7 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
       <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest" /></p>
       <p><b>Java / Spring</b><br />
       <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+      <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
       <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
       <img src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Cloud Alibaba" />
       <img src="https://img.shields.io/badge/MyBatis--Plus-1A7FBF?style=flat-square&logoColor=white" alt="MyBatis-Plus" />
@@ -92,9 +93,17 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
       <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logoColor=white" alt="Model Context Protocol" />
       <img src="https://img.shields.io/badge/Harness%20Agent-0F766E?style=flat-square&logoColor=white" alt="Harness Agent" />
       <img src="https://img.shields.io/badge/Loop%20Agent-334155?style=flat-square&logoColor=white" alt="Loop Agent" />
-      <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="Qwen / DashScope" /></p>
+      <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="Qwen / DashScope" />
+      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logoColor=white" alt="LangGraph" />
+      <img src="https://img.shields.io/badge/OpenAI%20Agents%20SDK-000000?style=flat-square&logo=openai&logoColor=white" alt="OpenAI Agents SDK" />
+      <img src="https://img.shields.io/badge/Dify-1C64F2?style=flat-square&logoColor=white" alt="Dify" />
+      <img src="https://img.shields.io/badge/LiteLLM-4F46E5?style=flat-square&logoColor=white" alt="LiteLLM" />
+      <img src="https://img.shields.io/badge/Ragas-7C3AED?style=flat-square&logoColor=white" alt="Ragas" />
+      <img src="https://img.shields.io/badge/DeepEval-E92063?style=flat-square&logoColor=white" alt="DeepEval" /></p>
       <p><b>Distributed systems</b><br />
       <img src="https://img.shields.io/badge/RPC-0F766E?style=flat-square&logoColor=white" alt="RPC" />
+      <img src="https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" />
+      <img src="https://img.shields.io/badge/etcd-419EDA?style=flat-square&logo=etcd&logoColor=white" alt="etcd" />
       <img src="https://img.shields.io/badge/Vert.x-782A90?style=flat-square&logo=eclipsevertica&logoColor=white" alt="Vert.x" /></p>
       <p><b>Data / middleware</b><br />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
@@ -103,7 +112,9 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
       <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elasticsearch" />
       <img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
       <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" /></p>
+      <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+      <img src="https://img.shields.io/badge/Milvus-00A1EA?style=flat-square&logo=milvus&logoColor=white" alt="Milvus" />
+      <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logoColor=white" alt="FAISS" /></p>
       <p><b>Python / backend</b><br />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
       <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
@@ -115,6 +126,7 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
       <img src="https://img.shields.io/badge/asyncio-3776AB?style=flat-square&logo=python&logoColor=white" alt="asyncio" /></p>
       <p><b>Systems / inference</b><br />
       <img src="https://img.shields.io/badge/vLLM-1F2937?style=flat-square&logoColor=white" alt="vLLM" />
+      <img src="https://img.shields.io/badge/TGI-FF9D00?style=flat-square&logo=huggingface&logoColor=white" alt="TGI" />
       <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-7C3AED?style=flat-square&logoColor=white" alt="HIP / ROCm" />
       <img src="https://img.shields.io/badge/Triton-0F766E?style=flat-square&logoColor=white" alt="Triton" />
       <img src="https://img.shields.io/badge/Hygon%20DCU-4F46E5?style=flat-square&logoColor=white" alt="Hygon DCU" />
@@ -130,7 +142,8 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
       <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
       <img src="https://img.shields.io/badge/ELK-005571?style=flat-square&logo=elastic&logoColor=white" alt="ELK" />
       <img src="https://img.shields.io/badge/SkyWalking-F1A61C?style=flat-square&logoColor=white" alt="SkyWalking" />
-      <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" /></p>
+      <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
+      <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" /></p>
     <td width="22%" align="center" valign="middle">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/mascot-dark.gif" />
@@ -239,6 +252,10 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
 - <b>Paradigm shift:</b> Prompt → Context → Harness → Loop Engineering. Human rules and discipline shrink the human-agent gap and force clearer architecture knowledge. 🧭&#8288;(｀・ω・´)
 - <b>Custom Skills:</b> write time-bound Skills or borrow strong public libraries (e.g. Matt Pocock's), keep project boundaries clear, grow toward Spec-driven Coding.
 - <b>Indie shipping path:</b> App / mini-program + overseas payments end to end; use information to drive development while filling gaps with AI.
+- <b>Enterprise AI Coding:</b> SDD (Spec-Kit / OpenSpec) × Harness Engineering on Claude Code — Subagents, Hooks, Permission, Headless CI — practiced on an AgentOS build, a distributed delay-delivery service, and enterprise Dify customization.
+- <b>Agent engineering (Python):</b> LLM Gateway, Function Calling / Tool Runtime / MCP, Agent Loop with state machines and checkpoints, sandboxed Codebase Agent, Codebase RAG with hybrid retrieval and rerank.
+- <b>Multi-Agent, Eval & ops:</b> Supervisor-style sub-agents and the Skill lifecycle; golden datasets, LLM-as-Judge (Ragas / DeepEval), trace & replay, gray release, rollback, and cost governance.
+- <b>Agentic AI product:</b> the PM → Builder route — 4D Method, memory and proactive-touch design, Skill packaging, multi-Agent collaboration, the eval flywheel, and Agentic UI.
 
 ---
 
