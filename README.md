@@ -15,15 +15,16 @@
   <tr>
     <td width="60%" valign="top">
       <p>Hello. I'm an incoming third-year Software Engineering student at North University of China. 💻&#8288;(￣▽￣)</p>
-      <p>This summer: Java microservices, Python / Python AI, and AI Coding under Harness Engineering. Pure vibe coding without hard constraints is easy to start and hard to maintain; I care more about architecture, systems work, and code that stays reviewable.</p>
+      <p>This summer: Java microservices &amp; middleware, LLM internals, and Spec-driven Coding under Harness Engineering. The honeymoon with vibe coding is over — I care about architecture, maintainability, and code built to last.</p>
       <p>⚡&#8288;(¬‿¬) Fewer throwaway lines, more judgment and workflow.</p>
       <p>What I'm practicing:</p>
       <ul>
-        <li><b>Full-chain shipping:</b> take a product from build to launch; overseas payments and the indie-dev loop.</li>
+        <li><b>Build &amp; practice:</b> large maintainable systems (microservices, middleware); remixes of emerging open-source paradigms as toy projects (OpenClaw, Hermes Agent, OpenHands, DeerFlow); long-lived vibe projects like my digital garden; integrating rich plugin/component ecosystems.</li>
+        <li><b>Bank hands-on points:</b> payments, DB, WeChat, Aliyun, UniApp; and rotate thinking hats — PM, FDE, full-stack, hackathon.</li>
         <li><b>Open source:</b> dig into my own repositories and hotspot projects; follow Bilibili creators (e.g. IT咖啡馆), clone, tinker, fork, or help maintain.</li>
-        <li><b>Evals:</b> hands-on evaluation of domestic models (DeepSeek, GLM). On the foreign side I watch OpenAI, Anthropic, and xAI (Gemini skipped for now: it has fallen behind).</li>
+        <li><b>Evals &amp; capability packs:</b> hands-on evaluation of domestic models (DeepSeek, GLM, Kimi) and the foreign big three (Anthropic, OpenAI, xAI). Tinker with MiniMax / StepFun credit packs (image, video, TTS, music) wired into agent workflows — plus custom workflows, utility Skills, and MCP.</li>
       </ul>
-      <p>Outside tech I'm a cyclist 🚲 and follow bike racing. I write a blog, tend a digital garden, note anime seasons, and keep small pieces of youth I do not want to lose.</p>
+      <p>Outside tech I'm a cyclist 🚲 and follow bike racing — the Grand Tours and spring classics. I write a blog, tend a digital garden, note anime seasons, and keep small pieces of youth I do not want to lose.</p>
     </td>
     <td width="40%" align="center" valign="middle">
       <img src="./assets/hero-knight.webp" width="92%" alt="threetwoa hero" />
@@ -34,7 +35,7 @@
 <p align="center">
   <a href="mailto:laiyif68@gmail.com">Email</a> ·
   <a href="https://my-blogs-roan-seven.vercel.app/">Blog</a> ·
-  <a href="https://threetwoa-digital-garden.vercel.app/">Digital Garden</a>
+  <a href="https://fork-firefly.vercel.app/">Digital Garden</a>
 </p>
 
 <p align="center">
@@ -53,7 +54,7 @@
 
 ## Agent workflow
 
-Coding agents help with exploration, research, repetitive edits, and first-pass implementation. Day to day I use Cursor, Claude Code, and Codex; cost-effective stacks include OpenCode Go carpools. Light CLIs are for quick probes; a heavy IDE (Cursor) carries long-lived work. The harness matters more than the prompt: scoped tasks, repository rules, reproducible commands, tests, docs, and a final diff review. 📋&#8288;(・ω・)ノ Design decisions and every merge stay mine.
+Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hotspots; GPT goes deep on research and requirements; a Go carpool drives Claude Code on DeepSeek v4 Flash with the full MiniMax capability pack; Kimi Code (carpooled K3), OpenCode on relayed GPT-5.6, and Pi on GLM cover lighter lanes; Cursor catches the scraps in auto. I reuse proven playbooks instead of reinventing wheels, and wire custom workflows into real builds — Matt's Skill flow keeps assets managed, every CLI keeps its memory and slash commands, and `.agent` config syncs across tools. The harness matters more than the prompt: scoped tasks, repository rules, reproducible commands, tests, docs, and a final diff review. 📋&#8288;(・ω・)ノ Design decisions and every merge stay mine.
 
 ---
 
@@ -84,7 +85,8 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
       <img src="https://img.shields.io/badge/Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Gateway" />
       <img src="https://img.shields.io/badge/OpenFeign-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="OpenFeign" />
       <img src="https://img.shields.io/badge/Sentinel-E23C39?style=flat-square&logoColor=white" alt="Sentinel" />
-      <img src="https://img.shields.io/badge/Seata-2E6BE6?style=flat-square&logoColor=white" alt="Seata" /></p>
+      <img src="https://img.shields.io/badge/Seata-2E6BE6?style=flat-square&logoColor=white" alt="Seata" />
+      <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Security" /></p>
       <p><b>AI / agents</b><br />
       <img src="https://img.shields.io/badge/Spring%20AI-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring AI" />
       <img src="https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logoColor=white" alt="LangChain4j" />
@@ -99,7 +101,9 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
       <img src="https://img.shields.io/badge/Dify-1C64F2?style=flat-square&logoColor=white" alt="Dify" />
       <img src="https://img.shields.io/badge/LiteLLM-4F46E5?style=flat-square&logoColor=white" alt="LiteLLM" />
       <img src="https://img.shields.io/badge/Ragas-7C3AED?style=flat-square&logoColor=white" alt="Ragas" />
-      <img src="https://img.shields.io/badge/DeepEval-E92063?style=flat-square&logoColor=white" alt="DeepEval" /></p>
+      <img src="https://img.shields.io/badge/DeepEval-E92063?style=flat-square&logoColor=white" alt="DeepEval" />
+      <img src="https://img.shields.io/badge/CrewAI-E25041?style=flat-square&logoColor=white" alt="CrewAI" />
+      <img src="https://img.shields.io/badge/Agentic%20UI-7C3AED?style=flat-square&logoColor=white" alt="Agentic UI" /></p>
       <p><b>Distributed systems</b><br />
       <img src="https://img.shields.io/badge/RPC-0F766E?style=flat-square&logoColor=white" alt="RPC" />
       <img src="https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" />
@@ -114,7 +118,10 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
       <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
       <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
       <img src="https://img.shields.io/badge/Milvus-00A1EA?style=flat-square&logo=milvus&logoColor=white" alt="Milvus" />
-      <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logoColor=white" alt="FAISS" /></p>
+      <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logoColor=white" alt="FAISS" />
+      <img src="https://img.shields.io/badge/XXL--Job-1C3C3C?style=flat-square&logoColor=white" alt="XXL-Job" />
+      <img src="https://img.shields.io/badge/Canal-5B7DB1?style=flat-square&logoColor=white" alt="Canal" />
+      <img src="https://img.shields.io/badge/Redisson-DC382D?style=flat-square&logoColor=white" alt="Redisson" /></p>
       <p><b>Python / backend</b><br />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
       <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
@@ -170,11 +177,13 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
     </td>
     <td width="50%" valign="top">
       <h3>AI4S · 书生国智科探挑战赛</h3>
-      <p>2026 书生国智科探挑战赛暨飞翔杯 AI Agent/Skills 开发大赛 · Shanghai AI Lab × Biren</p>
-      <p><b>Team:</b> 翻斗花园 · <b>Track:</b> 模型与算子 · <b>Status:</b> submitted; wrap-up in progress</p>
-      <p>Problem: reusable AI4S operators and scientific models on Biren GPU for Intern Discovery / SCP (six tracks under “科研数据 × AI Skills/Agent”). We ship Agent-assisted PINN / GNN / FNO-style tooling instead of one-off notebooks.</p>
-      <p>Delivered: full submission (完赛结项, 2026-07-28). Final polish and host follow-up remain; no public ranking yet.</p>
-      <p><a href="https://ai4scompetition.intern-ai.org.cn/">Competition site</a></p>
+      <p>2026 书生国智科探挑战赛暨飞翔杯 AI Agent/Skills 开发大赛 · Shanghai AI Lab × Biren · Track 5 模型与算子 · Team 翻斗花园</p>
+      <p><b>Live board:</b> public NS64 rel-L2 <b>0.035115</b> · tag <code>dualview_r2</code> · report <b>v9</b> · Spectral idle <b>3.811 / 8.054 / 29.560 ms</b> @64/128/256 · worst rel ≈ <b>2.17e-7</b> (≤1e-4) · ranking pending</p>
+      <p>Problem: ship a Biren-native Spectral Convolution (SUPA / Extension) and reuse it inside ≥4-layer FNO-NS on the public 64×64 Navier–Stokes set (1000/128) — Agent/Skills log required (~15%).</p>
+      <p>Stack: Biren106B · SDK 1.11 · <code>device=supa</code> · fused suFFT + SUPA dual-corner mul · FNO width32/modes16 · Cursor Agent harness (<code>skill.md</code>, operator opt-loop, promote gates).</p>
+      <p>Evidence: formal Spectral idle frozen; chain CPU↔SUPA &lt;1e-4; Pred/GT viz on public NS64; Agent log 35+ reviewed segments with abort/NO_SIGNAL discipline (no silent promote).</p>
+      <p>vs prior formal v8 (0.035302): public L2 ≈ <b>+0.53%</b> error drop after dual-view consistency polish; Spectral ms unchanged on purpose.</p>
+      <p><a href=”https://github.com/Aafff623/fandou-ai4s”>Source</a> · <a href=”https://ai4scompetition.intern-ai.org.cn/”>Competition site</a></p>
     </td>
   </tr>
   <tr>
@@ -245,8 +254,17 @@ Coding agents help with exploration, research, repetitive edits, and first-pass 
 
 ---
 
+## Currently building
+
+- <b>AgentOS:</b> an enterprise AI coding harness (SDD × Harness Engineering on Claude Code) — Subagents, Hooks, Permission, Headless CI.
+- <b>Distributed delay-delivery service:</b> Spring Cloud / middleware practice with a reliability focus.
+- <b>Enterprise Dify customization:</b> adapting Dify to a real business workflow.
+
+---
+
 ## What I'm learning
 
+- <b>NB Microservices Full-Stack:</b> Java microservices end to end with 小坏说Java (Bilibili) — Spring Cloud Alibaba, middleware, and production-grade backend practice.
 - <b>AI-assisted E2E testing:</b> use MCP tools so models can drive end-to-end flows and catch broken business paths early. 🔬&#8288;(・∀・)
 - <b>Light CLI + heavy IDE:</b> Claude Code / Kimi Code CLIs for quick exploration and small tasks; Cursor (browser, debugger, project context) for long-lived maintenance.
 - <b>Paradigm shift:</b> Prompt → Context → Harness → Loop Engineering. Human rules and discipline shrink the human-agent gap and force clearer architecture knowledge. 🧭&#8288;(｀・ω・´)
