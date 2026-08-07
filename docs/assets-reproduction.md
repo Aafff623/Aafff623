@@ -51,10 +51,16 @@ in the plan (§12) before copying candidates into `assets/`.
 
 ## `assets/hero-knight.webp` — intro hero
 
-- **Current:** WebP RGBA, trimmed from `800×1000` to ~`752×950`, quality 90, competition-style rounded alpha (`radius≈9%` of short side) plus a thin dual ring so the curve reads on light GitHub backgrounds (hero art is near-white at the edges). See `docs/adr/0003-hero-webp.md`.
+- **Current:** WebP RGB, `800×1000`, quality 90, **sharp corners** (rounded / card-ring trial reverted 2026-08). See `docs/adr/0003-hero-webp.md`.
 - **Why WebP:** the hero is a gradient-heavy illustration; PNG stored it at ~981 KB with no lossless headroom, while WebP q90 is ~10x smaller and visually near-identical.
-- **Why baked radius:** GitHub README strips most CSS `border-radius`; same approach as competition thumbnails (`comp-*-*.webp`).
-- **Source not tracked.** The original high-res render lives outside the repo. Local helper: `.scratch/round_hero.py` (restore flat `git checkout HEAD -- assets/hero-knight.webp` first if re-running after a rounded save).
+- **Source not tracked.** The original high-res render lives outside the repo.
+- **Regenerate (Pillow):**
+
+```python
+from PIL import Image
+Image.open("<source>.png").convert("RGB").save(
+    "assets/hero-knight.webp", format="WEBP", quality=90, method=6)
+```
 
 ## `assets/v9-banner.gif` — top banner
 

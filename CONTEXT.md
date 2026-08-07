@@ -33,7 +33,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 | Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, bright palette) |
 | Wordmark (light) | `./assets/brand-threetwoa.svg` | Default profile wordmark |
 | Wordmark (dark) | `./assets/brand-threetwoa-dark.svg` | Dark-theme wordmark selected with `<picture>` |
-| Hero | `./assets/hero-knight.webp` | Intro table right cell; trimmed + rounded-alpha WebP q90 (see ADR 0003) |
+| Hero | `./assets/hero-knight.webp` | Intro table right cell; sharp-corner WebP 800×1000 q90 (see ADR 0003) |
 | Mascot (light) | `./assets/mascot.gif` | Tech Stack right cell, light-theme 3D knight looping GIF |
 | Mascot (dark) | `./assets/mascot-dark.gif` | Dark-theme mascot selected with `<picture>` (see ADR 0002) |
 | Badges | HTTPS shields.io / simpleicons.org URLs | Tech stack and social link icons |
@@ -56,7 +56,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 - **Note:** Entries are chronological. Where an older entry names a section that has since been renamed or removed (e.g., "What I've been working on", "Projects", "Other projects"), the current structure is the section list in `LANGUAGE.md` and `CLAUDE.md`: Contact, Agent workflow, Tech stack, Competitions, GitHub stats, Classic project, What I'm learning, Activity.
 - Mascot is a 3D chibi knight shipped as light (`mascot.gif`) and dark (`mascot-dark.gif`) GIFs, switched with `<picture>`. See `docs/adr/0002-3d-chibi-knight-light-dark-gif.md` (supersedes ADR 0001).
-- The hero is served as WebP (`hero-knight.webp`, quality 90), replacing the earlier ~981 KB PNG. See `docs/adr/0003-hero-webp.md`. 2026-08: competition-style rounded alpha + thin dual ring (hero edge art is near-white; alpha-only corners vanish on light pages).
+- The hero is served as WebP (`hero-knight.webp`, 800×1000, quality 90), replacing the earlier ~981 KB PNG. See `docs/adr/0003-hero-webp.md`. 2026-08: rounded corners / card ring were tried then reverted — keep sharp corners.
 - Project quick links sit below the intro table and point at deployed URLs only (AgentCFO demo, Blog, Digital Garden), not GitHub repos or contest sites.
 - The Digital Garden link appears in the intro Quick links only (not in the Contact icon row); it is not treated as a top-tier destination like AgentCFO.
 - Tech stack badges use shields.io `flat-square` with brand fill colors. No AI tools row (tools stay in intro copy). Trim concept badges (Smart Accounts, Session Keys, Skills) and universal noise (Git, GitHub). Keep RAG / MCP / Harness Agent / Loop Agent in AI row. Drop Element Plus / Framer / GSAP / Vite / Ant Design / Pinia; Express; etcd / ZooKeeper; SQLite / PGVector / ShardingSphere; Prometheus / Vercel; Kafka (RabbitMQ only); Monad badge. WeChat Pay / Alipay stay out of badge rows.
@@ -70,3 +70,4 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 - **Activity (2026-08):** restored `github-readme-activity-graph` line chart (light/dark `<picture>`). The contribution-snake GIF heatmap was removed as redundant with GitHub's native contribution calendar. ADR 0004 is superseded.
 - **Voice recipe (2026-08):** profile copy follows `docs/voice/REPORTS.md` — minimal craftsman shell, systems metrics on Lead Cup, product clarity on AI4S / AgentCFO. No indie-MRR narrative; no “build almost anything” slogan.
 - **Intro / Learning (2026-08):** tagline is `⭐ Code Less, Architect More 🚀`. Identity is incoming third-year (准大三). Practice bullets: full-chain / open source / evals (tools live under Agent workflow: Cursor / Claude Code / Codex + OpenCode Go). Evals: DeepSeek / GLM + OpenAI / Anthropic / xAI (not Gemini). Emoji+kaomoji never in H2; use `&#8288;` / short paragraph to avoid wrap splits. Contact icons have no heading and no HR above them.
+- **2026-08 (course-driven additions):** author is taking three GeekTime bootcamps (企业级 AI 编程实战营 / AI Agent 全栈工程师训练营 / Agentic AI 产品训练营). Nine badges added — AI row: LangGraph, OpenAI Agents SDK, Dify, LiteLLM, Ragas, DeepEval; Distributed: gRPC, etcd (re-added, superseding the earlier "etcd / ZooKeeper" drop); Data: Milvus, FAISS; Systems/inference: TGI; DevOps: Prometheus (re-added, superseding the earlier "Prometheus / Vercel" drop); Java row: Rust. What I'm learning gains 4 course bullets (Enterprise AI Coding, Agent engineering, Multi-Agent/Eval/ops, Agentic AI product) → 9 bullets total.

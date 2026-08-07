@@ -15,7 +15,7 @@
 
 - **mascot**: Animated GIF in the Tech stack section.
 - **comp-syscap-banner / comp-ai4s-ketan**: Competitions event thumbnails (WebP, rounded alpha).
-- **hero-knight**: Static intro hero (WebP with rounded alpha; GitHub strips CSS `border-radius`).
+- **hero-knight**: Static intro hero (sharp-corner WebP; no baked border-radius).
 - **v9-banner**: Animated banner at the top of the profile.
 
 ## Workflow terms
