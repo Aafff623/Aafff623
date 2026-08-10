@@ -23,6 +23,7 @@
         <li><b>沉淀技术点：</b>支付、DB、微信、阿里云、UniApp 等；切换思考视角——PM、FDE、全栈、黑客松选手。</li>
         <li><b>开源：</b>从自己的 repositories 和开源热点入手；关注 B 站 UP（如 IT咖啡馆）拉项目捣鼓，做二开或维护。</li>
         <li><b>评测与权益包：</b>动手评测国模（DeepSeek、GLM、Kimi）与国外御三家（Anthropic、OpenAI、xAI）；把 MiniMax / StepFun 权益包（生图、视频、配音、音乐）集成进 Agent workflow，再搭配自定义 workflow、效率 Skill 与 MCP 体验。</li>
+        <li><b>自创 TTA Skills：</b>一套面向 Agent 的小工具集（<code>tta-cover</code> · <code>tta-draw-ui</code> · <code>tta-frontend</code> · <code>tta-html</code> · <code>tta-motion</code> · <code>tta-ppt</code> · <code>tta-tone</code> · <code>tta-visual</code>），覆盖封面、UI、前端、可分享 HTML、动效、演示、文案和解释型配图。</li>
       </ul>
       <p>技术之外：自行车爱好者 🚲，常看五大环赛等赛事；闲时写博客、经营数字花园，记录追番与随手感悟，在代码之外留一点温热。</p>
     </td>

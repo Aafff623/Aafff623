@@ -23,6 +23,7 @@
         <li><b>Bank hands-on points:</b> payments, DB, WeChat, Aliyun, UniApp; and rotate thinking hats — PM, FDE, full-stack, hackathon.</li>
         <li><b>Open source:</b> dig into my own repositories and hotspot projects; follow Bilibili creators (e.g. IT咖啡馆), clone, tinker, fork, or help maintain.</li>
         <li><b>Evals &amp; capability packs:</b> hands-on evaluation of domestic models (DeepSeek, GLM, Kimi) and the foreign big three (Anthropic, OpenAI, xAI). Tinker with MiniMax / StepFun credit packs (image, video, TTS, music) wired into agent workflows — plus custom workflows, utility Skills, and MCP.</li>
+        <li><b>My TTA Skills:</b> a small agent toolkit (<code>tta-cover</code> · <code>tta-draw-ui</code> · <code>tta-frontend</code> · <code>tta-html</code> · <code>tta-motion</code> · <code>tta-ppt</code> · <code>tta-tone</code> · <code>tta-visual</code>) for covers, UI, frontend work, shareable HTML, motion, decks, writing, and explainers.</li>
       </ul>
       <p>Outside tech I'm a cyclist 🚲 and follow bike racing — the Grand Tours and spring classics. I write a blog, tend a digital garden, note anime seasons, and keep small pieces of youth I do not want to lose.</p>
     </td>
