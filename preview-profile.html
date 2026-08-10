@@ -237,9 +237,10 @@
     <td width="50%" valign="top">
       <h3>Lead Cup · vLLM on Hygon DCU</h3>
       <p>2026 全国大学生计算机系统能力大赛 · 智能计算创新设计赛（先导杯）赛题 1 · Team 翻斗花园</p>
-      <p><b>Best run:</b> 87.7839 / 100 · #26 / 132 · SLA 0 · precision 0</p>
+      <p><b>Proof split:</b> official best anchor is 87.7839 / 100 · #26 / 132 · SLA 0 · precision 0; our own best anchor is 87.6933 / 100, with 4k–8k / 8k–16k / 16k–32k throughput 20.39 / 18.29 / 14.61 tok/s and precision 0.</p>
       <p>Workload: raise long-context Qwen throughput on a fixed domestic DCU at concurrency=1, under TTFT/TPOT P99 SLA (input mix 4k–8k / 8k–16k / 16k–32k).</p>
       <p>Stack: vLLM 0.18.1 · Qwen3.5-27B BF16 · Hygon DCU (gfx936) on SCNet. My focus: shared-gate fusion, SwiGLU HIP kernels, GDN launch packing, Gather-FA routing, LPK prefetch.</p>
+      <p><b>Validated recipe:</b> fused shared-gate ON · LPK stages=1 · Gather-FA ≤16K · rocBLAS + TunableOp · LPK prefetch. LONG prefill and LLMM1+fusion were rejected after measured regressions, including 83.8886 for the latter.</p>
       <p>vs official baseline smoke: TTFT P99 −61%–87% · TPOT P99 ≈ −35% · throughput +7%–24%. Scores locked to SCNet runs, not local Windows numbers.</p>
       <p><a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3" rel="nofollow">Submission</a> · <a href="https://github.com/Aafff623/vllm-cscc-leadcup">Source mirror</a></p>
     </td>
@@ -344,6 +345,5 @@
 </p>
 <hr>
 <p align="center"><i>Last updated: August 2026</i></p>
-</div>
 </body>
 </html>

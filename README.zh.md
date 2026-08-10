@@ -170,9 +170,10 @@ Coding agent 是一支车队，不是单一工具。Grok（expert 网页端）�
     <td width="50%" valign="top">
       <h3>Lead Cup · vLLM on Hygon DCU</h3>
       <p>2026 全国大学生计算机系统能力大赛 · 智能计算创新设计赛（先导杯）赛题 1 · 队伍翻斗花园</p>
-      <p><b>最好一跑：</b>87.7839 / 100 · #26 / 132 · SLA 0 · precision 0</p>
+      <p><b>证明拆分：</b>官方最佳锚为 87.7839 / 100 · #26 / 132 · SLA 0 · precision 0；本队最佳锚为 87.6933 / 100，4k–8k / 8k–16k / 16k–32k 吞吐为 20.39 / 18.29 / 14.61 tok/s，precision 0。</p>
       <p>工作负载：在固定国产 DCU、concurrency=1 下提升长上下文 Qwen 吞吐，并满足 TTFT / TPOT P99 SLA（输入档 4k–8k / 8k–16k / 16k–32k）。</p>
       <p>技术栈：vLLM 0.18.1 · Qwen3.5-27B BF16 · 海光 DCU（gfx936）· SCNet 实测。我负责 shared-gate 融合、SwiGLU HIP kernel、GDN launch packing、Gather-FA routing、LPK prefetch。</p>
+      <p><b>验证配方：</b>fused shared-gate 开启 · LPK stages=1 · Gather-FA ≤16K · rocBLAS + TunableOp · LPK prefetch。LONG prefill 与 LLMM1+fusion 经实测回退，后者曾降至 83.8886。</p>
       <p>相对官方基线 smoke：TTFT P99 −61%–87% · TPOT P99 ≈ −35% · 吞吐 +7%–24%。分数以 SCNet 跑分为准，不用本地 Windows 数字顶替。</p>
       <p><a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3">赛事提交</a> · <a href="https://github.com/Aafff623/vllm-cscc-leadcup">源码镜像</a></p>
     </td>
