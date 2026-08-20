@@ -12,8 +12,8 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 ## Identity and voice
 
-- **Profile:** Second-year Software Engineering student at North University of China, working toward a Java/Python + Agent Engineering internship.
-- **Tagline:** "Software Engineering student · Java & Python · Agent Engineering" (rendered under the wordmark).
+- **Profile:** Incoming third-year Software Engineering student at North University of China, working toward a Java/Python + Agent Engineering internship.
+- **Tagline:** `⭐ Code Less, Architect More 🚀` (rendered under the wordmark).
 - **Tone:** Direct, specific, and modest. Use first person and keep emoji sparse.
 - **Evidence:** Prefer concrete details, repository links, and transaction records over self-assigned labels.
 - **Editing reference:** Apply the anti-AI patterns from `humanizer-output-style`, adapted for an English profile.
@@ -31,8 +31,8 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 | Asset | File | Usage |
 | --- | --- | --- |
 | Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, bright palette) |
-| Wordmark (light) | `./assets/brand-threetwoa.svg` | Default profile wordmark |
-| Wordmark (dark) | `./assets/brand-threetwoa-dark.svg` | Dark-theme wordmark selected with `<picture>` |
+| Wordmark (light) | `./assets/brand-threetwoa.gif` | Default typewriter wordmark (SVG source: `brand-threetwoa.svg`) |
+| Wordmark (dark) | `./assets/brand-threetwoa-dark.gif` | Dark-theme typewriter wordmark selected with `<picture>` (SVG source: `brand-threetwoa-dark.svg`) |
 | Hero | `./assets/hero-knight.webp` | Intro table right cell; sharp-corner WebP 800×1000 q90 (see ADR 0003) |
 | Mascot (light) | `./assets/mascot.gif` | Tech Stack right cell, light-theme 3D knight looping GIF |
 | Mascot (dark) | `./assets/mascot-dark.gif` | Dark-theme mascot selected with `<picture>` (see ADR 0002) |
@@ -71,3 +71,5 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 - **Voice recipe (2026-08):** profile copy follows `docs/voice/REPORTS.md` — minimal craftsman shell, systems metrics on Lead Cup, product clarity on AI4S / AgentCFO. No indie-MRR narrative; no “build almost anything” slogan.
 - **Intro / Learning (2026-08):** tagline is `⭐ Code Less, Architect More 🚀`. Identity is incoming third-year (准大三). Practice bullets: full-chain / open source / evals (tools live under Agent workflow: Cursor / Claude Code / Codex + OpenCode Go). Evals: DeepSeek / GLM + OpenAI / Anthropic / xAI (not Gemini). Emoji+kaomoji never in H2; use `&#8288;` / short paragraph to avoid wrap splits. Contact icons have no heading and no HR above them.
 - **2026-08 (course-driven additions):** author is taking three GeekTime bootcamps (企业级 AI 编程实战营 / AI Agent 全栈工程师训练营 / Agentic AI 产品训练营). Nine badges added — AI row: LangGraph, OpenAI Agents SDK, Dify, LiteLLM, Ragas, DeepEval; Distributed: gRPC, etcd (re-added, superseding the earlier "etcd / ZooKeeper" drop); Data: Milvus, FAISS; Systems/inference: TGI; DevOps: Prometheus (re-added, superseding the earlier "Prometheus / Vercel" drop); Java row: Rust. Round 2: Spring Security (Java), XXL-Job + Canal + Redisson (Data/middleware), CrewAI + Agentic UI (AI). What I'm learning gains 4 course bullets (Enterprise AI Coding, Agent engineering, Multi-Agent/Eval/ops, Agentic AI product) + NB Microservices Full-Stack (小坏说Java) → 10 bullets total. Intro rewritten to Spec-driven Coding under Harness Engineering; Agent workflow rewritten as a tool fleet (Grok/GPT/Claude Code on DeepSeek v4 Flash + MiniMax/Kimi Code/OpenCode/Pi/Cursor auto).
+- **Wordmark typewriter (2026-08):** published profile loads `brand-threetwoa.gif` / `brand-threetwoa-dark.gif` (caret + left-to-right `threetwoa`, then hold). SVG sources stay tracked for edits. Tagline remains HTML. See ADR 0005.
+- **GitHub stats (2026-08):** cards use the public endpoint `github-readme-stats.shion.dev` (community host of github-readme-stats). Do not deploy or manage a Vercel app for this profile. `count_private` is off — that flag only works on a self-hosted instance with `PAT_1`. Official `github-readme-stats.vercel.app` is often 503; the old `sigma-five` Vercel app returned the PAT_1 error.

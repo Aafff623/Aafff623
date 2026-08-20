@@ -26,6 +26,7 @@ There is no build system, package manager, test suite, or linter in this reposit
 
 - **Profile:** Incoming third-year Software Engineering student at North University of China. Tagline: "Code Less, Architect More 🚀". Summer focus: Java microservices & middleware, LLM internals, Spec-driven Coding under Harness Engineering; vibe-coding honeymoon over — architecture / maintainability / code built to last. Tools: an agent fleet (Grok / GPT / Claude Code on DeepSeek v4 Flash + MiniMax pack / Kimi Code / OpenCode / Pi / Cursor auto). Evals: foreign big three (Anthropic / OpenAI / xAI) + domestic (DeepSeek / GLM / Kimi), MiniMax & StepFun credit packs. Optional emoji+kaomoji only at end of Intro / Agent / Learning body (never in headings). Outside tech: cycling (Grand Tours & classics), blog, digital garden, anime notes.
 - **Section order:** Intro (banner, wordmark, self-intro table + hero, quick links: Email/Blog/Digital Garden) → Contact icons (no heading) → Agent workflow → Tech stack → Competitions → GitHub stats → Classic project → Currently building → What I'm learning → Activity (`github-readme-activity-graph` line chart; no contribution-snake GIF).
+- **GitHub stats cards:** public host `https://github-readme-stats.shion.dev` (not a Vercel app in this repo, not `sigma-five`, not official `github-readme-stats.vercel.app`). No `count_private`. Do not add PAT_1 / Vercel for this profile.
 - **Agent workflow:** Fleet, not one tool — Grok (expert web) scouts hotspots; GPT deep-researches; Go carpool runs Claude Code on DeepSeek v4 Flash with the MiniMax capability pack; Kimi Code (K3), OpenCode (relayed GPT-5.6), Pi (GLM) light lanes; Cursor auto picks up scraps. Reuse playbooks, custom workflows, Matt's Skill flow, memory + slash commands in every CLI, .agent sync across tools; harness over prompt; author owns design and every merge.
 - **Competitions (2 cards only — do not restore dropped cards):**
   - `Lead Cup · vLLM on Hygon DCU`: 先导杯 / 智能计算创新设计赛题 1; team 翻斗花园; vLLM 0.18.1 · Qwen3.5-27B BF16 on Hygon DCU (gfx936) / SCNet; long-context concurrency=1. Author focus: shared-gate fusion, SwiGLU HIP, GDN packing, Gather-FA, LPK prefetch. Best run 87.7839/100 · #26/132. Links: GitLab submission + GitHub mirror. Thumbnail: `assets/comp-syscap-banner.webp`.
@@ -55,8 +56,10 @@ docs/
   assets-reproduction.md       # How each assets/ file was produced and regenerated
 assets/
   v9-banner.gif                # Animated banner used by README and preview
-  brand-threetwoa.svg          # Light-theme wordmark
-  brand-threetwoa-dark.svg     # Dark-theme wordmark selected with <picture>
+  brand-threetwoa.gif          # Light-theme typewriter wordmark (ADR 0005)
+  brand-threetwoa-dark.gif     # Dark-theme typewriter wordmark selected with <picture>
+  brand-threetwoa.svg          # Editable SVG source for the light GIF
+  brand-threetwoa-dark.svg     # Editable SVG source for the dark GIF
   hero-knight.webp             # Intro hero (sharp-corner WebP, see ADR 0003)
   mascot.gif                   # Light-theme animated mascot (Tech Stack section)
   mascot-dark.gif              # Dark-theme animated mascot selected with <picture>

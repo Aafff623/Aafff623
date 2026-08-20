@@ -4,8 +4,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/brand-threetwoa-dark.svg" />
-    <img src="./assets/brand-threetwoa.svg" alt="threetwoa" width="680" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/brand-threetwoa-dark.gif" />
+    <img src="./assets/brand-threetwoa.gif" alt="threetwoa" width="680" />
   </picture>
 </p>
 
@@ -185,7 +185,7 @@ Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hots
       <p>Stack: Biren106B · SDK 1.11 · <code>device=supa</code> · fused suFFT + SUPA dual-corner mul · FNO width32/modes16 · Cursor Agent harness (<code>skill.md</code>, operator opt-loop, promote gates).</p>
       <p>Evidence: formal Spectral idle frozen; chain CPU↔SUPA &lt;1e-4; Pred/GT viz on public NS64; Agent log 35+ reviewed segments with abort/NO_SIGNAL discipline (no silent promote).</p>
       <p>vs prior formal v8 (0.035302): public L2 ≈ <b>+0.53%</b> error drop after dual-view consistency polish; Spectral ms unchanged on purpose.</p>
-      <p><a href=”https://github.com/Aafff623/fandou-ai4s”>Source</a> · <a href=”https://ai4scompetition.intern-ai.org.cn/”>Competition site</a></p>
+      <p><a href="https://github.com/Aafff623/fandou-ai4s">Source</a> · <a href="https://ai4scompetition.intern-ai.org.cn/">Competition site</a></p>
     </td>
   </tr>
   <tr>
@@ -206,14 +206,14 @@ Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hots
   <tr>
     <td width="60%" align="center" valign="top">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=Aafff623&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide=prs,issues&count_private=true&hide_border=false&border_color=30363d&card_width=500" />
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Aafff623&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&count_private=true&hide_border=false&border_color=d1d9e0&card_width=500" alt="GitHub stats" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide=prs,issues&hide_border=false&border_color=30363d&card_width=500" />
+        <img src="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&hide_border=false&border_color=d1d9e0&card_width=500" alt="GitHub stats" />
       </picture>
     </td>
     <td width="40%" align="center" valign="top">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d&card_width=320" />
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aafff623&layout=compact&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&count_private=true&hide_border=false&border_color=d1d9e0&card_width=320" alt="Top languages" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d&card_width=320" />
+        <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=compact&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&hide_border=false&border_color=d1d9e0&card_width=320" alt="Top languages" />
       </picture>
     </td>
   </tr>

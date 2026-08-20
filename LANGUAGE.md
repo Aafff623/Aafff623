@@ -3,7 +3,9 @@
 ## Profile sections
 
 - **Intro**: Banner, wordmark, tagline, and the "who I am" table with the hero image.
-- **Project quick links**: Deployed project URLs only (AgentCFO demo, Blog, Digital Garden), below the intro table.
+- **Agent workflow**: Tool fleet and harness responsibility (no heading emoji).
+- **GitHub stats**: Official-algorithm cards from `github-readme-stats.shion.dev` (public stats only; no Vercel self-host).
+- **Project quick links**: Email, Blog, and Digital Garden, below the intro table. AgentCFO live demo stays on the Classic project card.
 - **Contact icons**: Icon links for GitHub, X, Bilibili, Telegram, and YouTube sit under Project quick links with **no section heading** and **no leading horizontal rule**; a rule still separates them from Agent workflow.
 - **Tech stack**: Compact brand-color `flat-square` shields by category. No AI tools row. Mascot stays on the right.
 - **Competitions**: Two cards only — Lead Cup (vLLM / Hygon / 先导杯) and AI4S 书生国智科探挑战赛. Layout is a 2×2 table: text row, then a shared image row so both thumbnails share one baseline. Do not reintroduce removed camps/contests in this section.
@@ -13,6 +15,7 @@
 
 ## Assets
 
+- **brand-threetwoa**: Published as light/dark typewriter GIFs (`brand-threetwoa.gif` / `brand-threetwoa-dark.gif`); SVG files are the editable source. See ADR 0005.
 - **mascot**: Animated GIF in the Tech stack section.
 - **comp-syscap-banner / comp-ai4s-ketan**: Competitions event thumbnails (WebP, rounded alpha).
 - **hero-knight**: Static intro hero (sharp-corner WebP; no baked border-radius).
