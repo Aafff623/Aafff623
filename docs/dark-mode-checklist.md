@@ -27,16 +27,16 @@
 - [x] 引入 `@media (prefers-color-scheme: dark)` 暗色变量集（对齐 GitHub dark default 配色）
 - [x] 背景 `--bg`、文字 `--text`、边框 `--border`、链接 `--link`、`code` 背景、`h2` 标题全部走变量
 - [x] 白底 GIF 资产（mascot / banner）在暗色下加圆角 + `outline` 边框，弱化白框突兀感
-- [x] 字标用 `<picture>` 包裹，暗色切换到 `brand-threetwoa-dark.svg`
+- [x] 字标用 `<picture>` 包裹，暗色切换到 `brand-threetwoa-dark.gif`（打字机 GIF，见 ADR 0005）
 
 ### README.md
-- [x] 字标 `<picture>` 切换：亮色 `brand-threetwoa.svg` ↔ 暗色 `brand-threetwoa-dark.svg`
+- [x] 字标 `<picture>` 切换：亮色 `brand-threetwoa.gif` ↔ 暗色 `brand-threetwoa-dark.gif`（打字机 GIF，见 ADR 0005；SVG 仍作源文件）
 - [x] 新增 `assets/brand-threetwoa-dark.svg`（浅蓝渐变，适配暗色背景）
 - [x] 吉祥物 `<picture>` 切换：亮色 `mascot.gif` ↔ 暗色 `mascot-dark.gif`（3D 骑士，见 ADR 0002）
 - [x] Activity 使用 `github-readme-activity-graph` 折线图 + `<picture>` 明暗切换（ADR 0004 贪吃蛇 GIF 已撤销）
 
 ### 新增资产
-- [x] `assets/brand-threetwoa-dark.svg`（暗色字标）
+- [x] `assets/brand-threetwoa-dark.gif`（暗色打字机字标；源文件仍为 SVG）
 - [x] `assets/mascot-dark.gif`（暗色吉祥物，3D 骑士）
 
 ---

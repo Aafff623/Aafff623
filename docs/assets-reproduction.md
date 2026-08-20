@@ -69,7 +69,23 @@ Image.open("<source>.png").convert("RGB").save(
 - If it needs a dark variant (see `docs/dark-mode-checklist.md` §4), recompose on a
   `#0d1117`-based background and wire with `<picture>`, mirroring the mascot approach.
 
-## Wordmarks — `assets/brand-threetwoa.svg` / `assets/brand-threetwoa-dark.svg`
+## Wordmarks — SVG source + published typewriter GIFs
 
-- Hand-editable SVG; no build step. The dark wordmark is a lighter/blue-gradient
-  variant selected via `<picture>` on the dark theme. Edit the SVG source directly.
+- **Source (edit these):** `assets/brand-threetwoa.svg` / `assets/brand-threetwoa-dark.svg`.
+  Hand-editable SVG; no build step for still frames. The dark wordmark is a
+  lighter/blue-gradient variant.
+- **Published (what README loads):** `assets/brand-threetwoa.gif` /
+  `assets/brand-threetwoa-dark.gif`. Typewriter loop, switched with `<picture>`.
+  See `docs/adr/0005-wordmark-typewriter-gif.md`.
+- **Regenerate GIFs** after an SVG edit (Playwright Chromium + Pillow):
+
+```bash
+python .scratch/wordmark-typewriter/render.py
+# then copy the two *.candidate.gif files into assets/ as
+# brand-threetwoa.gif and brand-threetwoa-dark.gif
+```
+
+- **Motion:** caret blinks → types `threetwoa` left-to-right in the final word
+  slot → caret blinks → hold ~2.6 s → loop. Tagline stays HTML, not in the GIF.
+- **Encode:** 760×150 at 2× (1520×300), ~15 unique frames, ~341 KB each.
+  Backgrounds `#ffffff` / `#0d1117` (GIF has no useful alpha).
