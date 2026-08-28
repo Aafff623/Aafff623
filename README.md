@@ -65,93 +65,44 @@ Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hots
   <tr>
     <td width="78%" valign="top">
       <p><b>Frontend</b><br />
-      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
       <img src="https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue" />
-      <img src="https://img.shields.io/badge/UniApp-2B9939?style=flat-square&logoColor=white" alt="UniApp" />
-      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-      <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></p>
-      <p><b>Node.js / real-time</b><br />
-      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
-      <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO" />
-      <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
-      <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest" /></p>
+      <img src="https://img.shields.io/badge/UniApp-2B9939?style=flat-square&logoColor=white" alt="UniApp" />
+      <img src="https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white" alt="Astro" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /></p>
       <p><b>Java / Spring</b><br />
       <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-      <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
       <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
-      <img src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Cloud Alibaba" />
+      <img src="https://img.shields.io/badge/Spring%20MVC-6DB33F?style=flat-square&logoColor=white" alt="Spring MVC" />
       <img src="https://img.shields.io/badge/MyBatis--Plus-1A7FBF?style=flat-square&logoColor=white" alt="MyBatis-Plus" />
-      <img src="https://img.shields.io/badge/Nacos-2E6BE6?style=flat-square&logoColor=white" alt="Nacos" />
-      <img src="https://img.shields.io/badge/Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Gateway" />
-      <img src="https://img.shields.io/badge/OpenFeign-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="OpenFeign" />
-      <img src="https://img.shields.io/badge/Sentinel-E23C39?style=flat-square&logoColor=white" alt="Sentinel" />
-      <img src="https://img.shields.io/badge/Seata-2E6BE6?style=flat-square&logoColor=white" alt="Seata" />
-      <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Security" /></p>
-      <p><b>AI / agents</b><br />
-      <img src="https://img.shields.io/badge/Spring%20AI-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring AI" />
-      <img src="https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logoColor=white" alt="LangChain4j" />
-      <img src="https://img.shields.io/badge/LangGraph4j-334155?style=flat-square&logoColor=white" alt="LangGraph4j" />
-      <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white" alt="Retrieval-Augmented Generation" />
-      <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logoColor=white" alt="Model Context Protocol" />
-      <img src="https://img.shields.io/badge/Harness%20Agent-0F766E?style=flat-square&logoColor=white" alt="Harness Agent" />
-      <img src="https://img.shields.io/badge/Loop%20Agent-334155?style=flat-square&logoColor=white" alt="Loop Agent" />
-      <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="Qwen / DashScope" />
-      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logoColor=white" alt="LangGraph" />
-      <img src="https://img.shields.io/badge/OpenAI%20Agents%20SDK-000000?style=flat-square&logo=openai&logoColor=white" alt="OpenAI Agents SDK" />
-      <img src="https://img.shields.io/badge/Dify-1C64F2?style=flat-square&logoColor=white" alt="Dify" />
-      <img src="https://img.shields.io/badge/LiteLLM-4F46E5?style=flat-square&logoColor=white" alt="LiteLLM" />
-      <img src="https://img.shields.io/badge/Ragas-7C3AED?style=flat-square&logoColor=white" alt="Ragas" />
-      <img src="https://img.shields.io/badge/DeepEval-E92063?style=flat-square&logoColor=white" alt="DeepEval" />
-      <img src="https://img.shields.io/badge/CrewAI-E25041?style=flat-square&logoColor=white" alt="CrewAI" />
-      <img src="https://img.shields.io/badge/Agentic%20UI-7C3AED?style=flat-square&logoColor=white" alt="Agentic UI" /></p>
-      <p><b>Distributed systems</b><br />
-      <img src="https://img.shields.io/badge/RPC-0F766E?style=flat-square&logoColor=white" alt="RPC" />
-      <img src="https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" />
-      <img src="https://img.shields.io/badge/etcd-419EDA?style=flat-square&logo=etcd&logoColor=white" alt="etcd" />
-      <img src="https://img.shields.io/badge/Vert.x-782A90?style=flat-square&logo=eclipsevertica&logoColor=white" alt="Vert.x" /></p>
-      <p><b>Data / middleware</b><br />
+      <img src="https://img.shields.io/badge/Sa--Token-6DB33F?style=flat-square&logoColor=white" alt="Sa-Token" /></p>
+      <p><b>Middleware &amp; microservices</b><br />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
       <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-      <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
-      <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elasticsearch" />
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
       <img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
-      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
-      <img src="https://img.shields.io/badge/Milvus-00A1EA?style=flat-square&logo=milvus&logoColor=white" alt="Milvus" />
-      <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logoColor=white" alt="FAISS" />
-      <img src="https://img.shields.io/badge/XXL--Job-1C3C3C?style=flat-square&logoColor=white" alt="XXL-Job" />
-      <img src="https://img.shields.io/badge/Canal-5B7DB1?style=flat-square&logoColor=white" alt="Canal" />
-      <img src="https://img.shields.io/badge/Redisson-DC382D?style=flat-square&logoColor=white" alt="Redisson" /></p>
-      <p><b>Python / backend</b><br />
+      <img src="https://img.shields.io/badge/RocketMQ-D77C10?style=flat-square&logo=apacherocketmq&logoColor=white" alt="RocketMQ" />
+      <img src="https://img.shields.io/badge/Netty-1F2937?style=flat-square&logoColor=white" alt="Netty" />
+      <img src="https://img.shields.io/badge/Nacos-2E6BE6?style=flat-square&logoColor=white" alt="Nacos" />
+      <img src="https://img.shields.io/badge/Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Gateway" /></p>
+      <p><b>AI / agents</b><br />
+      <img src="https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logoColor=white" alt="LangChain4j" />
+      <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="Qwen / DashScope" />
+      <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logoColor=white" alt="Model Context Protocol" />
+      <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white" alt="Retrieval-Augmented Generation" /></p>
+      <p><b>Python</b><br />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-      <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic" />
-      <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
-      <img src="https://img.shields.io/badge/httpx-1F2937?style=flat-square&logoColor=white" alt="httpx" />
-      <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" alt="Celery" />
-      <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest" />
-      <img src="https://img.shields.io/badge/asyncio-3776AB?style=flat-square&logo=python&logoColor=white" alt="asyncio" /></p>
-      <p><b>Systems / inference</b><br />
+      <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" />
+      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" /></p>
+      <p><b>Systems / inference — competition proof</b><br />
       <img src="https://img.shields.io/badge/vLLM-1F2937?style=flat-square&logoColor=white" alt="vLLM" />
-      <img src="https://img.shields.io/badge/TGI-FF9D00?style=flat-square&logo=huggingface&logoColor=white" alt="TGI" />
       <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-7C3AED?style=flat-square&logoColor=white" alt="HIP / ROCm" />
-      <img src="https://img.shields.io/badge/Triton-0F766E?style=flat-square&logoColor=white" alt="Triton" />
       <img src="https://img.shields.io/badge/Hygon%20DCU-4F46E5?style=flat-square&logoColor=white" alt="Hygon DCU" />
       <img src="https://img.shields.io/badge/Biren%20GPU-059669?style=flat-square&logoColor=white" alt="Biren GPU" /></p>
-      <p><b>Web3</b><br />
-      <img src="https://img.shields.io/badge/Viem-FF6B35?style=flat-square&logo=ethereum&logoColor=white" alt="Viem" />
-      <img src="https://img.shields.io/badge/Wagmi-1A1B1F?style=flat-square&logo=ethereum&logoColor=white" alt="Wagmi" /></p>
-      <p><b>DevOps / observability</b><br />
+      <p><b>DevOps</b><br />
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-      <img src="https://img.shields.io/badge/Harbor-60B932?style=flat-square&logo=harbor&logoColor=white" alt="Harbor" />
-      <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-      <img src="https://img.shields.io/badge/ELK-005571?style=flat-square&logo=elastic&logoColor=white" alt="ELK" />
-      <img src="https://img.shields.io/badge/SkyWalking-F1A61C?style=flat-square&logoColor=white" alt="SkyWalking" />
-      <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
-      <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" /></p>
+      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" /></p>
     <td width="22%" align="center" valign="middle">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/mascot-dark.gif" />
