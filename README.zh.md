@@ -234,8 +234,8 @@ Coding agent 是一支车队，不是单一工具。Grok（expert 网页端）�
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=0d1117&color=58a6ff&line=58a6ff&point=d29922&hide_border=true" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Aafff623&bg_color=ffffff&color=0969da&line=0969da&point=f59e0b&hide_border=true" alt="活跃度折线图" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aafff623/Aafff623/output/github-contribution-grid-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/Aafff623/Aafff623/output/github-contribution-grid-snake.svg" alt="贡献贪吃蛇" />
   </picture>
 </p>
 
