@@ -1,4 +1,5 @@
 .playwright-mcp/
+.mimosa/
 preview-v7-*.png
 github-profile-*.png
 *.heapsnapshot
