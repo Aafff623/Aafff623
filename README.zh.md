@@ -200,7 +200,7 @@ Coding agent 是一支车队，不是单一工具。Grok（expert 网页端）�
       </p>
     </td>
     <td width="35%" align="center" valign="middle">
-      <img src="https://raw.githubusercontent.com/San-Y108/agent-cfo/master/assets/images/readme/banner.png" width="100%" alt="AgentCFO banner" />
+      <img src="./assets/agentcfo-banner.webp" width="100%" alt="AgentCFO banner" />
     </td>
   </tr>
 </table>
@@ -241,4 +241,4 @@ Coding agent 是一支车队，不是单一工具。Grok（expert 网页端）�
 
 ---
 
-<p align="center"><i>最近更新：2026 年 8 月</i></p>
+<p align="center"><i>最近更新：2026 年 9 月</i></p>

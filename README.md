@@ -200,7 +200,7 @@ Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hots
       </p>
     </td>
     <td width="35%" align="center" valign="middle">
-      <img src="https://raw.githubusercontent.com/San-Y108/agent-cfo/master/assets/images/readme/banner.png" width="100%" alt="AgentCFO banner" />
+      <img src="./assets/agentcfo-banner.webp" width="100%" alt="AgentCFO banner" />
     </td>
   </tr>
 </table>
@@ -241,4 +241,4 @@ Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hots
 
 ---
 
-<p align="center"><i>Last updated: August 2026</i></p>
+<p align="center"><i>Last updated: September 2026</i></p>
