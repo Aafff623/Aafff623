@@ -33,7 +33,7 @@
 - [x] 字标 `<picture>` 切换：亮色 `brand-threetwoa.gif` ↔ 暗色 `brand-threetwoa-dark.gif`（打字机 GIF，见 ADR 0005；SVG 仍作源文件）
 - [x] 新增 `assets/brand-threetwoa-dark.svg`（浅蓝渐变，适配暗色背景）
 - [x] 吉祥物 `<picture>` 切换：亮色 `mascot.gif` ↔ 暗色 `mascot-dark.gif`（3D 骑士，见 ADR 0002）
-- [x] Activity 使用 `github-readme-activity-graph` 折线图 + `<picture>` 明暗切换（ADR 0004 贪吃蛇 GIF 已撤销）
+- [x] Activity 使用仓库自生成的 Platane/snk 贪吃蛇 SVG（`output` 分支）+ `<picture>` 明暗切换（见 ADR 0007；activity-graph 折线图因公共实例 402 已弃用）
 
 ### 新增资产
 - [x] `assets/brand-threetwoa-dark.gif`（暗色打字机字标；源文件仍为 SVG）
@@ -68,7 +68,7 @@
 
 ### 3.5 外部服务图片（stats / top langs）
 - **问题**：统计卡需要分别提供亮色、暗色参数，单一 URL 无法跟随主题。
-- **README 现状**：Stats、Top Languages、Activity 均使用 `<picture>` + 两套 URL（Activity 为 activity-graph 折线图）。✅
+- **README 现状**：Stats、Top Languages、Activity 均使用 `<picture>` + 两套 URL（Activity 为 `output` 分支上的贪吃蛇 SVG，见 ADR 0007）。✅
 - **preview 现状**：与 README 使用相同的 `<picture>` 结构。✅
 
 ---

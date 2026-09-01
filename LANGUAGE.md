@@ -11,7 +11,7 @@
 - **Competitions**: Two cards only — Lead Cup (vLLM / Hygon / 先导杯) and AI4S 书生国智科探挑战赛. Layout is a 2×2 table: text row, then a shared image row so both thumbnails share one baseline. Do not reintroduce removed camps/contests in this section.
 - **Classic project**: AgentCFO only. Other / coursework cards stay off the profile; Blog and Digital Garden remain in Project quick links.
 - **What I'm learning**: NB Microservices Full-Stack (小坏说Java) + AI-assisted E2E (MCP), light CLI × heavy IDE, Prompt→Context→Harness→Loop, custom Skills / Spec-driven Coding, indie App/mini-program + overseas payments, plus 4 course bullets (2026-08). No Web3 / OS / systems-inference rows here, no contest registration status, and no mirror of Competitions cards.
-- **Activity**: Third-party contribution activity line graph (`github-readme-activity-graph`) with light/dark `<picture>` URLs. Do not reintroduce the contribution-snake GIF heatmap here — GitHub's own calendar already covers that.
+- **Activity**: Platane/snk contribution-snake SVGs (light/dark via `<picture>`), generated in-repo by `.github/workflows/snake.yml` and served from the `output` branch. See ADR 0007; do not wire activity visuals to free public instances (the `github-readme-activity-graph` line chart was dropped after its public instance returned 402).
 
 ## Assets
 

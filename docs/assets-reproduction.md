@@ -37,10 +37,16 @@ ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/frame-%03d.png -i .scrat
 Repeat with `frames-dark/` for `mascot-dark.gif`. Then run the acceptance checks
 in the plan (§12) before copying candidates into `assets/`.
 
-## Activity graph (no local asset)
+## Activity snake (no local asset)
 
-- **Current:** `github-readme-activity-graph.vercel.app` line chart in the Activity section, light/dark via `<picture>`.
-- **Note:** the former `contribution-snake*.gif` heatmap (ADR 0004) was removed as redundant with GitHub's native calendar.
+- **Current:** Platane/snk contribution snake, generated in-repo by `.github/workflows/snake.yml` (daily cron + manual dispatch + push) and pushed to the `output` branch; the README embeds light/dark SVGs from `raw.githubusercontent.com` via `<picture>`. See `docs/adr/0007-contribution-snake-replaces-activity-graph.md`.
+- **Note:** the `github-readme-activity-graph` line chart was dropped when its public Vercel instance returned 402; activity visuals are generated in-repo via Actions, never wired to free public instances.
+
+## `assets/agentcfo-banner.webp` — Classic project banner
+
+- **Usage:** right cell of the Classic project table (`width="100%"`).
+- **Origin:** copied from the upstream repo `San-Y108/agent-cfo` (`assets/images/readme/banner.png`, 1672×941 PNG) and self-hosted so the profile does not break if the teammate repo moves or goes private.
+- **Encode:** WebP q90 via `ffmpeg -i <source>.png -quality 90` → ~297 KB (from ~1.8 MB PNG).
 
 ## `assets/comp-syscap-banner.webp` / `assets/comp-ai4s-ketan.webp` — Competitions thumbnails
 
