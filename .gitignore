@@ -1,9 +1,31 @@
-.playwright-mcp/
-.mimosa/
-preview-v7-*.png
-github-profile-*.png
-*.heapsnapshot
+# OS files
 .DS_Store
 Thumbs.db
-# Local generation frames, compression candidates, and visual checks; disposable and never referenced by tracked files.
+desktop.ini
+
+# MCP local configuration & runtime tools (tta-init standard)
+.agents/mcp.json
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+.playwright-mcp/
+.mimosa/
 .scratch/
+
+# Python cache (for temp scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.heapsnapshot
+
+# Temporary profile snapshots & renders
+preview-v7-*.png
+github-profile-*.png
+
+# Local temporary workspace (payload ignored, governance entry points tracked)
+temp/*
+!temp/README.md
+!temp/AGENTS.md
+
+
+

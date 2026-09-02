@@ -37,4 +37,4 @@ Replace the static transparent PNG with a white-background looping GIF (`assets/
 ## Related
 
 - `assets/mascot.gif`
-- `docs/dark-mode-checklist.md`
+- `temp/reports/dark-mode-checklist.md` (scratch report)

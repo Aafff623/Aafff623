@@ -11,7 +11,7 @@ ADR 0001 chose a single white-background looping GIF for the Tech Stack mascot a
 - The mascot was redesigned as a 3D chibi knight cycling through a five-pose sword sequence, replacing the earlier 2D character.
 - Dark-mode support matured across the rest of the profile — the wordmark, GitHub stats, top languages, and activity graph all switch by theme via `<picture>`. That left the light-only mascot as the last visible dark-mode defect.
 
-The full production plan (asset audit, motion, transitions, encoding budget) lives in `docs/tech-stack-3d-mascot-plan.md`.
+The full production plan (asset audit, motion, transitions, encoding budget) lives in `temp/reports/tech-stack-3d-mascot-plan.md`.
 
 ## Decision
 
@@ -46,6 +46,5 @@ Ship two pre-composited GIFs and switch them by theme with `<picture>`:
 ## Related
 
 - Supersedes `docs/adr/0001-mascot-white-background-gif.md`
-- `docs/tech-stack-3d-mascot-plan.md`
-- `docs/dark-mode-checklist.md`
 - `assets/mascot.gif`, `assets/mascot-dark.gif`
+- `temp/reports/tech-stack-3d-mascot-plan.md` (scratch planning report)

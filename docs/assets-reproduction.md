@@ -1,7 +1,7 @@
 # Asset Reproduction
 
 How the published binary assets in `assets/` were produced. Their working files
-(source frames, candidate encodes, scripts) live in ignored `.scratch/` and are
+(source frames, candidate encodes, scripts) live in ignored `temp/` and are
 **not tracked**, so this file is the durable record needed to regenerate or
 replace an asset. Where a source is not available in the repo, it is marked
 **source not tracked**.
@@ -9,29 +9,28 @@ replace an asset. Where a source is not available in the repo, it is marked
 ## Conventions
 
 - Published assets use **relative paths** (`./assets/...`) so they resolve on GitHub.
-- Keep candidate encodes under `.scratch/`; only copy an approved file into `assets/`.
+- Keep candidate encodes under `temp/`; only copy an approved file into `assets/`.
 - After replacing an asset, verify locally and with `gh api markdown`, and check
   both the default light and default dark GitHub themes.
 
 ## `assets/mascot.gif` and `assets/mascot-dark.gif` — Tech Stack mascot
 
-- **Decision:** `docs/adr/0002-3d-chibi-knight-light-dark-gif.md` (supersedes ADR 0001).
-- **Full pipeline:** `docs/tech-stack-3d-mascot-plan.md` (asset audit, motion, transitions, encoding budget).
-- **Source frames:** `.scratch/chibi-knight-import/chibi_knight_5_images/` — 5× `1254×1254` PNG (no alpha). Matte and align before encoding; do not rely on the original filenames for pose order (see plan §3).
+- **Full pipeline:** `docs/adr/0002-3d-chibi-knight-light-dark-gif.md` (scratch plan in `temp/reports/tech-stack-3d-mascot-plan.md`).
+- **Source frames:** `temp/chibi-knight-import/chibi_knight_5_images/` — 5× `1254×1254` PNG (no alpha). Matte and align before encoding; do not rely on the original filenames for pose order (see plan §3).
 - **Output:** `320×320`, 18 fps, ~73 frames, infinite loop. Light background near `#ffffff`; dark background near `#0d1117` with edges recomposited (not the light version darkened).
 - **Shipped sizes (A-tier):** light ~442 KB, dark ~478 KB (budget ≤1.5 MB per GIF; hard cap 3 MB).
 - **Encoding (representative two-pass palette):**
 
 ```bash
 # 1) build an optimized palette (64 colors is enough for the chibi knight)
-ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/frame-%03d.png \
+ffmpeg -framerate 18 -i temp/mascot-3d/frames-light/frame-%03d.png \
   -vf "scale=320:320:flags=lanczos,palettegen=max_colors=64:stats_mode=diff" \
-  -update 1 -frames:v 1 -y .scratch/mascot-3d/palette-light.png
+  -update 1 -frames:v 1 -y temp/mascot-3d/palette-light.png
 
 # 2) apply the palette; prefer no dither on flat areas
-ffmpeg -framerate 18 -i .scratch/mascot-3d/frames-light/frame-%03d.png -i .scratch/mascot-3d/palette-light.png \
+ffmpeg -framerate 18 -i temp/mascot-3d/frames-light/frame-%03d.png -i temp/mascot-3d/palette-light.png \
   -lavfi "scale=320:320:flags=lanczos[x];[x][1:v]paletteuse=dither=none" \
-  -loop 0 -y .scratch/mascot-3d/mascot-light.candidate.gif
+  -loop 0 -y temp/mascot-3d/mascot-light.candidate.gif
 ```
 
 Repeat with `frames-dark/` for `mascot-dark.gif`. Then run the acceptance checks
@@ -72,7 +71,7 @@ Image.open("<source>.png").convert("RGB").save(
 
 - **Current:** static pixelized-mascot banner, bright palette, ~92 KB.
 - **Source not tracked.** Frame source and encoding settings are not in the repo.
-- If it needs a dark variant (see `docs/dark-mode-checklist.md` §4), recompose on a
+- If it needs a dark variant (see `CONTEXT.md` / `docs/adr/0002-3d-chibi-knight-light-dark-gif.md`), recompose on a
   `#0d1117`-based background and wire with `<picture>`, mirroring the mascot approach.
 
 ## Wordmarks — SVG source + published typewriter GIFs
@@ -86,8 +85,9 @@ Image.open("<source>.png").convert("RGB").save(
 - **Regenerate GIFs** after an SVG edit (Playwright Chromium + Pillow):
 
 ```bash
-python .scratch/wordmark-typewriter/render.py
+python temp/scripts/wordmark-typewriter/render.py
 # then copy the two *.candidate.gif files into assets/ as
+
 # brand-threetwoa.gif and brand-threetwoa-dark.gif
 ```
 

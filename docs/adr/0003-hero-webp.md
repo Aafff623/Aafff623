@@ -28,7 +28,7 @@ Serve the hero as `assets/hero-knight.webp` (WebP, quality 90, `method=6`) at th
 
 - **Positive:** ~10x smaller hero (981 KB → 90 KB), full resolution, visually near-identical. The profile's heaviest asset becomes one of its lightest.
 - **Negative:** WebP has slightly less universal support than PNG in non-browser contexts, but every current browser and GitHub render it.
-- **Unchanged:** still a single light-background image with no dark variant (see `docs/dark-mode-checklist.md`).
+- **Unchanged:** still a single light-background image with no dark variant (see `temp/reports/dark-mode-checklist.md`).
 
 ## Related
 

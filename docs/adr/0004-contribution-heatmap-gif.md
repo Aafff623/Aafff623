@@ -2,7 +2,8 @@
 
 ## Status
 
-Superseded (2026-08). Activity is back to `github-readme-activity-graph` — the snake GIF duplicated GitHub's native contribution calendar.
+Superseded by [ADR 0007](0007-contribution-snake-replaces-activity-graph.md).
+
 
 ## Context
 
@@ -16,7 +17,7 @@ Replace the Activity graph with a self-hosted animated heatmap shipped as two GI
 
 - **Light:** `assets/contribution-snake.gif` — white background, GitHub light calendar palette.
 - **Dark:** `assets/contribution-snake-dark.gif` — `#0d1117` background, GitHub dark calendar palette.
-- **Source of truth:** `.scratch/contribution-heatmap/gen_heatmap_gif.py` (not tracked). It fetches `github.com/users/Aafff623/contributions` without a token (regex `data-date=... data-level=...`), lays cells out Sunday-first / week columns, plans an **A\* shortest-path route** between colored cells (lowest level first, like snk's `getBestRoute` batches) so the snake weaves around un-eaten cells instead of sweeping rows, draws frames with Pillow (12px rounded cells on a 16px grid), and encodes with ffmpeg `palettegen` + `paletteuse`.
+- **Source of truth:** `temp/contribution-heatmap/gen_heatmap_gif.py` (not tracked). It fetches `github.com/users/Aafff623/contributions` without a token (regex `data-date=... data-level=...`), lays cells out Sunday-first / week columns, plans an **A\* shortest-path route** between colored cells (lowest level first, like snk's `getBestRoute` batches) so the snake weaves around un-eaten cells instead of sweeping rows, draws frames with Pillow (12px rounded cells on a 16px grid), and encodes with ffmpeg `palettegen` + `paletteuse`.
 - **Trajectory robustness:** un-eaten colored cells act as walls, but the snake may step up to `PAD=2` cells outside the grid (mirrors snk's `isInsideLarge`) so a wall of colored cells never traps it; if A\* still fails, the fallback walks straight toward the goal cell by cell — the snake never teleports.
 - **Motion:** variable speed per the profile owner's algorithm — open ground ahead glides fast (4.5 cells/frame), close to a colored cell it slows to 1.5 cells/frame to "aim" (`speed()`: NEAR/FAR = 2/6, VMIN/VMAX = 1.5/4.5). The snake is purple (distinct from the green cells) with snk-style size and color gradients from head to tail. Exterior bypasses may insert a short bump-turn before climbing to the far lane.
 - **Spec (current render):** 896×192 (margins ≥ `PAD=2`), ~341 frames, 12 fps (~28 s loop), shipped ~247 KB each (`max_colors=64`). Level colors are GitHub's official calendar colors. Frame count, duration, and file size scale with the A\* path length, so they drift as contributions change.
@@ -38,6 +39,6 @@ Replace the Activity graph with a self-hosted animated heatmap shipped as two GI
 
 ## Related
 
-- `.scratch/contribution-heatmap/gen_heatmap_gif.py`, `docs/assets-reproduction.md`
-- `docs/dark-mode-checklist.md`
+- `temp/contribution-heatmap/gen_heatmap_gif.py`, `docs/assets-reproduction.md`
+- `temp/reports/dark-mode-checklist.md`
 - `assets/contribution-snake.gif`, `assets/contribution-snake-dark.gif`

@@ -47,5 +47,5 @@ The HTML tagline `Code Less, Architect More` stays as selectable text under the 
 - `assets/brand-threetwoa.gif`, `assets/brand-threetwoa-dark.gif`
 - `assets/brand-threetwoa.svg`, `assets/brand-threetwoa-dark.svg` (source)
 - `docs/assets-reproduction.md`
-- `docs/dark-mode-checklist.md`
+- `temp/reports/dark-mode-checklist.md`
 - ADR 0002 (same GIF + `<picture>` pattern)

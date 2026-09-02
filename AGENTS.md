@@ -27,6 +27,21 @@ Static **GitHub profile repository** (`Aafff623/Aafff623`). The root `README.md`
 - README strips `<style>`, inline `style=`, `<script>`, and CSS media queries → dark-mode image switching uses `<picture>` + `<source media>` only.
 - For risky HTML/table changes, verify with `gh api markdown` before pushing.
 
+## Read first
+
+- `README.md` for the published profile and daily layout.
+- `CONTEXT.md` for verified domain facts, glossary, constraints, active decisions, and `待确认` items.
+- `temp/AGENTS.md` before entering or creating files under `temp/`.
+- `docs/adr/` when making or evaluating significant architecture/asset decisions.
+
+## File boundaries
+
+- `assets/` contains only binary files currently referenced by the published profile (reproduction steps recorded in `docs/assets-reproduction.md`).
+- `temp/` is the local, ignored workspace for experimental scripts, compression frames, and scratch reports. Payloads must not be committed.
+- Durable decisions belong in `docs/adr/` or `CONTEXT.md`, never as loose unpromoted files.
+
 ## Full detail
 
-`CLAUDE.md` (complete guide) · `CONTEXT.md` (purpose, audience, constraints) · `LANGUAGE.md` (glossary) · `docs/adr/` (decisions).
+`CLAUDE.md` (Claude entry) · `CONTEXT.md` (single source of truth) · `docs/adr/` (durable decisions) · `temp/AGENTS.md` (temp workspace rules).
+
+
