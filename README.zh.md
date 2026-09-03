@@ -19,11 +19,11 @@
       <p>⚡&#8288;(¬‿¬) 少一点一次性代码，多一点判断与 Workflow。</p>
       <p>正在实践：</p>
       <ul>
-        <li><b>构建与实践：</b>大型可维护系统（微服务、中间件）；把新兴开源主流范式改造成玩具项目练手（OpenClaw、Hermes Agent、OpenHands、DeerFlow）；长期 vibe 项目如数字花园；集成丰富的插件 / 组件化生态。</li>
-        <li><b>沉淀技术点：</b>支付、DB、微信、阿里云、UniApp 等；切换思考视角——PM、FDE、全栈、黑客松选手。</li>
-        <li><b>开源：</b>从自己的 repositories 和开源热点入手；关注 B 站 UP（如 IT咖啡馆）拉项目捣鼓，做二开或维护。</li>
-        <li><b>评测与权益包：</b>动手评测国模（DeepSeek、GLM、Kimi）与国外御三家（Anthropic、OpenAI、xAI）；把 MiniMax / StepFun 权益包（生图、视频、配音、音乐）集成进 Agent workflow，再搭配自定义 workflow、效率 Skill 与 MCP 体验。</li>
-        <li><b>自创 TTA Skills：</b>一套面向 Agent 的小工具集（<code>tta-cover</code> · <code>tta-draw-ui</code> · <code>tta-frontend</code> · <code>tta-html</code> · <code>tta-motion</code> · <code>tta-ppt</code> · <code>tta-tone</code> · <code>tta-visual</code>），覆盖封面、UI、前端、可分享 HTML、动效、演示、文案和解释型配图。</li>
+        <li><b>构建与实践 (Builder Culture)：</b>紧跟开源主流范式，秉持“通过造轮子理解系统”的思路——参考 <a href="https://github.com/codecrafters-io/build-your-own-x">Build Your Own X</a> 与 CodeCrafters 动手把核心机制做成练手玩具（如终端 Shell、简易 Redis、以及参考 <a href="https://github.com/SaladDay/pi-from-scratch">pi-from-scratch</a> 手搓极简 Agent Loop）；结合 <a href="https://github.com/datawhalechina/Hello-Agents">Hello-Agents</a> 与李博杰 <a href="https://github.com/bojieli/ai-agent-book">ai-agent-book</a> 实验体系，在 OpenCode、Harness Agent 与自研工作流中吃透 Agent 架构；吸纳 <a href="https://github.com/datawhalechina/easy-vibe">Easy-Vibe</a> 与 VibeHub 的敏捷造物节奏，长期经营数字花园。</li>
+        <li><b>实战积累与数据底座：</b>打通支付、数据库调优、微信生态、阿里云与 UniApp，并借鉴阿江（MediaCrawler）经验实践 CDP 浏览器自动化与数据抓取；习惯切换视角想问题——做产品、做全栈、做黑客松交付。</li>
+        <li><b>开源探索：</b>从自己的仓库和社区前沿入手，拆解优质开源项目拉代码跑跑看，做二次开发、优化与维护。</li>
+        <li><b>模型实测与多模态：</b>动手测测国模（DeepSeek、GLM、Kimi）与国外御三家（Anthropic、OpenAI、xAI）；把 MiniMax / StepFun 的多模态能力（生图、视频、配音、音乐）接进自己的 Agent 工作流，搭配自写的小 Skill 和 MCP 跑跑看。</li>
+        <li><b>自创 TTA 系列 Skills：</b>以个人网名缩写（TTA）命名的一套面向 Agent 的小工具集（<code>tta-cover</code> · <code>tta-draw-ui</code> · <code>tta-frontend</code> · <code>tta-html</code> · <code>tta-motion</code> · <code>tta-ppt</code> · <code>tta-tone</code> · <code>tta-visual</code>），覆盖封面、UI、前端、可分享 HTML、动效、演示、文案与解释型配图。</li>
       </ul>
       <p>技术之外：自行车爱好者 🚲，常看五大环赛等赛事；闲时写博客、经营数字花园，记录追番与随手感悟，在代码之外留一点温热。</p>
     </td>
@@ -55,7 +55,7 @@
 
 ## Agent 工作流
 
-Coding agent 是一支车队，不是单一工具。Grok（expert 网页端）抓实时热点；GPT 做深度调研与需求讨论；Go 套餐在 Claude Code 上蹬 DeepSeek v4 Flash，配套 MiniMax 全套能力包；Kimi Code（拼车 K3）、OpenCode（中转 GPT-5.6 系）、Pi（GLM 老 Lite）分担轻量任务；Cursor 在 auto 里捡漏兜底。不重复造轮子、复用已验证的玩法，在真实项目里织进自定义 workflow——用 Matt 的 Skill 流管理资产文件，每个 CLI 都维护 memory 与 slash command，`.agent` 配置在工具间同步。比 prompt 更重要的是 harness：任务范围、仓库规则、可复现命令、测试、文档和最终 diff review。📋&#8288;(・ω・)ノ 设计判断与每一次 merge 仍由我负责。
+Coding agent 是一支协同车队，不是单一工具。Grok 网页端摸排实时热点，闲时也喜欢捣鼓 Grokbot；GPT 负责做深挖与需求拆解；~~此前日常用 Claude Code 配合 V4-Flash 搭配 MiniMax 各种多模态能力~~，现在核心开发转向在 **ZCode** 里配合 GLM Lite 老套餐，用 **GLM 5.3 Flash** 配合开发任务，充分利用其 Harness 生态和插件市场能力；~~OpenCode 和 Pi 分担轻量小任务~~，轻量小任务现已交给 **Antigravity** 里的 **Gemini 3.8 Flash**；Cursor 顺手修修补补。不重复造轮子，各家 CLI 配置好对应的 Harness 生态和插件市场，结合自研设计的 `harness-sync` 技能，一键跨端同步并持续维护迭代。Harness 大于 Prompt：限定上下文、理清仓库规约、跑通确定性命令与测试、写清文档并做好最后的 diff 审查。📋&#8288;(・ω・)ノ 架构判断与每一次 merge，都在我手里。
 
 ---
 
@@ -103,6 +103,7 @@ Coding agent 是一支车队，不是单一工具。Grok（expert 网页端）�
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
       <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
       <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" /></p>
+    </td>
     <td width="22%" align="center" valign="middle">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/mascot-dark.gif" />
@@ -209,24 +210,25 @@ Coding agent 是一支车队，不是单一工具。Grok（expert 网页端）�
 
 ## 正在构建
 
-- <b>AgentOS：</b>企业级 AI 编码 harness（基于 Claude Code 的 SDD × Harness Engineering）——Subagents、Hooks、Permission、Headless CI。
-- <b>分布式延时投递服务：</b>偏重可靠性的 Spring Cloud / 中间件实战。
-- <b>企业级 Dify 二开：</b>为真实业务工作流定制 Dify。
+- <b>DSH 插件生态：</b>深入研究 DSH 插件体系，正向官方社区贡献一个插件，同时独立从零开发另一个全新插件。
+- <b>分布式延时投递服务：</b>偏重可靠性与削峰填谷的 Spring Cloud / 中间件实战。
+- <b>企业级 Dify 深入定制：</b>面向真实业务流程定制知识库与工作流插件。
+- <b>Grokbot 探索实验：</b>摸索 Grokbot 的交互机制与自动化工作流玩法。
 
 ---
 
 ## 最近在学
 
-- <b>NB 微服务全栈：</b>跟着 B 站「小坏说Java」把 Java 微服务打穿——Spring Cloud Alibaba、中间件与生产级后端实战。
+- <b>Java 微服务全栈：</b>系统梳理微服务治理（Spring Cloud Alibaba、Nacos、Sentinel、Gateway）与高并发中间件可靠性保障。
 - <b>AI 辅助端到端测试：</b>用 MCP 工具让模型参与 E2E，尽早抓住断裂的业务流。🔬&#8288;(・∀・)
-- <b>轻量 CLI × 重度 IDE：</b>Claude Code / Kimi Code 等 CLI 做快速探索与小任务；Cursor（内置浏览器、调试、项目上下文）扛长期维护。
-- <b>范式演进：</b>Prompt → Context → Harness → Loop Engineering。用人类规范和纪律收窄人机理解偏差，逼自己把架构与项目知识想清楚。🧭&#8288;(｀・ω・´)
-- <b>自定义 Skill：</b>自写时效性 Skill，或借鉴优秀实践（如 Matt Pocock 的 Skill 库），划清项目边界，走向 Spec-driven Coding。
+- <b>轻量 CLI × 重度 IDE：</b>ZCode / Claude Code 做快速开发与探索，Antigravity (Gemini) 分担轻量小任务；Cursor（内置浏览器、调试、项目上下文）扛长期维护。
+- <b>范式演进：</b>Prompt → Context → Harness → Loop Engineering。用规范和纪律收窄人机理解偏差，逼自己把系统架构想清楚。🧭&#8288;(｀・ω・´)
+- <b>多端 Harness 协同与自研 Skill：</b>自研 <code>harness-sync</code> 维护多环境配置，以网名缩写（TTA）沉淀实用系列 Skills，走向规范驱动开发。
 - <b>兴趣驱动的独立开发链路：</b>打通 App / 小程序 + 海外支付；用信息推动开发，在 AI 探索业务时查漏补缺。
-- <b>企业级 AI 编程：</b>SDD（Spec-Kit / OpenSpec）× Harness Engineering，基于 Claude Code——Subagents、Hooks、Permission、Headless CI——在 AgentOS 搭建、分布式延时投递服务和 Dify 企业级二开三个实战里练透。
-- <b>Agent 工程（Python）：</b>LLM Gateway、Function Calling / Tool Runtime / MCP、带状态机与 Checkpoint 的 Agent Loop、沙箱化的 Codebase Agent、混合检索 + Rerank 的 Codebase RAG。
-- <b>Multi-Agent、评测与运维：</b>Supervisor 模式的子代理协作与 Skill 生命周期；Golden Dataset、LLM-as-Judge（Ragas / DeepEval）、Trace 与 Replay、灰度发布、回滚与成本治理。
-- <b>Agentic AI 产品：</b>PM → Builder 路线——4D Method、记忆体系与主动触达设计、Skill 封装、多 Agent 协作、评测数据飞轮与 Agentic UI。
+- <b>规范驱动编程 (SDD)：</b>实践 Spec-Kit / OpenSpec 模式，通过清晰的前置契约收敛人机认知偏差。
+- <b>Agent 核心工程（Python）：</b>LLM 网关分流、Function Calling / MCP 运行时、带状态机与 Checkpoint 的 Agent Loop、混合检索 RAG。
+- <b>多 Agent 协作与评测：</b>Subagent 协同调度、Golden Dataset 构建、LLM-as-Judge 自动化评测、Trace 观测与成本治理。
+- <b>Agentic 产品落地：</b>从想法到原型（PM → Builder），把记忆体系、主动触达与动态 UI 整合进真实场景。
 
 ---
 

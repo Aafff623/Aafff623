@@ -19,13 +19,13 @@
       <p>⚡&#8288;(¬‿¬) Fewer throwaway lines, more judgment and workflow.</p>
       <p>What I'm practicing:</p>
       <ul>
-        <li><b>Build &amp; practice:</b> large maintainable systems (microservices, middleware); remixes of emerging open-source paradigms as toy projects (OpenClaw, Hermes Agent, OpenHands, DeerFlow); long-lived vibe projects like my digital garden; integrating rich plugin/component ecosystems.</li>
-        <li><b>Bank hands-on points:</b> payments, DB, WeChat, Aliyun, UniApp; and rotate thinking hats — PM, FDE, full-stack, hackathon.</li>
-        <li><b>Open source:</b> dig into my own repositories and hotspot projects; follow Bilibili creators (e.g. IT咖啡馆), clone, tinker, fork, or help maintain.</li>
-        <li><b>Evals &amp; capability packs:</b> hands-on evaluation of domestic models (DeepSeek, GLM, Kimi) and the foreign big three (Anthropic, OpenAI, xAI). Tinker with MiniMax / StepFun credit packs (image, video, TTS, music) wired into agent workflows — plus custom workflows, utility Skills, and MCP.</li>
-        <li><b>My TTA Skills:</b> a small agent toolkit (<code>tta-cover</code> · <code>tta-draw-ui</code> · <code>tta-frontend</code> · <code>tta-html</code> · <code>tta-motion</code> · <code>tta-ppt</code> · <code>tta-tone</code> · <code>tta-visual</code>) for covers, UI, frontend work, shareable HTML, motion, decks, writing, and explainers.</li>
+        <li><b>Build &amp; practice (Builder culture):</b> exploring modern open-source paradigms with a "build to understand" mindset — learning by doing via <a href="https://github.com/codecrafters-io/build-your-own-x">Build Your Own X</a> and CodeCrafters with toy projects (custom terminal Shell, mini-Redis, and minimal agent loops inspired by <a href="https://github.com/SaladDay/pi-from-scratch">pi-from-scratch</a>); internalizing agent architecture through <a href="https://github.com/datawhalechina/Hello-Agents">Hello-Agents</a> and Li Bojie's <a href="https://github.com/bojieli/ai-agent-book">ai-agent-book</a> across OpenCode and Harness Agents; adopting agile shipping from <a href="https://github.com/datawhalechina/easy-vibe">Easy-Vibe</a> and VibeHub while tending my digital garden.</li>
+        <li><b>Practical stack &amp; data tooling:</b> payments, databases, WeChat ecosystem, Aliyun, UniApp, and CDP-based browser automation/scraping inspired by MediaCrawler; rotating thinking hats — PM, FDE, full-stack, hackathon builder.</li>
+        <li><b>Open source:</b> digging into my own repos and community hotspots; learning from open-source architectures, cloning, experimenting, forking, and maintaining.</li>
+        <li><b>Evals &amp; multimodal:</b> hands-on testing of domestic models (DeepSeek, GLM, Kimi) and the foreign big three (Anthropic, OpenAI, xAI). Wiring multimodal generation (MiniMax / StepFun for images, video, TTS, audio) into agent workflows, combined with custom utility Skills and MCP.</li>
+        <li><b>My TTA Skills:</b> a personal agent toolkit under my handle initials (TTA) — <code>tta-cover</code> · <code>tta-draw-ui</code> · <code>tta-frontend</code> · <code>tta-html</code> · <code>tta-motion</code> · <code>tta-ppt</code> · <code>tta-tone</code> · <code>tta-visual</code> — covering covers, UI, frontend work, shareable HTML, motion, decks, writing, and explainers.</li>
       </ul>
-      <p>Outside tech I'm a cyclist 🚲 and follow bike racing — the Grand Tours and spring classics. I write a blog, tend a digital garden, note anime seasons, and keep small pieces of youth I do not want to lose.</p>
+      <p>Outside tech I'm a cyclist 🚲 and follow bike racing — the Grand Tours and spring classics. I write a blog, tend a digital garden, track anime seasons, and keep a bit of warmth outside the screen that I don't want to lose.</p>
     </td>
     <td width="40%" align="center" valign="middle">
       <img src="./assets/hero-knight.webp" width="92%" alt="threetwoa hero" />
@@ -55,7 +55,7 @@
 
 ## Agent workflow
 
-Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hotspots; GPT goes deep on research and requirements; a Go carpool drives Claude Code on DeepSeek v4 Flash with the full MiniMax capability pack; Kimi Code (carpooled K3), OpenCode on relayed GPT-5.6, and Pi on GLM cover lighter lanes; Cursor catches the scraps in auto. I reuse proven playbooks instead of reinventing wheels, and wire custom workflows into real builds — Matt's Skill flow keeps assets managed, every CLI keeps its memory and slash commands, and `.agent` config syncs across tools. The harness matters more than the prompt: scoped tasks, repository rules, reproducible commands, tests, docs, and a final diff review. 📋&#8288;(・ω・)ノ Design decisions and every merge stay mine.
+Coding agents are a fleet, not a single tool. Grok scouts real-time topics on the web (and I enjoy tinkering with Grokbot); GPT goes deep on research and requirement breakdowns; ~~previously used Claude Code routed to V4-Flash alongside MiniMax multimodal generation~~ — core development has shifted to **ZCode** running on the GLM Lite plan with **GLM 5.3 Flash**, taking full advantage of its Harness ecosystem and plugin marketplace; ~~OpenCode and Pi for lightweight tasks~~ — lightweight routines are now handed over to **Gemini 3.8 Flash** inside **Antigravity**; Cursor handles localized patches and quick inline refinements. I avoid reinventing wheels: configure each CLI with its matching Harness ecosystem and plugin registry, and maintain my custom `harness-sync` skill to synchronize and iterate cross-tool configurations in one click. The harness matters more than the prompt: scoped context, repository rules, deterministic commands, tests, clean docs, and a careful final diff review. 📋&#8288;(・ω・)ノ Architectural judgment and every merge stay with me.
 
 ---
 
@@ -103,6 +103,7 @@ Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hots
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
       <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
       <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" /></p>
+    </td>
     <td width="22%" align="center" valign="middle">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/mascot-dark.gif" />
@@ -209,24 +210,25 @@ Coding agents are a fleet, not one tool. Grok (expert web) scouts real-time hots
 
 ## Currently building
 
-- <b>AgentOS:</b> an enterprise AI coding harness (SDD × Harness Engineering on Claude Code) — Subagents, Hooks, Permission, Headless CI.
-- <b>Distributed delay-delivery service:</b> Spring Cloud / middleware practice with a reliability focus.
-- <b>Enterprise Dify customization:</b> adapting Dify to a real business workflow.
+- <b>DSH plugin ecosystem:</b> diving into the DSH plugin architecture — contributing one plugin to the official community while independently developing another from scratch.
+- <b>Distributed delay-delivery service:</b> Spring Cloud / middleware practice with a reliability and load-leveling focus.
+- <b>Enterprise Dify customization:</b> tailored knowledge-base and agent workflow extensions for real-world scenarios.
+- <b>Grokbot experiments:</b> tinkering with Grokbot interactions and automated workflow playbooks.
 
 ---
 
 ## What I'm learning
 
-- <b>NB Microservices Full-Stack:</b> Java microservices end to end with 小坏说Java (Bilibili) — Spring Cloud Alibaba, middleware, and production-grade backend practice.
-- <b>AI-assisted E2E testing:</b> use MCP tools so models can drive end-to-end flows and catch broken business paths early. 🔬&#8288;(・∀・)
-- <b>Light CLI + heavy IDE:</b> Claude Code / Kimi Code CLIs for quick exploration and small tasks; Cursor (browser, debugger, project context) for long-lived maintenance.
-- <b>Paradigm shift:</b> Prompt → Context → Harness → Loop Engineering. Human rules and discipline shrink the human-agent gap and force clearer architecture knowledge. 🧭&#8288;(｀・ω・´)
-- <b>Custom Skills:</b> write time-bound Skills or borrow strong public libraries (e.g. Matt Pocock's), keep project boundaries clear, grow toward Spec-driven Coding.
-- <b>Indie shipping path:</b> App / mini-program + overseas payments end to end; use information to drive development while filling gaps with AI.
-- <b>Enterprise AI Coding:</b> SDD (Spec-Kit / OpenSpec) × Harness Engineering on Claude Code — Subagents, Hooks, Permission, Headless CI — practiced on an AgentOS build, a distributed delay-delivery service, and enterprise Dify customization.
-- <b>Agent engineering (Python):</b> LLM Gateway, Function Calling / Tool Runtime / MCP, Agent Loop with state machines and checkpoints, sandboxed Codebase Agent, Codebase RAG with hybrid retrieval and rerank.
-- <b>Multi-Agent, Eval & ops:</b> Supervisor-style sub-agents and the Skill lifecycle; golden datasets, LLM-as-Judge (Ragas / DeepEval), trace & replay, gray release, rollback, and cost governance.
-- <b>Agentic AI product:</b> the PM → Builder route — 4D Method, memory and proactive-touch design, Skill packaging, multi-Agent collaboration, the eval flywheel, and Agentic UI.
+- <b>Java microservices full-stack:</b> building clean microservices end to end — Spring Cloud Alibaba, Nacos, distributed transactions, and production-grade backend engineering.
+- <b>AI-assisted E2E testing:</b> using MCP tools so models can drive end-to-end flows and catch broken business paths early. 🔬&#8288;(・∀・)
+- <b>Light CLI + heavy IDE:</b> ZCode / Claude Code for rapid development and exploration, Antigravity (Gemini) for lighter tasks; Cursor (browser, debugger, project context) for long-lived maintenance.
+- <b>Paradigm shift:</b> Prompt → Context → Harness → Loop Engineering. Human rules and discipline shrink the human-agent gap and force clearer architecture thinking. 🧭&#8288;(｀・ω・´)
+- <b>Cross-harness sync &amp; custom skills:</b> maintaining multi-environment configs via my custom <code>harness-sync</code> skill, and distilling practical workflows into the TTA skill fleet.
+- <b>Indie shipping path:</b> App / mini-program + overseas payments end to end; letting information drive development while filling gaps with AI.
+- <b>Spec-driven coding (SDD):</b> practicing Spec-Kit / OpenSpec patterns to align human-agent assumptions through clear upfront contracts.
+- <b>Agent engineering (Python):</b> LLM routing, Function Calling / MCP runtimes, stateful Agent Loops with checkpoints, hybrid-retrieval RAG.
+- <b>Multi-Agent collaboration &amp; evals:</b> Subagent orchestration, golden datasets, LLM-as-Judge automated evals, tracing, and cost governance.
+- <b>Agentic product shipping:</b> moving from idea to prototype (PM → Builder), weaving memory systems, proactive touchpoints, and dynamic UI into real applications.
 
 ---
 
