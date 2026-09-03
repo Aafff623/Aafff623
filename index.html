@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>threetwoa | Profile Preview</title>
+  <meta name="description" content="GitHub profile and portfolio showcase for threetwoa (Aafff623)" />
+  <meta property="og:title" content="threetwoa | Profile Preview" />
+  <meta property="og:description" content="GitHub profile and portfolio showcase for threetwoa (Aafff623)" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #656d76;
+      --border: #d1d9e0;
+      --link: #0969da;
+      --code-bg: rgba(175,184,193,0.2);
+    }
+    html[data-theme="dark"],
+    html:not([data-theme="light"]) {
+      @media (prefers-color-scheme: dark) {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --border: #30363d;
+        --link: #4493f8;
+        --code-bg: rgba(110,118,129,0.4);
+      }
+    }
+    html[data-theme="dark"] {
+      --bg: #0d1117;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --border: #30363d;
+      --link: #4493f8;
+      --code-bg: rgba(110,118,129,0.4);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9em;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-group {
+      display: inline-flex;
+      background: var(--code-bg);
+      border-radius: 6px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .btn-toggle {
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      padding: 5px 12px;
+      font-size: 0.85em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+    .btn-toggle:hover {
+      color: var(--text);
+    }
+    .btn-toggle.active {
+      background: var(--bg);
+      color: var(--text);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      font-weight: 600;
+    }
+    .commit-badge {
+      font-size: 0.82em;
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", monospace;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .commit-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2da44e;
+      display: inline-block;
+    }
+    h1, h2, h3 { margin-top: 24px; margin-bottom: 12px; font-weight: 600; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+    h3 { font-size: 1.18em; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 16px; padding-left: 24px; }
+    li { margin-bottom: 6px; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }
+    img { max-width: 100%; height: auto; vertical-align: middle; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+    td { padding: 8px; vertical-align: top; }
+    td[valign="middle"] { vertical-align: middle; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: var(--text);
+    }
+    /* White-background GIFs get a subtle border in dark mode */
+    html[data-theme="dark"] img[src*="mascot.gif"],
+    html[data-theme="dark"] img[src*="v9-banner.gif"],
+    @media (prefers-color-scheme: dark) {
+      html:not([data-theme="light"]) img[src*="mascot.gif"],
+      html:not([data-theme="light"]) img[src*="v9-banner.gif"] {
+        border-radius: 10px;
+        outline: 1px solid var(--border);
+      }
+    }
+    .loading-state {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+      <div class="btn-group" id="langGroup">
+        <button class="btn-toggle active" id="btnEn" onclick="switchLang('en')">English</button>
+        <button class="btn-toggle" id="btnZh" onclick="switchLang('zh')">中文</button>
+      </div>
+
+      <div class="commit-badge">
+        <span class="dot"></span>
+        <span>Latest commit: 5d15417</span>
+      </div>
+
+      <div class="btn-group" id="themeGroup">
+        <button class="btn-toggle active" id="themeAuto" onclick="setTheme('auto')">Auto</button>
+        <button class="btn-toggle" id="themeLight" onclick="setTheme('light')">Light</button>
+        <button class="btn-toggle" id="themeDark" onclick="setTheme('dark')">Dark</button>
+      </div>
+    </div>
+
+    <main id="profileContent">
+      <div class="loading-state">Loading profile content...</div>
+    </main>
+  </div>
+
+  <script>
+    let profileData = { enHtml: '', zhHtml: '' };
+    let currentLang = 'en';
+
+    function render() {
+      const target = document.getElementById('profileContent');
+      if (currentLang === 'zh' && profileData.zhHtml) {
+        target.innerHTML = profileData.zhHtml;
+      } else if (profileData.enHtml) {
+        target.innerHTML = profileData.enHtml;
+      }
+    }
+
+    function switchLang(lang) {
+      currentLang = lang;
+      document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+      document.getElementById('btnZh').classList.toggle('active', lang === 'zh');
+      localStorage.setItem('pref_lang', lang);
+      render();
+    }
+
+    function setTheme(mode) {
+      if (mode === 'auto') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', mode);
+      }
+      document.getElementById('themeAuto').classList.toggle('active', mode === 'auto');
+      document.getElementById('themeLight').classList.toggle('active', mode === 'light');
+      document.getElementById('themeDark').classList.toggle('active', mode === 'dark');
+      localStorage.setItem('pref_theme', mode);
+    }
+
+    // Load initial preferences
+    const savedLang = localStorage.getItem('pref_lang');
+    if (savedLang === 'en' || savedLang === 'zh') {
+      currentLang = savedLang;
+      document.getElementById('btnEn').classList.toggle('active', currentLang === 'en');
+      document.getElementById('btnZh').classList.toggle('active', currentLang === 'zh');
+    }
+    const savedTheme = localStorage.getItem('pref_theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+
+    // Fetch parsed profile content from backend API
+    fetch('/api/profile')
+      .then(res => res.json())
+      .then(data => {
+        profileData = data;
+        render();
+      })
+      .catch(err => {
+        console.error('Failed to load profile:', err);
+        document.getElementById('profileContent').innerHTML = '<p class="muted">Error loading profile content. Please refresh.</p>';
+      });
+  </script>
+</body>
+</html>

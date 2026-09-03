@@ -1,0 +1,8 @@
+{
+  "name": "threetwoa | Profile Preview",
+  "description": "GitHub profile and portfolio showcase for threetwoa (Aafff623)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

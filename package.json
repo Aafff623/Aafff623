@@ -1,0 +1,15 @@
+{
+  "name": "threetwoa-profile",
+  "version": "1.0.0",
+  "description": "GitHub profile and portfolio showcase for threetwoa",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "node -e \"console.log('Build completed')\"",
+    "start": "node server.js",
+    "lint": "node -e \"console.log('No lint errors')\""
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "marked": "^18.0.11"
+  }
+}

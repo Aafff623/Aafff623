@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="./assets/v9-banner.gif" alt="threetwoa banner" />
+  <img src="./assets/v9-banner.gif" alt="threetwoa banner" width="100%" />
 </p>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/brand-threetwoa-dark.gif" />
-    <img src="./assets/brand-threetwoa.gif" alt="threetwoa" width="680" />
+    <img src="./assets/brand-threetwoa.gif" alt="Hello, I'm threetwoa" width="620" />
   </picture>
+  <br />
+  <sub><i>⭐ Code Less, Architect More 🚀</i></sub>
 </p>
-
-<p align="center"><i>⭐ Code Less, Architect More 🚀</i></p>
 
 <table width="100%">
   <tr>
@@ -19,11 +19,11 @@
       <p>⚡&#8288;(¬‿¬) 少一点一次性代码，多一点判断与 Workflow。</p>
       <p>正在实践：</p>
       <ul>
-        <li><b>构建与实践 (Builder Culture)：</b>紧跟开源主流范式，秉持“通过造轮子理解系统”的思路——参考 <a href="https://github.com/codecrafters-io/build-your-own-x">Build Your Own X</a> 与 CodeCrafters 动手把核心机制做成练手玩具（如终端 Shell、简易 Redis、以及参考 <a href="https://github.com/SaladDay/pi-from-scratch">pi-from-scratch</a> 手搓极简 Agent Loop）；结合 <a href="https://github.com/datawhalechina/Hello-Agents">Hello-Agents</a> 与李博杰 <a href="https://github.com/bojieli/ai-agent-book">ai-agent-book</a> 实验体系，在 OpenCode、Harness Agent 与自研工作流中吃透 Agent 架构；吸纳 <a href="https://github.com/datawhalechina/easy-vibe">Easy-Vibe</a> 与 VibeHub 的敏捷造物节奏，长期经营数字花园。</li>
-        <li><b>实战积累与数据底座：</b>打通支付、数据库调优、微信生态、阿里云与 UniApp，并借鉴阿江（MediaCrawler）经验实践 CDP 浏览器自动化与数据抓取；习惯切换视角想问题——做产品、做全栈、做黑客松交付。</li>
+        <li><b>构建与实践 (Builder Culture)：</b>紧跟开源主流范式，秉持“通过造轮子理解系统”的思路——参考 <a href="https://github.com/codecrafters-io/build-your-own-x">Build Your Own X</a> 与 CodeCrafters 动手把核心机制做成练手玩具（如终端 Shell、简易 Redis、以及参考 <a href="https://github.com/SaladDay/pi-from-scratch">pi-from-scratch</a> 手搓极简 Agent Loop）；自研落地了 <a href="https://github.com/Aafff623/wolfcha"><b>wolfcha</b></a>（多模型驱动的 AI 狼人杀游戏）与 <a href="https://github.com/Aafff623/pane"><b>pane</b></a>（Windows 托盘 AI 计划看板）；结合 <a href="https://github.com/datawhalechina/Hello-Agents">Hello-Agents</a> 与李博杰 <a href="https://github.com/bojieli/ai-agent-book">ai-agent-book</a> 实验体系，在 OpenCode、Harness Agent 与自研工作流中吃透 Agent 架构；吸纳 <a href="https://github.com/datawhalechina/easy-vibe">Easy-Vibe</a> 与 VibeHub 的敏捷造物节奏，长期经营数字花园。</li>
+        <li><b>实战积累与数据底座：</b>打通支付、数据库调优、微信生态、阿里云与 UniApp，并自研落地 <a href="https://github.com/Aafff623/sky-out-ai"><b>sky-out-ai</b></a>（苍穹外卖 AI 重构与客服 RAG）；借鉴阿江（MediaCrawler）经验实践 CDP 浏览器自动化与数据抓取；习惯切换视角想问题——做产品、做全栈、做黑客松交付。</li>
         <li><b>开源探索：</b>从自己的仓库和社区前沿入手，拆解优质开源项目拉代码跑跑看，做二次开发、优化与维护。</li>
         <li><b>模型实测与多模态：</b>动手测测国模（DeepSeek、GLM、Kimi）与国外御三家（Anthropic、OpenAI、xAI）；把 MiniMax / StepFun 的多模态能力（生图、视频、配音、音乐）接进自己的 Agent 工作流，搭配自写的小 Skill 和 MCP 跑跑看。</li>
-        <li><b>自创 TTA 系列 Skills：</b>以个人网名缩写（TTA）命名的一套面向 Agent 的小工具集（<code>tta-cover</code> · <code>tta-draw-ui</code> · <code>tta-frontend</code> · <code>tta-html</code> · <code>tta-motion</code> · <code>tta-ppt</code> · <code>tta-tone</code> · <code>tta-visual</code>），覆盖封面、UI、前端、可分享 HTML、动效、演示、文案与解释型配图。</li>
+        <li><b>自创 TTA 系列 Skills：</b>以个人网名缩写（TTA）命名的一套面向 Agent 的工具库 — <a href="https://github.com/Aafff623/tta-init"><code>tta-init</code></a> · <a href="https://github.com/Aafff623/tta-html"><code>tta-html</code></a> · <a href="https://github.com/Aafff623/tta-visual"><code>tta-visual</code></a> · <a href="https://github.com/Aafff623/tta-tone"><code>tta-tone</code></a> · <a href="https://github.com/Aafff623/tta-ppt"><code>tta-ppt</code></a> · <a href="https://github.com/Aafff623/tta-icon"><code>tta-icon</code></a> · <a href="https://github.com/Aafff623/tta-motion"><code>tta-motion</code></a> — 覆盖工作区治理、可分享 HTML、技术与漫画图示、双语文风、16:9 演示、图标生成与网页动效。</li>
       </ul>
       <p>技术之外：自行车爱好者 🚲，常看五大环赛等赛事；闲时写博客、经营数字花园，记录追番与随手感悟，在代码之外留一点温热。</p>
     </td>
@@ -34,21 +34,25 @@
 </table>
 
 <p align="center">
-  <a href="mailto:laiyif68@gmail.com">邮箱</a> ·
-  <a href="https://my-blogs-roan-seven.vercel.app/">博客</a> ·
-  <a href="https://fork-firefly.vercel.app/">数字花园</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Aafff623"><img height="42" width="42" src="https://cdn.simpleicons.org/github/181717" alt="GitHub" title="GitHub" /></a>
-  &nbsp;&nbsp;
-  <a href="https://x.com/FanLaiyi26341"><img height="42" width="42" src="https://cdn.simpleicons.org/x/000000" alt="X / Twitter" title="X / Twitter" /></a>
-  &nbsp;&nbsp;
-  <a href="https://space.bilibili.com/549916339"><img height="42" width="42" src="https://cdn.simpleicons.org/bilibili/00A1D6" alt="Bilibili" title="Bilibili" /></a>
-  &nbsp;&nbsp;
-  <a href="https://t.me/threetwoa"><img height="42" width="42" src="https://cdn.simpleicons.org/telegram/26A5E4" alt="Telegram" title="Telegram" /></a>
-  &nbsp;&nbsp;
-  <a href="https://www.youtube.com/@laiyiFan-23"><img height="42" width="42" src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube" title="YouTube" /></a>
+  <a href="https://github.com/Aafff623" title="GitHub"><img height="26" width="26" src="https://cdn.simpleicons.org/github/_/ffffff" alt="GitHub" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.zhihu.com/people/hai-kuo-ping-yu-yue-51-70" title="Zhihu / 知乎"><img height="26" width="26" src="https://cdn.simpleicons.org/zhihu/0084FF" alt="Zhihu" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://x.com/FanLaiyi26341" title="X / Twitter"><img height="26" width="26" src="https://cdn.simpleicons.org/x/_/ffffff" alt="X" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#" title="WeChat Official Account / 微信公众号 (筹备中)"><img height="26" width="26" src="https://cdn.simpleicons.org/wechat/07C160" alt="WeChat" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://space.bilibili.com/549916339" title="Bilibili"><img height="26" width="26" src="https://cdn.simpleicons.org/bilibili/00A1D6" alt="Bilibili" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://t.me/threetwoa" title="Telegram"><img height="26" width="26" src="https://cdn.simpleicons.org/telegram/26A5E4" alt="Telegram" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.youtube.com/@laiyiFan-23" title="YouTube"><img height="26" width="26" src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:laiyif68@gmail.com" title="Email: laiyif68@gmail.com"><img height="26" width="26" src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://my-blogs-roan-seven.vercel.app/" title="laiyi's Blog / 博客"><img height="26" width="26" src="https://cdn.simpleicons.org/blogger/FF5722" alt="Blog" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://fork-firefly.vercel.app/" title="Digital Garden / 数字花园"><img height="26" width="26" src="https://cdn.simpleicons.org/obsidian/7C3AED" alt="Digital Garden" /></a>
 </p>
 
 ---
@@ -63,8 +67,8 @@ Coding agent 是一支协同车队，不是单一工具。Grok 网页端摸排�
 
 <table width="100%">
   <tr>
-    <td width="78%" valign="top">
-      <p><b>前端</b><br />
+    <td width="40%" valign="top">
+      <p><b>前端与全栈</b><br />
       <img src="https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue" />
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
       <img src="https://img.shields.io/badge/UniApp-2B9939?style=flat-square&logoColor=white" alt="UniApp" />
@@ -73,7 +77,7 @@ Coding agent 是一支协同车队，不是单一工具。Grok 网页端摸排�
       <p><b>Java / Spring</b><br />
       <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
       <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
-      <img src="https://img.shields.io/badge/Spring%20MVC-6DB33F?style=flat-square&logoColor=white" alt="Spring MVC" />
+      <img src="https://img.shields.io/badge/Spring%20MVC-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring MVC" />
       <img src="https://img.shields.io/badge/MyBatis--Plus-1A7FBF?style=flat-square&logoColor=white" alt="MyBatis-Plus" />
       <img src="https://img.shields.io/badge/Sa--Token-6DB33F?style=flat-square&logoColor=white" alt="Sa-Token" /></p>
       <p><b>中间件与微服务</b><br />
@@ -82,32 +86,34 @@ Coding agent 是一支协同车队，不是单一工具。Grok 网页端摸排�
       <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
       <img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
       <img src="https://img.shields.io/badge/RocketMQ-D77C10?style=flat-square&logo=apacherocketmq&logoColor=white" alt="RocketMQ" />
-      <img src="https://img.shields.io/badge/Netty-1F2937?style=flat-square&logoColor=white" alt="Netty" />
-      <img src="https://img.shields.io/badge/Nacos-2E6BE6?style=flat-square&logoColor=white" alt="Nacos" />
+      <img src="https://img.shields.io/badge/Netty-1F2937?style=flat-square&logo=apache&logoColor=white" alt="Netty" />
+      <img src="https://img.shields.io/badge/Nacos-2E6BE6?style=flat-square&logo=alibabacloud&logoColor=white" alt="Nacos" />
       <img src="https://img.shields.io/badge/Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Gateway" /></p>
+    </td>
+    <td width="40%" valign="top">
       <p><b>AI 与智能体</b><br />
-      <img src="https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logoColor=white" alt="LangChain4j" />
+      <img src="https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain4j" />
       <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="通义千问 / DashScope" />
-      <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logoColor=white" alt="模型上下文协议" />
+      <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logo=anthropic&logoColor=white" alt="模型上下文协议" />
       <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white" alt="检索增强生成" /></p>
+      <p><b>系统与推理（竞赛实证）</b><br />
+      <img src="https://img.shields.io/badge/vLLM-1F2937?style=flat-square&logo=vllm&logoColor=white" alt="vLLM" />
+      <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-7C3AED?style=flat-square&logo=amd&logoColor=white" alt="HIP / ROCm" />
+      <img src="https://img.shields.io/badge/Hygon%20DCU-4F46E5?style=flat-square&logo=amd&logoColor=white" alt="Hygon DCU" />
+      <img src="https://img.shields.io/badge/Biren%20GPU-059669?style=flat-square&logoColor=white" alt="Biren GPU" /></p>
       <p><b>Python</b><br />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
       <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" />
       <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" /></p>
-      <p><b>系统与推理（竞赛实证）</b><br />
-      <img src="https://img.shields.io/badge/vLLM-1F2937?style=flat-square&logoColor=white" alt="vLLM" />
-      <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-7C3AED?style=flat-square&logoColor=white" alt="HIP / ROCm" />
-      <img src="https://img.shields.io/badge/Hygon%20DCU-4F46E5?style=flat-square&logoColor=white" alt="Hygon DCU" />
-      <img src="https://img.shields.io/badge/Biren%20GPU-059669?style=flat-square&logoColor=white" alt="Biren GPU" /></p>
       <p><b>DevOps</b><br />
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
       <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
       <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" /></p>
     </td>
-    <td width="22%" align="center" valign="middle">
+    <td width="20%" align="center" valign="middle">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/mascot-dark.gif" />
-        <img src="./assets/mascot.gif" width="90%" alt="animated threetwoa mascot" />
+        <img src="./assets/mascot.gif" width="95%" alt="animated threetwoa mascot" />
       </picture>
     </td>
   </tr>
@@ -156,16 +162,24 @@ Coding agent 是一支协同车队，不是单一工具。Grok 网页端摸排�
 
 <table width="100%">
   <tr>
-    <td width="60%" align="center" valign="top">
+    <td colspan="2" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide=prs,issues&hide_border=false&border_color=30363d&card_width=500" />
-        <img src="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&hide_border=false&border_color=d1d9e0&card_width=500" alt="GitHub stats" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Aafff623&theme=dark&background=0d1117&border=30363d&stroke=30363d&ring=58a6ff&fire=d29922&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=8b949e&hide_border=false" />
+        <img src="https://streak-stats.demolab.com/?user=Aafff623&theme=default&background=ffffff&border=d1d9e0&stroke=d1d9e0&ring=0969da&fire=f59e0b&currStreakNum=1f2328&sideNums=1f2328&currStreakLabel=0969da&sideLabels=0969da&dates=656d76&hide_border=false" alt="GitHub streak stats" width="100%" />
       </picture>
     </td>
-    <td width="40%" align="center" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d&card_width=320" />
-        <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=compact&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide=prs,issues&hide_border=false&border_color=d1d9e0&card_width=320" alt="Top languages" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d" />
+        <img src="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0" alt="GitHub stats" width="100%" />
+      </picture>
+    </td>
+    <td width="50%" align="center" valign="middle">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=donut&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d" />
+        <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=donut&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0" alt="Top languages" width="100%" />
       </picture>
     </td>
   </tr>
@@ -187,17 +201,19 @@ Coding agent 是一支协同车队，不是单一工具。Grok 网页端摸排�
         <li><b>证明：</b>两笔 Sepolia / SETH 支付（外部付款 + 内部转账）</li>
         <li><b>技术：</b>Next.js、TypeScript、FastAPI、Cobo CAW</li>
       </ul>
-      <p><a href="https://agentcfo-frontend.vercel.app/">在线演示</a> · <a href="https://github.com/San-Y108/agent-cfo">仓库</a></p>
       <p>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=next.js&logoColor=white" alt="Next.js" />
-        <img src="https://img.shields.io/badge/React-20232a?style=plastic&logo=react" alt="React" />
-        <img src="https://img.shields.io/badge/TypeScript-3178c6?style=plastic&logo=typescript&logoColor=white" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/Tailwind-06b6d4?style=plastic&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-        <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=plastic&logo=framer&logoColor=white" alt="Framer Motion" />
-        <img src="https://img.shields.io/badge/GSAP-88CE02?style=plastic&logo=greensock&logoColor=white" alt="GSAP" />
-        <img src="https://img.shields.io/badge/Recharts-FF7300?style=plastic&logo=recharts&logoColor=white" alt="Recharts" />
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=plastic&logo=fastapi&logoColor=white" alt="FastAPI" />
-        <img src="https://img.shields.io/badge/Cobo%20CAW-0969da?style=plastic" alt="Cobo CAW" />
+        <a href="https://agentcfo-frontend.vercel.app/"><img src="https://img.shields.io/badge/Live_Demo-agentcfo.vercel.app-10B981?style=flat-square&logo=vercel&logoColor=white" alt="在线演示" /></a>
+        &nbsp;
+        <a href="https://github.com/San-Y108/agent-cfo"><img src="https://img.shields.io/badge/Repository-San--Y108%2Fagent--cfo-181717?style=flat-square&logo=github&logoColor=white" alt="仓库" /></a>
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+        <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+        <img src="https://img.shields.io/badge/Cobo_CAW-0969DA?style=flat-square&logoColor=white" alt="Cobo CAW" />
       </p>
     </td>
     <td width="35%" align="center" valign="middle">
@@ -210,10 +226,10 @@ Coding agent 是一支协同车队，不是单一工具。Grok 网页端摸排�
 
 ## 正在构建
 
-- <b>DSH 插件生态：</b>深入研究 DSH 插件体系，正向官方社区贡献一个插件，同时独立从零开发另一个全新插件。
-- <b>分布式延时投递服务：</b>偏重可靠性与削峰填谷的 Spring Cloud / 中间件实战。
-- <b>企业级 Dify 深入定制：</b>面向真实业务流程定制知识库与工作流插件。
-- <b>Grokbot 探索实验：</b>摸索 Grokbot 的交互机制与自动化工作流玩法。
+- <img src="https://img.shields.io/badge/Status-Exploring-2563EB?style=flat-square" alt="探索中" /> <b>DSH 插件生态：</b>深入研究 DSH 插件体系，正向官方社区贡献一个插件，同时独立从零开发另一个全新插件。
+- <img src="https://img.shields.io/badge/Status-In_Progress-EA580C?style=flat-square" alt="进行中" /> <b>分布式延时投递服务：</b>偏重可靠性与削峰填谷的 Spring Cloud / 中间件实战。
+- <img src="https://img.shields.io/badge/Status-Prototyping-7C3AED?style=flat-square" alt="原型验证" /> <b>企业级 Dify 深入定制：</b>面向真实业务流程定制知识库与工作流插件。
+- <img src="https://img.shields.io/badge/Status-Lab-059669?style=flat-square" alt="实验室" /> <b>Grokbot 探索实验：</b>摸索 Grokbot 的交互机制与自动化工作流玩法。
 
 ---
 
