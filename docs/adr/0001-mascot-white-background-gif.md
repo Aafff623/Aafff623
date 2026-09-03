@@ -2,7 +2,7 @@
 
 ## Status
 
-Superseded by [ADR 0002](0002-3d-chibi-knight-light-dark-gif.md).
+Superseded by [ADR 0002](0002-3d-chibi-knight-light-dark-gif.md) (2026-06; superseded 2026-07).
 
 The 2D white-background GIF described here was replaced by a 3D chibi knight shipped as separate light (`assets/mascot.gif`) and dark (`assets/mascot-dark.gif`) GIFs, switched with `<picture>`. The dark-mode "white box" tradeoff recorded below no longer applies. This record is kept for history.
 

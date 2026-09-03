@@ -10,15 +10,15 @@ Static **GitHub profile repository** (`Aafff623/Aafff623`). The root `README.md`
 
 - **Published profile (GitHub)** → `README.md` (English only; GitHub renders this as the public profile)
 - **Chinese mirror (local review)** → `README.zh.md` — same structure/facts as `README.md` on **this branch**
-- **Local previews** → `preview-profile.html` (EN) + `preview-profile.zh.html` (ZH); open together via `open-previews.bat` / `open-previews.ps1`
+- **Local previews** → `temp/preview/preview-profile.html` (EN) + `temp/preview/preview-profile.zh.html` (ZH); open together via `scripts/open-previews.bat` / `scripts/open-previews.ps1`
 - **Asset paths** must be relative (`./assets/...`) so they resolve on GitHub; external badges use HTTPS
-- **Profile copy** should be direct, specific, and modest. Use first person, prefer facts and links over labels, and apply the anti-AI patterns from `humanizer-output-style`.
+- **Profile copy** should be direct, specific, and modest. Use first person, prefer facts and links over labels, and apply the anti-AI patterns from `humanizer-tone`.
 
 ## Bilingual sync (per branch)
 
 - EN and ZH are maintained **on the same branch together**. Changing structure, facts, links, or layout in EN requires the matching ZH update in the same change set.
-- ZH on a branch must mirror **that branch’s** EN (`README.md` / `preview-profile.html`), not another branch’s Chinese files.
-- Pairing: `README.md` ↔ `README.zh.md`; `preview-profile.html` ↔ `preview-profile.zh.html`.
+- ZH on a branch must mirror **that branch’s** EN (`README.md` / `temp/preview/preview-profile.html`), not another branch’s Chinese files.
+- Pairing: `README.md` ↔ `README.zh.md`; `temp/preview/preview-profile.html` ↔ `temp/preview/preview-profile.zh.html`.
 - For review, start both previews (launcher or both files). Each preview has an EN / 中文 switcher.
 
 ## Critical gotchas

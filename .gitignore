@@ -8,6 +8,7 @@ desktop.ini
 .mcp.json
 .cursor/mcp.json
 .vscode/mcp.json
+.claude/
 .playwright-mcp/
 .mimosa/
 .scratch/

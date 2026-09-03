@@ -85,9 +85,8 @@ Image.open("<source>.png").convert("RGB").save(
 - **Regenerate GIFs** after an SVG edit (Playwright Chromium + Pillow):
 
 ```bash
-python temp/scripts/wordmark-typewriter/render.py
-# then copy the two *.candidate.gif files into assets/ as
-
+python scripts/render-wordmark.py
+# then copy the candidate GIFs from temp/scripts/wordmark-typewriter/ into assets/ as
 # brand-threetwoa.gif and brand-threetwoa-dark.gif
 ```
 

@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted. Supersedes [ADR 0001](0001-mascot-white-background-gif.md).
+Accepted (2026-07). Supersedes [ADR 0001](0001-mascot-white-background-gif.md).
 
 ## Context
 

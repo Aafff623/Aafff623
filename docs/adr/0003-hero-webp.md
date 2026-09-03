@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted. Reverses the "hero stays PNG" note in `CONTEXT.md` Active Decisions.
+Accepted (2026-07). Reverses the "hero stays PNG" note in `CONTEXT.md` Active Decisions.
 
 ## Context
 

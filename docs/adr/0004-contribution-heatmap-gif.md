@@ -2,7 +2,7 @@
 
 ## Status
 
-Superseded by [ADR 0007](0007-contribution-snake-replaces-activity-graph.md).
+Superseded by [ADR 0007](0007-contribution-snake-replaces-activity-graph.md) (2026-08-01; superseded 2026-08-28).
 
 
 ## Context
