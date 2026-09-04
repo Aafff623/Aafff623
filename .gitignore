@@ -12,6 +12,12 @@ desktop.ini
 .playwright-mcp/
 .mimosa/
 .scratch/
+.codegraph/
+
+# Local secrets & environment (tta-init standard)
+.env
+.env.*
+!.env.example
 
 # Python cache (for temp scripts)
 __pycache__/
