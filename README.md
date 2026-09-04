@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/v9-banner.gif" alt="threetwoa banner" width="100%" />
+  <img src="./assets/v9-banner.gif" alt="threetwoa banner" width="760" />
 </p>
 
 <p align="center">
@@ -13,32 +13,40 @@
 
 <table width="100%">
   <tr>
-    <td width="60%" valign="top">
-      <p>Hello. I'm an incoming third-year Software Engineering student at North University of China. 💻&#8288;(￣▽￣)</p>
-      <p>This summer: Java microservices &amp; middleware, LLM internals, and Spec-driven Coding under Harness Engineering. The honeymoon with vibe coding is over — I care about architecture, maintainability, and code built to last.</p>
-      <p>⚡&#8288;(¬‿¬) Fewer throwaway lines, more judgment and workflow.</p>
-      <p>What I'm practicing:</p>
+    <td width="65%" valign="top">
+      <p>Hello! I'm a third-year Software Engineering student @ North University of China. 😘 Focused on <b>Java microservices &amp; middleware</b>, <b>LLM runtime internals</b>, and <b>Spec-driven Coding</b> under engineering harnesses, prioritizing maintainability and system boundaries. 💫</p>
       <ul>
-        <li><b>Build &amp; practice (Builder culture):</b> exploring modern open-source paradigms with a "build to understand" mindset — learning by doing via <a href="https://github.com/codecrafters-io/build-your-own-x">Build Your Own X</a> and CodeCrafters with toy projects (custom terminal Shell, mini-Redis, and minimal agent loops inspired by <a href="https://github.com/SaladDay/pi-from-scratch">pi-from-scratch</a>); built <a href="https://github.com/Aafff623/wolfcha"><b>wolfcha</b></a> (multi-agent social deduction game powered by DeepSeek/Qwen/Gemini) and <a href="https://github.com/Aafff623/pane"><b>pane</b></a> (Windows tray multi-plan AI tracker); internalizing agent architecture through <a href="https://github.com/datawhalechina/Hello-Agents">Hello-Agents</a> and Li Bojie's <a href="https://github.com/bojieli/ai-agent-book">ai-agent-book</a> across OpenCode and Harness Agents; adopting agile shipping from <a href="https://github.com/datawhalechina/easy-vibe">Easy-Vibe</a> and VibeHub while tending my digital garden.</li>
-        <li><b>Practical stack &amp; data tooling:</b> payments, databases, WeChat ecosystem, Aliyun, UniApp, and CDP-based browser automation/scraping inspired by MediaCrawler; building full-stack applications like <a href="https://github.com/Aafff623/sky-out-ai"><b>sky-out-ai</b></a> (takeout AI reconstruction with customer service RAG); rotating thinking hats — PM, FDE, full-stack, hackathon builder.</li>
-        <li><b>Open source:</b> digging into my own repos and community hotspots; learning from open-source architectures, cloning, experimenting, forking, and maintaining.</li>
-        <li><b>Evals &amp; multimodal:</b> hands-on testing of domestic models (DeepSeek, GLM, Kimi) and the foreign big three (Anthropic, OpenAI, xAI). Wiring multimodal generation (MiniMax / StepFun for images, video, TTS, audio) into agent workflows, combined with custom utility Skills and MCP.</li>
-        <li><b>My TTA Skills:</b> a personal agent toolkit under my handle initials (TTA) — <a href="https://github.com/Aafff623/tta-init"><code>tta-init</code></a> · <a href="https://github.com/Aafff623/tta-html"><code>tta-html</code></a> · <a href="https://github.com/Aafff623/tta-visual"><code>tta-visual</code></a> · <a href="https://github.com/Aafff623/tta-tone"><code>tta-tone</code></a> · <a href="https://github.com/Aafff623/tta-ppt"><code>tta-ppt</code></a> · <a href="https://github.com/Aafff623/tta-icon"><code>tta-icon</code></a> · <a href="https://github.com/Aafff623/tta-motion"><code>tta-motion</code></a> — covering workspace governance, HTML docs, manga/technical diagrams, bilingual tone, 16:9 decks, icon generation, and web motion.</li>
+        <li><b>Self-developed highlights:</b><br />
+          &nbsp;&nbsp;🔹 Maintaining <a href="https://github.com/Aafff623/wolfcha"><b>wolfcha</b></a> (AI Werewolf social deduction with dynamic multi-agent persona scheduling &amp; modern UI)<br />
+          &nbsp;&nbsp;🔹 Porting &amp; maintaining <a href="https://github.com/Aafff623/pane"><b>pane</b></a> (OpenUsage Windows tray port, real-time quota dashboard for 15+ AI providers)<br />
+          &nbsp;&nbsp;🔹 Co-developing <a href="https://github.com/San-Y108/agent-cfo"><b>AgentCFO</b></a> (DAO treasury policy compliance &amp; on-chain approval automation, hackathon finalist)<br />
+          &nbsp;&nbsp;🔹 Building <a href="https://github.com/Aafff623/simple-ai-code-helper"><b>simple-ai-code-helper</b></a> (Spring Boot + LangChain4j + MCP AI coding assistant)<br />
+          &nbsp;&nbsp;🔹 Customizing <a href="https://github.com/Aafff623/fork-Firefly"><b>fork-Firefly</b></a> (Astro-based blog &amp; digital garden fork with automated agent publishing pipelines)</li>
+        <li><b>Harness Engineering &amp; TTA Toolchain:</b> Turning spec-driven experience into reusable engineering assets; open-sourcing the TTA skill fleet — <a href="https://github.com/Aafff623/tta-init"><code>tta-init</code></a> (governance baseline for agent maintenance) · <a href="https://github.com/Aafff623/tta-html"><code>tta-html</code></a> (interactive HTML showcase &amp; slides) · <a href="https://github.com/Aafff623/tta-visual"><code>tta-visual</code></a> (high-fidelity generative visual assets) · <a href="https://github.com/Aafff623/tta-tone"><code>tta-tone</code></a> (natural humanized copywriting &amp; review) · <a href="https://github.com/Aafff623/tta-ppt"><code>tta-ppt</code></a> (presentation slide generators) · <a href="https://github.com/Aafff623/tta-frontend"><code>tta-frontend</code></a> (production-ready web templates); plus cross-harness sync via <code>harness-sync</code>.</li>
+        <li><b>Open Source &amp; Fullstack Engineering:</b> Re-architected &amp; shipped <a href="https://github.com/Aafff623/sky-out-ai"><b>sky-out-ai</b></a> (AI-enhanced takeout platform, 3-tier runnable, customer service RAG); deep-dived <a href="https://github.com/Aafff623/fork-yu-rpc"><b>fork-yu-rpc</b></a> (Java RPC framework) &amp; <a href="https://github.com/Aafff623/fork-yu-picture"><b>fork-yu-picture</b></a> (collaborative cloud gallery); actively maintaining fullstack and community repos: <a href="https://github.com/Aafff623/ResumeWise"><code>ResumeWise</code></a> · <a href="https://github.com/Aafff623/fork-Firefly"><code>fork-Firefly</code></a> · <a href="https://github.com/Aafff623/fork-daybook"><code>fork-daybook</code></a> · <a href="https://github.com/Aafff623/fork-mianshiya"><code>fork-mianshiya</code></a> · <a href="https://github.com/Aafff623/fork-sql-mother"><code>fork-sql-mother</code></a> etc.</li>
       </ul>
-      <p>Outside tech I'm a cyclist 🚲 and follow bike racing — the Grand Tours and spring classics. I write a blog, tend a digital garden, track anime seasons, and keep a bit of warmth outside the screen that I don't want to lose.</p>
+      <p>Outside tech: Road cycling enthusiast 🚲, following Grand Tours &amp; Monuments; writing blogs, cultivating digital gardens, and staying curious beyond the screen.</p>
     </td>
-    <td width="40%" align="center" valign="middle">
-      <img src="./assets/hero-knight.webp" width="92%" alt="threetwoa hero" />
+    <td width="35%" align="center" valign="top">
+      <img src="./assets/hero-knight.gif" width="90%" alt="threetwoa hero" />
+      <br />
+      <sub><i>🌏 Earth Online Player · Builder · 🚲</i></sub>
+      <br /><br />
+      <sub>📍 Taiyuan · NUC &nbsp;·&nbsp; 💼 Seeking 2027 SWE Internships<br />🌱 Core Java / Python Agent Fullstack</sub>
+      <br /><br />
+      <a href="https://github.com/Aafff623"><img src="https://img.shields.io/badge/Focus-Architecture_%26_Ecosystem-0969DA?style=flat-square&logo=github&logoColor=white" alt="Focus: Architecture &amp; Ecosystem" /></a>
+      &nbsp;
+      <a href="https://github.com/Aafff623?tab=repositories"><img src="https://img.shields.io/badge/Repos-30%2B_Open_Source-10B981?style=flat-square&logo=github&logoColor=white" alt="30+ Open Source Repositories" /></a>
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <a href="https://github.com/Aafff623" title="GitHub"><img height="26" width="26" src="https://cdn.simpleicons.org/github/_/ffffff" alt="GitHub" /></a>
+  <a href="https://github.com/Aafff623" title="GitHub"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/ffffff" /><img height="26" width="26" src="https://cdn.simpleicons.org/github/181717" alt="GitHub" /></picture></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.zhihu.com/people/hai-kuo-ping-yu-yue-51-70" title="Zhihu / 知乎"><img height="26" width="26" src="https://cdn.simpleicons.org/zhihu/0084FF" alt="Zhihu" /></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://x.com/FanLaiyi26341" title="X / Twitter"><img height="26" width="26" src="https://cdn.simpleicons.org/x/_/ffffff" alt="X" /></a>
+  <a href="https://x.com/FanLaiyi26341" title="X / Twitter"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/x/ffffff" /><img height="26" width="26" src="https://cdn.simpleicons.org/x/000000" alt="X" /></picture></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#" title="WeChat Official Account / 微信公众号 (筹备中)"><img height="26" width="26" src="https://cdn.simpleicons.org/wechat/07C160" alt="WeChat" /></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
@@ -57,13 +65,19 @@
 
 ---
 
-## Agent workflow
+## ⚡ Building the Agent Workflow
 
-Coding agents are a fleet, not a single tool. Grok scouts real-time topics on the web (and I enjoy tinkering with Grokbot); GPT goes deep on research and requirement breakdowns; ~~previously used Claude Code routed to V4-Flash alongside MiniMax multimodal generation~~ — core development has shifted to **ZCode** running on the GLM Lite plan with **GLM 5.3 Flash**, taking full advantage of its Harness ecosystem and plugin marketplace; ~~OpenCode and Pi for lightweight tasks~~ — lightweight routines are now handed over to **Gemini 3.8 Flash** inside **Antigravity**; Cursor handles localized patches and quick inline refinements. I avoid reinventing wheels: configure each CLI with its matching Harness ecosystem and plugin registry, and maintain my custom `harness-sync` skill to synchronize and iterate cross-tool configurations in one click. The harness matters more than the prompt: scoped context, repository rules, deterministic commands, tests, clean docs, and a careful final diff review. 📋&#8288;(・ω・)ノ Architectural judgment and every merge stay with me.
+For daily Agent Coding Workflows, configuring an extensive Harness ecosystem is essential🤔—the complete execution environment exposed to the model, including MCPs, Skills, Hooks, Subagents, System Prompts, global and role-specific rules, and app/plugin marketplace integrations. Multimodal capabilities like image, video, and audio generation are packed into the Harness environment for agents to discover and orchestrate autonomously. Finally, tasks are tiered by complexity and project scope across different models for maximum leverage. Current workflow distribution (iteratively maintained and updated) 🥳:
+
+- 🧭 **Trends & Social Signals:** **Grok / Gemini** (former for trends, hot topics, and new product discoveries; latter primarily as a multimodal workbench);
+- 🔬 **Deep Research & Detailed Design:** **Opus / Sol** (in-depth research, system architecture, and technical decomposition);
+- ⚡ **Core Architecture & Primary Coding:** **GLM 5.3, K3, Terra..** (fine-grained refactoring and long-term maintenance);
+- 🛠️ **Lightweight Tasks & Agile Assists:** Typically Flash-tier models like **Gemini, GLM, DeepSeek, and Grok** handling fast, lightweight, small-scope tasks;
+- 📑 **Daily Productivity & Team Collaboration:** **Kimi / Doubao / GPT**
 
 ---
 
-## Tech stack
+## 🛠️ Tech Stack
 
 <table width="100%">
   <tr>
@@ -121,7 +135,7 @@ Coding agents are a fleet, not a single tool. Grok scouts real-time topics on th
 
 ---
 
-## Competitions
+## 🏆 Competitions
 
 <table width="100%">
   <tr>
@@ -130,20 +144,38 @@ Coding agents are a fleet, not a single tool. Grok scouts real-time topics on th
       <p>2026 全国大学生计算机系统能力大赛 · 智能计算创新设计赛（先导杯）赛题 1 · Team 翻斗花园</p>
       <p><b>Proof split:</b> official best anchor is 87.7839 / 100 · #26 / 132 · SLA 0 · precision 0; our own best anchor is 87.6933 / 100, with 4k–8k / 8k–16k / 16k–32k throughput 20.39 / 18.29 / 14.61 tok/s and precision 0.</p>
       <p>Workload: raise long-context Qwen throughput on a fixed domestic DCU at concurrency=1, under TTFT/TPOT P99 SLA (input mix 4k–8k / 8k–16k / 16k–32k).</p>
-      <p>Stack: vLLM 0.18.1 · Qwen3.5-27B BF16 · Hygon DCU (gfx936) on SCNet. My focus: shared-gate fusion, SwiGLU HIP kernels, GDN launch packing, Gather-FA routing, LPK prefetch.</p>
-      <p><b>Validated recipe:</b> fused shared-gate ON · LPK stages=1 · Gather-FA ≤16K · rocBLAS + TunableOp · LPK prefetch. LONG prefill and LLMM1+fusion were rejected after measured regressions, including 83.8886 for the latter.</p>
-      <p>vs official baseline smoke: TTFT P99 −61%–87% · TPOT P99 ≈ −35% · throughput +7%–24%. Scores locked to SCNet runs, not local Windows numbers.</p>
-      <p><a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3">Submission</a> · <a href="https://github.com/Aafff623/vllm-cscc-leadcup">Source mirror</a></p>
+      <p><b>Validated recipe:</b> fused shared-gate ON · LPK stages=1 · Gather-FA ≤16K · rocBLAS + TunableOp · LPK prefetch. vs official baseline smoke: TTFT P99 −61%–87% · TPOT P99 ≈ −35% · throughput +7%–24%.</p>
+      <p>
+        <a href="https://gitlab.eduxiji.net/T2026101109912321/vllm-cscc-leadcup3"><img src="https://img.shields.io/badge/GitLab-Submission-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab Submission" /></a>
+        &nbsp;
+        <a href="https://github.com/Aafff623/vllm-cscc-leadcup"><img src="https://img.shields.io/badge/Mirror-vllm--cscc--leadcup-181717?style=flat-square&logo=github&logoColor=white" alt="Source mirror" /></a>
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/vLLM-0.18.1-1F2937?style=flat-square&logo=vllm&logoColor=white" alt="vLLM" />
+        <img src="https://img.shields.io/badge/Hygon_DCU-gfx936-4F46E5?style=flat-square&logo=amd&logoColor=white" alt="Hygon DCU" />
+        <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-SwiGLU-7C3AED?style=flat-square&logo=amd&logoColor=white" alt="HIP / ROCm" />
+        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+        <img src="https://img.shields.io/badge/Qwen-3.5--27B-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="Qwen" />
+      </p>
     </td>
     <td width="50%" valign="top">
       <h3>AI4S · 书生国智科探挑战赛</h3>
       <p>2026 书生国智科探挑战赛暨飞翔杯 AI Agent/Skills 开发大赛 · Shanghai AI Lab × Biren · Track 5 模型与算子 · Team 翻斗花园</p>
       <p><b>Live board:</b> public NS64 rel-L2 <b>0.035115</b> · tag <code>dualview_r2</code> · report <b>v9</b> · Spectral idle <b>3.811 / 8.054 / 29.560 ms</b> @64/128/256 · worst rel ≈ <b>2.17e-7</b> (≤1e-4) · ranking pending</p>
       <p>Problem: ship a Biren-native Spectral Convolution (SUPA / Extension) and reuse it inside ≥4-layer FNO-NS on the public 64×64 Navier–Stokes set (1000/128) — Agent/Skills log required (~15%).</p>
-      <p>Stack: Biren106B · SDK 1.11 · <code>device=supa</code> · fused suFFT + SUPA dual-corner mul · FNO width32/modes16 · Cursor Agent harness (<code>skill.md</code>, operator opt-loop, promote gates).</p>
       <p>Evidence: formal Spectral idle frozen; chain CPU↔SUPA &lt;1e-4; Pred/GT viz on public NS64; Agent log 35+ reviewed segments with abort/NO_SIGNAL discipline (no silent promote).</p>
-      <p>vs prior formal v8 (0.035302): public L2 ≈ <b>+0.53%</b> error drop after dual-view consistency polish; Spectral ms unchanged on purpose.</p>
-      <p><a href="https://github.com/Aafff623/fandou-ai4s">Source</a> · <a href="https://ai4scompetition.intern-ai.org.cn/">Competition site</a></p>
+      <p>
+        <a href="https://github.com/Aafff623/fandou-ai4s"><img src="https://img.shields.io/badge/Repository-fandou--ai4s-181717?style=flat-square&logo=github&logoColor=white" alt="Source repository" /></a>
+        &nbsp;
+        <a href="https://ai4scompetition.intern-ai.org.cn/"><img src="https://img.shields.io/badge/Official-AI4S_Contest-0969DA?style=flat-square&logoColor=white" alt="Competition site" /></a>
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/Biren_106B-SDK_1.11-059669?style=flat-square&logoColor=white" alt="Biren 106B" />
+        <img src="https://img.shields.io/badge/SUPA-Spectral_Conv-2563EB?style=flat-square&logoColor=white" alt="SUPA" />
+        <img src="https://img.shields.io/badge/FNO-Navier--Stokes-8B5CF6?style=flat-square&logoColor=white" alt="FNO" />
+        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+        <img src="https://img.shields.io/badge/Cursor_Agent-Harness-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor Agent" />
+      </p>
     </td>
   </tr>
   <tr>
@@ -158,28 +190,20 @@ Coding agents are a fleet, not a single tool. Grok scouts real-time topics on th
 
 ---
 
-## GitHub stats
+## 📊 GitHub Stats
 
 <table width="100%">
   <tr>
-    <td colspan="2" align="center" valign="middle">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Aafff623&theme=dark&background=0d1117&border=30363d&stroke=30363d&ring=58a6ff&fire=d29922&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=8b949e&hide_border=false" />
-        <img src="https://streak-stats.demolab.com/?user=Aafff623&theme=default&background=ffffff&border=d1d9e0&stroke=d1d9e0&ring=0969da&fire=f59e0b&currStreakNum=1f2328&sideNums=1f2328&currStreakLabel=0969da&sideLabels=0969da&dates=656d76&hide_border=false" alt="GitHub streak stats" width="100%" />
-      </picture>
-    </td>
-  </tr>
-  <tr>
     <td width="50%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d" />
-        <img src="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0" alt="GitHub stats" width="100%" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&count_private=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d&border_radius=8" />
+        <img src="https://github-readme-stats.shion.dev/api?username=Aafff623&show_icons=true&count_private=true&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0&border_radius=8" alt="GitHub stats" width="100%" />
       </picture>
     </td>
     <td width="50%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=donut&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d" />
-        <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=donut&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0" alt="Top languages" width="100%" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=compact&langs_count=6&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=d29922&hide_border=false&border_color=30363d&border_radius=8" />
+        <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Aafff623&layout=compact&langs_count=6&bg_color=ffffff&title_color=0969da&text_color=1f2328&icon_color=f59e0b&hide_border=false&border_color=d1d9e0&border_radius=8" alt="Top languages" width="100%" />
       </picture>
     </td>
   </tr>
@@ -187,19 +211,19 @@ Coding agents are a fleet, not a single tool. Grok scouts real-time topics on th
 
 ---
 
-## Classic project
+## 🌟 Classic Projects
 
 <table width="100%">
   <tr>
     <td width="65%" valign="top">
       <h3><a href="https://github.com/San-Y108/agent-cfo">AgentCFO: DAO treasury assistant</a></h3>
-      <p>Helps DAO operators prepare and approve treasury payouts through Cobo Agentic Wallet, instead of ad-hoc spreadsheets and opaque transfers. Hackathon prototype.</p>
+      <p>A treasury assistant for DAO operators 🤠 powered by Cobo Agentic Wallet. Automates payout proposals, policy compliance checks, and multi-party on-chain approvals, replacing fragmented spreadsheets and manual transfers. Hackathon finalist prototype.</p>
       <ul>
         <li><b>Track:</b> Cobo · Agentic Economy × CAW</li>
-        <li><b>My role:</b> frontend lead; landing page and the operator console used in the demo</li>
-        <li><b>Flow:</b> contribution records and budget rules → payment plan → deterministic checks → human approval → payout and audit report</li>
-        <li><b>Proof:</b> two Sepolia / SETH payouts (external payment + internal transfer)</li>
-        <li><b>Stack:</b> Next.js, TypeScript, FastAPI, Cobo CAW</li>
+        <li><b>Role:</b> Frontend lead; designed and built the web landing page and operator console</li>
+        <li><b>Flow:</b> Contribution records &amp; budget rules → automated payout plan → deterministic policy checks → multi-party human approval → on-chain execution &amp; audit log</li>
+        <li><b>Proof:</b> Two end-to-end verified settlements on Sepolia testnet (external payment + internal transfer)</li>
+        <li><b>Stack:</b> Next.js · TypeScript · FastAPI · Cobo CAW</li>
       </ul>
       <p>
         <a href="https://agentcfo-frontend.vercel.app/"><img src="https://img.shields.io/badge/Live_Demo-agentcfo.vercel.app-10B981?style=flat-square&logo=vercel&logoColor=white" alt="Live demo" /></a>
@@ -224,31 +248,56 @@ Coding agents are a fleet, not a single tool. Grok scouts real-time topics on th
 
 ---
 
-## Currently building
+## 📚 What I'm Learning
 
-- <img src="https://img.shields.io/badge/Status-Exploring-2563EB?style=flat-square" alt="Exploring" /> <b>DSH plugin ecosystem:</b> Diving into the DSH plugin architecture — contributing one plugin to the official community while independently developing another from scratch.
-- <img src="https://img.shields.io/badge/Status-In_Progress-EA580C?style=flat-square" alt="In Progress" /> <b>Distributed delay-delivery service:</b> Spring Cloud &amp; middleware practice with high reliability and load-leveling focus.
-- <img src="https://img.shields.io/badge/Status-Prototyping-7C3AED?style=flat-square" alt="Prototyping" /> <b>Enterprise Dify customization:</b> Tailored knowledge-base retrieval and agent workflow extensions for production scenarios.
-- <img src="https://img.shields.io/badge/Status-Lab-059669?style=flat-square" alt="Lab" /> <b>Grokbot experiments:</b> Tinkering with real-time agent interactions, scheduled monitors, and automated workflow playbooks.
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-inprogress-en-dark.svg" /><img src="./assets/badge-status-inprogress-en.svg" width="80" height="34" alt="Active" /></picture></div>
+      <h4>⚡ Java Microservices &amp; Distributed Resilience</h4>
+      <p>Systematically organizing microservice governance (Spring Cloud Alibaba, Nacos, Sentinel, Gateway) and middleware reliability. Building a <b>distributed delay-delivery system</b> focused on high-concurrency peak shaving, zero message loss, and cluster failover.</p>
+      <p><code>Spring Cloud</code> <code>RocketMQ</code> <code>Nacos</code> <code>Sentinel</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-prototyping-en-dark.svg" /><img src="./assets/badge-status-prototyping-en.svg" width="88" height="34" alt="Prototype" /></picture></div>
+      <h4>🔬 Agent Core Engineering &amp; Production Evals</h4>
+      <p>Exploring LLM gateway routing, stateful Agent Loops with checkpoints, MCP tool runtimes, and hybrid-retrieval RAG. Customizing enterprise Dify knowledge bases and workflows, alongside Subagent orchestration, Golden Datasets, and LLM-as-Judge automated evals.</p>
+      <p><code>Agent Loop</code> <code>Checkpoint</code> <code>Dify Plugins</code> <code>Evals</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-inprogress-en-dark.svg" /><img src="./assets/badge-status-inprogress-en.svg" width="80" height="34" alt="Active" /></picture></div>
+      <h4>🧭 Spec-Driven Development (SDD) &amp; Paradigms</h4>
+      <p>Evolving from <code>Prompt → Context → Harness → Loop Engineering</code>, using discipline to shrink human-agent gaps and force clearer architecture thinking. Practicing Spec-Kit and OpenSpec upfront contracts to align cognition, connecting dual-track iteration with MCP-assisted E2E testing to catch broken business paths early.</p>
+      <p><code>Spec-Kit</code> <code>OpenSpec</code> <code>Dual-Track</code> <code>E2E MCP</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-exploring-en-dark.svg" /><img src="./assets/badge-status-exploring-en.svg" width="82" height="34" alt="Explore" /></picture></div>
+      <h4>🔌 Plugin Ecosystems &amp; Cross-Harness Governance</h4>
+      <p>Diving into DSH plugin internals—contributing an enhancement plugin to the official community while developing another workflow plugin from scratch. Syncing multi-agent configs with custom <code>harness-sync</code>, and distilling practical workflows into the TTA skill fleet toward spec-driven development.</p>
+      <p><code>DSH Plugins</code> <code>harness-sync</code> <code>TTA Skills</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-lab-en-dark.svg" /><img src="./assets/badge-status-lab-en.svg" width="72" height="34" alt="Lab" /></picture></div>
+      <h4>🧪 Agentic Product Delivery &amp; Proactive Triggers</h4>
+      <p>Tinkering with Grokbot interactions, proactive listening, and automated monitoring workflows. Moving from idea to prototype (PM → Builder), weaving persistent memory, proactive triggers, and Generative UI into real application scenarios.</p>
+      <p><code>Grokbot</code> <code>PM➔Builder</code> <code>Active Loop</code> <code>Generative UI</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-prototyping-en-dark.svg" /><img src="./assets/badge-status-prototyping-en.svg" width="88" height="34" alt="Prototype" /></picture></div>
+      <h4>🚢 Indie Shipping &amp; Global Monetization</h4>
+      <p>Connecting mobile apps and mini-programs with international payments (Stripe). Letting information drive development while filling gaps with AI, validating real demand and indie shipping paths with lean MVPs.</p>
+      <p><code>Mobile App</code> <code>Mini Program</code> <code>Global Stripe</code> <code>MVP</code></p>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## What I'm learning
-
-- <b>Java microservices full-stack:</b> building clean microservices end to end — Spring Cloud Alibaba, Nacos, distributed transactions, and production-grade backend engineering.
-- <b>AI-assisted E2E testing:</b> using MCP tools so models can drive end-to-end flows and catch broken business paths early. 🔬&#8288;(・∀・)
-- <b>Light CLI + heavy IDE:</b> ZCode / Claude Code for rapid development and exploration, Antigravity (Gemini) for lighter tasks; Cursor (browser, debugger, project context) for long-lived maintenance.
-- <b>Paradigm shift:</b> Prompt → Context → Harness → Loop Engineering. Human rules and discipline shrink the human-agent gap and force clearer architecture thinking. 🧭&#8288;(｀・ω・´)
-- <b>Cross-harness sync &amp; custom skills:</b> maintaining multi-environment configs via my custom <code>harness-sync</code> skill, and distilling practical workflows into the TTA skill fleet.
-- <b>Indie shipping path:</b> App / mini-program + overseas payments end to end; letting information drive development while filling gaps with AI.
-- <b>Spec-driven coding (SDD):</b> practicing Spec-Kit / OpenSpec patterns to align human-agent assumptions through clear upfront contracts.
-- <b>Agent engineering (Python):</b> LLM routing, Function Calling / MCP runtimes, stateful Agent Loops with checkpoints, hybrid-retrieval RAG.
-- <b>Multi-Agent collaboration &amp; evals:</b> Subagent orchestration, golden datasets, LLM-as-Judge automated evals, tracing, and cost governance.
-- <b>Agentic product shipping:</b> moving from idea to prototype (PM → Builder), weaving memory systems, proactive touchpoints, and dynamic UI into real applications.
-
----
-
-## Activity
+## 📈 Activity
 
 <p align="center">
   <picture>
