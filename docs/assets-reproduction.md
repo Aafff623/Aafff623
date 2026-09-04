@@ -17,14 +17,13 @@ replace an asset. Where a source is not available in the repo, it is marked
 
 - **Full pipeline:** `docs/adr/0002-3d-chibi-knight-light-dark-gif.md` (scratch plan in `temp/reports/tech-stack-3d-mascot-plan.md`).
 - **Source frames:** `temp/chibi-knight-import/chibi_knight_5_images/` — 5× `1254×1254` PNG (no alpha). Matte and align before encoding; do not rely on the original filenames for pose order (see plan §3).
-- **Output:** `320×320`, 18 fps, ~73 frames, infinite loop. Light background near `#ffffff`; dark background near `#0d1117` with edges recomposited (not the light version darkened).
-- **Shipped sizes (A-tier):** light ~442 KB, dark ~478 KB (budget ≤1.5 MB per GIF; hard cap 3 MB).
+- **Output:** `320×320`, 18 fps, 115 frames seamless loop. Light background `#ffffff` (~1.75 MB); dark background `#0d1117` with edges recomposited (~1.85 MB).
 - **Encoding (representative two-pass palette):**
 
 ```bash
-# 1) build an optimized palette (64 colors is enough for the chibi knight)
+# 1) build an optimized palette (64-128 colors for the chibi knight)
 ffmpeg -framerate 18 -i temp/mascot-3d/frames-light/frame-%03d.png \
-  -vf "scale=320:320:flags=lanczos,palettegen=max_colors=64:stats_mode=diff" \
+  -vf "scale=320:320:flags=lanczos,palettegen=max_colors=128:stats_mode=diff" \
   -update 1 -frames:v 1 -y temp/mascot-3d/palette-light.png
 
 # 2) apply the palette; prefer no dither on flat areas
@@ -33,8 +32,7 @@ ffmpeg -framerate 18 -i temp/mascot-3d/frames-light/frame-%03d.png -i temp/masco
   -loop 0 -y temp/mascot-3d/mascot-light.candidate.gif
 ```
 
-Repeat with `frames-dark/` for `mascot-dark.gif`. Then run the acceptance checks
-in the plan (§12) before copying candidates into `assets/`.
+Repeat with `frames-dark/` for `mascot-dark.gif`.
 
 ## Activity snake (no local asset)
 
@@ -54,12 +52,12 @@ in the plan (§12) before copying candidates into `assets/`.
 - **Sources:** organizer promo art (not generated in-repo). Fit inside canvas, centered, dark fill; then round; WebP q≈86.
 - **Mapping:** `comp-syscap-banner.webp` → Lead Cup; `comp-ai4s-ketan.webp` → AI4S 书生国智科探.
 
-## `assets/hero-knight.webp` — intro hero
+## `assets/hero-knight.gif` and `assets/hero-knight.webp` — Intro hero
 
-- **Current:** WebP RGB, `800×1000`, quality 90, **sharp corners** (rounded / card-ring trial reverted 2026-08). See `docs/adr/0003-hero-webp.md`.
-- **Why WebP:** the hero is a gradient-heavy illustration; PNG stored it at ~981 KB with no lossless headroom, while WebP q90 is ~10x smaller and visually near-identical.
-- **Source not tracked.** The original high-res render lives outside the repo.
-- **Regenerate (Pillow):**
+- **Current (Primary):** `assets/hero-knight.gif` — 28-frame seamless loop GIF generated from AI video synthesis (~2.60 MB). Cropped and color-calibrated to preserve sharp edges and avoid loop stutters.
+- **Fallback / Baseline:** `assets/hero-knight.webp` — WebP RGB, `800×1000`, quality 90, **sharp corners** (~131 KB). See `docs/adr/0003-hero-webp.md`.
+- **Source not tracked.** The original high-res render and raw video sequence live outside the repo.
+- **Regenerate WebP fallback (Pillow):**
 
 ```python
 from PIL import Image
@@ -67,30 +65,31 @@ Image.open("<source>.png").convert("RGB").save(
     "assets/hero-knight.webp", format="WEBP", quality=90, method=6)
 ```
 
-## `assets/v9-banner.gif` — top banner
+## `assets/v9-banner.gif` — Top banner
 
-- **Current:** static pixelized-mascot banner, bright palette, ~92 KB.
-- **Source not tracked.** Frame source and encoding settings are not in the repo.
-- If it needs a dark variant (see `CONTEXT.md` / `docs/adr/0002-3d-chibi-knight-light-dark-gif.md`), recompose on a
-  `#0d1117`-based background and wire with `<picture>`, mirroring the mascot approach.
+- **Current:** Dynamic pixelized-mascot animated banner, bright palette, 24 frames, ~2.52 MB (optimized from `temp/banner_24f_342_c36.gif`).
+- **Source not tracked.** Frame sequence originates from pixel-art motion synthesis.
+- **Theme behavior:** Light-first palette with high-contrast elements; renders cleanly across both light and dark GitHub profile wrappers.
 
 ## Wordmarks — SVG source + published typewriter GIFs
 
-- **Source (edit these):** `assets/brand-threetwoa.svg` / `assets/brand-threetwoa-dark.svg`.
-  Hand-editable SVG; no build step for still frames. The dark wordmark is a
-  lighter/blue-gradient variant.
-- **Published (what README loads):** `assets/brand-threetwoa.gif` /
-  `assets/brand-threetwoa-dark.gif`. Typewriter loop, switched with `<picture>`.
-  See `docs/adr/0005-wordmark-typewriter-gif.md`.
-- **Regenerate GIFs** after an SVG edit (Playwright Chromium + Pillow):
+- **Source (edit these):** `assets/brand-threetwoa.svg` / `assets/brand-threetwoa-dark.svg`. Hand-editable SVG; no build step for still frames. The dark wordmark uses a lighter gradient variant.
+- **Published (what README loads):** `assets/brand-threetwoa.gif` / `assets/brand-threetwoa-dark.gif`. 56-frame typewriter + wave + backspace loop, switched with `<picture>`. See `docs/adr/0008-typewriter-wordmark-wave.md` (supersedes `docs/adr/0005-wordmark-typewriter-gif.md`).
+- **Motion flow:**
+  1. Caret blinks on empty
+  2. Types `threetwoa` left-to-right (12 frames)
+  3. 👋 emoji swings an 8-frame wrist pivot curve (`0° → 16° → -8° → 20° → -6° → 16° → -4° → 0°`)
+  4. Holds for ~2.0 s (15 frames)
+  5. Backspace smoothly erases characters back to blank
+  6. Loop repeats seamlessly
+- **Sizes:** Light ~710 KB, Dark ~784 KB (1520×300 @ 2×, master palette quantization via Pillow).
+- **Regenerate GIFs:** `python scripts/render-wordmark.py` (candidate GIFs placed in `temp/scripts/wordmark-typewriter/`, then promoted to `assets/`).
 
-```bash
-python scripts/render-wordmark.py
-# then copy the candidate GIFs from temp/scripts/wordmark-typewriter/ into assets/ as
-# brand-threetwoa.gif and brand-threetwoa-dark.gif
-```
+## `assets/badge-status-*.svg` — What I'm Learning Bento Grid Badges
 
-- **Motion:** caret blinks → types `threetwoa` left-to-right in the final word
-  slot → caret blinks → hold ~2.6 s → loop. Tagline stays HTML, not in the GIF.
-- **Encode:** 760×150 at 2× (1520×300), ~15 unique frames, ~341 KB each.
-  Backgrounds `#ffffff` / `#0d1117` (GIF has no useful alpha).
+- **Usage:** Plan-D aurora-pill status badges embedded via `<picture>` inside each cell of the 3×2 Bento grid (`What I'm Learning`).
+- **Structure (16 files):**
+  - 4 status types: `inprogress` (进行中), `prototyping` (原型验证), `exploring` (探索中), `lab` (实验室).
+  - 2 locales: EN (`badge-status-[type]-en.svg`) and ZH (`badge-status-[type].svg`).
+  - 2 theme variants: Light (`.svg`) and Dark (`-dark.svg`).
+- **Design rules:** Self-contained SVG pill badges with subtle border-glow and uppercase text; no external web fonts or scripts; rendered cleanly at native height (`34px`).
