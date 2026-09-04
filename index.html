@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <base href="/" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>threetwoa | Profile Preview</title>
+  <title>threetwoa | Profile Preview & Editor</title>
   <meta name="description" content="GitHub profile and portfolio showcase for threetwoa (Aafff623)" />
-  <meta property="og:title" content="threetwoa | Profile Preview" />
-  <meta property="og:description" content="GitHub profile and portfolio showcase for threetwoa (Aafff623)" />
   <style>
     :root {
       --bg: #ffffff;
@@ -14,7 +13,11 @@
       --muted: #656d76;
       --border: #d1d9e0;
       --link: #0969da;
+      --accent: #f59e0b;
+      --accent-cyan: #06b6d4;
       --code-bg: rgba(175,184,193,0.2);
+      --card-bg: #f6f8fa;
+      --card-border: #d1d9e0;
     }
     html[data-theme="dark"],
     html:not([data-theme="light"]) {
@@ -24,7 +27,11 @@
         --muted: #8b949e;
         --border: #30363d;
         --link: #4493f8;
+        --accent: #d29922;
+        --accent-cyan: #22d3ee;
         --code-bg: rgba(110,118,129,0.4);
+        --card-bg: #161b22;
+        --card-border: #30363d;
       }
     }
     html[data-theme="dark"] {
@@ -33,22 +40,31 @@
       --muted: #8b949e;
       --border: #30363d;
       --link: #4493f8;
+      --accent: #d29922;
+      --accent-cyan: #22d3ee;
       --code-bg: rgba(110,118,129,0.4);
+      --card-bg: #161b22;
+      --card-border: #30363d;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       padding: 24px 16px 64px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", "Noto Sans SC", Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
-      transition: background 0.15s ease, color 0.15s ease;
+      transition: background 0.15s ease, color 0.15s ease, padding-right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    body.has-anno-sidebar {
+      padding-right: 390px;
     }
     .container {
       max-width: 900px;
       margin: 0 auto;
     }
+
+    /* Standard Showcase Toolbar */
     .toolbar {
       display: flex;
       justify-content: space-between;
@@ -77,6 +93,10 @@
       cursor: pointer;
       font-weight: 500;
       transition: all 0.15s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
     .btn-toggle:hover {
       color: var(--text);
@@ -102,6 +122,298 @@
       background: #2da44e;
       display: inline-block;
     }
+
+    /* Floating Action Toolbar in Edit Mode (Single Row, perfectly balanced) */
+    .edit-floating-toolbar {
+      position: fixed;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100px);
+      opacity: 0;
+      pointer-events: none;
+      z-index: 999999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      width: auto;
+      max-width: calc(100vw - 32px);
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease;
+    }
+    :root[data-theme="light"] .edit-floating-toolbar {
+      background: rgba(255, 255, 255, 0.95);
+      border-color: rgba(0, 0, 0, 0.12);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+    body.is-editing .edit-floating-toolbar {
+      transform: translateX(-50%) translateY(0) !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+
+    .toolbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #f8fafc;
+      margin-right: 4px;
+    }
+    :root[data-theme="light"] .toolbar-brand {
+      color: #0f172a;
+    }
+    .toolbar-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+    }
+    body.is-editing .toolbar-dot {
+      background: #f59e0b;
+      box-shadow: 0 0 8px #f59e0b;
+    }
+    body.is-annotating .toolbar-dot {
+      background: #8b5cf6;
+      box-shadow: 0 0 8px #8b5cf6;
+    }
+
+    .tool-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #e2e8f0;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+    :root[data-theme="light"] .tool-btn {
+      color: #1e293b;
+      background: rgba(0, 0, 0, 0.04);
+      border-color: rgba(0, 0, 0, 0.08);
+    }
+    .tool-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-1px);
+    }
+    :root[data-theme="light"] .tool-btn:hover {
+      background: rgba(0, 0, 0, 0.08);
+    }
+    .tool-btn.primary {
+      background: #0969da;
+      color: #ffffff;
+      border-color: #0969da;
+      font-weight: 600;
+    }
+    .tool-btn.primary:hover {
+      background: #0858b8;
+    }
+    .tool-btn.active-amber {
+      background: #f59e0b !important;
+      color: #000 !important;
+      border-color: #f59e0b !important;
+      font-weight: 600;
+    }
+    .tool-btn.active-purple {
+      background: #8b5cf6 !important;
+      color: #fff !important;
+      border-color: #8b5cf6 !important;
+      font-weight: 600;
+    }
+    .tool-btn.danger:hover {
+      background: rgba(239, 68, 68, 0.2);
+      color: #ef4444;
+      border-color: #ef4444;
+    }
+    .tool-divider {
+      width: 1px;
+      height: 16px;
+      background: rgba(255, 255, 255, 0.18);
+      margin: 0 2px;
+    }
+    :root[data-theme="light"] .tool-divider {
+      background: rgba(0, 0, 0, 0.12);
+    }
+
+    /* Live Edit & Annotations Status Banners */
+    .mode-banner {
+      display: none;
+      max-width: 900px;
+      margin: 0 auto 20px;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    body.is-editing .edit-banner {
+      display: flex;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: var(--text);
+    }
+    body.is-annotating .anno-banner {
+      display: flex;
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      color: var(--text);
+    }
+
+    /* In-place Editable Styles */
+    body.is-live-editing #profileContent [contenteditable="true"] {
+      outline: 2px dashed rgba(9, 105, 218, 0.5) !important;
+      outline-offset: 3px;
+      border-radius: 4px;
+      cursor: text;
+      transition: all 0.15s ease;
+    }
+    body.is-live-editing #profileContent [contenteditable="true"]:hover {
+      outline-color: var(--link) !important;
+      background: rgba(9, 105, 218, 0.05);
+    }
+    body.is-live-editing #profileContent [contenteditable="true"]:focus {
+      outline: 2px solid var(--link) !important;
+      background: rgba(9, 105, 218, 0.09);
+    }
+
+    /* Annotation Mode Hover/Selected Styles */
+    body.is-annotating #profileContent * {
+      cursor: crosshair !important;
+    }
+    body.is-annotating .annotatable-hover {
+      outline: 2px solid #06b6d4 !important;
+      outline-offset: 2px;
+      background-color: rgba(6, 182, 212, 0.1) !important;
+    }
+    body.is-annotating .annotatable-selected {
+      outline: 3px solid #8b5cf6 !important;
+      outline-offset: 2px;
+      background-color: rgba(139, 92, 246, 0.15) !important;
+      box-shadow: 0 0 15px rgba(139, 92, 246, 0.3) !important;
+    }
+
+    /* Annotation Sidebar Drawer */
+    .annotation-sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 380px;
+      background: var(--card-bg);
+      border-left: 1px solid var(--card-border);
+      box-shadow: -10px 0 35px rgba(0, 0, 0, 0.35);
+      z-index: 999998;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .annotation-sidebar.open {
+      transform: translateX(0);
+    }
+    .anno-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.03);
+    }
+    .anno-body {
+      flex: 1;
+      padding: 16px 18px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .anno-target-box {
+      background: var(--bg);
+      border: 1px dashed #8b5cf6;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 12px;
+    }
+    .anno-item-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      position: relative;
+    }
+    .anno-footer {
+      padding: 14px 18px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: rgba(15, 23, 42, 0.03);
+    }
+    .anno-btn-primary {
+      background: #8b5cf6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+      transition: all 0.2s ease;
+    }
+    .anno-btn-primary:hover {
+      background: #7c3aed;
+      transform: translateY(-1px);
+    }
+
+    /* Toast Notification */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(40px);
+      background: rgba(15, 23, 42, 0.94);
+      color: #f8fafc;
+      padding: 9px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 13px;
+      font-weight: 500;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+      z-index: 1000000;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .toast-msg.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Profile Markdown Typography */
     h1, h2, h3 { margin-top: 24px; margin-bottom: 12px; font-weight: 600; }
     h1 { font-size: 2em; }
     h2 { font-size: 1.5em; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
@@ -109,10 +421,17 @@
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     p { margin: 0 0 14px; }
-    ul { margin: 0 0 16px; padding-left: 24px; }
+    ul, ol { margin: 0 0 16px; padding-left: 24px; }
+    ol { list-style-type: decimal; }
+    ol > li { margin-bottom: 12px; }
+    ol > li > b { display: inline-block; margin-bottom: 4px; }
+    ol > li > ul { margin: 6px 0 8px; padding-left: 20px; list-style-type: disc; }
+    ol > li > ul > li { margin-bottom: 5px; }
     li { margin-bottom: 6px; }
     hr { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }
     img { max-width: 100%; height: auto; vertical-align: middle; }
+    picture { display: inline-block; vertical-align: middle; }
+    picture img { vertical-align: middle; }
     table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
     td { padding: 8px; vertical-align: top; }
     td[valign="middle"] { vertical-align: middle; }
@@ -142,8 +461,96 @@
   </style>
 </head>
 <body>
+
+  <!-- Floating Action Toolbar (Active in Edit Mode, Single Row, Balanced) -->
+  <header class="edit-floating-toolbar" id="editToolbar">
+    <div class="toolbar-brand">
+      <span class="toolbar-dot"></span>
+      <span id="previewStatusText">Edit Mode</span>
+    </div>
+
+    <button id="btnToggleAnno" class="tool-btn" title="Toggle Annotation Mode: click any GIF, badge, or text to record ideas">
+      <span>💬</span> <span>批注</span>
+    </button>
+    <button id="btnToggleLiveEdit" class="tool-btn" title="Toggle inline text editing">
+      <span>✏️</span> <span id="btnLiveEditText">在线编辑</span>
+    </button>
+    <button id="btnSaveDraft" class="tool-btn primary" title="Save draft to local storage">
+      <span>💾</span> <span>保存草稿</span>
+    </button>
+    <button id="btnExportReview" class="tool-btn" title="Export draft changes to prompt AI for review">
+      <span>🔄</span> <span>导出审查</span>
+    </button>
+    <button id="btnResetDraft" class="tool-btn danger" title="Reset draft to original version">
+      <span>↺</span> <span>重置</span>
+    </button>
+
+    <div class="tool-divider"></div>
+
+    <button id="btnFloatingTheme" class="tool-btn" title="Toggle dark/light theme">
+      <span>🌓</span>
+    </button>
+
+    <div class="btn-group" style="padding:1px;background:rgba(255,255,255,0.12);">
+      <button class="tool-btn" id="btnFloatEn" onclick="switchLang('en')" style="border:none;border-radius:999px;padding:3px 8px;">EN</button>
+      <button class="tool-btn" id="btnFloatZh" onclick="switchLang('zh')" style="border:none;border-radius:999px;padding:3px 8px;">中文</button>
+    </div>
+
+    <div class="tool-divider"></div>
+
+    <button id="btnExitEdit" class="tool-btn" onclick="toggleEditMode(false)" title="Exit Edit Mode and view finished showcase">
+      <span>👁️</span> <span>成品展示</span>
+    </button>
+  </header>
+
+  <!-- Right Slide-out Annotation Sidebar Drawer -->
+  <div class="annotation-sidebar" id="annotationSidebar">
+    <div class="anno-header">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="color:#8b5cf6;font-size:16px;">💬</span>
+        <strong style="font-size:14px;color:var(--text);">元素智能引用批注面板</strong>
+      </div>
+      <button id="btnCloseAnno" style="background:transparent;border:none;color:var(--muted);font-size:18px;cursor:pointer;line-height:1;">✕</button>
+    </div>
+
+    <div class="anno-body" id="annoBody">
+      <div class="anno-target-box" id="annoTargetBox">
+        <div style="color:#8b5cf6;font-weight:700;margin-bottom:4px;" id="annoTargetBadge">🎯 选中目标元素:</div>
+        <div id="annoTargetLabel" style="color:var(--text);font-weight:600;margin-bottom:4px;word-break:break-all;">未选择元素</div>
+        <div id="annoTargetSnippet" style="color:var(--muted);font-size:11px;font-family:ui-monospace,monospace;max-height:55px;overflow:hidden;text-overflow:ellipsis;background:rgba(128,128,128,0.08);padding:6px;border-radius:4px;">
+          点击页面中的任意图片、GIF、徽章或文本段落
+        </div>
+      </div>
+
+      <div>
+        <label style="font-size:12px;font-weight:700;color:var(--text);display:block;margin-bottom:6px;">✍️ 修改建议 / 需求说明:</label>
+        <textarea id="annoInputText" rows="4" placeholder="例如：给这块内容补充实测数据，或者调整徽章样式与链接..." style="width:100%;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px;font-size:12.5px;color:var(--text);font-family:inherit;outline:none;resize:none;box-sizing:border-box;"></textarea>
+        <button id="btnAddAnno" style="width:100%;margin-top:8px;padding:8px;background:rgba(139,92,246,0.1);border:1px solid #8b5cf6;color:#8b5cf6;font-weight:700;border-radius:6px;cursor:pointer;font-size:12px;">
+          ＋ 添加到批注待办列表
+        </button>
+      </div>
+
+      <div>
+        <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;">
+          <span>📋 已记录批注 (<span id="annoCount" style="color:#8b5cf6;">0</span>)</span>
+          <button id="btnClearAnno" style="background:transparent;border:none;color:var(--muted);font-size:11px;cursor:pointer;">清空</button>
+        </div>
+        <div id="annoItemsContainer" style="display:flex;flex-direction:column;gap:8px;"></div>
+      </div>
+    </div>
+
+    <div class="anno-footer">
+      <button class="anno-btn-primary" id="btnExportAnno">
+        <span>📋</span>
+        <span>导出批注审查 Prompt (自动复制)</span>
+      </button>
+      <div style="font-size:11px;color:var(--muted);text-align:center;">直接粘贴进对话框即可驱动 AI 进行针对性修改！</div>
+    </div>
+  </div>
+
   <div class="container">
-    <div class="toolbar">
+    <!-- Showcase Mode Toolbar -->
+    <div class="toolbar" id="showcaseToolbar">
       <div class="btn-group" id="langGroup">
         <button class="btn-toggle active" id="btnEn" onclick="switchLang('en')">English</button>
         <button class="btn-toggle" id="btnZh" onclick="switchLang('zh')">中文</button>
@@ -151,39 +558,128 @@
 
       <div class="commit-badge">
         <span class="dot"></span>
-        <span>Latest commit: 5d15417</span>
+        <span>Latest commit: 40e7081</span>
       </div>
 
-      <div class="btn-group" id="themeGroup">
-        <button class="btn-toggle active" id="themeAuto" onclick="setTheme('auto')">Auto</button>
-        <button class="btn-toggle" id="themeLight" onclick="setTheme('light')">Light</button>
-        <button class="btn-toggle" id="themeDark" onclick="setTheme('dark')">Dark</button>
+      <div style="display:inline-flex;align-items:center;gap:8px;">
+        <div class="btn-group" id="themeGroup">
+          <button class="btn-toggle active" id="themeAuto" onclick="setTheme('auto')">Auto</button>
+          <button class="btn-toggle" id="themeLight" onclick="setTheme('light')">Light</button>
+          <button class="btn-toggle" id="themeDark" onclick="setTheme('dark')">Dark</button>
+        </div>
+        <button class="btn-toggle" id="btnEnterEdit" onclick="toggleEditMode(true)" style="color:var(--text);border:1px solid var(--border);border-radius:6px;font-weight:600;" title="进入本地编辑与批注调试模式 (Editor & Annotation Mode)">
+          <span>✏️</span> <span>编辑模式</span>
+        </button>
       </div>
     </div>
 
+    <!-- Edit Status Banner -->
+    <div class="mode-banner edit-banner" id="editNoticeBanner">
+      <span>⚡ <strong>在线编辑模式激活</strong>：可直接点击正文修改文字，修改后点击「保存草稿」或「导出审查」。</span>
+      <button onclick="toggleLiveEdit(false)" style="background:transparent;border:1px solid var(--border);color:var(--text);padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11.5px;">完成文字修改</button>
+    </div>
+    <div class="mode-banner anno-banner" id="annoNoticeBanner">
+      <span>💬 <strong>引用批注模式激活</strong>：点击页面中任意元素进行选中并添加修改意见。</span>
+      <button onclick="toggleAnnotationMode(false)" style="background:transparent;border:1px solid #8b5cf6;color:#8b5cf6;padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11.5px;">退出批注</button>
+    </div>
+
+    <!-- Main Rendered Content -->
     <main id="profileContent">
       <div class="loading-state">Loading profile content...</div>
     </main>
   </div>
 
+  <div class="toast-msg" id="toastMsg">Notification</div>
+
   <script>
     let profileData = { enHtml: '', zhHtml: '' };
     let currentLang = 'en';
+    let isEditMode = false;
+    let isLiveEditing = false;
+    let isAnnotating = false;
+    let selectedElement = null;
+    let annotationList = [];
+
+    const STORAGE_DRAFT_PREFIX = 'profile_draft_v3_';
+    // Clear deprecated and merged draft caches to ensure official updates load
+    try {
+      localStorage.removeItem('profile_draft_v1_zh');
+      localStorage.removeItem('profile_draft_v1_en');
+      localStorage.removeItem('profile_draft_v2_zh');
+      localStorage.removeItem('profile_draft_v2_en');
+      localStorage.removeItem('aafff623_profile_preview_zh_saved_html');
+    } catch (e) {}
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastMsg');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+
+    function normalizeHtml(html) {
+      if (!html) return '';
+      return html.replace(/(src|srcset)=["']\.\/assets\//g, '$1="/assets/');
+    }
+
+    function updatePictureThemes() {
+      const themeAttr = document.documentElement.getAttribute('data-theme');
+      const isDark = themeAttr === 'dark' || (!themeAttr && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.querySelectorAll('picture').forEach(pic => {
+        const darkSource = pic.querySelector('source[media*="dark"], source[data-orig-media*="dark"]');
+        const img = pic.querySelector('img');
+        if (!img) return;
+        if (!img.dataset.origSrc) img.dataset.origSrc = img.src;
+        if (darkSource && !darkSource.dataset.origSrcset) darkSource.dataset.origSrcset = darkSource.srcset;
+
+        const darkSrc = darkSource ? darkSource.dataset.origSrcset : null;
+        const lightSrc = img.dataset.origSrc;
+
+        if (isDark && darkSrc) {
+          if (darkSource) darkSource.srcset = darkSrc;
+          img.src = darkSrc;
+        } else {
+          if (darkSource) darkSource.srcset = '';
+          img.src = lightSrc;
+        }
+      });
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      if (!document.documentElement.getAttribute('data-theme')) {
+        updatePictureThemes();
+      }
+    });
 
     function render() {
       const target = document.getElementById('profileContent');
-      if (currentLang === 'zh' && profileData.zhHtml) {
-        target.innerHTML = profileData.zhHtml;
+      const draftKey = STORAGE_DRAFT_PREFIX + currentLang;
+      // In finished showcase mode (http://localhost:3000/), ALWAYS show the latest server content
+      const savedDraft = isEditMode ? localStorage.getItem(draftKey) : null;
+
+      if (savedDraft) {
+        target.innerHTML = normalizeHtml(savedDraft);
+      } else if (currentLang === 'zh' && profileData.zhHtml) {
+        target.innerHTML = normalizeHtml(profileData.zhHtml);
       } else if (profileData.enHtml) {
-        target.innerHTML = profileData.enHtml;
+        target.innerHTML = normalizeHtml(profileData.enHtml);
       }
+
+      applyEditStates();
+      updatePictureThemes();
     }
 
     function switchLang(lang) {
       currentLang = lang;
+      // Sync buttons
       document.getElementById('btnEn').classList.toggle('active', lang === 'en');
       document.getElementById('btnZh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btnFloatEn').classList.toggle('active-amber', lang === 'en');
+      document.getElementById('btnFloatZh').classList.toggle('active-amber', lang === 'zh');
       localStorage.setItem('pref_lang', lang);
+      
+      // Update page title & render
+      document.title = (lang === 'zh') ? 'threetwoa | 个人主页预览与编辑' : 'threetwoa | Profile Preview & Editor';
       render();
     }
 
@@ -197,22 +693,267 @@
       document.getElementById('themeLight').classList.toggle('active', mode === 'light');
       document.getElementById('themeDark').classList.toggle('active', mode === 'dark');
       localStorage.setItem('pref_theme', mode);
+      updatePictureThemes();
     }
 
-    // Load initial preferences
-    const savedLang = localStorage.getItem('pref_lang');
-    if (savedLang === 'en' || savedLang === 'zh') {
-      currentLang = savedLang;
-      document.getElementById('btnEn').classList.toggle('active', currentLang === 'en');
-      document.getElementById('btnZh').classList.toggle('active', currentLang === 'zh');
+    function toggleEditMode(enable) {
+      isEditMode = enable;
+      document.body.classList.toggle('is-editing', enable);
+      
+      if (!enable) {
+        toggleLiveEdit(false);
+        toggleAnnotationMode(false);
+        showToast('👁️ 已切回成品展示模式');
+      } else {
+        showToast('✏️ 已进入本地编辑模式');
+      }
     }
+
+    function toggleLiveEdit(forceState) {
+      isLiveEditing = (typeof forceState === 'boolean') ? forceState : !isLiveEditing;
+      document.body.classList.toggle('is-live-editing', isLiveEditing);
+      const btn = document.getElementById('btnToggleLiveEdit');
+      const txt = document.getElementById('btnLiveEditText');
+      
+      if (isLiveEditing) {
+        btn.classList.add('active-amber');
+        txt.textContent = '退出文字编辑';
+        showToast('✏️ 点击正文任意文字直接编辑');
+      } else {
+        btn.classList.remove('active-amber');
+        txt.textContent = '在线编辑';
+      }
+      applyEditStates();
+    }
+
+    function toggleAnnotationMode(forceState) {
+      isAnnotating = (typeof forceState === 'boolean') ? forceState : !isAnnotating;
+      document.body.classList.toggle('is-annotating', isAnnotating);
+      document.body.classList.toggle('has-anno-sidebar', isAnnotating);
+      document.getElementById('annotationSidebar').classList.toggle('open', isAnnotating);
+      document.getElementById('btnToggleAnno').classList.toggle('active-purple', isAnnotating);
+      
+      if (isAnnotating) {
+        showToast('💬 批注模式已开启，点击任意元素批注');
+      } else {
+        clearSelection();
+      }
+    }
+
+    function applyEditStates() {
+      const root = document.getElementById('profileContent');
+      if (!root) return;
+      
+      const editables = root.querySelectorAll('p, h1, h2, h3, li, td, span, b, i, strong, em');
+      editables.forEach(el => {
+        if (isLiveEditing) {
+          el.setAttribute('contenteditable', 'true');
+        } else {
+          el.removeAttribute('contenteditable');
+        }
+      });
+    }
+
+    // Annotation element selection
+    function clearSelection() {
+      if (selectedElement) {
+        selectedElement.classList.remove('annotatable-selected');
+        selectedElement = null;
+      }
+      document.getElementById('annoTargetLabel').textContent = '未选择元素';
+      document.getElementById('annoTargetSnippet').textContent = '点击页面中的任意图片、GIF、徽章或文本段落';
+    }
+
+    function setupAnnotationEvents() {
+      const root = document.getElementById('profileContent');
+      if (!root) return;
+
+      root.addEventListener('mouseover', (e) => {
+        if (!isAnnotating) return;
+        if (e.target.closest('#editToolbar') || e.target.closest('#annotationSidebar')) return;
+        e.target.classList.add('annotatable-hover');
+      });
+
+      root.addEventListener('mouseout', (e) => {
+        if (!isAnnotating) return;
+        e.target.classList.remove('annotatable-hover');
+      });
+
+      root.addEventListener('click', (e) => {
+        if (!isAnnotating) return;
+        if (e.target.closest('#editToolbar') || e.target.closest('#annotationSidebar')) return;
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (selectedElement) {
+          selectedElement.classList.remove('annotatable-selected');
+        }
+        selectedElement = e.target;
+        selectedElement.classList.add('annotatable-selected');
+
+        // Extract metadata
+        let name = selectedElement.tagName.toLowerCase();
+        if (selectedElement.alt) name += ` [alt="${selectedElement.alt}"]`;
+        else if (selectedElement.id) name += ` #${selectedElement.id}`;
+        else if (selectedElement.innerText) name += ` "${selectedElement.innerText.trim().substring(0, 24)}"`;
+
+        document.getElementById('annoTargetLabel').textContent = name;
+        document.getElementById('annoTargetSnippet').textContent = selectedElement.outerHTML.substring(0, 160) + '...';
+        document.getElementById('annoInputText').focus();
+      });
+    }
+
+    // Save & Reset Drafts
+    document.getElementById('btnSaveDraft').addEventListener('click', () => {
+      const root = document.getElementById('profileContent');
+      if (root) {
+        const draftKey = STORAGE_DRAFT_PREFIX + currentLang;
+        localStorage.setItem(draftKey, root.innerHTML);
+        showToast('💾 草稿已保存到本地！刷新自动保留');
+      }
+    });
+
+    document.getElementById('btnResetDraft').addEventListener('click', () => {
+      if (confirm('确定要清除当前语言的本地修改草稿，恢复为服务器最新版本吗？')) {
+        const draftKey = STORAGE_DRAFT_PREFIX + currentLang;
+        localStorage.removeItem(draftKey);
+        render();
+        showToast('↺ 已还原至服务器最新版本');
+      }
+    });
+
+    // Export Review prompt
+    document.getElementById('btnExportReview').addEventListener('click', () => {
+      const root = document.getElementById('profileContent');
+      let prompt = `### 🔄 Profile 草稿审查与同步需求 (${currentLang.toUpperCase()})\n\n`;
+      prompt += `我已在本地编辑模式下对个人主页草稿进行了修改，请协助审查并同步回仓库：\n`;
+      prompt += `1. 语言：${currentLang === 'zh' ? '中文 (README.zh.md)' : '英文 (README.md)'}；\n`;
+      prompt += `2. 请审查技术术语用词的严谨性，并保持中英双语版本严格同步；\n\n`;
+      prompt += `【当前修改后正文文本快照】：\n\`\`\`markdown\n` + (root ? root.innerText.trim() : '') + `\n\`\`\`\n`;
+
+      navigator.clipboard.writeText(prompt).then(() => {
+        showToast('📋 审查提示词已复制到剪贴板！');
+        alert('🎉 审查提示词已成功复制到剪贴板！\n\n可直接粘贴发给 AI 助手进行审查与代码写入。');
+      }).catch(() => {
+        showToast('❌ 复制失败，请手动选择复制');
+      });
+    });
+
+    // Annotation Sidebar actions
+    document.getElementById('btnToggleAnno').addEventListener('click', () => toggleAnnotationMode());
+    document.getElementById('btnToggleLiveEdit').addEventListener('click', () => toggleLiveEdit());
+    document.getElementById('btnCloseAnno').addEventListener('click', () => toggleAnnotationMode(false));
+
+    document.getElementById('btnFloatingTheme').addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-theme');
+      setTheme(cur === 'dark' ? 'light' : 'dark');
+      showToast(cur === 'dark' ? '☀️ 已切换为浅色主题' : '🌙 已切换为深色主题');
+    });
+
+    document.getElementById('btnAddAnno').addEventListener('click', () => {
+      const text = document.getElementById('annoInputText').value.trim();
+      if (!text) {
+        alert('请输入批注建议说明！');
+        return;
+      }
+      const label = document.getElementById('annoTargetLabel').textContent;
+      const snippet = document.getElementById('annoTargetSnippet').textContent;
+
+      annotationList.push({
+        id: Date.now(),
+        target: label,
+        snippet: snippet,
+        note: text,
+        lang: currentLang
+      });
+
+      document.getElementById('annoInputText').value = '';
+      updateAnnoListUI();
+      showToast('＋ 批注已添加到列表');
+    });
+
+    document.getElementById('btnClearAnno').addEventListener('click', () => {
+      if (confirm('清空所有已记录的批注？')) {
+        annotationList = [];
+        updateAnnoListUI();
+      }
+    });
+
+    function updateAnnoListUI() {
+      const container = document.getElementById('annoItemsContainer');
+      document.getElementById('annoCount').textContent = annotationList.length;
+      container.innerHTML = '';
+
+      annotationList.forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = 'anno-item-card';
+        card.innerHTML = `
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);">
+            <span>#${idx + 1} [${item.lang.toUpperCase()}]</span>
+            <button onclick="removeAnno(${item.id})" style="border:none;background:transparent;color:#ef4444;cursor:pointer;font-size:11px;">删除</button>
+          </div>
+          <div style="font-weight:600;font-size:12px;color:var(--text);word-break:break-all;">${item.target}</div>
+          <div style="font-size:12px;color:var(--text);background:rgba(139,92,246,0.06);padding:6px;border-radius:4px;">${item.note}</div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    window.removeAnno = function(id) {
+      annotationList = annotationList.filter(item => item.id !== id);
+      updateAnnoListUI();
+    };
+
+    document.getElementById('btnExportAnno').addEventListener('click', () => {
+      if (annotationList.length === 0) {
+        alert('尚未记录任何批注。');
+        return;
+      }
+      let md = `### 📝 Profile 引用批注与修改任务清单\n\n`;
+      md += `我在本地预览调试中对主页元素进行了定向批注，请协助针对性修改对应内容：\n\n`;
+      annotationList.forEach((item, idx) => {
+        md += `**${idx + 1}. 目标：${item.target}**\n`;
+        md += `- **定位代码片**：\`${item.snippet.replace(/`/g, "'")}\`\n`;
+        md += `- **🎯 修改意见**：${item.note}\n\n`;
+      });
+      md += `👉 **核心契约要求**：严格保持中英文双语一致性，修改 \`README.md\` 的同时对齐更新 \`README.zh.md\`。\n`;
+
+      navigator.clipboard.writeText(md).then(() => {
+        showToast('📋 批注 Prompt 已复制到剪贴板！');
+        alert('🎉 批注 Prompt 已成功复制到剪贴板！\n\n直接粘贴给 AI 助手即可执行精准修改。');
+      }).catch(() => {
+        showToast('❌ 复制失败，请手动选择复制');
+      });
+    });
+
+    // Check URL parameters on load
+    const urlParams = new URLSearchParams(window.location.search);
+    const path = window.location.pathname;
+
+    if (path.startsWith('/edit') || urlParams.get('mode') === 'edit') {
+      isEditMode = true;
+      document.body.classList.add('is-editing');
+    }
+
+    if (path.endsWith('/zh') || urlParams.get('lang') === 'zh') {
+      currentLang = 'zh';
+    } else {
+      const savedLang = localStorage.getItem('pref_lang');
+      if (savedLang === 'en' || savedLang === 'zh') {
+        currentLang = savedLang;
+      }
+    }
+
     const savedTheme = localStorage.getItem('pref_theme');
     if (savedTheme) {
       setTheme(savedTheme);
     }
 
-    // Fetch parsed profile content from backend API
-    fetch('/api/profile')
+    switchLang(currentLang);
+    setupAnnotationEvents();
+
+    // Fetch parsed profile content from backend API with cache-buster
+    fetch('/api/profile?_t=' + Date.now())
       .then(res => res.json())
       .then(data => {
         profileData = data;
