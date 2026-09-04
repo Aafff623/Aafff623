@@ -10,7 +10,9 @@ Static **GitHub profile repository** (`Aafff623/Aafff623`). The root `README.md`
 
 - **Published profile (GitHub)** → `README.md` (English only; GitHub renders this as the public profile)
 - **Chinese mirror (local review)** → `README.zh.md` — same structure/facts as `README.md` on **this branch**
-- **Local previews** → `temp/preview/preview-profile.html` (EN) + `temp/preview/preview-profile.zh.html` (ZH); open together via `scripts/open-previews.bat` / `scripts/open-previews.ps1`
+- **Local previews (二元模式)**:
+  - **成品展示预览**: `http://localhost:3000/` (`index.html`) — 真实 GitHub 渲染成品效果，无覆盖工具栏；
+  - **本地编辑/调试模式**: `http://localhost:3000/edit` 或 `temp/preview/preview-profile.html` (EN) + `temp/preview/preview-profile.zh.html` (ZH)（通过 `scripts/open-previews.bat` 批量启动），内置隐藏式浮动工具栏、内联文字实时编辑（Live Edit）、智能引用批注侧边栏（Annotations）与 AI 审查 Prompt 导出。
 - **Asset paths** must be relative (`./assets/...`) so they resolve on GitHub; external badges use HTTPS
 - **Profile copy** should be direct, specific, and modest. Use first person, prefer facts and links over labels, and apply the anti-AI patterns from `humanizer-tone`.
 
