@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="34" viewBox="0 0 76 34" fill="none">
+  <defs>
+    <linearGradient id="g_light_inprogress_zh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5E00" />
+      <stop offset="100%" stop-color="#FFA500" />
+    </linearGradient>
+    <filter id="f_light_inprogress_zh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#FF5E00" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  <!-- Crisp Ceramic White Pill Container -->
+  <rect x="1" y="1" width="74" height="32" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+  <!-- Vibrant Gradient Orb on Left -->
+  <circle cx="16" cy="17" r="12" fill="url(#g_light_inprogress_zh)" filter="url(#f_light_inprogress_zh)" />
+  <circle cx="16" cy="17" r="10.5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="0.8" />
+  <!-- Icon in Left Orb -->
+  <text x="16" y="17.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" dominant-baseline="middle">⚡</text>
+  <!-- High Contrast Tech Text on Right -->
+  <text x="50.0" y="17.8" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="12.5" font-weight="800" fill="#9A3412" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.3">进行中</text>
+</svg>
