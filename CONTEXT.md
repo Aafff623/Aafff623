@@ -43,7 +43,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 | Asset | File | Usage |
 | --- | --- | --- |
-| Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, bright midtone grade; animated WebP primary is `./assets/v9-banner-animated.webp`) |
+| Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, restored original warm pixel-art palette; animated WebP primary is `./assets/v9-banner-animated.webp`) |
 | Wordmark (light) | `./assets/brand-threetwoa.gif` | Default typewriter wordmark (SVG source: `brand-threetwoa.svg`) |
 | Wordmark (dark) | `./assets/brand-threetwoa-dark.gif` | Dark-theme typewriter wordmark selected with `<picture>` (SVG source: `brand-threetwoa-dark.svg`) |
 | Hero | `./assets/hero-knight.gif` | Intro table right cell; animated seamless loop GIF generated from AI video (fallback: `hero-knight.webp`) |

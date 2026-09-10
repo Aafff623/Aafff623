@@ -93,20 +93,19 @@ Image.open("<source>.png").convert("RGB").save(
 
 ## `assets/v9-banner.gif` — Top banner
 
-- **Current:** Dynamic pixelized-mascot animated banner, 24 frames at `760×342`, ~2.52 MB (optimized from `temp/banner_24f_342_c36.gif`). The published GIF and animated WebP are both rebuilt through `scripts/brighten-banner-assets.js` so their colors stay aligned.
-- **Color grade:** A restrained `eq` pass (`brightness=0.10`, `contrast=1.02`, `saturation=1.10`, `gamma=1.05`) lifts the midtones and keeps the pixel-art palette clear without a sepia filter. GIF output uses a 256-color palette with `sierra2_4a` dithering; WebP uses quality `75` and compression level `6`.
+- **Current:** Dynamic pixelized-mascot animated banner, 24 frames at `760×342`, ~2.52 MB (optimized from `temp/banner_24f_342_c36.gif`). The published GIF is the canonical accepted asset; its original warm pixel-art palette is intentionally preserved.
+- **Color treatment:** No CSS filter, sepia pass, or brightness lift is applied. The earlier warmer/yellower midtone is part of the chosen artwork style. The animated WebP is a neutral transcode of the same GIF, using quality `75` and compression level `6`.
 - **Source not tracked.** Frame sequence originates from pixel-art motion synthesis.
 - **Theme behavior:** Light-first palette with high-contrast elements; renders cleanly across both light and dark GitHub profile wrappers.
 
-Regenerate both published variants with:
+Regenerate the WebP derivative after changing the canonical GIF with:
 
 ```bash
-node scripts/brighten-banner-assets.js
+node scripts/encode-banner-webp.js
 ```
 
-The script writes through a temporary directory before copying the results to
-`assets/v9-banner.gif` and `assets/v9-banner-animated.webp`, so the source GIF
-can safely remain the input path.
+The script writes through a temporary directory before copying the result to
+`assets/v9-banner-animated.webp`; the canonical GIF remains unchanged.
 
 ## Wordmarks — SVG source + published typewriter GIFs
 

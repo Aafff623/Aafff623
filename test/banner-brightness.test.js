@@ -30,7 +30,7 @@ function readAnimatedWebpChunk(bytes, offset) {
   return { type, size, next: offset + 8 + size + (size % 2) };
 }
 
-test('banner keeps its pixel-art animation while using a brighter midtone grade', () => {
+test('banner preserves the original warm pixel-art animation', () => {
   const probe = spawnSync('ffprobe', [
     '-v', 'error',
     '-select_streams', 'v:0',
@@ -45,7 +45,8 @@ test('banner keeps its pixel-art animation while using a brighter midtone grade'
   assert.match(probe.stdout, /height=342/);
   assert.match(probe.stdout, /nb_frames=24/);
   assert.match(probe.stdout, /duration=3\.600000/);
-  assert.ok(signalStats(BANNER_GIF) >= 150, 'banner midtones should be visibly brighter than the old grade');
+  const yavg = signalStats(BANNER_GIF);
+  assert.ok(yavg >= 125 && yavg <= 145, `banner should retain its original warm midtone range (YAVG=${yavg})`);
 });
 
 test('animated WebP banner has a self-consistent RIFF container and 24 frames', () => {
