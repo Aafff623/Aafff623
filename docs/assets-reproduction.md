@@ -13,7 +13,29 @@ replace an asset. Where a source is not available in the repo, it is marked
 - After replacing an asset, verify locally and with `gh api markdown`, and check
   both the default light and default dark GitHub themes.
 
-## `assets/mascot.gif` and `assets/mascot-dark.gif` — Tech Stack mascot
+## `assets/tech-stack-knight-v2.gif` and `assets/tech-stack-knight-v2-dark.gif` — Tech Stack mascot
+
+- **Source:** User-supplied `1254×1254` RGBA sprite sheet, arranged as a 4×4 grid. The source image is external to the repository and is not tracked.
+- **Crop:** Split on the measured grid edges (`0, 314, 627, 941, 1254` in both axes), then pad each cell to a centered `320×320` transparent canvas. This preserves each pose's proportions while keeping the published GIF size aligned with the original Tech Stack box.
+- **Output:** 16 frames in an action-grouped loop (`16, 1, 6, 2, 3, 4, 5, 9, 10, 11, 12, 14, 8, 13, 7, 15`), 3 fps, infinite loop. Light background `#ffffff`; dark background `#0d1117`.
+- **Working frames:** 16 ignored local PNGs, `frame-01.png` through `frame-16.png`; regenerate them from the supplied source when needed. Their local directory is intentionally not part of the tracked instructions.
+- **Encoding (representative):**
+
+```bash
+ffmpeg -framerate 3 -i <frame-dir>/frame-%02d.png \
+  -f lavfi -i 'color=c=white:s=320x320:r=3' \
+  -filter_complex '[1:v][0:v]overlay=0:0:format=auto:shortest=1,split[s0][s1];[s0]palettegen=max_colors=256:stats_mode=diff[p];[s1][p]paletteuse=dither=sierra2_4a' \
+  -frames:v 16 -loop 0 -y assets/tech-stack-knight-v2.gif
+
+ffmpeg -framerate 3 -i <frame-dir>/frame-%02d.png \
+  -f lavfi -i 'color=c=#0d1117:s=320x320:r=3' \
+  -filter_complex '[1:v][0:v]overlay=0:0:format=auto:shortest=1,split[s0][s1];[s0]palettegen=max_colors=256:stats_mode=diff[p];[s1][p]paletteuse=dither=sierra2_4a' \
+  -frames:v 16 -loop 0 -y assets/tech-stack-knight-v2-dark.gif
+```
+
+- **Fallback:** `assets/mascot.gif` and `assets/mascot-dark.gif` are retained unchanged for rollback or later reuse. They are intentionally not rendered by either README.
+
+## `assets/mascot.gif` and `assets/mascot-dark.gif` — Retained Tech Stack mascot fallback
 
 - **Full pipeline:** `docs/adr/0002-3d-chibi-knight-light-dark-gif.md` (scratch plan in `temp/reports/tech-stack-3d-mascot-plan.md`).
 - **Source frames:** `temp/chibi-knight-import/chibi_knight_5_images/` — 5× `1254×1254` PNG (no alpha). Matte and align before encoding; do not rely on the original filenames for pose order (see plan §3).

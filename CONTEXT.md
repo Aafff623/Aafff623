@@ -20,11 +20,11 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 ## Constraints
 
-- No build system, package manager, test suite, or linter. Only static Markdown, HTML, SVG, PNG, and GIF.
+- The published profile has no production build step. Local preview uses Node/Express and `marked`; `npm test`, `npm run lint`, and `npm run build` provide local regression and profile consistency checks.
 - `README.md` must use relative paths for local assets (e.g., `./assets/...`) so they resolve on GitHub.
 - GitHub's cmark-gfm treats blank lines inside raw HTML blocks as block terminators. Keep `<table>` blocks compact.
 - Profile is light-mode-first; assets should look correct on a white background.
-- `assets/` contains only files used by the published profile. `temp/` is the ignored, disposable local workspace for generated frames, compression candidates, and scratch reports; tracked files must not depend on anything inside it.
+- `assets/` contains files used by the published profile; explicitly retained rollback assets may remain there when they are documented and referenced only by hidden source comments. `temp/` is the ignored, disposable local workspace for generated frames, compression candidates, and scratch reports; tracked files must not depend on anything inside it.
 
 ## Profile Sections & Structure
 
@@ -47,8 +47,10 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 | Wordmark (light) | `./assets/brand-threetwoa.gif` | Default typewriter wordmark (SVG source: `brand-threetwoa.svg`) |
 | Wordmark (dark) | `./assets/brand-threetwoa-dark.gif` | Dark-theme typewriter wordmark selected with `<picture>` (SVG source: `brand-threetwoa-dark.svg`) |
 | Hero | `./assets/hero-knight.gif` | Intro table right cell; animated seamless loop GIF generated from AI video (fallback: `hero-knight.webp`) |
-| Mascot (light) | `./assets/mascot.gif` | Tech Stack right cell, light-theme 3D knight looping GIF |
-| Mascot (dark) | `./assets/mascot-dark.gif` | Dark-theme mascot selected with `<picture>` (see ADR 0002) |
+| Tech Stack mascot (light) | `./assets/tech-stack-knight-v2.gif` | Tech Stack right cell, 16-pose chibi knight loop on a light background |
+| Tech Stack mascot (dark) | `./assets/tech-stack-knight-v2-dark.gif` | Dark-theme 16-pose mascot selected with `<picture>` |
+| Retained mascot fallback (light) | `./assets/mascot.gif` | Inactive rollback asset, hidden from the rendered profile |
+| Retained mascot fallback (dark) | `./assets/mascot-dark.gif` | Inactive rollback asset, hidden from the rendered profile |
 | AgentCFO banner | `./assets/agentcfo-banner.webp` | Classic project right cell; self-hosted copy of the upstream repo banner (WebP q90) |
 | Badges | HTTPS shields.io / simpleicons.org URLs | Tech stack and social link icons |
 
@@ -69,14 +71,15 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 1. **EN published profile:** `README.md` is the published GitHub profile page.
 2. **ZH mirror:** `README.zh.md` is the Simplified Chinese mirror for review. Keep structure, facts, links, and badge rows identical across locales on the **same branch**.
 3. **Local previews (二元模式规范)**:
-   - **成品展示模式 (Showcase Preview)**: `http://localhost:3000/` (`index.html`)。纯净无损展示 GitHub Profile 成品渲染效果，用于最终视觉验收与双语/主题切换对照。
-   - **本地编辑/调试模式 (Editor & Annotation Mode)**: `http://localhost:3000/edit`（或直接打开 `temp/preview/preview-profile.html` / `preview-profile.zh.html`，启动脚本：`scripts/open-previews.bat` / `scripts/open-previews.ps1`）。集成现代化隐藏式浮动工具栏、内联文字实时编辑（Live Edit）、智能引用批注侧边栏（Element Annotation）、Prompt 导出与本地 localStorage 草稿持久化系统，用于本地日常调试、批注与内容迭代。
+   - **成品展示模式 (Showcase Preview)**: `http://127.0.0.1:3000/` (`index.html`)。纯净无损展示 GitHub Profile 成品渲染效果，用于最终视觉验收与双语/主题切换对照。
+   - **本地编辑/调试模式 (Editor & Annotation Mode)**: `http://127.0.0.1:3000/edit`（中文入口：`/edit/zh`，启动脚本：`scripts/open-previews.bat` / `scripts/open-previews.ps1`）。集成现代化隐藏式浮动工具栏、内联文字实时编辑（Live Edit）、智能引用批注侧边栏（Element Annotation）、Prompt 导出与本地 localStorage 草稿持久化系统，用于本地日常调试、批注与内容迭代。
 4. For risky HTML/table changes, verify with `gh api markdown` before pushing.
 5. Commit atomic changes with Conventional Commits.
 
 ## Active Decisions
 
 - **Mascot (ADR 0002):** 3D chibi knight shipped as light (`mascot.gif`) and dark (`mascot-dark.gif`) GIFs, switched with `<picture>` (supersedes ADR 0001).
+- **Tech Stack Mascot v2 (ADR 0009, 2026-09):** The Tech Stack cell now uses two 16-frame, 320×320, 3 fps GIFs generated from the supplied 4×4 sprite sheet (`tech-stack-knight-v2.gif` / `tech-stack-knight-v2-dark.gif`). ADR 0002's mascot files remain unchanged as hidden rollback assets and are no longer rendered.
 - **Hero (ADR 0003):** Served as WebP (`hero-knight.webp`, 800×1000, quality 90, sharp corners), replacing the earlier ~981 KB PNG.
 - **Wordmark Typewriter (ADR 0005):** Published as `brand-threetwoa.gif` / `brand-threetwoa-dark.gif` (caret + left-to-right type then hold). Editable SVG sources kept in `assets/`.
 - **Tech Stack Badges (ADR 0006):** Badges are **repo-evidence only** — 7 groups / 32 badges, each backed by a repository or competition artifact. No course-only or ungrounded badges.
@@ -96,4 +99,3 @@ Follow `tta-init` asset-contracts: dynamic facts that are not finalized must be 
 - **DSH 插件贡献与独立插件项目:** `待确认` [官方社区 PR 何时合并？自研独立插件何时完成首次发布？当前仅作为正在构建探索阶段记录，不上独立徽章]
 - **分布式延时投递服务实战成果:** `待确认` [压测基准与吞吐 SLA 数据何时冻结？未产出独立可验证 repo 前不上徽章墙]
 - **2026-08/09 极客时间三门实战营相关技术栈徽章:** `待确认` [何时在自研/竞赛项目中产生真实代码落地？按 ADR 0006 严格执行实证原则，无真实 repo 支撑前徽章保持下架]
-

@@ -126,9 +126,10 @@
     </td>
     <td width="20%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./assets/mascot-dark.gif" />
-        <img src="./assets/mascot.gif" width="95%" alt="animated threetwoa mascot" />
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-knight-v2-dark.gif" />
+        <img src="./assets/tech-stack-knight-v2.gif" width="95%" alt="循环播放的 chibi knight 角色动画" />
       </picture>
+      <!-- 保留旧素材作为回滚备份：./assets/mascot.gif 和 ./assets/mascot-dark.gif。 -->
     </td>
   </tr>
 </table>
