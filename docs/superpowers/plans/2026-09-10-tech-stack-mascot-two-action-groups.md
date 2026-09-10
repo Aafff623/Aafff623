@@ -31,7 +31,7 @@
 - Consumes: the published GIF files and the new sequence metadata file created in Task 2.
 - Produces: assertions for 144 frames, paired light/dark metadata, complete canvases, and generated-group ordering.
 
-- [ ] **Step 1: Write the failing tests**
+- [x] **Step 1: Write the failing tests**
 
 Add tests that read the sequence manifest and assert:
 
@@ -47,13 +47,13 @@ assert.deepEqual(sequence.insertions, [
 
 Update the existing mascot binary test from 64 frames and `14.620000` seconds to the measured 144-frame contract only after the new encoder output exists; keep its full-canvas and opaque-frame assertions unchanged.
 
-- [ ] **Step 2: Run the focused tests to verify they fail**
+- [x] **Step 2: Run the focused tests to verify they fail**
 
 Run: `node --test test/tech-stack-mascot-sequence.test.js test/profile.test.js`
 
 Expected: FAIL because the sequence manifest and 144-frame GIF output do not exist yet.
 
-- [ ] **Step 3: Keep the test scope narrow**
+- [x] **Step 3: Keep the test scope narrow**
 
 Do not weaken the existing descriptor, theme-pairing, fallback-retention, or README assertions to accommodate the larger loop.
 
@@ -70,7 +70,7 @@ Do not weaken the existing descriptor, theme-pairing, fallback-retention, or REA
 - Consumes: the existing 16 registered baseline frames plus accepted `C01–C10` and `D01–D10` key poses under `temp/tech-stack-mascot-v3/`.
 - Produces: an exported manifest with key-pose labels, ordered connections, delay classes, and `frameCount=144`.
 
-- [ ] **Step 1: Define the manifest before encoder changes**
+- [x] **Step 1: Define the manifest before encoder changes**
 
 Export a plain object with these exact fields:
 
@@ -92,13 +92,13 @@ module.exports = {
 
 Derive `keyFrames`, ordered `connections`, and `frameCount` from the manifest so the expected count cannot silently diverge from the declared sequence.
 
-- [ ] **Step 2: Run the focused manifest test**
+- [x] **Step 2: Run the focused manifest test**
 
 Run: `node --test test/tech-stack-mascot-sequence.test.js`
 
 Expected: PASS for the manifest contract after the test from Task 1 is pointed at the exported object.
 
-- [ ] **Step 3: Document the candidate and promotion directories**
+- [x] **Step 3: Document the candidate and promotion directories**
 
 Record that source sheets, generated key frames, normalized PNGs, palette probes, and rejected candidates remain in `temp/tech-stack-mascot-v3/`; only final GIFs are promoted to `assets/`.
 
@@ -115,19 +115,19 @@ Record that source sheets, generated key frames, normalized PNGs, palette probes
 - Consumes: `C:\Users\Lenovo\AppData\Local\Temp\codex-clipboard-cfe503e9-6d1d-48f1-b7f1-f55cd37165e5.png` and the existing cropped baseline character references.
 - Produces: exactly 20 transparent key-pose PNGs named `C01.png`–`C10.png` and `D01.png`–`D10.png`, each preserving the supplied chibi knight identity.
 
-- [ ] **Step 1: Generate Group C from the supplied character reference**
+- [x] **Step 1: Generate Group C from the supplied character reference**
 
 Use the approved image-generation tool with the supplied sprite sheet as the reference. Generate the ten-pose evade/counter sequence with transparent background, no text, no grid, no new props, full-body framing, and consistent costume, hair, face, outline, and palette. Keep every candidate in `temp/tech-stack-mascot-v3/source/`.
 
-- [ ] **Step 2: Generate Group D from the supplied character reference**
+- [x] **Step 2: Generate Group D from the supplied character reference**
 
 Generate the ten-pose observe/understand/celebrate sequence with the same constraints and keep candidates in the same ignored directory.
 
-- [ ] **Step 3: Crop and inspect candidates**
+- [x] **Step 3: Crop and inspect candidates**
 
 Split generated sheets or individual outputs into the named key frames, remove only isolated boundary/matte residue, and reject any pose with clipped hair, feet, missing limbs, opaque background, or a visibly different character design. Do not promote a candidate merely because its action label is correct.
 
-- [ ] **Step 4: Record rejected candidates without publishing them**
+- [x] **Step 4: Record rejected candidates without publishing them**
 
 Keep rejected files and a short reason under `temp/tech-stack-mascot-v3/rejected/`; do not add them to `assets/` or tracked documentation.
 
@@ -146,25 +146,25 @@ Keep rejected files and a short reason under `temp/tech-stack-mascot-v3/rejected
 - Consumes: 36 key poses and the existing anchor-registration constants.
 - Produces: 144 normalized full-canvas PNG frames in manifest order, with three explicit in-between frames per connection.
 
-- [ ] **Step 1: Add a failing frame-count and registration test**
+- [x] **Step 1: Add a failing frame-count and registration test**
 
 Assert that the build input directory has 144 frames, every normalized PNG is `320×320` RGBA, and no frame's detected head anchor falls outside the existing tolerance around `(132,115)`.
 
-- [ ] **Step 2: Run the test to verify it fails**
+- [x] **Step 2: Run the test to verify it fails**
 
 Run: `node --test test/tech-stack-mascot-sequence.test.js`
 
 Expected: FAIL because the new key frames and transitions are not yet normalized.
 
-- [ ] **Step 3: Implement manifest-driven normalization**
+- [x] **Step 3: Implement manifest-driven normalization**
 
 Replace the fixed 64-frame assumption with the manifest's ordered frame list while retaining the current geometry filtering, shared base scale, head-anchor registration, and isolated-residue exclusion. New corrections must be generated from measured head silhouettes and reviewed as data; do not reintroduce transparent-bounds centering.
 
-- [ ] **Step 4: Generate the three transition frames per connection**
+- [x] **Step 4: Generate the three transition frames per connection**
 
 For each adjacent key-pose pair touching a new group, generate `t1`, `t2`, and `t3` as actual pose intermediates. Use endpoint references, preserve the same character identity, and verify that no transition is a crossfade or a repeated endpoint.
 
-- [ ] **Step 5: Run the focused normalization test**
+- [x] **Step 5: Run the focused normalization test**
 
 Run: `node --test test/tech-stack-mascot-sequence.test.js`
 
@@ -183,23 +183,23 @@ Expected: PASS with exactly 144 normalized frame inputs and stable anchor/size m
 - Consumes: 144 normalized transparent frames and the existing light/dark background colors.
 - Produces: paired infinite-loop GIFs with identical frame order and complete opaque canvases.
 
-- [ ] **Step 1: Encode candidate light and dark GIFs in `temp/`**
+- [x] **Step 1: Encode candidate light and dark GIFs in `temp/`**
 
 Composite every frame over `#ffffff` and `#0d1117`, encode a full `320×320` GIF frame for each, disable GIF differential offsetting, set infinite looping, and write candidates under `temp/tech-stack-mascot-v3/candidates/`.
 
-- [ ] **Step 2: Apply action-aware GIF delays**
+- [x] **Step 2: Apply action-aware GIF delays**
 
 Keep the existing punch cadence for unchanged combat frames. Use longer holds for the new expressive `question`, `realization`, `celebratory hop`, and `settle` poses. Read the final Graphic Control Extensions back from the binary and record the exact delay sequence; do not infer it from `ffmpeg`'s nominal frame rate.
 
-- [ ] **Step 3: Probe candidate metadata**
+- [x] **Step 3: Probe candidate metadata**
 
 Verify with `ffprobe` and the existing GIF parser that both candidates have 144 frames, the same total duration, an infinite loop, and one full opaque `320×320` descriptor per frame.
 
-- [ ] **Step 4: Promote only after checks pass**
+- [x] **Step 4: Promote only after checks pass**
 
 Copy the accepted candidates to the two exact existing asset paths. Do not replace `assets/mascot.gif`, `assets/mascot-dark.gif`, `assets/hero-knight-animated.webp`, or `assets/v9-banner-animated.webp`.
 
-- [ ] **Step 5: Run the full test suite**
+- [x] **Step 5: Run the full test suite**
 
 Run: `npm test`
 
@@ -220,20 +220,20 @@ Expected: all profile, server, GIF, and sequence tests pass.
 - Consumes: final measured frame count, duration, file sizes, hashes, and verification output from Task 5.
 - Produces: synchronized durable records and a running local preview for manual inspection.
 
-- [ ] **Step 1: Update the asset contract with measured facts**
+- [x] **Step 1: Update the asset contract with measured facts**
 
 Record the 144-frame sequence, the two insertion points, the final measured duration/delays, and the exact light/dark hashes. Keep rollback asset statements unchanged.
 
-- [ ] **Step 2: Run repository checks**
+- [x] **Step 2: Run repository checks**
 
 Run: `npm run lint`, `npm run build`, and `git diff --check`.
 
 Expected: all commands exit successfully.
 
-- [ ] **Step 3: Start the local preview**
+- [x] **Step 3: Start the local preview**
 
 Run `node server.js` with `HOST=127.0.0.1` and `PORT=3000`, then verify `/`, `/edit`, `/edit/zh`, both GIF URLs, and `/api/profile` return HTTP 200. Open `http://127.0.0.1:3000/edit` for manual review.
 
-- [ ] **Step 4: Perform the final worktree audit**
+- [x] **Step 4: Perform the final worktree audit**
 
 Run `git status --short --branch`, inspect the diff, and confirm only the intended tracked assets/scripts/tests/docs changed. Do not use `git add .` and do not push.

@@ -31,7 +31,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 - **Intro**: Banner, wordmark, tagline, and the "who I am" table with the sharp-corner hero image.
 - **Contact icons**: Icon links for GitHub, X, Bilibili, Telegram, and YouTube sit under Project quick links with no section heading and no leading horizontal rule.
 - **Agent workflow**: Tool fleet and harness responsibility (no heading emoji).
-- **Tech stack**: Compact brand-color `flat-square` shields by category (repo-evidence only). Mascot stays on the right.
+- **Tech stack**: Historical portfolio inventory shown as brand-color `flat-square` shields by category; ADR 0010 restores the earlier broad coverage while distinguishing history from current production claims. Mascot stays on the right.
 - **Competitions**: Exactly two cards (Lead Cup and AI4S) in a 2×2 table with a shared thumbnail row.
 - **GitHub stats**: Community-hosted official-algorithm cards (`github-readme-stats.shion.dev`).
 - **Classic project**: AgentCFO only (with self-hosted banner).
@@ -43,12 +43,12 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 
 | Asset | File | Usage |
 | --- | --- | --- |
-| Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, bright palette) |
+| Banner | `./assets/v9-banner.gif` | Top-center animated banner (pixelized mascot, bright midtone grade; animated WebP primary is `./assets/v9-banner-animated.webp`) |
 | Wordmark (light) | `./assets/brand-threetwoa.gif` | Default typewriter wordmark (SVG source: `brand-threetwoa.svg`) |
 | Wordmark (dark) | `./assets/brand-threetwoa-dark.gif` | Dark-theme typewriter wordmark selected with `<picture>` (SVG source: `brand-threetwoa-dark.svg`) |
 | Hero | `./assets/hero-knight.gif` | Intro table right cell; animated seamless loop GIF generated from AI video (fallback: `hero-knight.webp`) |
-| Tech Stack mascot (light) | `./assets/tech-stack-knight-v2.gif` | Tech Stack right cell, 16-pose chibi knight loop on a light background |
-| Tech Stack mascot (dark) | `./assets/tech-stack-knight-v2-dark.gif` | Dark-theme 16-pose mascot selected with `<picture>` |
+| Tech Stack mascot (light) | `./assets/tech-stack-knight-v2.gif` | Tech Stack right cell, 144-frame / 36-key-pose chibi knight loop on a light background |
+| Tech Stack mascot (dark) | `./assets/tech-stack-knight-v2-dark.gif` | Dark-theme 144-frame / 36-key-pose mascot selected with `<picture>` |
 | Retained mascot fallback (light) | `./assets/mascot.gif` | Inactive rollback asset, hidden from the rendered profile |
 | Retained mascot fallback (dark) | `./assets/mascot-dark.gif` | Inactive rollback asset, hidden from the rendered profile |
 | AgentCFO banner | `./assets/agentcfo-banner.webp` | Classic project right cell; self-hosted copy of the upstream repo banner (WebP q90) |
@@ -79,10 +79,11 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 ## Active Decisions
 
 - **Mascot (ADR 0002):** 3D chibi knight shipped as light (`mascot.gif`) and dark (`mascot-dark.gif`) GIFs, switched with `<picture>` (supersedes ADR 0001).
-- **Tech Stack Mascot v2 (ADR 0009, 2026-09):** The Tech Stack cell now uses two 16-frame, 320×320, 3 fps GIFs generated from the supplied 4×4 sprite sheet (`tech-stack-knight-v2.gif` / `tech-stack-knight-v2-dark.gif`). ADR 0002's mascot files remain unchanged as hidden rollback assets and are no longer rendered.
+- **Tech Stack Mascot v3 (ADR 0009, 2026-09):** The Tech Stack cell now uses two 144-frame, 320×320 GIFs. The original 16-pose loop keeps its registered baseline frames, while two new ten-pose groups extend the sequence: `C01–C10` for evade/counter combat and `D01–D10` for observe/understand/celebrate. Each of the 36 key-pose connections has three transition frames, for a 39.41-second continuous loop (`tech-stack-knight-v2.gif` / `tech-stack-knight-v2-dark.gif`). The punch section preserves the existing cadence; the expressive D group uses progressively longer holds and transition delays so question, realization, celebration, landing, and settle poses read as intentional beats. New frames use the same `320×320` transparent registration canvas, shared base scale (`TARGET_SCALE=0.9`), per-frame calibration, and warm-color head anchor at `x=132`, `y=115`. Boundary-connected neutral matte, including black generated backgrounds, is removed before registration. The final GIF encoder emits every logical frame as one full, opaque `320×320` canvas at `(0,0)`—never as a transparent differential rectangle—so switching poses never depends on prior-frame disposal state. ADR 0002's mascot files remain unchanged as hidden rollback assets and are no longer rendered.
 - **Hero (ADR 0003):** Served as WebP (`hero-knight.webp`, 800×1000, quality 90, sharp corners), replacing the earlier ~981 KB PNG.
+- **Banner color grade (2026-09):** The top pixel-art banner is regenerated from the original GIF with `scripts/brighten-banner-assets.js`. The shared `eq` grade (`brightness=0.10`, `contrast=1.02`, `saturation=1.10`, `gamma=1.05`) raises midtones without applying a sepia cast; the GIF fallback and animated WebP are produced from the same source pass.
 - **Wordmark Typewriter (ADR 0005):** Published as `brand-threetwoa.gif` / `brand-threetwoa-dark.gif` (caret + left-to-right type then hold). Editable SVG sources kept in `assets/`.
-- **Tech Stack Badges (ADR 0006):** Badges are **repo-evidence only** — 7 groups / 32 badges, each backed by a repository or competition artifact. No course-only or ungrounded badges.
+- **Tech Stack Badges (ADR 0010, 2026-09):** The profile restores the historically recorded broad badge wall across frontend, Node.js, Java/Spring, distributed systems, middleware/data, AI/agents, Python, inference, Web3, and DevOps. It is a portfolio/history inventory rather than a claim of equal-depth current production use. ADR 0006 documents the superseded compact 32-badge phase.
 - **Activity Visual (ADR 0007):** In-repo Platane/snk contribution snake SVGs generated by `.github/workflows/snake.yml` to the `output` branch (supersedes ADR 0004 and defunct external activity-graph).
 - **Self-Hosted Assets:** `agentcfo-banner.webp` is self-hosted to survive upstream teammate repo changes. Stats cards use `github-readme-stats.shion.dev` as a light community endpoint exception.
 - **Workflow Evolution (2026-09):** Core dev migrated from Claude Code (V4-Flash + MiniMax) to ZCode (GLM Lite / GLM 5.3 Flash), lightweight routines moved from OpenCode/Pi to Antigravity (Gemini 3.8 Flash). Cross-tool sync managed via custom `harness-sync` skill.

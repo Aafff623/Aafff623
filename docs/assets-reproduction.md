@@ -15,23 +15,27 @@ replace an asset. Where a source is not available in the repo, it is marked
 
 ## `assets/tech-stack-knight-v2.gif` and `assets/tech-stack-knight-v2-dark.gif` — Tech Stack mascot
 
-- **Source:** User-supplied `1254×1254` RGBA sprite sheet, arranged as a 4×4 grid. The source image is external to the repository and is not tracked.
-- **Crop:** Split on the measured grid edges (`0, 314, 627, 941, 1254` in both axes), then pad each cell to a centered `320×320` transparent canvas. This preserves each pose's proportions while keeping the published GIF size aligned with the original Tech Stack box.
-- **Output:** 16 frames in an action-grouped loop (`16, 1, 6, 2, 3, 4, 5, 9, 10, 11, 12, 14, 8, 13, 7, 15`), 3 fps, infinite loop. Light background `#ffffff`; dark background `#0d1117`.
-- **Working frames:** 16 ignored local PNGs, `frame-01.png` through `frame-16.png`; regenerate them from the supplied source when needed. Their local directory is intentionally not part of the tracked instructions.
+- **Source:** User-supplied `1254×1254` RGBA sprite sheet, arranged as a 4×4 grid, plus two locally generated `5×2` action sheets for groups C and D. All source sheets are external/candidate material and are not tracked.
+- **Crop:** The supplied sheet uses measured grid edges (`0, 314, 627, 941, 1254` in both axes). The generated `1983×793` sheets use rounded proportional edges (`x: 0, 397, 793, 1190, 1586, 1983`; `y: 0, 397, 793`) through `scripts/crop-generated-mascot-sheet.js`. Every cell is kept proportional, then normalized into the fixed `320×320` transparent canvas. `scripts/strip-generated-background.js` removes only boundary-connected neutral matte pixels, including pure black, so generated backgrounds cannot become a window-sized black/gray flash.
+- **Registration:** Run `node scripts/normalize-tech-stack-frames.js <source-dir> <registered-dir> [calibration.json]` before encoding. The old 64 registered baseline frames are reused unchanged; only the 20 new key poses and 66 new transition frames are independently registered. The pass uses a shared base scale (`TARGET_SCALE=0.9`) and per-frame calibration toward a safe `122px` canonical head silhouette, then places the warm-color head anchor at `x=132`, `y=115`. The geometry pass ignores isolated edge specks while retaining the main character and nearby action components, so a generated matte cannot change the registration box. Full alpha bounds are retained for rendering, but are never used as the placement anchor: question marks, impact trails, and celebration particles must not move the character itself.
+- **Output:** `scripts/tech-stack-mascot-sequence.js` defines 36 key poses: the original order with `C01–C10` inserted after `5` and before `9`, and `D01–D10` inserted after `15` and before `16`. `scripts/assemble-tech-stack-mascot-loop.js` emits each connection as `[source, transition 1, transition 2, transition 3]`, for 144 frames total. The C group keeps the punch cadence; the D group uses progressively longer key holds and transition delays for question, realization, celebration, landing, and settle beats. Light background `#ffffff`; dark background `#0d1117`. Each encoded image frame must be a full, opaque `320×320` canvas at `(0,0)`; transparent difference rectangles are forbidden because they make a new pose depend on prior-frame compositing.
+- **Working frames:** 16 supplied baseline source poses, 20 generated key poses, 66 generated transition poses, and the 42 retained transitions from unchanged baseline connections. The ignored working tree under `temp/tech-stack-mascot-v3/` records the source, cropped, cleaned, registered, assembled, and candidate stages; it is intentionally not part of the tracked asset payload.
 - **Encoding (representative):**
 
 ```bash
-ffmpeg -framerate 3 -i <frame-dir>/frame-%02d.png \
-  -f lavfi -i 'color=c=white:s=320x320:r=3' \
+ffmpeg -framerate 10 -i <sequence-dir>/frame-%03d.png \
+  -f lavfi -i 'color=c=white:s=320x320:r=10' \
   -filter_complex '[1:v][0:v]overlay=0:0:format=auto:shortest=1,split[s0][s1];[s0]palettegen=max_colors=256:stats_mode=diff[p];[s1][p]paletteuse=dither=sierra2_4a' \
-  -frames:v 16 -loop 0 -y assets/tech-stack-knight-v2.gif
+  -frames:v 144 -loop 0 -gifflags -offsetting-transdiff -y assets/tech-stack-knight-v2.gif
 
-ffmpeg -framerate 3 -i <frame-dir>/frame-%02d.png \
-  -f lavfi -i 'color=c=#0d1117:s=320x320:r=3' \
+ffmpeg -framerate 10 -i <sequence-dir>/frame-%03d.png \
+  -f lavfi -i 'color=c=#0d1117:s=320x320:r=10' \
   -filter_complex '[1:v][0:v]overlay=0:0:format=auto:shortest=1,split[s0][s1];[s0]palettegen=max_colors=256:stats_mode=diff[p];[s1][p]paletteuse=dither=sierra2_4a' \
-  -frames:v 16 -loop 0 -y assets/tech-stack-knight-v2-dark.gif
+  -frames:v 144 -loop 0 -gifflags -offsetting-transdiff -y assets/tech-stack-knight-v2-dark.gif
 ```
+
+- **Timing pass:** After encoding, rewrite the GIF Graphic Control Extension delays with `node temp/scripts/rewrite-gif-delays.js <uniform.gif> <timed.gif> <manifest.frameDurations...>`. The manifest keeps the existing punch cadence, sets the C recovery to `120/120/260 ms`, and progressively slows the D group from `550–1000 ms` key holds with `180–640 ms` transition steps. The final binary contains 144 delays totaling `39.41 seconds` for both variants. This changes only playback timing; the decoded RGB frames remain unchanged. Recheck the final output's GIF image descriptors after this pass; all 144 must still be full opaque canvases.
+- **In-between generation:** Generate three transparent reference-guided frames for every connection touching the new C/D groups: `5→C01`, `C01→C02` through `C09→C10`, `C10→9`, `15→D01`, and `D01→D02` through `D09→D10`, `D10→16`. Unchanged baseline connections reuse their previously registered frames. Reject any candidate with a background, changed character identity, extra limbs, or a shifted foot baseline; do not use crossfade frames.
 
 - **Fallback:** `assets/mascot.gif` and `assets/mascot-dark.gif` are retained unchanged for rollback or later reuse. They are intentionally not rendered by either README.
 
@@ -89,9 +93,20 @@ Image.open("<source>.png").convert("RGB").save(
 
 ## `assets/v9-banner.gif` — Top banner
 
-- **Current:** Dynamic pixelized-mascot animated banner, bright palette, 24 frames, ~2.52 MB (optimized from `temp/banner_24f_342_c36.gif`).
+- **Current:** Dynamic pixelized-mascot animated banner, 24 frames at `760×342`, ~2.52 MB (optimized from `temp/banner_24f_342_c36.gif`). The published GIF and animated WebP are both rebuilt through `scripts/brighten-banner-assets.js` so their colors stay aligned.
+- **Color grade:** A restrained `eq` pass (`brightness=0.10`, `contrast=1.02`, `saturation=1.10`, `gamma=1.05`) lifts the midtones and keeps the pixel-art palette clear without a sepia filter. GIF output uses a 256-color palette with `sierra2_4a` dithering; WebP uses quality `75` and compression level `6`.
 - **Source not tracked.** Frame sequence originates from pixel-art motion synthesis.
 - **Theme behavior:** Light-first palette with high-contrast elements; renders cleanly across both light and dark GitHub profile wrappers.
+
+Regenerate both published variants with:
+
+```bash
+node scripts/brighten-banner-assets.js
+```
+
+The script writes through a temporary directory before copying the results to
+`assets/v9-banner.gif` and `assets/v9-banner-animated.webp`, so the source GIF
+can safely remain the input path.
 
 ## Wordmarks — SVG source + published typewriter GIFs
 
