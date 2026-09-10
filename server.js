@@ -10,23 +10,19 @@ marked.setOptions({
 });
 
 const app = express();
-const PORT = 3000;
+const HOST = process.env.HOST || '127.0.0.1';
+const PORT = Number.parseInt(process.env.PORT || '3000', 10);
+const ASSETS_DIR = path.join(__dirname, 'assets');
+const PREVIEW_PATH = path.join(__dirname, 'index.html');
 
-// Robust assets middleware - serve /assets/* regardless of route prefix (e.g., /edit/assets/*)
-app.use((req, res, next) => {
-  const assetsIdx = req.path.indexOf('/assets/');
-  if (assetsIdx !== -1) {
-    const subPath = decodeURIComponent(req.path.substring(assetsIdx + 8));
-    const fullPath = path.join(__dirname, 'assets', subPath);
-    if (fs.existsSync(fullPath)) {
-      return res.sendFile(fullPath);
-    }
-  }
-  next();
-});
+if (!Number.isInteger(PORT) || PORT < 1 || PORT > 65535) {
+  throw new Error(`Invalid PORT: ${process.env.PORT}`);
+}
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-app.use('/edit/assets', express.static(path.join(__dirname, 'assets')));
+app.disable('x-powered-by');
+
+// Only expose the published local assets. Do not serve the project root.
+app.use('/assets', express.static(ASSETS_DIR, { fallthrough: false }));
 
 // API endpoint returning parsed English and Chinese profiles
 app.get('/api/profile', (req, res) => {
@@ -49,36 +45,34 @@ app.get('/api/profile', (req, res) => {
   }
 });
 
-// Serve static assets and files from root
-app.use(express.static(__dirname));
-
-// Local Editor & Annotation Mode routes
-app.get('/edit', (req, res) => {
+function sendPreview(req, res) {
   res.set('Cache-Control', 'no-cache');
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+  res.sendFile(PREVIEW_PATH);
+}
 
-app.get('/edit/zh', (req, res) => {
-  res.set('Cache-Control', 'no-cache');
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+// Local Showcase and Editor & Annotation Mode routes
+app.get(['/', '/edit', '/edit/zh'], sendPreview);
 
 app.get('/preview', (req, res) => {
   res.redirect('/edit');
 });
 
-// Primary entry point route (Finished Showcase Preview)
-app.get('/', (req, res) => {
-  res.set('Cache-Control', 'no-cache');
-  res.sendFile(path.join(__dirname, 'index.html'));
+app.use((err, req, res, next) => {
+  if (err.status === 404) {
+    return res.status(404).json({ error: 'Not found' });
+  }
+  next(err);
 });
 
-// Fallback route
-app.get('*', (req, res) => {
-  res.set('Cache-Control', 'no-cache');
-  res.sendFile(path.join(__dirname, 'index.html'));
+// Missing files and routes must remain real 404s, especially under /assets.
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not found' });
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running at http://0.0.0.0:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, HOST, () => {
+    console.log(`Server running at http://${HOST}:${PORT}`);
+  });
+}
+
+module.exports = { app };

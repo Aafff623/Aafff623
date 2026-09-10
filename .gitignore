@@ -37,3 +37,6 @@ temp/*
 # Node dependencies
 node_modules/
 package-lock.json
+
+# Optional external profile mirror sync (may contain local credentials)
+scripts/sync-gitee.*

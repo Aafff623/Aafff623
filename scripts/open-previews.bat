@@ -1,4 +1,3 @@
 @echo off
-REM Open English + Chinese local profile previews together from temp/preview/.
-start "" "%~dp0..\temp\preview\preview-profile.html"
-start "" "%~dp0..\temp\preview\preview-profile.zh.html"
+REM Start the canonical local preview server and open both editor routes.
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0open-previews.ps1"

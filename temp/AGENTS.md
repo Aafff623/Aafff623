@@ -19,7 +19,7 @@ This document governs agent behavior inside the ignored local `temp/` directory.
      - Clean up heavy candidate frames if no longer needed.
 
 3. **Subdirectory Organization**:
-   - `temp/preview/` — Local preview standalone HTML files (`preview-profile.html`, `preview-profile.zh.html`).
+   - `temp/preview/` — Legacy standalone preview snapshots. The canonical local preview is `server.js` + `index.html`; these snapshots are not launch inputs and may be absent after a fresh checkout.
    - `temp/reports/` — Intermediate analysis reports, audit logs, and checklists.
    - `temp/scripts/` — Disposable experimental scripts and candidate generator harnesses.
 

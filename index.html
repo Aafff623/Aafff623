@@ -558,7 +558,7 @@
 
       <div class="commit-badge">
         <span class="dot"></span>
-        <span>Latest commit: 40e7081</span>
+        <span>Local preview · README source</span>
       </div>
 
       <div style="display:inline-flex;align-items:center;gap:8px;">
@@ -703,8 +703,10 @@
       if (!enable) {
         toggleLiveEdit(false);
         toggleAnnotationMode(false);
+        render();
         showToast('👁️ 已切回成品展示模式');
       } else {
+        render();
         showToast('✏️ 已进入本地编辑模式');
       }
     }
@@ -829,7 +831,9 @@
       prompt += `我已在本地编辑模式下对个人主页草稿进行了修改，请协助审查并同步回仓库：\n`;
       prompt += `1. 语言：${currentLang === 'zh' ? '中文 (README.zh.md)' : '英文 (README.md)'}；\n`;
       prompt += `2. 请审查技术术语用词的严谨性，并保持中英双语版本严格同步；\n\n`;
-      prompt += `【当前修改后正文文本快照】：\n\`\`\`markdown\n` + (root ? root.innerText.trim() : '') + `\n\`\`\`\n`;
+      const snapshot = root ? root.innerHTML.trim().replace(/```/g, '` ` `') : '';
+      prompt += `【当前修改后的渲染 HTML 快照】：\n\`\`\`html\n${snapshot}\n\`\`\`\n`;
+      prompt += `提示：这是本地渲染结果快照，不能直接替代 README.md；请在确认后同步更新 README.md 与 README.zh.md。\n`;
 
       navigator.clipboard.writeText(prompt).then(() => {
         showToast('📋 审查提示词已复制到剪贴板！');
@@ -887,14 +891,30 @@
       annotationList.forEach((item, idx) => {
         const card = document.createElement('div');
         card.className = 'anno-item-card';
-        card.innerHTML = `
-          <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);">
-            <span>#${idx + 1} [${item.lang.toUpperCase()}]</span>
-            <button onclick="removeAnno(${item.id})" style="border:none;background:transparent;color:#ef4444;cursor:pointer;font-size:11px;">删除</button>
-          </div>
-          <div style="font-weight:600;font-size:12px;color:var(--text);word-break:break-all;">${item.target}</div>
-          <div style="font-size:12px;color:var(--text);background:rgba(139,92,246,0.06);padding:6px;border-radius:4px;">${item.note}</div>
-        `;
+
+        const meta = document.createElement('div');
+        meta.style.cssText = 'display:flex;justify-content:space-between;font-size:11px;color:var(--muted);';
+
+        const metaLabel = document.createElement('span');
+        metaLabel.textContent = `#${idx + 1} [${item.lang.toUpperCase()}]`;
+
+        const removeButton = document.createElement('button');
+        removeButton.type = 'button';
+        removeButton.textContent = '删除';
+        removeButton.style.cssText = 'border:none;background:transparent;color:#ef4444;cursor:pointer;font-size:11px;';
+        removeButton.addEventListener('click', () => removeAnno(item.id));
+
+        meta.append(metaLabel, removeButton);
+
+        const target = document.createElement('div');
+        target.style.cssText = 'font-weight:600;font-size:12px;color:var(--text);word-break:break-all;';
+        target.textContent = item.target;
+
+        const note = document.createElement('div');
+        note.style.cssText = 'font-size:12px;color:var(--text);background:rgba(139,92,246,0.06);padding:6px;border-radius:4px;';
+        note.textContent = item.note;
+
+        card.append(meta, target, note);
         container.appendChild(card);
       });
     }
