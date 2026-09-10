@@ -8,12 +8,6 @@ const GRID_EDGES = [0, 314, 627, 941, 1254];
 const ACTION_ORDER = [16, 1, 6, 2, 3, 4, 5, 9, 10, 11, 12, 14, 8, 13, 7, 15];
 const TARGET_SIZE = 320;
 
-if (!SOURCE || !OUTPUT_DIR) {
-  console.error('Usage: node scripts/crop-tech-stack-sprite.js <source.png> <output-dir>');
-  process.exitCode = 1;
-  return;
-}
-
 function readPng(filePath) {
   const bytes = fs.readFileSync(filePath);
   if (bytes.toString('hex', 0, 8) !== '89504e470d0a1a0a') throw new Error('source is not a PNG');
@@ -145,6 +139,8 @@ function removeBoundaryNoise(cell, width, height) {
 
       const queue = [start];
       const component = [];
+      let minX = x;
+      let maxX = x;
       seen[start] = 1;
       let minY = y;
       let maxY = y;
@@ -154,6 +150,8 @@ function removeBoundaryNoise(cell, width, height) {
         const currentX = current % width;
         const currentY = Math.floor(current / width);
         component.push(current);
+        minX = Math.min(minX, currentX);
+        maxX = Math.max(maxX, currentX);
         minY = Math.min(minY, currentY);
         maxY = Math.max(maxY, currentY);
 
@@ -171,8 +169,18 @@ function removeBoundaryNoise(cell, width, height) {
 
       const isSmall = component.length < 1000;
       const touchesHorizontalBoundary = minY <= 6 || maxY >= height - 7;
-      if ((isSmall && touchesHorizontalBoundary) || component.length < 8) {
-        for (const pixel of component) cell[pixel * 4 + 3] = 0;
+      const touchesVerticalBoundary = minX <= 6 || maxX >= width - 7;
+      if ((isSmall && (touchesHorizontalBoundary || touchesVerticalBoundary)) || component.length < 8) {
+        const cleanupPadding = 4;
+        const cleanupMinX = Math.max(0, minX - cleanupPadding);
+        const cleanupMaxX = Math.min(width - 1, maxX + cleanupPadding);
+        const cleanupMinY = Math.max(0, minY - cleanupPadding);
+        const cleanupMaxY = Math.min(height - 1, maxY + cleanupPadding);
+        for (let cleanupY = cleanupMinY; cleanupY <= cleanupMaxY; cleanupY += 1) {
+          for (let cleanupX = cleanupMinX; cleanupX <= cleanupMaxX; cleanupX += 1) {
+            cell[(cleanupY * width + cleanupX) * 4 + 3] = 0;
+          }
+        }
       }
     }
   }
@@ -212,15 +220,26 @@ function cropCell(source, cellNumber) {
   return output;
 }
 
-const source = readPng(SOURCE);
-if (source.width !== 1254 || source.height !== 1254) {
-  throw new Error(`expected 1254×1254 source, got ${source.width}×${source.height}`);
+function main() {
+  if (!SOURCE || !OUTPUT_DIR) {
+    console.error('Usage: node scripts/crop-tech-stack-sprite.js <source.png> <output-dir>');
+    process.exitCode = 1;
+    return;
+  }
+
+  const source = readPng(SOURCE);
+  if (source.width !== 1254 || source.height !== 1254) {
+    throw new Error(`expected 1254×1254 source, got ${source.width}×${source.height}`);
+  }
+
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  for (let index = 0; index < ACTION_ORDER.length; index++) {
+    const outputPath = path.join(OUTPUT_DIR, `frame-${String(index + 1).padStart(2, '0')}.png`);
+    writePng(outputPath, TARGET_SIZE, TARGET_SIZE, cropCell(source, ACTION_ORDER[index]));
+  }
+
+  console.log(`[sprite-crop] wrote ${ACTION_ORDER.length} frames to ${OUTPUT_DIR}`);
 }
 
-fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-for (let index = 0; index < ACTION_ORDER.length; index++) {
-  const outputPath = path.join(OUTPUT_DIR, `frame-${String(index + 1).padStart(2, '0')}.png`);
-  writePng(outputPath, TARGET_SIZE, TARGET_SIZE, cropCell(source, ACTION_ORDER[index]));
-}
-
-console.log(`[sprite-crop] wrote ${ACTION_ORDER.length} frames to ${OUTPUT_DIR}`);
+module.exports = { removeBoundaryNoise };
+if (require.main === module) main();

@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/v9-banner.gif" alt="threetwoa banner" width="760" />
+  <picture>
+    <source type="image/webp" srcset="./assets/v9-banner-animated.webp" />
+    <img src="./assets/v9-banner.gif" alt="threetwoa banner" width="760" />
+  </picture>
 </p>
 
 <p align="center">
@@ -9,6 +12,8 @@
   </picture>
   <br />
   <sub><i>⭐ Code Less, Architect More 🚀</i></sub>
+  <br />
+  <sub><i>🤖 Models secure the baseline; experience expands the frontier.</i></sub>
 </p>
 
 <table width="100%">
@@ -22,13 +27,15 @@
           &nbsp;&nbsp;🔹 协作研发 <a href="https://github.com/San-Y108/agent-cfo"><b>AgentCFO</b></a>（DAO 资金合规与链上审批自动化，黑客松入围）<br />
           &nbsp;&nbsp;🔹 研发 <a href="https://github.com/Aafff623/simple-ai-code-helper"><b>simple-ai-code-helper</b></a>（Spring Boot + LangChain4j + MCP 智能编程助手）<br />
           &nbsp;&nbsp;🔹 二创 <a href="https://github.com/Aafff623/fork-Firefly"><b>fork-Firefly</b></a>（基于 Astro 的个人博客与数字花园二创，打通 Agent 自动化发文流水线）</li>
-        <li><b>工程 Harness &amp; TTA 工具链：</b>沉淀规范驱动开发经验，统一跨端环境规则；开源系列工程 Skills — <a href="https://github.com/Aafff623/tta-init"><code>tta-init</code></a>（Agent 可持续维护项目核心治理资产）· <a href="https://github.com/Aafff623/tta-html"><code>tta-html</code></a>（丰富可交互式 HTML 展示页）· <a href="https://github.com/Aafff623/tta-visual"><code>tta-visual</code></a>（高质量视觉配图生成）· <a href="https://github.com/Aafff623/tta-tone"><code>tta-tone</code></a>（去 AI 味的写作与拟真风格润色）· <a href="https://github.com/Aafff623/tta-ppt"><code>tta-ppt</code></a>（一键落地汇报幻灯片）· <a href="https://github.com/Aafff623/tta-frontend"><code>tta-frontend</code></a>（标准前端工程底座）；以及跨 Harness 环境自动对齐（<code>harness-sync</code>）。</li>
         <li><b>开源重构与全栈落地：</b>独立重构并落地 <a href="https://github.com/Aafff623/sky-out-ai"><b>sky-out-ai</b></a>（苍穹外卖 AI 增强版，三端可跑，客服 RAG）；深度跟练 <a href="https://github.com/Aafff623/fork-yu-rpc"><b>fork-yu-rpc</b></a>（手写 Java RPC）与 <a href="https://github.com/Aafff623/fork-yu-picture"><b>fork-yu-picture</b></a>（协作云图库）；持续维护与二次开发全栈/开源项目：<a href="https://github.com/Aafff623/ResumeWise"><code>ResumeWise</code></a> · <a href="https://github.com/Aafff623/fork-Firefly"><code>fork-Firefly</code></a> · <a href="https://github.com/Aafff623/fork-daybook"><code>fork-daybook</code></a> · <a href="https://github.com/Aafff623/fork-mianshiya"><code>fork-mianshiya</code></a> · <a href="https://github.com/Aafff623/fork-sql-mother"><code>fork-sql-mother</code></a> 等。</li>
       </ul>
       <p>技术之外：公路车骑行爱好者 🚲，关注大环赛与古典赛；闲时写博客、打理数字花园，在屏幕之外保持对生活的好奇。</p>
     </td>
     <td width="35%" align="center" valign="top">
-      <img src="./assets/hero-knight.gif" width="90%" alt="threetwoa hero" />
+      <picture>
+        <source type="image/webp" srcset="./assets/hero-knight-animated.webp" />
+        <img src="./assets/hero-knight.gif" width="90%" alt="threetwoa hero" />
+      </picture>
       <br />
       <sub><i>🌏 地球Online玩家 · Builder · 🚲</i></sub>
       <br /><br />
@@ -84,45 +91,116 @@
     <td width="40%" valign="top">
       <p><b>前端与全栈</b><br />
       <img src="https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue" />
+      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
       <img src="https://img.shields.io/badge/UniApp-2B9939?style=flat-square&logoColor=white" alt="UniApp" />
       <img src="https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white" alt="Astro" />
-      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /></p>
+      <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+      <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+      <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
+      <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" alt="GSAP" /></p>
+      <p><b>Node.js / 实时通信</b><br />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+      <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO" />
+      <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
+      <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest" /></p>
       <p><b>Java / Spring</b><br />
       <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
       <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
       <img src="https://img.shields.io/badge/Spring%20MVC-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring MVC" />
+      <img src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-FF6A00?style=flat-square&logo=alibabacloud&logoColor=white" alt="Spring Cloud Alibaba" />
       <img src="https://img.shields.io/badge/MyBatis--Plus-1A7FBF?style=flat-square&logoColor=white" alt="MyBatis-Plus" />
-      <img src="https://img.shields.io/badge/Sa--Token-6DB33F?style=flat-square&logoColor=white" alt="Sa-Token" /></p>
-      <p><b>中间件与微服务</b><br />
+      <img src="https://img.shields.io/badge/Sa--Token-6DB33F?style=flat-square&logoColor=white" alt="Sa-Token" />
+      <img src="https://img.shields.io/badge/OpenFeign-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="OpenFeign" />
+      <img src="https://img.shields.io/badge/Sentinel-EF4C3C?style=flat-square&logoColor=white" alt="Sentinel" />
+      <img src="https://img.shields.io/badge/Seata-E6522C?style=flat-square&logoColor=white" alt="Seata" />
+      <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="Spring Security" /></p>
+      <p><b>分布式系统</b><br />
+      <img src="https://img.shields.io/badge/RPC-374151?style=flat-square&logoColor=white" alt="RPC" />
+      <img src="https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" />
+      <img src="https://img.shields.io/badge/etcd-419EDA?style=flat-square&logo=etcd&logoColor=white" alt="etcd" />
+      <img src="https://img.shields.io/badge/Vert.x-782B90?style=flat-square&logo=eclipsevertx&logoColor=white" alt="Vert.x" />
+      <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" /></p>
+      <p><b>中间件与数据</b><br />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
       <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
       <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+      <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
+      <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
+      <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elasticsearch" />
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+      <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=black" alt="Supabase" />
       <img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
       <img src="https://img.shields.io/badge/RocketMQ-D77C10?style=flat-square&logo=apacherocketmq&logoColor=white" alt="RocketMQ" />
       <img src="https://img.shields.io/badge/Netty-1F2937?style=flat-square&logo=apache&logoColor=white" alt="Netty" />
       <img src="https://img.shields.io/badge/Nacos-2E6BE6?style=flat-square&logo=alibabacloud&logoColor=white" alt="Nacos" />
-      <img src="https://img.shields.io/badge/Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Gateway" /></p>
+      <img src="https://img.shields.io/badge/Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Gateway" />
+      <img src="https://img.shields.io/badge/Milvus-00A1EA?style=flat-square&logo=milvus&logoColor=white" alt="Milvus" />
+      <img src="https://img.shields.io/badge/FAISS-2D6CDF?style=flat-square&logoColor=white" alt="FAISS" />
+      <img src="https://img.shields.io/badge/Redisson-D92A2A?style=flat-square&logoColor=white" alt="Redisson" />
+      <img src="https://img.shields.io/badge/Canal-1A7FBF?style=flat-square&logoColor=white" alt="Canal" />
+      <img src="https://img.shields.io/badge/XXL--JOB-1A7FBF?style=flat-square&logoColor=white" alt="XXL-Job" /></p>
     </td>
     <td width="40%" valign="top">
       <p><b>AI 与智能体</b><br />
       <img src="https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain4j" />
+      <img src="https://img.shields.io/badge/Claude%20Code-D4A27F?style=flat-square&logo=claude&logoColor=black" alt="Claude Code" />
+      <img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor" />
+      <img src="https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white" alt="Codex" />
+      <img src="https://img.shields.io/badge/Skills-F59E0B?style=flat-square&logoColor=black" alt="Skills" />
+      <img src="https://img.shields.io/badge/LangGraph4j-1C3C3C?style=flat-square&logoColor=white" alt="LangGraph4j" />
+      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangGraph" />
+      <img src="https://img.shields.io/badge/Spring%20AI-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring AI" />
       <img src="https://img.shields.io/badge/Qwen-615CED?style=flat-square&logo=alibabacloud&logoColor=white" alt="通义千问 / DashScope" />
       <img src="https://img.shields.io/badge/MCP-111827?style=flat-square&logo=anthropic&logoColor=white" alt="模型上下文协议" />
-      <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white" alt="检索增强生成" /></p>
+      <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white" alt="检索增强生成" />
+      <img src="https://img.shields.io/badge/OpenAI%20Agents%20SDK-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI Agents SDK" />
+      <img src="https://img.shields.io/badge/Dify-1C64F2?style=flat-square&logoColor=white" alt="Dify" />
+      <img src="https://img.shields.io/badge/LiteLLM-111827?style=flat-square&logoColor=white" alt="LiteLLM" />
+      <img src="https://img.shields.io/badge/Ragas-111827?style=flat-square&logoColor=white" alt="Ragas" />
+      <img src="https://img.shields.io/badge/DeepEval-111827?style=flat-square&logoColor=white" alt="DeepEval" />
+      <img src="https://img.shields.io/badge/CrewAI-111827?style=flat-square&logoColor=white" alt="CrewAI" />
+      <img src="https://img.shields.io/badge/Agentic%20UI-111827?style=flat-square&logoColor=white" alt="Agentic UI" />
+      <img src="https://img.shields.io/badge/Harness%20Agent-111827?style=flat-square&logoColor=white" alt="Harness Agent" />
+      <img src="https://img.shields.io/badge/Loop%20Agent-111827?style=flat-square&logoColor=white" alt="Loop Agent" /></p>
       <p><b>系统与推理（竞赛实证）</b><br />
       <img src="https://img.shields.io/badge/vLLM-1F2937?style=flat-square&logo=vllm&logoColor=white" alt="vLLM" />
       <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-7C3AED?style=flat-square&logo=amd&logoColor=white" alt="HIP / ROCm" />
       <img src="https://img.shields.io/badge/Hygon%20DCU-4F46E5?style=flat-square&logo=amd&logoColor=white" alt="Hygon DCU" />
-      <img src="https://img.shields.io/badge/Biren%20GPU-059669?style=flat-square&logoColor=white" alt="Biren GPU" /></p>
+      <img src="https://img.shields.io/badge/Biren%20GPU-059669?style=flat-square&logoColor=white" alt="Biren GPU" />
+      <img src="https://img.shields.io/badge/TGI-1F2937?style=flat-square&logoColor=white" alt="TGI" />
+      <img src="https://img.shields.io/badge/Triton-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="Triton" /></p>
       <p><b>Python</b><br />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
       <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" />
-      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" /></p>
-      <p><b>DevOps</b><br />
+      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" />
+      <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic" />
+      <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
+      <img src="https://img.shields.io/badge/httpx-111827?style=flat-square&logoColor=white" alt="httpx" />
+      <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" alt="Celery" />
+      <img src="https://img.shields.io/badge/asyncio-111827?style=flat-square&logo=python&logoColor=white" alt="asyncio" />
+      <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest" /></p>
+      <p><b>Web3</b><br />
+      <img src="https://img.shields.io/badge/Ethers.js-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" alt="Ethers.js" />
+      <img src="https://img.shields.io/badge/Viem-1C1C1C?style=flat-square&logoColor=white" alt="Viem" />
+      <img src="https://img.shields.io/badge/Wagmi-1C1C1C?style=flat-square&logoColor=white" alt="Wagmi" />
+      <img src="https://img.shields.io/badge/Smart%20Accounts-0969DA?style=flat-square&logoColor=white" alt="Smart Accounts" />
+      <img src="https://img.shields.io/badge/Session%20Keys-F59E0B?style=flat-square&logoColor=black" alt="Session Keys" /></p>
+      <p><b>DevOps 与可观测性</b><br />
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+      <img src="https://img.shields.io/badge/Harbor-60B932?style=flat-square&logo=harbor&logoColor=white" alt="Harbor" />
+      <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
       <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" /></p>
+      <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+      <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+      <img src="https://img.shields.io/badge/ELK-005571?style=flat-square&logo=elastic&logoColor=white" alt="ELK" />
+      <img src="https://img.shields.io/badge/SkyWalking-484A4C?style=flat-square&logo=apache&logoColor=white" alt="SkyWalking" />
+      <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
+      <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" /></p>
     </td>
     <td width="20%" align="center" valign="middle">
       <picture>
@@ -256,41 +334,41 @@
     <td width="50%" valign="top">
       <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-inprogress-dark.svg" /><img src="./assets/badge-status-inprogress.svg" width="76" height="34" alt="进行中" /></picture></div>
       <h4>⚡ Java 微服务与分布式高可用</h4>
-      <p>系统梳理微服务治理（Spring Cloud Alibaba、Nacos、Sentinel、Gateway）与高并发中间件可靠性保障。实战构建<b>分布式延时投递系统</b>，专注高并发削峰填谷、消息防丢与集群容灾。</p>
+      <p>学习微服务治理（Spring Cloud Alibaba、Nacos、Sentinel、Gateway）与中间件可靠性，构建<b>分布式延时投递系统</b>，面向高并发削峰、消息防丢与集群容灾。</p>
       <p><code>Spring Cloud</code> <code>RocketMQ</code> <code>Nacos</code> <code>Sentinel</code></p>
     </td>
     <td width="50%" valign="top">
       <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-prototyping-dark.svg" /><img src="./assets/badge-status-prototyping.svg" width="82" height="34" alt="原型验证" /></picture></div>
-      <h4>🔬 Agent 核心工程与系统评测</h4>
-      <p>探索 LLM 网关分流、带状态机与 Checkpoint 的 Agent Loop、MCP 运行时与混合重排 RAG。深入定制企业级 Dify 知识库与工作流插件，实践 Subagent 协同调度、Golden Dataset 与 LLM-as-Judge 自动化评测。</p>
+      <h4>🔬 Agent 运行时与系统评测</h4>
+      <p>探索 LLM 网关分流、带 Checkpoint 的有状态 Agent Loop、MCP 运行时与混合检索 RAG；定制企业级 Dify 知识库和工作流，实践 Subagent 调度、Golden Dataset 与 LLM-as-Judge 评测。</p>
       <p><code>Agent Loop</code> <code>Checkpoint</code> <code>Dify Plugins</code> <code>Evals</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-inprogress-dark.svg" /><img src="./assets/badge-status-inprogress.svg" width="76" height="34" alt="进行中" /></picture></div>
-      <h4>🧭 规范驱动编程 (SDD) 与开发范式</h4>
-      <p>践行 <code>Prompt → Context → Harness → Loop Engineering</code> 演进，用规范和纪律收窄人机理解偏差，逼自己把系统架构想清楚。实践 Spec-Kit 与 OpenSpec 模式，通过清晰的前置契约收敛人机认知，打通双轨协作与 MCP 辅助端到端测试，尽早抓住断裂的业务流。</p>
+      <h4>🧭 规范驱动编程（SDD）</h4>
+      <p>沿着 <code>Prompt → Context → Harness → Loop Engineering</code> 演进，用规范减少人机偏差，逼自己把架构想清楚。实践 Spec-Kit 与 OpenSpec 前置契约，结合双轨协作和 MCP 辅助 E2E 测试，尽早发现业务链路断点。</p>
       <p><code>Spec-Kit</code> <code>OpenSpec</code> <code>Dual-Track</code> <code>E2E MCP</code></p>
     </td>
     <td width="50%" valign="top">
       <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-exploring-dark.svg" /><img src="./assets/badge-status-exploring.svg" width="76" height="34" alt="探索中" /></picture></div>
-      <h4>🔌 插件生态与跨端 Harness 治理</h4>
-      <p>深入研究 DSH 插件体系与运行机制，向官方社区贡献增强插件并独立从零开发工作流新插件。自研 <code>harness-sync</code> 统一多平台环境配置，以网名缩写（TTA）持续沉淀实用系列 Skills，走向规范驱动开发。</p>
+      <h4>🔌 插件生态与配置同步</h4>
+      <p>研究 DSH 插件机制，向官方社区贡献增强插件，并从零开发工作流插件。用 <code>harness-sync</code> 对齐多 Agent 配置，将实践沉淀为 TTA Skills，服务规范驱动开发。</p>
       <p><code>DSH Plugins</code> <code>harness-sync</code> <code>TTA Skills</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-lab-dark.svg" /><img src="./assets/badge-status-lab.svg" width="76" height="34" alt="实验室" /></picture></div>
-      <h4>🧪 Agentic 产品交付与主动自动化</h4>
-      <p>摸索 Grokbot 交互机制、主动监听与自动化监控工作流。走从想法到原型（PM → Builder）的独立交付路线，把记忆体系、主动触达与 Generative UI 整合进真实应用场景。</p>
+      <h4>🧪 Agentic 产品与主动自动化</h4>
+      <p>探索 Grokbot 交互、主动监听与自动监控，从想法到原型（PM → Builder）推进，把持久化记忆、主动触达与 Generative UI 放进真实应用场景。</p>
       <p><code>Grokbot</code> <code>PM➔Builder</code> <code>Active Loop</code> <code>Generative UI</code></p>
     </td>
     <td width="50%" valign="top">
       <div align="right"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-status-prototyping-dark.svg" /><img src="./assets/badge-status-prototyping.svg" width="82" height="34" alt="原型验证" /></picture></div>
-      <h4>🚢 兴趣驱动的独立开发链路</h4>
-      <p>打通 App / 小程序与海外支付结算（Stripe）全链路。用信息推动开发，在 AI 探索业务时查漏补缺，以轻量 MVP 快速验证真实需求与独立开发链路。</p>
+      <h4>🚢 独立开发与海外支付</h4>
+      <p>打通 App / 小程序与海外支付（Stripe）。以信息驱动开发、用 AI 补齐认知，再用轻量 MVP 验证真实需求和独立开发路径。</p>
       <p><code>Mobile App</code> <code>Mini Program</code> <code>Global Stripe</code> <code>MVP</code></p>
     </td>
   </tr>
