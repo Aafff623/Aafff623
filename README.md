@@ -204,8 +204,8 @@ For daily Agent Coding Workflows, configuring an extensive Harness ecosystem is 
     </td>
     <td width="20%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-knight-v2-dark.gif" />
-        <img src="./assets/tech-stack-knight-v2.gif" width="95%" alt="animated chibi knight sprite loop" />
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-knight-v2-tall-dark.gif" />
+        <img src="./assets/tech-stack-knight-v2-tall.gif" width="95%" loading="lazy" decoding="async" alt="animated chibi tech guardian with looping pixel signal rail and sword-dance effects" />
       </picture>
       <!-- Retained rollback assets: ./assets/mascot.gif and ./assets/mascot-dark.gif. -->
     </td>

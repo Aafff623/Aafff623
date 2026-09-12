@@ -6,7 +6,7 @@
     "dev": "node server.js",
     "build": "node scripts/validate-profile.js",
     "start": "node server.js",
-    "lint": "node --check server.js && node --check scripts/assemble-tech-stack-mascot-loop.js && node --check scripts/encode-banner-webp.js && node --check scripts/crop-generated-mascot-sheet.js && node --check scripts/crop-tech-stack-sprite.js && node --check scripts/normalize-tech-stack-frames.js && node --check scripts/strip-generated-background.js && node --check scripts/tech-stack-mascot-sequence.js && node scripts/validate-profile.js",
+    "lint": "node --check server.js && node --check scripts/assemble-tech-stack-mascot-loop.js && node --check scripts/compose-tech-stack-tall-mascot.js && node --check scripts/encode-banner-webp.js && node --check scripts/crop-generated-mascot-sheet.js && node --check scripts/crop-tech-stack-sprite.js && node --check scripts/normalize-tech-stack-frames.js && node --check scripts/strip-generated-background.js && node --check scripts/tech-stack-mascot-sequence.js && node --check scripts/tech-stack-sword-sequence.js && node scripts/validate-profile.js",
     "test": "node --test"
   },
   "dependencies": {

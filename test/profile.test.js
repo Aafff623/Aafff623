@@ -12,8 +12,8 @@ const README_PATHS = [
   path.join(ROOT, 'README.zh.md')
 ];
 const MASCOT_ASSETS = [
-  'tech-stack-knight-v2.gif',
-  'tech-stack-knight-v2-dark.gif'
+  'tech-stack-knight-v2-tall.gif',
+  'tech-stack-knight-v2-tall-dark.gif'
 ];
 const FALLBACK_ASSETS = ['mascot.gif', 'mascot-dark.gif'];
 const ANIMATED_WEBP_EXPECTATIONS = [
@@ -153,11 +153,12 @@ test('editor regressions stay fixed', () => {
   assert.match(batchLauncher, /open-previews\.ps1/);
   assert.match(index, /else if \(isEditMode\) \{\s*\/\/ Editor always opens in Chinese; only the showcase page honors the saved preference\.\s*currentLang = 'zh';/);
   assert.match(spriteCrop, /ACTION_ORDER = \[16, 1, 6, 2, 3, 4, 5, 9, 10, 11, 12, 14, 8, 13, 7, 15\]/);
-  assert.match(assetDocs, /144 frames total[\s\S]*C group keeps the punch cadence/);
+  assert.match(assetDocs, /176 frames[\s\S]*C group keeps the punch cadence/);
 
   for (const [index, readme] of readmes.entries()) {
-    assert.match(readme, /tech-stack-knight-v2\.gif/, `README ${index} should use the new mascot`);
-    assert.match(readme, /tech-stack-knight-v2-dark\.gif/, `README ${index} should use the dark mascot`);
+    assert.match(readme, /tech-stack-knight-v2-tall\.gif/, `README ${index} should use the tall mascot`);
+    assert.match(readme, /tech-stack-knight-v2-tall-dark\.gif/, `README ${index} should use the tall dark mascot`);
+    assert.match(readme, /loading="lazy" decoding="async"/, `README ${index} should defer the tall mascot request`);
     assert.match(readme, /<sub><i>🤖 Models secure the baseline; experience expands the frontier\.<\/i><\/sub>/, `README ${index} should include the architecture line in italic style`);
     assert.doesNotMatch(readme, /srcset="\.\/assets\/mascot-dark\.gif"/);
     assert.doesNotMatch(readme, /src="\.\/assets\/mascot\.gif"/);
