@@ -22,11 +22,11 @@
       <p>你好！我是中北大学软件工程准大三学生😘，专注 <b>Java 微服务 &amp; 中间件</b>、<b>大模型底层机制</b> 与 <b>规范驱动编码 (Spec-driven Coding)</b>，追求架构可维护性与系统工程边界。💫</p>
       <ul>
         <li><b>自研代表作：</b><br />
-          &nbsp;&nbsp;🔹 维护 <a href="https://github.com/Aafff623/wolfcha"><b>wolfcha</b></a>（多模型性格调度驱动、具有 UI 设计感的 AI 狼人杀推断对弈）<br />
-          &nbsp;&nbsp;🔹 移植并维护 <a href="https://github.com/Aafff623/pane"><b>pane</b></a>（OpenUsage Windows 移植版，多厂商 AI 订阅/Token 配额托盘悬浮看板）<br />
+          &nbsp;&nbsp;🔹 二创 <a href="https://github.com/Aafff623/fork-Firefly"><b>fork-Firefly</b></a>（基于 Astro 的个人博客与数字花园二创，打通 Agent 自动化发文流水线）<br />
           &nbsp;&nbsp;🔹 协作研发 <a href="https://github.com/San-Y108/agent-cfo"><b>AgentCFO</b></a>（DAO 资金合规与链上审批自动化，黑客松入围）<br />
-          &nbsp;&nbsp;🔹 研发 <a href="https://github.com/Aafff623/simple-ai-code-helper"><b>simple-ai-code-helper</b></a>（Spring Boot + LangChain4j + MCP 智能编程助手）<br />
-          &nbsp;&nbsp;🔹 二创 <a href="https://github.com/Aafff623/fork-Firefly"><b>fork-Firefly</b></a>（基于 Astro 的个人博客与数字花园二创，打通 Agent 自动化发文流水线）</li>
+          &nbsp;&nbsp;🔹 移植并维护 <a href="https://github.com/Aafff623/pane"><b>pane</b></a>（OpenUsage Windows 移植版，多厂商 AI 订阅/Token 配额托盘悬浮看板）<br />
+          &nbsp;&nbsp;🔹 维护 <a href="https://github.com/Aafff623/wolfcha"><b>wolfcha</b></a>（多模型性格调度驱动、具有 UI 设计感的 AI 狼人杀推断对弈）<br />
+          &nbsp;&nbsp;🔹 研发 <a href="https://github.com/Aafff623/simple-ai-code-helper"><b>simple-ai-code-helper</b></a>（Spring Boot + LangChain4j + MCP 智能编程助手）</li>
         <li><b>开源重构与全栈落地：</b>独立重构并落地 <a href="https://github.com/Aafff623/sky-out-ai"><b>sky-out-ai</b></a>（苍穹外卖 AI 增强版，三端可跑，客服 RAG）；深度跟练 <a href="https://github.com/Aafff623/fork-yu-rpc"><b>fork-yu-rpc</b></a>（手写 Java RPC）与 <a href="https://github.com/Aafff623/fork-yu-picture"><b>fork-yu-picture</b></a>（协作云图库）；持续维护与二次开发全栈/开源项目：<a href="https://github.com/Aafff623/ResumeWise"><code>ResumeWise</code></a> · <a href="https://github.com/Aafff623/fork-Firefly"><code>fork-Firefly</code></a> · <a href="https://github.com/Aafff623/fork-daybook"><code>fork-daybook</code></a> · <a href="https://github.com/Aafff623/fork-mianshiya"><code>fork-mianshiya</code></a> · <a href="https://github.com/Aafff623/fork-sql-mother"><code>fork-sql-mother</code></a> 等。</li>
       </ul>
       <p>技术之外：公路车骑行爱好者 🚲，关注大环赛与古典赛；闲时写博客、打理数字花园，在屏幕之外保持对生活的好奇。</p>
