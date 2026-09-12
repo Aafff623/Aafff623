@@ -112,7 +112,7 @@ test('preview server exposes only the local preview surface', async () => {
     assert.equal(root.status, 200);
     assert.match(root.headers.get('content-type') || '', /text\/html/);
 
-    for (const route of ['/edit', '/edit/zh']) {
+    for (const route of ['/edit', '/edit/zh', '/edit/en']) {
       const response = await fetch(`${base}${route}`);
       assert.equal(response.status, 200, route);
     }
@@ -147,10 +147,11 @@ test('editor regressions stay fixed', () => {
   assert.doesNotMatch(index, /Latest commit:\s*40e7081/);
   assert.match(index, /toggleLiveEdit\(false\);\s*toggleAnnotationMode\(false\);\s*render\(\);/s);
   assert.doesNotMatch(index, /card\.innerHTML\s*=\s*`/);
+  assert.match(launcher, /\$previewBase\/["']/);
   assert.match(launcher, /\$previewBase\/edit["']/);
-  assert.match(launcher, /\$previewBase\/edit\/zh["']/);
   assert.doesNotMatch(launcher, /temp[\\/]preview/);
   assert.match(batchLauncher, /open-previews\.ps1/);
+  assert.match(index, /else if \(isEditMode\) \{\s*\/\/ Editor always opens in Chinese; only the showcase page honors the saved preference\.\s*currentLang = 'zh';/);
   assert.match(spriteCrop, /ACTION_ORDER = \[16, 1, 6, 2, 3, 4, 5, 9, 10, 11, 12, 14, 8, 13, 7, 15\]/);
   assert.match(assetDocs, /144 frames total[\s\S]*C group keeps the punch cadence/);
 

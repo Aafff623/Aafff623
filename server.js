@@ -51,7 +51,7 @@ function sendPreview(req, res) {
 }
 
 // Local Showcase and Editor & Annotation Mode routes
-app.get(['/', '/edit', '/edit/zh'], sendPreview);
+app.get(['/', '/edit', '/edit/zh', '/edit/en'], sendPreview);
 
 app.get('/preview', (req, res) => {
   res.redirect('/edit');

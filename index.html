@@ -955,7 +955,13 @@
       document.body.classList.add('is-editing');
     }
 
-    if (path.endsWith('/zh') || urlParams.get('lang') === 'zh') {
+    const langParam = urlParams.get('lang');
+    if (path.endsWith('/zh') || langParam === 'zh') {
+      currentLang = 'zh';
+    } else if (path.endsWith('/en') || langParam === 'en') {
+      currentLang = 'en';
+    } else if (isEditMode) {
+      // Editor always opens in Chinese; only the showcase page honors the saved preference.
       currentLang = 'zh';
     } else {
       const savedLang = localStorage.getItem('pref_lang');

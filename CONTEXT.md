@@ -72,7 +72,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 2. **ZH mirror:** `README.zh.md` is the Simplified Chinese mirror for review. Keep structure, facts, links, and badge rows identical across locales on the **same branch**.
 3. **Local previews (二元模式规范)**:
    - **成品展示模式 (Showcase Preview)**: `http://127.0.0.1:3000/` (`index.html`)。纯净无损展示 GitHub Profile 成品渲染效果，用于最终视觉验收与双语/主题切换对照。
-   - **本地编辑/调试模式 (Editor & Annotation Mode)**: `http://127.0.0.1:3000/edit`（中文入口：`/edit/zh`，启动脚本：`scripts/open-previews.bat` / `scripts/open-previews.ps1`）。集成现代化隐藏式浮动工具栏、内联文字实时编辑（Live Edit）、智能引用批注侧边栏（Element Annotation）、Prompt 导出与本地 localStorage 草稿持久化系统，用于本地日常调试、批注与内容迭代。
+   - **本地编辑/调试模式 (Editor & Annotation Mode)**: `http://127.0.0.1:3000/edit`（默认中文；显式语言入口：`/edit/zh`、`/edit/en`，启动脚本：`scripts/open-previews.bat` / `scripts/open-previews.ps1` 会同时打开成品展示与编辑页）。集成现代化隐藏式浮动工具栏、内联文字实时编辑（Live Edit）、智能引用批注侧边栏（Element Annotation）、Prompt 导出与本地 localStorage 草稿持久化系统，用于本地日常调试、批注与内容迭代。
 4. For risky HTML/table changes, verify with `gh api markdown` before pushing.
 5. Commit atomic changes with Conventional Commits.
 
@@ -89,7 +89,7 @@ Public GitHub profile repository for `Aafff623`. `README.md` at the repository r
 - **Workflow Evolution (2026-09):** Core dev migrated from Claude Code (V4-Flash + MiniMax) to ZCode (GLM Lite / GLM 5.3 Flash), lightweight routines moved from OpenCode/Pi to Antigravity (Gemini 3.8 Flash). Cross-tool sync managed via custom `harness-sync` skill.
 - **Typewriter Wordmark + Wave (ADR 0008, 2026-09):** `brand-threetwoa.gif` / `brand-threetwoa-dark.gif` upgraded to 56-frame seamless loop: characters type in → 👋 emoji swings 8-frame wrist-pivot (0°→16°→-8°→20°→-6°→16°→-4°→0°) → 2-second hold → backspace erase → repeat. Generated via `Pillow` + master-palette quantization; light 694 KB / dark 765 KB.
 - **What I'm Learning Bento Layout (2026-09):** Section restructured from a flat bullet list to a 3×2 HTML `<table>` Bento grid. Each cell contains a right-aligned plan-D aurora-pill SVG badge (light + dark variants via `<picture>`), an `<h4>` card title with prefix emoji, prose description in genuine engineer voice, and a tech-tag `<code>` row. Body text is emoji/kaomoji-free.
-- **Local Preview Dual-Mode (2026-09):** `index.html` + `server.js` implement a two-mode local preview server at `http://localhost:3000/`: Showcase mode (`/`) renders parsed Markdown via `/api/profile` (marked.js, no-cache); Editor & Annotation mode (`/edit`) adds a hidden floating toolbar with Live Edit, localStorage draft, element annotation sidebar, and Prompt export. Language (`en`/`zh`) and theme (`light`/`dark`/`auto`) are switchable at runtime.
+- **Local Preview Dual-Mode (2026-09):** `index.html` + `server.js` implement a two-mode local preview server at `http://localhost:3000/`: Showcase mode (`/`) renders parsed Markdown via `/api/profile` (marked.js, no-cache); Editor & Annotation mode (`/edit`) adds a hidden floating toolbar with Live Edit, localStorage draft, element annotation sidebar, and Prompt export. The editor defaults to Chinese (`/edit/zh` and `/edit/en` are explicit language entries); the showcase remembers the last chosen language via `pref_lang`. Theme (`light`/`dark`/`auto`) is switchable at runtime.
 
 
 ## Pending Facts / 待确认事项

@@ -1,4 +1,4 @@
-# Start the canonical local preview server and open both editor routes.
+# Start the canonical local preview server and open the showcase and the editor (editor defaults to Chinese).
 $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $previewBase = "http://127.0.0.1:3000"
 $serverReady = $false
@@ -28,5 +28,5 @@ if (-not $serverReady) {
   throw "Preview server did not start at $previewBase"
 }
 
+Start-Process "$previewBase/"
 Start-Process "$previewBase/edit"
-Start-Process "$previewBase/edit/zh"
