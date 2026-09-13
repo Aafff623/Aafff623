@@ -153,7 +153,7 @@ test('editor regressions stay fixed', () => {
   assert.match(batchLauncher, /open-previews\.ps1/);
   assert.match(index, /else if \(isEditMode\) \{\s*\/\/ Editor always opens in Chinese; only the showcase page honors the saved preference\.\s*currentLang = 'zh';/);
   assert.match(spriteCrop, /ACTION_ORDER = \[16, 1, 6, 2, 3, 4, 5, 9, 10, 11, 12, 14, 8, 13, 7, 15\]/);
-  assert.match(assetDocs, /176 frames[\s\S]*C group keeps the punch cadence/);
+  assert.match(assetDocs, /177 frames[\s\S]*C-group punch override at `1\.25×`/);
 
   for (const [index, readme] of readmes.entries()) {
     assert.match(readme, /tech-stack-knight-v2-tall\.gif/, `README ${index} should use the tall mascot`);

@@ -28,6 +28,7 @@ const THEMES = Object.freeze([
     name: 'dark',
     source: path.join(ROOT, 'assets', 'tech-stack-knight-v2-dark.gif'),
     background: '0x0d1117',
+    sourceMatte: '0x0c0f16',
     output: path.join(ROOT, 'assets', 'tech-stack-knight-v2-tall-dark.gif')
   }
 ]);
@@ -161,7 +162,7 @@ function frameFiles(directory) {
     .sort((left, right) => left.localeCompare(right, undefined, { numeric: true }));
 }
 
-function composeTallMascot({ name, source, background, output }) {
+function composeTallMascot({ name, source, sourceMatte, background, output }) {
   if (!fs.existsSync(source)) throw new Error(`source mascot does not exist: ${source}`);
   fs.mkdirSync(path.dirname(output), { recursive: true });
 
@@ -182,6 +183,7 @@ function composeTallMascot({ name, source, background, output }) {
   try {
     runFfmpeg([
       '-i', source,
+      '-vf', 'format=rgb24',
       '-fps_mode', 'passthrough',
       '-start_number', '1',
       path.join(sourceFrames, 'frame-%03d.png')
@@ -194,22 +196,37 @@ function composeTallMascot({ name, source, background, output }) {
 
     prepareSwordFrames(swordFrames, name);
     const actionFrames = frameFiles(swordFrames);
-    if (actionFrames.length !== sequence.actionFrameCount) {
-      throw new Error(`prepared ${actionFrames.length} sword frames; expected ${sequence.actionFrameCount}`);
+    if (actionFrames.length !== sequence.preparedActionFrameCount) {
+      throw new Error(`prepared ${actionFrames.length} sword frames; expected ${sequence.preparedActionFrameCount}`);
     }
-    for (const [index, frame] of [...frames, ...actionFrames].entries()) {
-      const sourceDirectory = index < frames.length ? sourceFrames : swordFrames;
+    const combinedFrameSources = [
+      ...frames.slice(0, sequence.preSwordBaseFrameCount)
+        .map(frame => ({ directory: sourceFrames, frame })),
+      ...actionFrames.map(frame => ({ directory: swordFrames, frame })),
+      { directory: sourceFrames, frame: frames.at(-1) },
+      ...frames.slice(sequence.celebrationStartIndex)
+        .map(frame => ({ directory: sourceFrames, frame }))
+    ];
+    if (combinedFrameSources.length !== sequence.frameCount) {
+      throw new Error(`assembled ${combinedFrameSources.length} frames; expected ${sequence.frameCount}`);
+    }
+    for (const [index, { directory, frame }] of combinedFrameSources.entries()) {
       fs.copyFileSync(
-        path.join(sourceDirectory, frame),
+        path.join(directory, frame),
         path.join(combinedFrames, `frame-${String(index + 1).padStart(3, '0')}.png`)
       );
     }
 
     renderDecorations(decorationFrames, name, sequence.frameCount);
+    const characterInput = sourceMatte
+      ? `[0:v]format=rgba,colorkey=${sourceMatte}:0.01:0.0[character]`
+      : '[0:v]format=rgba[character]';
     const renderFilter = [
-      `[0:v]pad=${WIDTH}:${HEIGHT}:0:${CHARACTER_TOP}:color=${background},format=rgba[base]`,
+      characterInput,
+      `color=c=${background}:s=${WIDTH}x${HEIGHT}:r=10[base]`,
+      `[base][character]overlay=0:${CHARACTER_TOP}:format=auto[canvas]`,
       '[1:v]format=rgba[decor]',
-      '[base][decor]overlay=0:0:format=auto,format=rgb24[out]'
+      '[canvas][decor]overlay=0:0:format=auto,format=rgb24[out]'
     ].join(';');
 
     runFfmpeg([

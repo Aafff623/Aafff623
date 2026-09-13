@@ -69,21 +69,45 @@ function readGifImageFrames(bytes) {
   return frames;
 }
 
-test('sword extension keeps a staged 32-frame action chapter', () => {
+test('sword extension orders punch, sword, and celebration chapters', () => {
   assert.equal(sequence.playbackRate, 1.15);
+  assert.equal(sequence.punchPlaybackRate, 1.25);
   assert.equal(sequence.baseFrameCount, 144);
+  assert.equal(sequence.punchStartLabel, 'source-C01');
+  assert.equal(sequence.punchEndLabel, 'transition-C10-9-3');
+  assert.equal(sequence.punchStartIndex, 28);
+  assert.equal(sequence.punchFrameCount, 40);
   assert.equal(sequence.actionFrameCount, 32);
-  assert.equal(sequence.frameCount, 176);
+  assert.equal(sequence.loopBridgeFrameCount, 1);
+  assert.equal(sequence.celebrationFrameCount, 40);
+  assert.equal(sequence.frameCount, 177);
   assert.equal(sequence.frameLabels.length, sequence.frameCount);
   assert.equal(sequence.frameDurations.length, sequence.frameCount);
+  assert.equal(sequence.punchTotalDurationMs, 6130);
   assert.equal(sequence.actionTotalDurationMs, 4780);
-  assert.equal(sequence.totalDurationMs, 39200);
+  assert.equal(sequence.totalDurationMs, 38620);
   assert.equal(sequence.frameDurations[0], 350);
-  assert.equal(sequence.frameDurations[144], 190);
+  assert.equal(sequence.frameDurations[28], 320);
+  assert.equal(sequence.frameDurations[29], 70);
+  assert.equal(sequence.frameDurations[67], 210);
+  assert.equal(sequence.frameDurations[104], 190);
+  assert.equal(sequence.frameDurations[136], 100);
   assert.equal(sequence.frameLabels[0], 'source-16');
-  assert.equal(sequence.frameLabels[143], 'transition-D10-16-3');
-  assert.equal(sequence.frameLabels[144], 'sword-01');
-  assert.equal(sequence.frameLabels.at(-1), 'sword-32');
+  assert.equal(sequence.frameLabels[67], 'transition-C10-9-3');
+  assert.equal(sequence.frameLabels[103], 'transition-15-D01-3');
+  assert.equal(sequence.frameLabels[104], 'sword-01');
+  assert.equal(sequence.frameLabels[135], 'sword-32');
+  assert.equal(sequence.frameLabels[136], 'loop-bridge-base-last');
+  assert.equal(sequence.frameLabels[137], 'source-D01');
+  assert.equal(sequence.frameLabels.at(-1), 'transition-D10-16-3');
+  assert.ok(
+    sequence.frameLabels.indexOf('transition-C10-9-3') < sequence.frameLabels.indexOf('sword-01'),
+    'punch chapter must precede sword chapter'
+  );
+  assert.ok(
+    sequence.frameLabels.indexOf('sword-32') < sequence.frameLabels.indexOf('source-D01'),
+    'sword chapter must precede celebration chapter'
+  );
   assert.match(fs.readFileSync(composerPath, 'utf8'), /tech-stack-sword-sequence/);
   assert.ok(fs.existsSync(preparationPath), 'sword frame preparation script must exist');
 });
@@ -109,7 +133,7 @@ test('generated sword source sheets and their integration contract are present',
   assert.match(preparation, /frame_count|frameCount/);
 });
 
-test('published tall mascots append the sword chapter as full opaque canvases', () => {
+test('published tall mascots place the sword chapter in full opaque canvases', () => {
   for (const gifPath of TALL_MASCOTS) {
     assert.ok(fs.existsSync(gifPath), `missing tall mascot: ${path.basename(gifPath)}`);
     const probe = execFileSync('ffprobe', [
@@ -122,8 +146,8 @@ test('published tall mascots append the sword chapter as full opaque canvases', 
     ], { encoding: 'utf8' });
     assert.match(probe, /width=320/);
     assert.match(probe, /height=1100/);
-    assert.match(probe, /nb_frames=176/);
-    assert.match(probe, /duration=39\.200000/);
+    assert.match(probe, /nb_frames=177/);
+    assert.match(probe, /duration=38\.620000/);
 
     const imageFrames = readGifImageFrames(fs.readFileSync(gifPath));
     assert.equal(imageFrames.length, sequence.frameCount);
@@ -137,4 +161,44 @@ test('published tall mascots append the sword chapter as full opaque canvases', 
 
     assert.ok(fs.statSync(gifPath).size < 7_000_000, 'lazy-start animation should stay below the per-theme budget');
   }
+});
+
+test('published dark mascot normalizes the embedded base panel to the outer background', () => {
+  const darkMascot = TALL_MASCOTS[1];
+  const pixels = execFileSync('python', ['-c', [
+    'from PIL import Image',
+    'import json, sys',
+    'image = Image.open(sys.argv[1])',
+    'samples = {}',
+    'for frame_index in (0, 142):',
+    '    image.seek(frame_index)',
+    '    frame = image.convert("RGB")',
+    '    samples[str(frame_index)] = [frame.getpixel((0, 390)), frame.getpixel((10, 400))]',
+    'print(json.dumps(samples))'
+  ].join('\n'), darkMascot], { encoding: 'utf8' });
+  const samples = JSON.parse(pixels);
+  for (const frameIndex of ['0', '142']) {
+    assert.deepEqual(samples[frameIndex][0], [13, 17, 23], `outer background at frame ${frameIndex}`);
+    assert.deepEqual(samples[frameIndex][1], [13, 17, 23], `base panel background at frame ${frameIndex}`);
+  }
+});
+
+test('published mascots connect sword action into celebration without a duplicate boundary', () => {
+  const checks = execFileSync('python', ['-c', [
+    'from PIL import Image, ImageChops',
+    'import json, sys',
+    'image = Image.open(sys.argv[1])',
+    'frames = []',
+    'for frame_index in (103, 104, 135, 136, 137):',
+    '    image.seek(frame_index)',
+    '    frames.append(image.convert("RGB").crop((0, 390, 320, 710)))',
+    'def mean_difference(left, right):',
+    '    histogram = ImageChops.difference(left, right).histogram()',
+    '    return sum(i * (histogram[i] + histogram[i + 256] + histogram[i + 512]) for i in range(256)) / max(1, sum(histogram))',
+    'print(json.dumps({"start_duplicate": ImageChops.difference(frames[0], frames[1]).getbbox() is None, "action_to_bridge_mean_difference": mean_difference(frames[2], frames[3]), "bridge_to_celebration_mean_difference": mean_difference(frames[3], frames[4])}))'
+  ].join('\n'), TALL_MASCOTS[1]], { encoding: 'utf8' });
+  const result = JSON.parse(checks);
+  assert.equal(result.start_duplicate, false);
+  assert.ok(result.action_to_bridge_mean_difference < 20, 'sword recovery should hand off to the bridge smoothly');
+  assert.ok(result.bridge_to_celebration_mean_difference < 14, 'the bridge should hand off to celebration smoothly');
 });

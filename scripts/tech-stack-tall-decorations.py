@@ -13,6 +13,14 @@ CANVAS = (320, 1100)
 TOP_SIGNAL = "top-signal"
 BOTTOM_LANDING_PAD = "bottom-landing-pad"
 SPRITE_SHEET = Path(__file__).with_name("art") / "tech-stack-ornament-sprites.png"
+IMPACT_SPRITE_SHEET = Path(__file__).with_name("art") / "tech-stack-impact-atlas.png"
+CHARACTER_TOP = 390
+PUNCH_START = 28
+PUNCH_END = 67
+SWORD_START = 104
+SWORD_END = 135
+SWORD_BRIDGE = 136
+CELEBRATION_START = 137
 
 THEMES = {
     "light": {
@@ -42,23 +50,41 @@ SPRITE_BOXES = {
     "landing-right": (1201, 536, 1463, 778),
 }
 
+IMPACT_SPRITE_BOXES = {
+    "punch-burst": (0, 0, 64, 64),
+    "punch-spark": (64, 0, 128, 64),
+    "punch-trail": (128, 0, 192, 64),
+    "punch-sparks": (192, 0, 256, 64),
+    "celebration-burst": (0, 64, 64, 128),
+    "celebration-sparkles": (64, 64, 128, 128),
+    "celebration-confetti": (128, 64, 192, 128),
+    "landing-ring": (192, 64, 256, 128),
+}
+
 
 def draw_line(draw: ImageDraw.ImageDraw, points, fill, width=2):
     draw.line(points, fill=fill, width=width, joint="curve")
 
 
-def load_sprites():
-    if not SPRITE_SHEET.exists():
-        raise SystemExit(f"missing generated sprite sheet: {SPRITE_SHEET}")
-    sheet = Image.open(SPRITE_SHEET).convert("RGBA")
+def load_sprite_group(sheet_path, boxes):
+    if not sheet_path.exists():
+        raise SystemExit(f"missing generated sprite sheet: {sheet_path}")
+    sheet = Image.open(sheet_path).convert("RGBA")
     sprites = {}
-    for name, box in SPRITE_BOXES.items():
+    for name, box in boxes.items():
         sprite = sheet.crop(box)
         bbox = sprite.getchannel("A").getbbox()
         if bbox is None:
             raise SystemExit(f"generated sprite has no visible pixels: {name}")
         sprites[name] = sprite.crop(bbox)
     return sprites
+
+
+def load_sprites():
+    return {
+        **load_sprite_group(SPRITE_SHEET, SPRITE_BOXES),
+        **load_sprite_group(IMPACT_SPRITE_SHEET, IMPACT_SPRITE_BOXES),
+    }
 
 
 def paste_sprite(image, sprites, name, center, size, opacity=255):
@@ -149,6 +175,113 @@ def draw_bottom_motion(image, draw, colors, sprites, frame_index, frame_count):
     draw.rectangle((211, 1036, 215, 1040), fill=colors["gold"] if (frame_index + frame_count // 12) % (frame_count // 6) < frame_count // 12 else colors["muted"])
 
 
+def draw_chapter_rail_response(draw, colors, frame_index):
+    if PUNCH_START <= frame_index <= PUNCH_END:
+        step = (frame_index - PUNCH_START) % 4
+        if step == 0:
+            draw.rectangle((136, 268, 184, 275), fill=colors["soft"])
+            draw.rectangle((120, 282, 200, 288), fill=colors["blue"])
+            draw.rectangle((112, 266, 118, 272), fill=colors["soft"])
+            draw.rectangle((202, 266, 208, 272), fill=colors["soft"])
+            draw.rectangle((124, 982, 196, 989), fill=colors["blue"])
+            draw.rectangle((108, 996, 212, 1001), fill=colors["soft"])
+            draw.rectangle((100, 980, 106, 986), fill=colors["blue"])
+            draw.rectangle((214, 980, 220, 986), fill=colors["blue"])
+        elif step == 1:
+            draw.rectangle((148, 269, 172, 274), fill=colors["blue"])
+            draw.rectangle((130, 282, 190, 286), fill=colors["soft"])
+            draw.rectangle((128, 984, 192, 990), fill=colors["soft"])
+            draw.rectangle((116, 998, 204, 1002), fill=colors["blue"])
+    elif frame_index == SWORD_BRIDGE:
+        draw.rectangle((146, 269, 174, 274), fill=colors["soft"])
+        draw.rectangle((130, 984, 190, 990), fill=colors["blue"])
+    elif frame_index >= CELEBRATION_START:
+        phase = frame_index - CELEBRATION_START
+        if phase < 12:
+            draw.rectangle((132, 267, 188, 275), fill=colors["gold"])
+            draw.rectangle((116, 282, 204, 288), fill=colors["gold"])
+            draw.rectangle((104, 264, 112, 272), fill=colors["gold"])
+            draw.rectangle((208, 264, 216, 272), fill=colors["gold"])
+            draw.rectangle((120, 982, 200, 990), fill=colors["gold"])
+            draw.rectangle((104, 996, 216, 1002), fill=colors["gold"])
+            draw.rectangle((94, 980, 102, 988), fill=colors["gold"])
+            draw.rectangle((218, 980, 226, 988), fill=colors["gold"])
+        elif 24 <= phase < 36:
+            draw.rectangle((116, 940, 204, 948), fill=colors["soft"])
+            draw.rectangle((124, 970, 196, 979), fill=colors["gold"])
+            draw.rectangle((108, 988, 116, 996), fill=colors["gold"])
+            draw.rectangle((204, 988, 212, 996), fill=colors["gold"])
+
+
+def character_center(local_y, local_x=160):
+    return (local_x, CHARACTER_TOP + local_y)
+
+
+def draw_punch_effects(image, sprites, frame_index):
+    phase = frame_index - PUNCH_START
+    step = phase % 4
+    if step == 0:
+        paste_sprite(image, sprites, "punch-burst", character_center(170, 236), (54, 54), 245)
+        paste_sprite(image, sprites, "punch-trail", character_center(170, 216), (62, 20), 225)
+        paste_sprite(image, sprites, "punch-sparks", character_center(146, 246), (36, 32), 200)
+    elif step == 1:
+        paste_sprite(image, sprites, "punch-trail", character_center(170, 220), (72, 22), 235)
+        paste_sprite(image, sprites, "punch-burst", character_center(170, 240), (48, 48), 185)
+        paste_sprite(image, sprites, "punch-spark", character_center(156, 254), (32, 30), 195)
+    elif step == 2:
+        paste_sprite(image, sprites, "punch-burst", character_center(170, 236), (52, 52), 232)
+        paste_sprite(image, sprites, "punch-trail", character_center(170, 224), (58, 18), 205)
+        paste_sprite(image, sprites, "punch-spark", character_center(144, 248), (36, 34), 220)
+    else:
+        paste_sprite(image, sprites, "punch-trail", character_center(170, 220), (66, 22), 225)
+        paste_sprite(image, sprites, "punch-burst", character_center(170, 239), (46, 46), 205)
+        paste_sprite(image, sprites, "punch-sparks", character_center(194, 242), (40, 34), 190)
+
+
+def draw_sword_charge(image, sprites, frame_index):
+    phase = frame_index - (SWORD_START - 8)
+    opacity = round(70 + 80 * pulse(phase, 8, 1))
+    paste_sprite(image, sprites, "punch-sparks", character_center(126), (24, 24), opacity)
+
+
+def draw_sword_recovery(image, sprites):
+    paste_sprite(image, sprites, "punch-spark", character_center(182, 238), (20, 20), 120)
+
+
+def draw_celebration_effects(image, sprites, frame_index):
+    phase = frame_index - CELEBRATION_START
+    if phase < 8:
+        paste_sprite(image, sprites, "celebration-burst", character_center(38, 154), (64, 64), round(245 - phase * 14))
+        paste_sprite(image, sprites, "celebration-sparkles", character_center(46, 154), (52, 42), round(220 - phase * 8))
+        paste_sprite(image, sprites, "celebration-confetti", character_center(82, 216), (48, 36), round(215 - phase * 8))
+    elif phase < 16:
+        paste_sprite(image, sprites, "celebration-burst", character_center(42, 154), (58, 58), round(170 - (phase - 8) * 10))
+        paste_sprite(image, sprites, "celebration-sparkles", character_center(50, 154), (54, 42), 215)
+        paste_sprite(image, sprites, "celebration-confetti", character_center(96, 218), (54, 40), 205)
+    elif phase < 24:
+        paste_sprite(image, sprites, "celebration-sparkles", character_center(56, 154), (52, 42), 210)
+        paste_sprite(image, sprites, "celebration-confetti", character_center(110, 220), (52, 42), 185)
+    elif phase < 36:
+        paste_sprite(image, sprites, "landing-ring", character_center(250, 160), (112, 46), 235)
+        paste_sprite(image, sprites, "celebration-sparkles", character_center(78, 154), (40, 34), 185)
+        paste_sprite(image, sprites, "celebration-confetti", character_center(118, 218), (44, 36), 165)
+    else:
+        paste_sprite(image, sprites, "celebration-sparkles", character_center(58, 154), (40, 32), round(165 - (phase - 36) * 15))
+
+
+def draw_character_effects(image, sprites, frame_index):
+    # New effects stay outside the sword source chapter. The existing sword
+    # artwork remains the only character-cell effect for frames 104-135.
+    if PUNCH_START <= frame_index <= PUNCH_END:
+        draw_punch_effects(image, sprites, frame_index)
+    elif SWORD_START - 8 <= frame_index < SWORD_START:
+        draw_sword_charge(image, sprites, frame_index)
+    elif frame_index == SWORD_BRIDGE:
+        draw_sword_recovery(image, sprites)
+    elif frame_index >= CELEBRATION_START:
+        draw_celebration_effects(image, sprites, frame_index)
+
+
 def render(output: Path, theme: str, frame_index=0, frame_count=144, sprites=None):
     if theme not in THEMES:
         raise SystemExit(f"unknown theme: {theme}")
@@ -161,6 +294,8 @@ def render(output: Path, theme: str, frame_index=0, frame_count=144, sprites=Non
     draw_bottom_static(draw, colors)
     draw_top_motion(image, draw, colors, sprites, frame_index, frame_count)
     draw_bottom_motion(image, draw, colors, sprites, frame_index, frame_count)
+    draw_chapter_rail_response(draw, colors, frame_index)
+    draw_character_effects(image, sprites, frame_index)
     output.parent.mkdir(parents=True, exist_ok=True)
     image.save(output, format="PNG", optimize=True)
 

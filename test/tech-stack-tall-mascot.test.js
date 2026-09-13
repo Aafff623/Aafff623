@@ -10,6 +10,7 @@ const sequence = require('../scripts/tech-stack-sword-sequence');
 const { rewriteGifDelays } = require('../scripts/compose-tech-stack-tall-mascot');
 const decorationRendererPath = path.join(ROOT, 'scripts', 'tech-stack-tall-decorations.py');
 const spriteSheetPath = path.join(ROOT, 'scripts', 'art', 'tech-stack-ornament-sprites.png');
+const impactAtlasPath = path.join(ROOT, 'scripts', 'art', 'tech-stack-impact-atlas.png');
 const README_PATHS = [
   path.join(ROOT, 'README.md'),
   path.join(ROOT, 'README.zh.md')
@@ -113,7 +114,91 @@ test('GIF delay rewriting ignores marker-like bytes after the trailer', () => {
   }
 });
 
-test('tall tech stack mascot fills the side rail without changing the animation contract', () => {
+test('chapter effects add punch and celebration feedback without covering sword frames', () => {
+  assert.ok(fs.existsSync(impactAtlasPath), 'chapter effect atlas must be tracked as a pipeline source');
+  const atlasProbe = execFileSync('ffprobe', [
+    '-v', 'error',
+    '-show_entries', 'stream=width,height,pix_fmt',
+    '-of', 'default=noprint_wrappers=1',
+    impactAtlasPath
+  ], { encoding: 'utf8' });
+  assert.match(atlasProbe, /width=256/);
+  assert.match(atlasProbe, /height=128/);
+  assert.match(atlasProbe, /pix_fmt=rgba/);
+
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tech-stack-chapter-effects-test-'));
+  const framesDir = path.join(tempDir, 'frames');
+  const sampleScript = [
+    'from PIL import Image',
+    'import json, pathlib, sys',
+    'root = pathlib.Path(sys.argv[1])',
+    'def alpha_count(index):',
+    '    image = Image.open(root / f"frame-{index + 1:03d}.png").convert("RGBA")',
+    '    return int(image.crop((0, 390, 320, 710)).getchannel("A").getbbox() is not None)',
+    'print(json.dumps({str(index): alpha_count(index) for index in (20, 28, 104, 136, 137)}))'
+  ].join('\n');
+
+  try {
+    execFileSync('python', [decorationRendererPath, framesDir, 'dark', String(sequence.frameCount)], { stdio: 'ignore' });
+    const samples = JSON.parse(execFileSync('python', ['-c', sampleScript, framesDir], { encoding: 'utf8' }));
+    assert.equal(samples['20'], 0, 'neutral frame should not receive character-cell effects');
+    assert.ok(samples['28'] > 0, 'punch chapter should receive a character-cell impact effect');
+    assert.equal(samples['104'], 0, 'sword chapter should remain free of the new chapter effects');
+    assert.ok(samples['136'] > 0, 'sword recovery bridge should receive a short hand-off effect');
+    assert.ok(samples['137'] > 0, 'celebration chapter should receive a character-cell burst effect');
+  } finally {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  }
+});
+
+test('amplified chapter effects occupy a visible envelope across the rail', () => {
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tech-stack-impact-visibility-test-'));
+  const framesDir = path.join(tempDir, 'frames');
+  const sampleScript = [
+    'from PIL import Image',
+    'import json, pathlib, sys',
+    'root = pathlib.Path(sys.argv[1])',
+    'boxes = {',
+    '    "character": (0, 390, 320, 710),',
+    '    "topRail": (0, 0, 320, 360),',
+    '    "bottomRail": (0, 760, 320, 1100),',
+    '}',
+    'def region_metrics(image, box):',
+    '    alpha = image.crop(box).getchannel("A")',
+    '    bbox = alpha.getbbox()',
+    '    return {',
+    '        "width": 0 if bbox is None else bbox[2] - bbox[0],',
+    '        "height": 0 if bbox is None else bbox[3] - bbox[1],',
+    '        "pixels": sum(alpha.histogram()[1:]),',
+    '    }',
+    'metrics = {}',
+    'for index in (20, 28, 29, 30, 31, 137, 161, 104, 135):',
+    '    image = Image.open(root / f"frame-{index + 1:03d}.png").convert("RGBA")',
+    '    metrics[str(index)] = {name: region_metrics(image, box) for name, box in boxes.items()}',
+    'print(json.dumps(metrics))',
+  ].join('\n');
+
+  try {
+    execFileSync('python', [decorationRendererPath, framesDir, 'dark', String(sequence.frameCount)], { stdio: 'ignore' });
+    const metrics = JSON.parse(execFileSync('python', ['-c', sampleScript, framesDir], { encoding: 'utf8' }));
+    assert.ok(metrics['28'].character.width >= 44, 'punch burst should read as a large impact');
+    assert.ok(metrics['28'].character.height >= 40, 'punch burst should have vertical weight');
+    assert.ok(
+      Math.min(...[28, 29, 30, 31].map(index => metrics[String(index)].character.pixels)) >= 160,
+      'each punch frame should retain visible impact pixels'
+    );
+    assert.ok(metrics['137'].character.width >= 118, 'celebration burst should occupy a readable envelope');
+    assert.ok(metrics['161'].character.width >= 120, 'landing ring should spread below the character');
+    assert.ok(metrics['28'].topRail.pixels > metrics['20'].topRail.pixels, 'punch should brighten the top rail');
+    assert.ok(metrics['28'].bottomRail.pixels > metrics['20'].bottomRail.pixels, 'punch should brighten the bottom rail');
+    assert.equal(metrics['104'].character.pixels, 0, 'sword frame 104 must remain free of new character effects');
+    assert.equal(metrics['135'].character.pixels, 0, 'sword frame 135 must remain free of new character effects');
+  } finally {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  }
+});
+
+test('tall tech stack mascot fills the side rail and preserves its display contract', () => {
   const decorationRenderer = fs.readFileSync(decorationRendererPath, 'utf8');
   assert.match(decorationRenderer, /CANVAS = \(320, 1100\)/);
   assert.match(decorationRenderer, /TOP_SIGNAL = "top-signal"/);
@@ -137,8 +222,8 @@ test('tall tech stack mascot fills the side rail without changing the animation 
     ], { encoding: 'utf8' });
     assert.match(probe, /width=320/);
     assert.match(probe, /height=1100/);
-    assert.match(probe, /nb_frames=176/);
-    assert.match(probe, /duration=39\.200000/);
+    assert.match(probe, /nb_frames=177/);
+    assert.match(probe, /duration=38\.620000/);
 
     const imageFrames = readGifImageFrames(fs.readFileSync(gifPath));
     assert.equal(imageFrames.length, sequence.frameCount);
